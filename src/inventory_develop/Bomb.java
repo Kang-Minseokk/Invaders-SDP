@@ -168,7 +168,7 @@ public class Bomb{
         int distanceY = column.get(pos).getPositionY() - nextcolumn.get(nextpos).getPositionY();
         int distanceX = column.get(pos).getPositionX() - nextcolumn.get(nextpos).getPositionX();
 
-        return (distanceY >= -50 && distanceX >= -50) || (distanceY <= 50 && distanceX <= 50);
+        return (distanceY >= -50 && distanceX >= -50) && (distanceY <= 50 && distanceX <= 50);
     }
 
 }
