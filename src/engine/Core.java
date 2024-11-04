@@ -9,15 +9,14 @@ import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import CtrlS.CurrencyManager;
-import CtrlS.RoundState;
-import CtrlS.ReceiptScreen;
-import CtrlS.UpgradeManager;
-import clove.Statistics;
-import CtrlS.RoundState;
-import CtrlS.ReceiptScreen;
-//import Sound_Operator.SoundManager;
-import clove.AchievementManager;
+import Currency.CurrencyManager;
+import Currency.RoundState;
+import Currency.ReceiptScreen;
+import Currency.UpgradeManager;
+
+import Achievement.Statistics;
+import Achievement.AchievementManager;
+
 import screen.*;
 import engine.TwoPlayerMode;
 

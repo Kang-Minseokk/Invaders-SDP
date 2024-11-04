@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.Properties;
 import java.util.logging.Logger;
-import inventory_develop.ShipStatus;
+import entity.ShipStatus;
 
 public final class UpgradeManager {
 

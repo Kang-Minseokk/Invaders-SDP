@@ -2,14 +2,12 @@ package screen;
 
 import java.awt.event.KeyEvent;
 import java.io.IOException;
-import java.util.ArrayList;
 
 import engine.Cooldown;
 import engine.Core;
 // Sound Operator
 import engine.SoundManager;
-import engine.Score;
-import inventory_develop.ShipStatus;
+import entity.ShipStatus;
 
 /**
  * Implements the title screen.

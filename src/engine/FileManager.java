@@ -17,10 +17,10 @@ import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.util.*;
 import java.util.logging.Logger;
-import CtrlS.EncryptionSupport;
+import Currency.EncryptionSupport;
 import engine.DrawManager.SpriteType;
 
-import clove.Statistics; //Team Clove
+import Achievement.Statistics; //Team Clove
 
 /**
  * Manages files used in the application.

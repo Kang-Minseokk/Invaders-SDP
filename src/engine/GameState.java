@@ -1,6 +1,6 @@
 package engine;
 
-import clove.ScoreManager;
+import Achievement.ScoreManager;
 
 /**
  * Implements an object that stores the state of the game between levels.

@@ -1,6 +1,4 @@
-package inventory_develop;
-
-import entity.EnemyShip;
+package entity;
 
 import java.util.Set;
 

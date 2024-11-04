@@ -1,6 +1,5 @@
 package entity;
 
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,20 +10,20 @@ import java.util.logging.Logger;
 import javax.swing.Timer;
 
 import Enemy.*;
+
 import engine.SoundManager;
-import clove.ScoreManager;
-import inventory_develop.Bomb;
-import inventory_develop.SpeedItem;
-import screen.Screen;
 import engine.Cooldown;
 import engine.Core;
 import engine.DrawManager;
 import engine.DrawManager.SpriteType;
 import engine.GameSettings;
+
+import Achievement.ScoreManager;
+
+import screen.Screen;
+
 import static java.lang.Math.*;
 import Enemy.PiercingBulletPool;
-//Sound_Operator
-//import Sound_Operator.SoundManager;
 
 /**
  * Groups enemy ships into a formation that moves together.

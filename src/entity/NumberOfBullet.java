@@ -1,4 +1,4 @@
-package inventory_develop;
+package entity;
 
 import Enemy.PiercingBullet;
 import Enemy.PiercingBulletPool;

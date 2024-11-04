@@ -8,17 +8,14 @@ import Enemy.PiercingBullet;
 import engine.Cooldown;
 import engine.Core;
 import engine.DrawManager.SpriteType;
-import inventory_develop.Bomb;
 import Enemy.PiercingBulletPool;
 // Sound Operator
 import engine.SoundManager;
 // Import PlayerGrowth class
 import Enemy.PlayerGrowth;
 // Import NumberOfBullet class
-import inventory_develop.NumberOfBullet;
-// Import ShipStatus class
-import inventory_develop.ItemBarrierAndHeart;
-import inventory_develop.ShipStatus;
+
+
 /**
  * Implements a ship, to be controlled by the player.
  *

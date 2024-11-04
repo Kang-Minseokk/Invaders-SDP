@@ -1,7 +1,7 @@
-package clove;
+package Achievement;
 
 import java.time.Instant;
-import inventory_develop.Bomb;
+import entity.Bomb;
 
 public class ScoreManager {
 

@@ -5,13 +5,13 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
-import clove.Statistics; //Team Clove
+import Achievement.Statistics; //Team Clove
 import engine.Cooldown;
 import engine.Core;
 import engine.GameState;
 import engine.Score;
 import Enemy.PlayerGrowth;
-import inventory_develop.NumberOfBullet;
+import entity.NumberOfBullet;
 
 /**
  * Implements the score screen.

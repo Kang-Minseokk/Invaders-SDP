@@ -4,7 +4,7 @@ package Currency;
 import engine.Core;
 import engine.GameState;
 // item level Bonus
-import inventory_develop.ShipStatus;
+import entity.ShipStatus;
 
 import java.io.IOException;
 

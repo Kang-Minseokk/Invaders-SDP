@@ -1,4 +1,4 @@
-package clove;
+package Achievement;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,8 +8,6 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
-
-import CtrlS.CurrencyManager;
 import engine.Core;
 import engine.FileManager;
 

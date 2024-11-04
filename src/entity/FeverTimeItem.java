@@ -1,7 +1,7 @@
-package inventory_develop;
+package entity;
 
-import engine.SoundManager;
 import engine.Core;
+import engine.SoundManager;
 
 import java.util.logging.Logger;
 
