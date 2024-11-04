@@ -13,15 +13,13 @@ import CtrlS.CurrencyManager;
 import CtrlS.RoundState;
 import CtrlS.ReceiptScreen;
 import CtrlS.UpgradeManager;
-import Sound_Operator.SoundManager;
 import clove.Statistics;
-import level_design.Background;
 import CtrlS.RoundState;
 import CtrlS.ReceiptScreen;
-import Sound_Operator.SoundManager;
+//import Sound_Operator.SoundManager;
 import clove.AchievementManager;
 import screen.*;
-import twoplayermode.TwoPlayerMode;
+import engine.TwoPlayerMode;
 
 
 /**
@@ -129,10 +127,6 @@ public final class Core {
 		DrawManager.getInstance().setFrame(frame);
 		int width = frame.getWidth();
 		int height = frame.getHeight();
-
-		/** ### TEAM INTERNATIONAL ###*/
-		/** Initialize singleton instance of a background*/
-		Background.getInstance().initialize(frame);
 
 		gameSettings = new ArrayList<GameSettings>();
 		gameSettings.add(SETTINGS_LEVEL_1);

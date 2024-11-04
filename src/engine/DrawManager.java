@@ -21,7 +21,7 @@ import inventory_develop.Bomb;
 import screen.Screen;
 import entity.Entity;
 
-import level_design.Background;
+import screen.Background;
 
 import javax.imageio.ImageIO;
 
@@ -121,6 +121,10 @@ public class DrawManager {
 
 	};
 
+	/** For Achievement**/
+	static int timer = 100;
+	static String achievementText = null;
+
 	/**
 	* Private constructor.
 	*
@@ -199,6 +203,7 @@ public class DrawManager {
 	 */
 	public void setFrame(final Frame currentFrame) {
 		frame = currentFrame;
+		Background.getInstance().initialize(frame);
 	}
 
 	/**
@@ -275,16 +280,16 @@ public class DrawManager {
 	 * @param screen
 	 *            Screen to draw in.
 	 */
-	@SuppressWarnings("unused")
-	private void drawBorders(final Screen screen) {
-		backBufferGraphics.setColor(Color.GREEN);
-		backBufferGraphics.drawLine(0, 0, screen.getWidth() - 1, 0);
-		backBufferGraphics.drawLine(0, 0, 0, screen.getHeight() - 1);
-		backBufferGraphics.drawLine(screen.getWidth() - 1, 0,
-				screen.getWidth() - 1, screen.getHeight() - 1);
-		backBufferGraphics.drawLine(0, screen.getHeight() - 1,
-				screen.getWidth() - 1, screen.getHeight() - 1);
-	}
+//	@SuppressWarnings("unused")
+//	private void drawBorders(final Screen screen) {
+//		backBufferGraphics.setColor(Color.GREEN);
+//		backBufferGraphics.drawLine(0, 0, screen.getWidth() - 1, 0);
+//		backBufferGraphics.drawLine(0, 0, 0, screen.getHeight() - 1);
+//		backBufferGraphics.drawLine(screen.getWidth() - 1, 0,
+//				screen.getWidth() - 1, screen.getHeight() - 1);
+//		backBufferGraphics.drawLine(0, screen.getHeight() - 1,
+//				screen.getWidth() - 1, screen.getHeight() - 1);
+//	}
 
 	/**
 	 * For debugging purpouses, draws a grid over the canvas.
@@ -292,14 +297,14 @@ public class DrawManager {
 	 * @param screen
 	 *            Screen to draw in.
 	 */
-	@SuppressWarnings("unused")
-	private void drawGrid(final Screen screen) {
-		backBufferGraphics.setColor(Color.DARK_GRAY);
-		for (int i = 0; i < screen.getHeight() - 1; i += 2)
-			backBufferGraphics.drawLine(0, i, screen.getWidth() - 1, i);
-		for (int j = 0; j < screen.getWidth() - 1; j += 2)
-			backBufferGraphics.drawLine(j, 0, j, screen.getHeight() - 1);
-	}
+//	@SuppressWarnings("unused")
+//	private void drawGrid(final Screen screen) {
+//		backBufferGraphics.setColor(Color.DARK_GRAY);
+//		for (int i = 0; i < screen.getHeight() - 1; i += 2)
+//			backBufferGraphics.drawLine(0, i, screen.getWidth() - 1, i);
+//		for (int j = 0; j < screen.getWidth() - 1; j += 2)
+//			backBufferGraphics.drawLine(j, 0, j, screen.getHeight() - 1);
+//	}
 
 	/**
 	 * Draws current score on screen.
@@ -309,12 +314,12 @@ public class DrawManager {
 	 * @param score
 	 *            Current score.
 	 */
-	public void drawScore(final Screen screen, final int score) {
-		backBufferGraphics.setFont(fontRegular);
-		backBufferGraphics.setColor(Color.WHITE);
-		String scoreString = String.format("%04d", score);
-		backBufferGraphics.drawString(scoreString, screen.getWidth() - 60, 25);
-	}
+//	public void drawScore(final Screen screen, final int score) {
+//		backBufferGraphics.setFont(fontRegular);
+//		backBufferGraphics.setColor(Color.WHITE);
+//		String scoreString = String.format("%04d", score);
+//		backBufferGraphics.drawString(scoreString, screen.getWidth() - 60, 25);
+//	}
 
 	/**
 	 * Draws number of remaining lives on screen.
@@ -967,5 +972,17 @@ public class DrawManager {
 					(count) + "   " + Core.getUpgradeManager().Price(number) + " "
 					+ Core.getUpgradeManager().whatMoney(count,number);
 		}
+	}
+
+
+	/** For achievement**/
+	public static int getAchievementTimer(){return timer;}
+	public static String getAchievementText(){return achievementText;}
+	public static void addAchievementTimer(){timer++;}
+	public static void achieveAchievement(String Text){
+		timer = 0;
+		achievementText = Text;
+		// Sound Operator
+		SoundManager.getInstance().playES("achievement");
 	}
 }

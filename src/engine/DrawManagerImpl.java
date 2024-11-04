@@ -1,10 +1,9 @@
-package HUDTeam;
+package engine;
 
-import engine.DrawManager;
-import screen.GameScreen;
-import screen.Screen;
 import entity.Entity;
-import java.awt.Color;
+import screen.Screen;
+
+import java.awt.*;
 
 public class DrawManagerImpl extends DrawManager {
 

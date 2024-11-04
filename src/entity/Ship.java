@@ -11,7 +11,7 @@ import engine.DrawManager.SpriteType;
 import inventory_develop.Bomb;
 import Enemy.PiercingBulletPool;
 // Sound Operator
-import Sound_Operator.SoundManager;
+import engine.SoundManager;
 // Import PlayerGrowth class
 import Enemy.PlayerGrowth;
 // Import NumberOfBullet class

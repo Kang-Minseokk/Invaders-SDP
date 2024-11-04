@@ -6,8 +6,6 @@ import java.util.List;
 import engine.Core;
 import engine.DrawManager;
 import engine.GameState;
-import clove.Statistics;
-import HUDTeam.DrawAchievementHud;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -255,7 +253,7 @@ public class AchievementConditions {
             achievement.completeAchievement();
             getUnlockedAchievements();
             System.out.println("Unlocked achievements list: " + unlockedAchievements);
-            DrawAchievementHud.achieve(achievement.getAchievementName());
+            DrawManager.achieveAchievement(achievement.getAchievementName());
             if(achievement.getGem() > 0) {
                 try {
                     Core.getCurrencyManager().addGem(achievement.getGem());

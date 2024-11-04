@@ -1,27 +1,17 @@
-package twoplayermode;
+package engine;
 
 
-
-import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.util.Set;
-import java.util.HashSet;
-
-import Enemy.*;
-import HUDTeam.DrawManagerImpl;
-import screen.GameScreen;
-import engine.GameState;
-import engine.GameSettings;
-import entity.Ship;
-import engine.DrawManager;
+import Enemy.Item;
 import Enemy.PiercingBullet;
 import entity.Bullet;
 import entity.BulletPool;
-import entity.EnemyShip;
 import entity.Obstacle;
-import inventory_develop.ItemBarrierAndHeart;
-import inventory_develop.FeverTimeItem;
-import Sound_Operator.SoundManager;
+import entity.Ship;
+import screen.GameScreen;
+
+import java.awt.*;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class TwoPlayerMode extends GameScreen {
@@ -32,9 +22,6 @@ public class TwoPlayerMode extends GameScreen {
 
     public TwoPlayerMode(GameState gameState, GameSettings gameSettings, boolean bonusLife, int width, int height, int fps) {
         super(gameState, gameSettings, bonusLife, width, height, fps);
-
-
-
     }
 
     @Override

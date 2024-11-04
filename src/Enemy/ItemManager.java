@@ -22,7 +22,7 @@ import inventory_develop.SpeedItem;
 import CtrlS.CurrencyManager;
 
 // Sound Operator
-import Sound_Operator.SoundManager;
+import engine.SoundManager;
 
 
 public class ItemManager {

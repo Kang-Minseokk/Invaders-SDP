@@ -4,10 +4,10 @@ import java.awt.Insets;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
-import HUDTeam.DrawAchievementHud;
-import HUDTeam.DrawManagerImpl;
+import engine.DrawManagerImpl;
 import engine.Cooldown;
 import engine.Core;
+
 import engine.DrawManager;
 import engine.InputManager;
 
@@ -114,9 +114,9 @@ public class Screen {
 	 */
 	protected void drawPost() {
 		// Jo minseo / HUD team
-		if(DrawAchievementHud.getTimer() < 100) {
-			DrawManagerImpl.drawAchievement(this, DrawAchievementHud.getAchievementText());
-			DrawAchievementHud.addTimer();
+		if(DrawManager.getAchievementTimer() < 100) {
+			DrawManagerImpl.drawAchievement(this, DrawManager.getAchievementText());
+			DrawManager.addAchievementTimer();
 		}
 	}
 	/**

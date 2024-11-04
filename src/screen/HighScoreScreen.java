@@ -4,12 +4,10 @@ import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.List;
 
-import HUDTeam.DrawAchievementHud;
-import HUDTeam.DrawManagerImpl;
 import engine.Core;
 import engine.Score;
 // Sound Operator
-import Sound_Operator.SoundManager;
+import engine.SoundManager;
 
 /**
  * Implements the high scores screen, it shows player records.

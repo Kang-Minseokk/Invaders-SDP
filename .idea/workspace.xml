@@ -5,15 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2d1df9e-7633-4932-824c-2c1f0ea58909" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Currency/CurrencyManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Currency/EncryptionSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Currency/Gem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Currency/ReceiptScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Currency/RoundState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Currency/UpgradeManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enemy/ItemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy/ItemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HUDTeam/DrawAchievementHud.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HUDTeam/DrawManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sound_Operator/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/SoundManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clove/AchievementConditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clove/AchievementConditions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Core.java" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/engine/DrawManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/EnemyShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/EnemyShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/EnemyShipFormation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/EnemyShipFormation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inventory_develop/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inventory_develop/Bomb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inventory_develop/FeverTimeItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inventory_develop/FeverTimeItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/level_design/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/GameScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/HighScoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/HighScoreScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/ScoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/ScoreScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/TitleScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/TitleScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoplayermode/TwoPlayerMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/TwoPlayerMode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +61,9 @@
     &quot;associatedIndex&quot;: 6
     }</component>
   <component name="ProjectId" id="2lvMrDXDXT0D24Hdc7PGKjkYe4i" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,9 +72,9 @@
   "keyToString": {
     "Application.Core.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/background",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/OSYSTUDY/241018/Invaders-SDP_TEAMstarter",
+    "last_opened_file_path": "C:/Users/limul/Desktop/College/2_grade/2_semester/소프트웨어 개발 실무/workspace2/Invaders-SDP/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +89,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="clove" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src" />
+      <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src\CtrlS" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="engine" />
+      <recent name="screen" />
       <recent name="clove" />
     </key>
   </component>
@@ -91,7 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Core" />
+        <item itemvalue="애플리케이션.Core" />
       </list>
     </recent_temporary>
   </component>
@@ -177,5 +208,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/CtrlS/RoundState.java</url>
+          <line>26</line>
+          <properties field="COIN_ITEM_VALUE" class="CtrlS.RoundState" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
