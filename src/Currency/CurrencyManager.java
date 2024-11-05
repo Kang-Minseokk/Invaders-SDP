@@ -41,7 +41,7 @@ public final class CurrencyManager {
     public void addCoin(int amount) throws IOException {
         int current_coin = fileManager.loadCoin();
         amount += current_coin;
-        fileManager.saveCoin(amount+100000);
+        fileManager.saveCoin(amount);
     }
 
     /**
