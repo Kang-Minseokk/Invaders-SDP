@@ -39,9 +39,6 @@ public class HpEnemyShip {
      * 		   if hp is 1, return white
      */
     public static Color determineColor(int hp) {
-        Color color = Color.WHITE; // Declare a variable to store the color
-                                    // set basic color WHITE
-
         if (hp == 2)
             return new Color(0xFFEB3B);
         else if (hp == 3)

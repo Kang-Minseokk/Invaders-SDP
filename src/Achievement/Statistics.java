@@ -30,7 +30,7 @@ public class Statistics {
     /** Total playtime */
     private long totalPlaytime;
     /** Additional playtime */
-    private long playTime;
+
 
     private static FileManager fileManager;
     private static Logger logger;
@@ -62,9 +62,6 @@ public class Statistics {
         this.playedGameNumber = playedGameNumber;
         this.clearAchievementNumber = clearAchievementNumber;
         this.totalPlaytime = TotalPlaytime;
-
-        //this.achievementConditions = new AchievementConditions();
-        //this.scheduler = Executors.newSingleThreadScheduledExecutor();
     }
 
     /**

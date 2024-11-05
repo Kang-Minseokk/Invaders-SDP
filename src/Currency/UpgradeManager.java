@@ -15,7 +15,7 @@ public final class UpgradeManager {
     /** Singleton instance of the class. */
     private static UpgradeManager instance;
     /** Application logger. */
-    private static Logger logger;
+
     private static FileManager fileManager;
 
     // Upgrade keys
@@ -41,7 +41,6 @@ public final class UpgradeManager {
      */
     private UpgradeManager() {
         fileManager = Core.getFileManager();
-        logger = Core.getLogger();
         try{
             Core.getFileManager().saveUpgradeStatus(Core.getFileManager().loadUpgradeStatus());
         } catch (IOException e){
@@ -258,12 +257,13 @@ public final class UpgradeManager {
                     else {
                         return getCoinCount() / 4 * 5;
                     }
+                default:
+                    Core.getLogger().warning("Invalid input: Cannot calculate price for input " + i);
+                    throw new IllegalArgumentException("Invalid Input");
             }
         } catch (IOException e){
             throw new RuntimeException(e);
         }
-        Core.getLogger().warning("Can not Calculate Price");
-        return 0;
     }
 
     public int PriceCalculation(int basic_price, int count){

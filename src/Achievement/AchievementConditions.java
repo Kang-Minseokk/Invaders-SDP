@@ -18,7 +18,7 @@ public class AchievementConditions {
     private DrawManager drawManager;
 
     private GameState gameState;
-    private static Logger logger;
+    private static Logger logger = Logger.getLogger(AchievementConditions.class.getName());
 
     private int highestLevel;
     private int totalBulletsShot;
@@ -127,7 +127,7 @@ public class AchievementConditions {
     public void checkAllAchievements() {
         boolean allCompleted = true;
 
-        System.out.println("Checking all achievements...");
+        logger.info("Checking all achievements...");
         for (Achievement achievement: allAchievements) {
             if (!achievement.isCompleted()) {
                 allCompleted = false;
@@ -141,7 +141,7 @@ public class AchievementConditions {
 
     public void onStage() throws  IOException {
         int highestStage = stats.getHighestLevel();
-        System.out.println("Checking stage achievements. Highest stage: " + highestStage);
+        logger.info("Checking stage achievements. Highest stage: " + highestStage);
         for (Achievement achievement : stageAchievements) {
             if (highestStage >= achievement.getRequiredStages() && !achievement.isCompleted()) {
                 completeAchievement(achievement);
@@ -154,10 +154,10 @@ public class AchievementConditions {
         lastKillTime = System.currentTimeMillis();
 
         int currentKills = stats.getTotalShipsDestroyed();
-        System.out.println("Checking kill achievements. Current kills: " + currentKills);
-        System.out.println("Kill Achievements size: " + killAchievements.size());
+        logger.info("Checking kill achievements. Current kills: " + currentKills);
+        logger.info("Kill Achievements size: " + killAchievements.size());
         for (Achievement achievement : killAchievements) {
-            System.out.println("Checking " + achievement.getAchievementName());
+            logger.info("Checking " + achievement.getAchievementName());
             if (currentKills >= achievement.getRequiredKills() && !achievement.isCompleted()) {
                 completeAchievement(achievement);
             }
@@ -200,7 +200,7 @@ public class AchievementConditions {
     }
 
     public void checkNoDeathAchievements(int lives) {
-        System.out.println("Checking No Death achievements. Current lives: " + lives);
+        logger.info("Checking No Death achievements. Current lives: " + lives);
         if (lives == Core.MAX_LIVES) {
             for (Achievement achievement : noDeathAchievements) {
                 if (highestLevel==7 && !achievement.isCompleted()) {
@@ -211,7 +211,7 @@ public class AchievementConditions {
     }
 
     public void score(int score) {
-        System.out.println("Checking score achievements. Current score: " + score);
+        logger.info("Checking score achievements. Current score: " + score);
             for (Achievement achievement : scoreAchievements) {
                 if (score >= achievement.getRequiredScore() && !achievement.isCompleted()) {
                     completeAchievement(achievement);
@@ -222,10 +222,10 @@ public class AchievementConditions {
     // TODO function getShipsDestructionStreak not added yet
     public void killStreak() throws IOException {
         int shipsDestructionStreak = stats.getShipsDestructionStreak();
-        System.out.println("Checking killstreak achievements. Current killstreaks: " + shipsDestructionStreak);
-        System.out.println("Killstreak Achievements size: " + streakAchievements.size());
+        logger.info("Checking killstreak achievements. Current killstreaks: " + shipsDestructionStreak);
+        logger.info("Killstreak Achievements size: " + streakAchievements.size());
         for (Achievement achievement : streakAchievements) {
-            System.out.println("Checking " + achievement.getAchievementName());
+            logger.info("Checking " + achievement.getAchievementName());
             if (shipsDestructionStreak>= achievement.getRequiredKillStreaks() && !achievement.isCompleted()) {
                 completeAchievement(achievement);
             }
@@ -235,7 +235,7 @@ public class AchievementConditions {
     public void trials() {
         int playedTrials = stats.getPlayedGameNumber();
         for (Achievement achievement : trialAchievements) {
-            System.out.println("Checking trial achievements. Current trials: " + playedTrials);
+            logger.info("Checking trial achievements. Current trials: " + playedTrials);
             if (playedTrials >= achievement.getRequiredTrials() && !achievement.isCompleted()) {
                 completeAchievement(achievement);
             }
@@ -248,11 +248,11 @@ public class AchievementConditions {
 
     private void completeAchievement(Achievement achievement) {
         if (!unlockedAchievements.contains(achievement.getAchievementName())) {
-            System.out.println("Achievement Unlocked: " + achievement.getAchievementName() + " - " + achievement.getAchievementDescription());
+            logger.info("Achievement Unlocked: " + achievement.getAchievementName() + " - " + achievement.getAchievementDescription());
             unlockedAchievements.add(achievement.getAchievementName());
             achievement.completeAchievement();
             getUnlockedAchievements();
-            System.out.println("Unlocked achievements list: " + unlockedAchievements);
+            logger.info("Unlocked achievements list: " + unlockedAchievements);
             DrawManager.achieveAchievement(achievement.getAchievementName());
             if(achievement.getGem() > 0) {
                 try {
@@ -263,7 +263,7 @@ public class AchievementConditions {
             }
         }
         else if (unlockedAchievements.contains(achievement.getAchievementName())) {
-            System.out.println(achievement.getAchievementName() + " has already been unlocked.");
+            logger.info(achievement.getAchievementName() + " has already been unlocked.");
         }
     }
 

@@ -535,109 +535,138 @@ public class EnemyShipFormation implements Iterable<EnemyShip> {
 	 * @param isChainExploded
 	 * 			  True if enemy ship is chain exploded
 	 */
-	public final int[] _destroy(final Bullet bullet, final EnemyShip destroyedShip, boolean isChainExploded) {// Edited by Enemy team
-		int count = 0;	// number of destroyed enemy
-		int point = 0;  // point of destroyed enemy
+	public final int[] _destroy(final Bullet bullet, final EnemyShip destroyedShip, boolean isChainExploded) {
+		int count = 0;
+		int point = 0;
 
-		// Checks if this ship is 'chainExploded' due to recursive call
-		if (isChainExploded
-				&& !destroyedShip.spriteType.equals(SpriteType.ExplosiveEnemyShip1)
-				&& !destroyedShip.spriteType.equals(SpriteType.ExplosiveEnemyShip2)){
+		if (shouldChainExplode(destroyedShip, isChainExploded)) {
 			destroyedShip.chainExplode();
 		}
 
-		if (bullet.getSpriteType() == SpriteType.ItemBomb && isCircle) {	// Bomb Item type1
-			int[] score = Bomb.destroyByBomb_isCircle(enemyShips, destroyedShip, this.itemManager, this.logger);
-			count = score[0];
-			point = score[1];
-		} else if (bullet.getSpriteType() == SpriteType.ItemBomb) {		// Bomb Item type2
-			int[] score = Bomb.destroyByBomb(enemyShips, destroyedShip, this.itemManager, this.logger);
+		if (bullet.getSpriteType() == SpriteType.ItemBomb) {
+			int[] score = isCircle
+					? Bomb.destroyByBomb_isCircle(enemyShips, destroyedShip, this.itemManager, this.logger)
+					: Bomb.destroyByBomb(enemyShips, destroyedShip, this.itemManager, this.logger);
 			count = score[0];
 			point = score[1];
 		} else {
-			for (List<EnemyShip> column : this.enemyShips) // Add by team Enemy
-				for (int i = 0; i < column.size(); i++) {
-					if (column.get(i).equals(destroyedShip)) {
-						switch (destroyedShip.spriteType){
-							case ExplosiveEnemyShip1:
-							case ExplosiveEnemyShip2:
-								HpEnemyShip.hit(destroyedShip);
-
-								//Sound_Operator
-								if (destroyedShip.isDestroyed()) {
-
-									sm = SoundManager.getInstance();
-									sm.playES("enemy_explosion");
-								}
-								point += destroyedShip.getPointValue();
-								int point_mob[]  =  explosive(destroyedShip.getX(), destroyedShip.getY(),
-										this.enemyShips.indexOf(column),i,this.enemyShips); // Edited by team Enemy
-								point += point_mob[0];
-								count += point_mob[1]+1;
-								if(isChainExploded){
-									this.scoreManager.addScore(point-destroyedShip.getPointValue());
-								}
-								this.logger.info("Destroyed ExplosiveEnemyship in ("
-										+ this.enemyShips.indexOf(column) + "," + i + ")");
-
-								break;
-							default:
-								HpEnemyShip.hit(destroyedShip);
-
-								if(destroyedShip.getHp() > 0 ){
-									this.logger.info("Enemy ship lost 1 HP in ("
-											+ this.enemyShips.indexOf(column) + "," + i + ")");
-								}else{
-									this.logger.info("Destroyed ship in ("
-											+ this.enemyShips.indexOf(column) + "," + i + ")");
-									point = column.get(i).getPointValue();
-									count += 1;
-								}
-								break;
-						}
-						if (column.get(i).getColor().equals(Color.MAGENTA)) { //add by team enemy
-							this.itemManager.dropItem(destroyedShip, 1, 1);
-						}
-
-
-
-					}
-				}
+			int[] results = handleStandardDestruction(bullet, destroyedShip);
+			count += results[0];
+			point += results[1];
 		}
 
-		// Updates the list of ships that can shoot the player.
-		if (bullet.getSpriteType() == SpriteType.ItemBomb) {	// team Inventory
-			Bomb.nextShooterByBomb(enemyShips, shooters, this, logger);
-
-		} else if (destroyedShip.isDestroyed()) {
-			if (this.shooters.contains(destroyedShip)) {
-				int destroyedShipIndex = this.shooters.indexOf(destroyedShip);
-				int destroyedShipColumnIndex = -1;
-
-				for (List<EnemyShip> column : this.enemyShips)
-					if (column.contains(destroyedShip)) {
-						destroyedShipColumnIndex = this.enemyShips.indexOf(column);
-						break;
-					}
-
-				EnemyShip nextShooter = getNextShooter(this.enemyShips
-						.get(destroyedShipColumnIndex));
-
-				if (nextShooter != null)
-					this.shooters.set(destroyedShipIndex, nextShooter);
-				else {
-					this.shooters.remove(destroyedShipIndex);
-					this.logger.info("Shooters list reduced to "
-							+ this.shooters.size() + " members.");
-				}
-
-			}
-		}
+		updateShooterList(bullet, destroyedShip);
 		this.shipCount -= count;
 
-		int[] returnValue = {count, point};
-		return returnValue;
+		return new int[]{count, point};
 	}
+
+	private boolean shouldChainExplode(EnemyShip destroyedShip, boolean isChainExploded) {
+		return isChainExploded &&
+				!destroyedShip.spriteType.equals(SpriteType.ExplosiveEnemyShip1) &&
+				!destroyedShip.spriteType.equals(SpriteType.ExplosiveEnemyShip2);
+	}
+
+	private int[] handleStandardDestruction(final Bullet bullet, final EnemyShip destroyedShip) {
+		int count = 0;
+		int point = 0;
+
+		for (List<EnemyShip> column : this.enemyShips) {
+			for (int i = 0; i < column.size(); i++) {
+				if (column.get(i).equals(destroyedShip)) {
+					int[] destructionResult = processShipDestruction(bullet, destroyedShip, column, i);
+					count += destructionResult[0];
+					point += destructionResult[1];
+					dropItemIfNecessary(destroyedShip);
+				}
+			}
+		}
+		return new int[]{count, point};
+	}
+
+	private int[] processShipDestruction(final Bullet bullet, final EnemyShip destroyedShip, List<EnemyShip> column, int index) {
+		int count = 0;
+		int point = 0;
+
+		switch (destroyedShip.spriteType) {
+			case ExplosiveEnemyShip1:
+			case ExplosiveEnemyShip2:
+				point += handleExplosiveShipDestruction(destroyedShip, column, index);
+				count++;
+				break;
+			default:
+				point += handleNormalShipDestruction(destroyedShip, column, index);
+				if (destroyedShip.getHp() <= 0) {
+					count++;
+				}
+				break;
+		}
+		return new int[]{count, point};
+	}
+
+	private int handleExplosiveShipDestruction(EnemyShip destroyedShip, List<EnemyShip> column, int index) {
+		HpEnemyShip.hit(destroyedShip);
+		playExplosionSound(destroyedShip);
+
+		int point = destroyedShip.getPointValue();
+		int[] pointAndCount = explosive(destroyedShip.getX(), destroyedShip.getY(), this.enemyShips.indexOf(column), index, this.enemyShips);
+		point += pointAndCount[0];
+
+		this.logger.info("Destroyed ExplosiveEnemyship in (" + this.enemyShips.indexOf(column) + "," + index + ")");
+		return point;
+	}
+
+	private int handleNormalShipDestruction(EnemyShip destroyedShip, List<EnemyShip> column, int index) {
+		HpEnemyShip.hit(destroyedShip);
+
+		if (destroyedShip.getHp() > 0) {
+			this.logger.info("Enemy ship lost 1 HP in (" + this.enemyShips.indexOf(column) + "," + index + ")");
+			return 0;
+		} else {
+			this.logger.info("Destroyed ship in (" + this.enemyShips.indexOf(column) + "," + index + ")");
+			return column.get(index).getPointValue();
+		}
+	}
+
+	private void playExplosionSound(EnemyShip destroyedShip) {
+		if (destroyedShip.isDestroyed()) {
+			SoundManager.getInstance().playES("enemy_explosion");
+		}
+	}
+
+	private void dropItemIfNecessary(EnemyShip destroyedShip) {
+		if (destroyedShip.getColor().equals(Color.MAGENTA)) {
+			this.itemManager.dropItem(destroyedShip, 1, 1);
+		}
+	}
+
+	private void updateShooterList(final Bullet bullet, final EnemyShip destroyedShip) {
+		if (bullet.getSpriteType() == SpriteType.ItemBomb) {
+			Bomb.nextShooterByBomb(enemyShips, shooters, this, logger);
+		} else if (destroyedShip.isDestroyed() && this.shooters.contains(destroyedShip)) {
+			int destroyedShipIndex = this.shooters.indexOf(destroyedShip);
+			int destroyedShipColumnIndex = findDestroyedShipColumnIndex(destroyedShip);
+
+			EnemyShip nextShooter = getNextShooter(this.enemyShips.get(destroyedShipColumnIndex));
+
+			if (nextShooter != null) {
+				this.shooters.set(destroyedShipIndex, nextShooter);
+			} else {
+				this.shooters.remove(destroyedShipIndex);
+				this.logger.info("Shooters list reduced to " + this.shooters.size() + " members.");
+			}
+		}
+	}
+
+	private int findDestroyedShipColumnIndex(EnemyShip destroyedShip) {
+		for (List<EnemyShip> column : this.enemyShips) {
+			if (column.contains(destroyedShip)) {
+				return this.enemyShips.indexOf(column);
+			}
+		}
+		return -1;
+	}
+
 
 	/**
 	 * A function that explosive up, down, left, and right when an explosive EnemyShip dies
@@ -653,105 +682,66 @@ public class EnemyShipFormation implements Iterable<EnemyShip> {
 	 * @param enemyShips
 	 * 			  the current arrangement of the enemy
 	 */
-	public int[] explosive(final int x, final int y, final int index_x, final int index_y, List<List<EnemyShip>> enemyShips){
-
-
+	public int[] explosive(final int x, final int y, final int index_x, final int index_y, List<List<EnemyShip>> enemyShips) {
 		Queue<EnemyShip> targetShipQ = new LinkedList<>();
 		Timer timer = new Timer(500, null);
 		int range = 2;
-		int i = 1;
 		int point = 0;
 		int mob = 0;
 
-		Bullet bullet = new Bullet(0,0,-1);
+		Bullet bullet = new Bullet(0, 0, -1);
 
-		do{
+		findTargetsInRange(x, y, index_x, index_y, range, enemyShips, targetShipQ);
 
-			if(index_x+i >= 0 && enemyShips.size() > index_x+i && enemyShips.get(index_x+i).size() > y){ // right
-				EnemyShip targetShip = enemyShips.get(index_x+i).get(y);
-				if (!targetShip.isDestroyed()) {
-					if (targetShip.getX() == x + i && targetShip.getY() == y) {
-						targetShipQ.add(targetShip);
-						point += targetShip.getPointValue();
-						mob += 1;
-
-					}
-				}
-			}
-
-			if( index_x-i >= 0 && enemyShips.size() > index_x-i && enemyShips.get(index_x-i).size() > y) { // left
-				EnemyShip targetShip = enemyShips.get(index_x - i).get(y);
-				if(!targetShip.isDestroyed()) {
-					if (targetShip.getX() == x - i && targetShip.getY() == y) {
-						targetShipQ.add(targetShip);
-						point += targetShip.getPointValue();
-						mob += 1;
-
-					}
-				}
-			}
-
-			if(index_y-i >= 0){//up
-				EnemyShip targetShip = enemyShips.get(index_x).get(index_y-i);
-				if (!targetShip.isDestroyed()) {
-					if (targetShip.getX() == x && targetShip.getY() == y - i) {
-						targetShipQ.add(targetShip);
-						point += targetShip.getPointValue();
-						mob += 1;
-					}
-				}
-			}
-
-			if(enemyShips.get(index_x).size() > index_y+i){//down
-				EnemyShip targetShip = enemyShips.get(index_x).get(index_y+i);
-				if(!targetShip.isDestroyed()) {
-					if (targetShip.getX() == x && targetShip.getY() == y + i) {
-						targetShipQ.add(targetShip);
-						point += targetShip.getPointValue();
-						mob += 1;
-
-
-					}
-				}
-			}
-
-			targetShipQ.add(new EnemyShip());
-
-			i++;
-		}
-		while(i <= range);
-
-		ActionListener listener = new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-
-
-
-				while(true){
-					if(!targetShipQ.isEmpty()) {
-						EnemyShip targetShip = targetShipQ.poll();
-						if(targetShip.getX() != -2){
-							_destroy(bullet,targetShip,true);
-						}else{
-							break;
-						}
-
-					}else{
-						break;
-					}
-				}
-
-				if (targetShipQ.isEmpty())
-					((Timer) e.getSource()).stop();
-
-			}
-		};
-
+		ActionListener listener = createExplosionListener(targetShipQ, bullet);
 		timer.addActionListener(listener);
 		timer.start();
 
 		return new int[]{point, mob};
 	}
+
+	private void findTargetsInRange(final int x, final int y, final int index_x, final int index_y, int range, List<List<EnemyShip>> enemyShips, Queue<EnemyShip> targetShipQ) {
+		for (int i = 1; i <= range; i++) {
+			checkAndAddTarget(enemyShips, targetShipQ, index_x + i, y, x + i, y); // right
+			checkAndAddTarget(enemyShips, targetShipQ, index_x - i, y, x - i, y); // left
+			checkAndAddTarget(enemyShips, targetShipQ, index_x, index_y - i, x, y - i); // up
+			checkAndAddTarget(enemyShips, targetShipQ, index_x, index_y + i, x, y + i); // down
+		}
+		targetShipQ.add(new EnemyShip()); // Add a marker to signify the end of valid targets
+	}
+
+	private void checkAndAddTarget(List<List<EnemyShip>> enemyShips, Queue<EnemyShip> targetShipQ, int targetIndexX, int targetIndexY, int expectedX, int expectedY) {
+		if (isValidIndex(targetIndexX, targetIndexY, enemyShips)) {
+			EnemyShip targetShip = enemyShips.get(targetIndexX).get(targetIndexY);
+			if (!targetShip.isDestroyed() && targetShip.getX() == expectedX && targetShip.getY() == expectedY) {
+				targetShipQ.add(targetShip);
+			}
+		}
+	}
+
+	private boolean isValidIndex(int indexX, int indexY, List<List<EnemyShip>> enemyShips) {
+		return indexX >= 0 && indexX < enemyShips.size() && indexY >= 0 && indexY < enemyShips.get(indexX).size();
+	}
+
+	private ActionListener createExplosionListener(Queue<EnemyShip> targetShipQ, Bullet bullet) {
+		return new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				while (!targetShipQ.isEmpty()) {
+					EnemyShip targetShip = targetShipQ.poll();
+					if (targetShip.getX() != -2) {
+						_destroy(bullet, targetShip, true);
+					} else {
+						break;
+					}
+				}
+				if (targetShipQ.isEmpty()) {
+					((Timer) e.getSource()).stop();
+				}
+			}
+		};
+	}
+
 	public final void BecomeCircle(boolean iscircle){
 		this.isCircle=iscircle;
 	}

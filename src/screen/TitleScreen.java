@@ -92,69 +92,74 @@ public class TitleScreen extends Screen {
 	 */
 	protected final void update() {
 		super.update();
-
 		draw();
-		if (this.selectionCooldown.checkFinished()
-				&& this.inputDelay.checkFinished()) {
-			if (inputManager.isKeyDown(KeyEvent.VK_UP)
-					|| inputManager.isKeyDown(KeyEvent.VK_W)) {
-				previousMenuItem();
-				this.selectionCooldown.reset();
-				// Sound Operator
-				SoundManager.getInstance().playES("menuSelect_es");
-			}
-			if (inputManager.isKeyDown(KeyEvent.VK_DOWN)
-					|| inputManager.isKeyDown(KeyEvent.VK_S)) {
-				nextMenuItem();
-				this.selectionCooldown.reset();
-				// Sound Operator
-				SoundManager.getInstance().playES("menuSelect_es");
-			}
 
-			// produced by Starter
-			if (returnCode == 2) {
-				if (inputManager.isKeyDown(KeyEvent.VK_LEFT)
-						|| inputManager.isKeyDown(KeyEvent.VK_A)) {
-					moveMenuLeft();
-					this.selectionCooldown.reset();
-					// Sound Operator
-					SoundManager.getInstance().playES("menuSelect_es");
-				}
-				if (inputManager.isKeyDown(KeyEvent.VK_RIGHT)
-						|| inputManager.isKeyDown(KeyEvent.VK_D)) {
-					moveMenuRight();
-					this.selectionCooldown.reset();
-					// Sound Operator
-					SoundManager.getInstance().playES("menuSelect_es");
-				}
-			}
-
-			if(returnCode == 4) {
-				if (inputManager.isKeyDown(KeyEvent.VK_LEFT)
-						|| inputManager.isKeyDown(KeyEvent.VK_A)) {
-					nextMerchantState();
-					this.selectionCooldown.reset();
-					// Sound Operator
-					SoundManager.getInstance().playES("menuSelect_es");
-				}
-				if (inputManager.isKeyDown(KeyEvent.VK_RIGHT)
-						|| inputManager.isKeyDown(KeyEvent.VK_D)) {
-					previousMerchantState();
-					this.selectionCooldown.reset();
-					// Sound Operator
-					SoundManager.getInstance().playES("menuSelect_es");
-				}
-
-			}
-
-			if (inputManager.isKeyDown(KeyEvent.VK_SPACE))
-				if(returnCode == 4) {
-					testStatUpgrade();
-                    this.selectionCooldown.reset();
-				}
-				else this.isRunning = false;
+		if (this.selectionCooldown.checkFinished() && this.inputDelay.checkFinished()) {
+			handleVerticalMenuNavigation();
+			handleHorizontalMenuNavigation();
+			handleSpecialReturnCode();
+			handleSpaceKey();
 		}
 	}
+
+	private void handleVerticalMenuNavigation() {
+		if (inputManager.isKeyDown(KeyEvent.VK_UP) || inputManager.isKeyDown(KeyEvent.VK_W)) {
+			previousMenuItem();
+			this.selectionCooldown.reset();
+			playMenuSelectSound();
+		}
+		if (inputManager.isKeyDown(KeyEvent.VK_DOWN) || inputManager.isKeyDown(KeyEvent.VK_S)) {
+			nextMenuItem();
+			this.selectionCooldown.reset();
+			playMenuSelectSound();
+		}
+	}
+
+	private void handleHorizontalMenuNavigation() {
+		if (returnCode == 2) {
+			if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+				moveMenuLeft();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+			if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+				moveMenuRight();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+		}
+	}
+
+	private void handleSpecialReturnCode() {
+		if (returnCode == 4) {
+			if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+				nextMerchantState();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+			if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+				previousMerchantState();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+		}
+	}
+
+	private void handleSpaceKey() {
+		if (inputManager.isKeyDown(KeyEvent.VK_SPACE)) {
+			if (returnCode == 4) {
+				testStatUpgrade();
+				this.selectionCooldown.reset();
+			} else {
+				this.isRunning = false;
+			}
+		}
+	}
+
+	private void playMenuSelectSound() {
+		SoundManager.getInstance().playES("menuSelect_es");
+	}
+
 	// Use later if needed. -Starter
 	// public int getPnumSelectionCode() {return this.pnumSelectionCode;}
 
@@ -177,7 +182,7 @@ public class TitleScreen extends Screen {
 	/**
 	 * Shifts the focus to the next menu item.
 	 */
-	
+
 	private void testStatUpgrade() {
 		// CtrlS: testStatUpgrade should only be called after coins are spent
 		if (this.merchantState == 1) { // bulletCount

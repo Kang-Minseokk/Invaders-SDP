@@ -278,91 +278,105 @@ public class GameScreen extends Screen {
 		super.update();
 
 		if (this.inputDelay.checkFinished() && !this.levelFinished) {
-			// --- OBSTACLES
-			if (this.obstacleSpawnCooldown.checkFinished()) {
-				// Adjust spawn amount based on the level
-				int spawnAmount = Math.min(level, 3); // Spawn up to 3 obstacles at higher levels
-				for (int i = 0; i < spawnAmount; i++) {
-					int randomX = new Random().nextInt(this.width - 30);
-					obstacles.add(new Obstacle(randomX, 50)); // Start each at the top of the screen
-				}
-				this.obstacleSpawnCooldown.reset();
-			}
-
-			// --- OBSTACLES
-			Set<Obstacle> obstaclesToRemove = new HashSet<>();
-			for (Obstacle obstacle : this.obstacles) {
-				obstacle.update(this.level); // Make obstacles move or perform actions
-				if (obstacle.shouldBeRemoved()) {
-					obstaclesToRemove.add(obstacle);  // Mark obstacle for removal after explosion
-				}
-			}
-			this.obstacles.removeAll(obstaclesToRemove);
-
-			if (!this.ship.isDestroyed()) {
-
-				boolean moveRight = inputManager.isKeyDown(KeyEvent.VK_RIGHT)
-						|| inputManager.isKeyDown(KeyEvent.VK_D);
-				boolean moveLeft = inputManager.isKeyDown(KeyEvent.VK_LEFT)
-						|| inputManager.isKeyDown(KeyEvent.VK_A);
-
-				boolean isRightBorder = this.ship.getPositionX()
-						+ this.ship.getWidth() + this.ship.getSpeed() > this.width - 1;
-				boolean isLeftBorder = this.ship.getPositionX()
-						- this.ship.getSpeed() < 1;
-
-				if (moveRight && !isRightBorder) {
-					this.ship.moveRight();
-					this.backgroundMoveRight = true;
-				}
-				if (moveLeft && !isLeftBorder) {
-					this.ship.moveLeft();
-					this.backgroundMoveLeft = true;
-				}
-				if (inputManager.isKeyDown(KeyEvent.VK_ENTER))
-					if (this.ship.shoot(this.bullets)) {
-						this.bulletsShot++;
-						this.fire_id++;
-						this.logger.info("Bullet's fire_id is " + fire_id);
-					}
-			}
-
-			if (this.enemyShipSpecial != null) {
-				if (!this.enemyShipSpecial.isDestroyed())
-					this.enemyShipSpecial.move(2, 0);
-				else if (this.enemyShipSpecialExplosionCooldown.checkFinished())
-					this.enemyShipSpecial = null;
-
-			}
-			if (this.enemyShipSpecial == null
-					&& this.enemyShipSpecialCooldown.checkFinished()) {
-				this.enemyShipSpecial = new EnemyShip();
-				this.enemyShipSpecialCooldown.reset();
-				//Sound Operator
-				sm = SoundManager.getInstance();
-				sm.playES("UFO_come_up");
-				this.logger.info("A special ship appears");
-			}
-			if (this.enemyShipSpecial != null
-					&& this.enemyShipSpecial.getPositionX() > this.width) {
-				this.enemyShipSpecial = null;
-				this.logger.info("The special ship has escaped");
-			}
-
-			this.item.updateBarrierAndShip(this.ship);   // team Inventory
-			this.speedItem.update();         // team Inventory
-			this.feverTimeItem.update();
-			this.enemyShipFormation.update();
-			this.enemyShipFormation.shoot(this.bullets);
+			handleObstacles();
+			handleShipMovement();
+			handleSpecialEnemyShip();
+			updateGameItems();
+			managePlayerTwoControls();
 		}
-		//manageCollisions();
+
 		manageCollisions_add_item(); //by Enemy team
 		cleanBullets();
 		cleanObstacles();
 		this.itemManager.cleanItems(); //by Enemy team
 
+		draw();
+		handleWaveCompletion();
+		handleLevelEnd();
+	}
+
+	private void handleObstacles() {
+		if (this.obstacleSpawnCooldown.checkFinished()) {
+			spawnObstacles();
+			this.obstacleSpawnCooldown.reset();
+		}
+
+		Set<Obstacle> obstaclesToRemove = new HashSet<>();
+		for (Obstacle obstacle : this.obstacles) {
+			obstacle.update(this.level);
+			if (obstacle.shouldBeRemoved()) {
+				obstaclesToRemove.add(obstacle);
+			}
+		}
+		this.obstacles.removeAll(obstaclesToRemove);
+	}
+
+	private void spawnObstacles() {
+		int spawnAmount = Math.min(level, 3);
+		for (int i = 0; i < spawnAmount; i++) {
+			int randomX = new Random().nextInt(this.width - 30);
+			obstacles.add(new Obstacle(randomX, 50));
+		}
+	}
+
+	private void handleShipMovement() {
+		if (!this.ship.isDestroyed()) {
+			boolean moveRight = inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D);
+			boolean moveLeft = inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A);
+			boolean isRightBorder = this.ship.getPositionX() + this.ship.getWidth() + this.ship.getSpeed() > this.width - 1;
+			boolean isLeftBorder = this.ship.getPositionX() - this.ship.getSpeed() < 1;
+
+			if (moveRight && !isRightBorder) {
+				this.ship.moveRight();
+				this.backgroundMoveRight = true;
+			}
+			if (moveLeft && !isLeftBorder) {
+				this.ship.moveLeft();
+				this.backgroundMoveLeft = true;
+			}
+			if (inputManager.isKeyDown(KeyEvent.VK_ENTER)) {
+				if (this.ship.shoot(this.bullets)) {
+					this.bulletsShot++;
+					this.fire_id++;
+					this.logger.info("Bullet's fire_id is " + fire_id);
+				}
+			}
+		}
+	}
+
+	private void handleSpecialEnemyShip() {
+		if (this.enemyShipSpecial != null) {
+			if (!this.enemyShipSpecial.isDestroyed()) {
+				this.enemyShipSpecial.move(2, 0);
+			} else if (this.enemyShipSpecialExplosionCooldown.checkFinished()) {
+				this.enemyShipSpecial = null;
+			}
+		}
+
+		if (this.enemyShipSpecial == null && this.enemyShipSpecialCooldown.checkFinished()) {
+			this.enemyShipSpecial = new EnemyShip();
+			this.enemyShipSpecialCooldown.reset();
+			sm = SoundManager.getInstance();
+			sm.playES("UFO_come_up");
+			this.logger.info("A special ship appears");
+		}
+
+		if (this.enemyShipSpecial != null && this.enemyShipSpecial.getPositionX() > this.width) {
+			this.enemyShipSpecial = null;
+			this.logger.info("The special ship has escaped");
+		}
+	}
+
+	private void updateGameItems() {
+		this.item.updateBarrierAndShip(this.ship);
+		this.speedItem.update();
+		this.feverTimeItem.update();
+		this.enemyShipFormation.update();
+		this.enemyShipFormation.shoot(this.bullets);
+	}
+
+	private void managePlayerTwoControls() {
 		if (player2 != null) {
-			// Player 2 movement and shooting
 			boolean moveRight2 = inputManager.isKeyDown(KeyEvent.VK_C);
 			boolean moveLeft2 = inputManager.isKeyDown(KeyEvent.VK_Z);
 
@@ -376,67 +390,46 @@ public class GameScreen extends Screen {
 				player2.shoot(bullets);
 			}
 
-			// Player 2 bullet collision handling
 			TwoPlayerMode.handleBulletCollisionsForPlayer2(this.bullets, player2);
-
-			// 장애물과 아이템 상호작용 추가
 			TwoPlayerMode.handleObstacleCollisionsForPlayer2(this.obstacles, player2);
 			TwoPlayerMode.handleItemCollisionsForPlayer2(player2);
 		}
-		draw();
+	}
 
-		/**
-		* Added by the Level Design team and edit by team Enemy
-		* Changed the conditions for the game to end  by team Enemy
-		*
-		* Counts and checks if the number of waves destroyed match the intended number of waves for this level
-		* Spawn another wave
-		**/
+	private void handleWaveCompletion() {
 		if (getRemainingEnemies() == 0 && waveCounter < this.gameSettings.getWavesNumber()) {
-
 			waveCounter++;
 			this.initialize();
-
 		}
+	}
 
-		/**
-		* Wave counter condition added by the Level Design team*
-		* Changed the conditions for the game to end  by team Enemy
-		*
-		* Checks if the intended number of waves for this level was destroyed
-		* **/
-		if ((getRemainingEnemies() == 0
-		&& !this.levelFinished
-		&& waveCounter == this.gameSettings.getWavesNumber())
-		|| (this.lives == 0)
-		) {
+	private void handleLevelEnd() {
+		if ((getRemainingEnemies() == 0 && !this.levelFinished && waveCounter == this.gameSettings.getWavesNumber())
+				|| (this.lives == 0)) {
 			this.levelFinished = true;
-			//this.screenFinishedCooldown.reset(); It works now -- With love, Level Design Team
 		}
 
 		if (this.levelFinished && this.screenFinishedCooldown.checkFinished()) {
-			//this.logger.info("Final Playtime: " + playTime + " seconds");    //clove
 			achievementConditions.checkNoDeathAchievements(lives);
 			achievementConditions.score(score);
-            try { //Team Clove
+			try {
 				statistics.comHighestLevel(level);
 				statistics.addBulletShot(bulletsShot);
 				statistics.addShipsDestroyed(shipsDestroyed);
-
 				achievementConditions.onKill();
 				achievementConditions.onStage();
 				achievementConditions.trials();
 				achievementConditions.killStreak();
 				achievementConditions.fastKill(fastKill);
 				achievementConditions.score(score);
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
 
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-
-            this.isRunning = false;
+			this.isRunning = false;
 		}
 	}
+
 
 	/**
 	 * Draws the elements associated with the screen.
@@ -572,49 +565,6 @@ public class GameScreen extends Screen {
 		this.obstacles.removeAll(removableObstacles);
 	}
 
-	/**
-	 * Manages collisions between bullets and ships. -original code
-	 */
-	private void manageCollisions() {
-		Set<Bullet> recyclable = new HashSet<Bullet>();
-		for (Bullet bullet : this.bullets)
-			if (bullet.getSpeed() > 0) {
-				if (checkCollision(bullet, this.ship) && !this.levelFinished) {
-					recyclable.add(bullet);
-					if (!this.ship.isDestroyed() && !this.item.isbarrierActive()) {	// team Inventory
-						this.ship.destroy();
-						this.lives--;
-						this.logger.info("Hit on player ship, " + this.lives
-								+ " lives remaining.");
-					}
-				}
-			} else {
-				for (EnemyShip enemyShip : this.enemyShipFormation)
-					if (!enemyShip.isDestroyed()
-							&& checkCollision(bullet, enemyShip)) {
-						this.scoreManager.addScore(enemyShip.getPointValue());    //clove
-						this.shipsDestroyed++;
-						// CtrlS - increase the hitCount for 1 kill
-						this.hitCount++;
-						this.enemyShipFormation.destroy(enemyShip);
-						recyclable.add(bullet);
-					}
-				if (this.enemyShipSpecial != null
-						&& !this.enemyShipSpecial.isDestroyed()
-						&& checkCollision(bullet, this.enemyShipSpecial)) {
-					this.scoreManager.addScore(this.enemyShipSpecial.getPointValue());    //clove
-					this.shipsDestroyed++;
-					// CtrlS - increase the hitCount for 1 kill
-					this.hitCount++;
-					this.enemyShipSpecial.destroy();
-					this.enemyShipSpecialExplosionCooldown.reset();
-					recyclable.add(bullet);
-				}
-			}
-		this.bullets.removeAll(recyclable);
-		BulletPool.recycle(recyclable);
-	}
-
 
 	/**
 	 * Manages collisions between bullets and ships. -Edited code for Drop Item
@@ -622,158 +572,161 @@ public class GameScreen extends Screen {
 	 */
 	//by Enemy team
 	public void manageCollisions_add_item() {
-		Set<PiercingBullet> recyclable = new HashSet<PiercingBullet>();
-		for (PiercingBullet bullet : this.bullets)
+		Set<PiercingBullet> recyclable = new HashSet<>();
+		handleBulletCollisions(recyclable);
+		handleObstacleCollisions();
+		handleItemCollisions();
+		this.bullets.removeAll(recyclable);
+		PiercingBulletPool.recycle(recyclable);
+	}
+
+	private void handleBulletCollisions(Set<PiercingBullet> recyclable) {
+		for (PiercingBullet bullet : this.bullets) {
 			if (bullet.getSpeed() > 0) {
-				if (checkCollision(bullet, this.ship) && !this.levelFinished) {
-					recyclable.add(bullet);
-					if (!this.ship.isDestroyed() && !this.item.isbarrierActive()) {	// team Inventory
-						this.ship.destroy();
-						this.lives--;
-						this.logger.info("Hit on player ship, " + this.lives
-								+ " lives remaining.");
-
-						// Sound Operator
-						if (this.lives == 0){
-							sm = SoundManager.getInstance();
-							sm.playShipDieSounds();
-						}
-					}
-				}
+				handlePlayerCollision(bullet, recyclable);
 			} else {
-				// CtrlS - set fire_id of bullet.
-				bullet.setFire_id(fire_id);
-				for (EnemyShip enemyShip : this.enemyShipFormation) {
-					if (!enemyShip.isDestroyed()
-							&& checkCollision(bullet, enemyShip)) {
-						int CntAndPnt[] = this.enemyShipFormation._destroy(bullet, enemyShip, false);    // team Inventory
-						this.shipsDestroyed += CntAndPnt[0];
-						int feverScore = CntAndPnt[0]; //TEAM CLOVE //Edited by team Enemy
+				handleEnemyCollisions(bullet, recyclable);
+				handleSpecialEnemyCollisions(bullet, recyclable);
+				handleObstacleBulletCollisions(bullet, recyclable);
+			}
+		}
+	}
 
-						if(enemyShip.getHp() <= 0) {
-							//inventory_f fever time is activated, the score is doubled.
-							if(feverTimeItem.isActive()) {
-								feverScore = feverScore * 10;
-							}
-							this.shipsDestroyed++;
-						}
-
-            this.scoreManager.addScore(feverScore); //clove
-            this.score += CntAndPnt[1];
-
-						// CtrlS - If collision occur then check the bullet can process
-						if (!processedFireBullet.contains(bullet.getFire_id())) {
-							// CtrlS - increase hitCount if the bullet can count
-							if (bullet.isCheckCount()) {
-								hitCount++;
-								bullet.setCheckCount(false);
-								this.logger.info("Hit count!");
-								processedFireBullet.add(bullet.getFire_id()); // mark this bullet_id is processed.
-							}
-						}
-
-						bullet.onCollision(enemyShip); // Handle bullet collision with enemy ship
-
-						// Check PiercingBullet piercing count and add to recyclable if necessary
-						if (bullet.getPiercingCount() <= 0) {
-							//Ctrl-S : set true of CheckCount if the bullet is planned to recycle.
-							bullet.setCheckCount(true);
-							recyclable.add(bullet);
-						}
-					}
-					// Added by team Enemy.
-					// Enemy killed by Explosive enemy gives points too
-					if (enemyShip.isChainExploded()) {
-						if (enemyShip.getColor() == Color.MAGENTA) {
-							this.itemManager.dropItem(enemyShip, 1, 1);
-						}
-						this.score += enemyShip.getPointValue();
-						this.shipsDestroyed++;
-						enemyShip.setChainExploded(false); // resets enemy's chain explosion state.
-					}
-				}
-				if (this.enemyShipSpecial != null
-						&& !this.enemyShipSpecial.isDestroyed()
-						&& checkCollision(bullet, this.enemyShipSpecial)) {
-					int feverSpecialScore = enemyShipSpecial.getPointValue();
-          			// inventory - Score bonus when acquiring fever items
-					if (feverTimeItem.isActive()) { feverSpecialScore *= 10; } //TEAM CLOVE //Team inventory
-
-					// CtrlS - If collision occur then check the bullet can process
-					if (!processedFireBullet.contains(bullet.getFire_id())) {
-						// CtrlS - If collision occur then increase hitCount and checkCount
-						if (bullet.isCheckCount()) {
-							hitCount++;
-							bullet.setCheckCount(false);
-							this.logger.info("Hit count!");
-						}
-
-					}
-					this.scoreManager.addScore(feverSpecialScore); //clove
-					this.shipsDestroyed++;
-					this.enemyShipSpecial.destroy();
-					this.enemyShipSpecialExplosionCooldown.reset();
-
-					bullet.onCollision(this.enemyShipSpecial); // Handle bullet collision with special enemy
-
-					// Check PiercingBullet piercing count for special enemy and add to recyclable if necessary
-					if (bullet.getPiercingCount() <= 0) {
-						//Ctrl-S : set true of CheckCount if the bullet is planned to recycle.
-						bullet.setCheckCount(true);
-						recyclable.add(bullet);
-					}
-
-					//// Drop item to 100%
-					this.itemManager.dropItem(enemyShipSpecial,1,2);
-				}
-
-				for (Obstacle obstacle : this.obstacles) {
-					if (!obstacle.isDestroyed() && checkCollision(bullet, obstacle)) {
-						obstacle.destroy();  // Destroy obstacle
-						recyclable.add(bullet);  // Remove bullet
-
-						// Sound Operator
-						sm = SoundManager.getInstance();
-						sm.playES("obstacle_explosion");
-					}
+	private void handlePlayerCollision(PiercingBullet bullet, Set<PiercingBullet> recyclable) {
+		if (checkCollision(bullet, this.ship) && !this.levelFinished) {
+			recyclable.add(bullet);
+			if (!this.ship.isDestroyed() && !this.item.isbarrierActive()) {
+				this.ship.destroy();
+				this.lives--;
+				this.logger.info("Hit on player ship, " + this.lives + " lives remaining.");
+				if (this.lives == 0) {
+					SoundManager.getInstance().playShipDieSounds();
 				}
 			}
+		}
+	}
 
-		for (Obstacle obstacle : this.obstacles) {
-			if (!obstacle.isDestroyed() && checkCollision(this.ship, obstacle)) {
-				//Obstacles ignored when barrier activated_team inventory
-				if (!this.item.isbarrierActive()) {
-					this.lives--;
-					if (!this.ship.isDestroyed()) {
-						this.ship.destroy();  // Optionally, destroy the ship or apply other effects.
-					}
-					obstacle.destroy();  // Destroy obstacle
-					this.logger.info("Ship hit an obstacle, " + this.lives + " lives remaining.");
-				} else {
-					obstacle.destroy();  // Destroy obstacle
-					this.logger.info("Shield blocked the hit from an obstacle, " + this.lives + " lives remaining.");
-				}
+	private void handleEnemyCollisions(PiercingBullet bullet, Set<PiercingBullet> recyclable) {
+		bullet.setFire_id(fire_id);
+		for (EnemyShip enemyShip : this.enemyShipFormation) {
+			if (!enemyShip.isDestroyed() && checkCollision(bullet, enemyShip)) {
+				processEnemyCollision(bullet, enemyShip, recyclable);
+			}
+			handleChainExplosion(enemyShip);
+		}
+	}
 
-				break;  // Stop further collisions if the ship is destroyed.
+	private void processEnemyCollision(PiercingBullet bullet, EnemyShip enemyShip, Set<PiercingBullet> recyclable) {
+		int[] CntAndPnt = this.enemyShipFormation._destroy(bullet, enemyShip, false);
+		this.shipsDestroyed += CntAndPnt[0];
+		int feverScore = CntAndPnt[0];
+		if (enemyShip.getHp() <= 0 && feverTimeItem.isActive()) {
+			feverScore *= 10;
+		}
+		this.shipsDestroyed++;
+		this.scoreManager.addScore(feverScore);
+		this.score += CntAndPnt[1];
+
+		if (!processedFireBullet.contains(bullet.getFire_id())) {
+			if (bullet.isCheckCount()) {
+				hitCount++;
+				bullet.setCheckCount(false);
+				this.logger.info("Hit count!");
+				processedFireBullet.add(bullet.getFire_id());
 			}
 		}
 
-		this.bullets.removeAll(recyclable);
-		PiercingBulletPool.recycle(recyclable);
+		bullet.onCollision(enemyShip);
+		if (bullet.getPiercingCount() <= 0) {
+			bullet.setCheckCount(true);
+			recyclable.add(bullet);
+		}
+	}
 
-		//Check item and ship collision
-		for(Item item : itemManager.items){
+	private void handleChainExplosion(EnemyShip enemyShip) {
+		if (enemyShip.isChainExploded()) {
+			if (enemyShip.getColor() == Color.MAGENTA) {
+				this.itemManager.dropItem(enemyShip, 1, 1);
+			}
+			this.score += enemyShip.getPointValue();
+			this.shipsDestroyed++;
+			enemyShip.setChainExploded(false);
+		}
+	}
+
+	private void handleSpecialEnemyCollisions(PiercingBullet bullet, Set<PiercingBullet> recyclable) {
+		if (this.enemyShipSpecial != null && !this.enemyShipSpecial.isDestroyed()
+				&& checkCollision(bullet, this.enemyShipSpecial)) {
+			int feverSpecialScore = enemyShipSpecial.getPointValue();
+			if (feverTimeItem.isActive()) {
+				feverSpecialScore *= 10;
+			}
+
+			if (!processedFireBullet.contains(bullet.getFire_id())) {
+				if (bullet.isCheckCount()) {
+					hitCount++;
+					bullet.setCheckCount(false);
+					this.logger.info("Hit count!");
+				}
+			}
+
+			this.scoreManager.addScore(feverSpecialScore);
+			this.shipsDestroyed++;
+			this.enemyShipSpecial.destroy();
+			this.enemyShipSpecialExplosionCooldown.reset();
+
+			bullet.onCollision(this.enemyShipSpecial);
+			if (bullet.getPiercingCount() <= 0) {
+				bullet.setCheckCount(true);
+				recyclable.add(bullet);
+			}
+
+			this.itemManager.dropItem(enemyShipSpecial, 1, 2);
+		}
+	}
+
+	private void handleObstacleBulletCollisions(PiercingBullet bullet, Set<PiercingBullet> recyclable) {
+		for (Obstacle obstacle : this.obstacles) {
+			if (!obstacle.isDestroyed() && checkCollision(bullet, obstacle)) {
+				obstacle.destroy();
+				recyclable.add(bullet);
+				SoundManager.getInstance().playES("obstacle_explosion");
+			}
+		}
+	}
+
+	private void handleObstacleCollisions() {
+		for (Obstacle obstacle : this.obstacles) {
+			if (!obstacle.isDestroyed() && checkCollision(this.ship, obstacle)) {
+				if (!this.item.isbarrierActive()) {
+					this.lives--;
+					if (!this.ship.isDestroyed()) {
+						this.ship.destroy();
+					}
+					obstacle.destroy();
+					this.logger.info("Ship hit an obstacle, " + this.lives + " lives remaining.");
+				} else {
+					obstacle.destroy();
+					this.logger.info("Shield blocked the hit from an obstacle, " + this.lives + " lives remaining.");
+				}
+				break;
+			}
+		}
+	}
+
+	private void handleItemCollisions() {
+		for (Item item : itemManager.items) {
 			if (checkCollision(item, ship)) {
 				itemManager.OperateItem(item);
-				// CtrlS: Count coin
-				if (item.getSpriteType() == DrawManager.SpriteType.ItemCoin) coinItemsCollected++;
+				if (item.getSpriteType() == DrawManager.SpriteType.ItemCoin) {
+					coinItemsCollected++;
+				}
 				Core.getLogger().info("coin: " + coinItemsCollected);
 			}
 		}
 		itemManager.removeAllReItems();
-
-
 	}
+
 
 
 	/**

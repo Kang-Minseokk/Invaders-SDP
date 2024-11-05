@@ -44,6 +44,7 @@ public class Achievement {
                 break;
             case STAGE:
                 this.requiredStages = requiredValue;
+                break;
             case TRIALS:
                 this.requiredTrials = requiredValue;
                 break;
