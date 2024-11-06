@@ -33,6 +33,8 @@ public class TitleScreen extends Screen {
 	//inventory
 	private ShipStatus shipStatus;
 
+	private int customState;
+
 
 	/**
 	 * Constructor, establishes the properties of the screen.
@@ -53,17 +55,18 @@ public class TitleScreen extends Screen {
 		this.returnCode = 2;
 		this.selectionCooldown = Core.getCooldown(SELECTION_TIME);
 		this.selectionCooldown.reset();
+		this.customState = 0;
 
 
 		// CtrlS: Set user's coin, gem
-        try {
-            this.coin = Core.getCurrencyManager().getCoin();
+		try {
+			this.coin = Core.getCurrencyManager().getCoin();
 			this.gem = Core.getCurrencyManager().getGem();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 
-        // Sound Operator
+		// Sound Operator
 		SoundManager.getInstance().playBGM("mainMenu_bgm");
 
 		// inventory load upgrade price
@@ -99,6 +102,22 @@ public class TitleScreen extends Screen {
 			handleHorizontalMenuNavigation();
 			handleSpecialReturnCode();
 			handleSpaceKey();
+			handleCustomOption();
+		}
+	}
+
+	private void handleCustomOption() {
+		if (returnCode == 6) {
+			if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+				previousCustomState();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+			if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+				nextCustomState();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
 		}
 	}
 
@@ -150,7 +169,11 @@ public class TitleScreen extends Screen {
 			if (returnCode == 4) {
 				testStatUpgrade();
 				this.selectionCooldown.reset();
-			} else {
+			}
+			else if(returnCode == 6){
+				this.selectionCooldown.reset();
+			}
+			else {
 				this.isRunning = false;
 			}
 		}
@@ -303,7 +326,7 @@ public class TitleScreen extends Screen {
 		}
 	}
 	private void nextMenuItem() {
-		if (this.returnCode == 5) // Team Clover changed values because recordMenu added
+		if (this.returnCode == 7) // Team Clover changed values because recordMenu added
 			this.returnCode = 0; // from '2 player mode' to 'Exit' (Starter)
 		else if (this.returnCode == 0)
 			this.returnCode = 2; // from 'Exit' to 'Play' (Starter)
@@ -317,7 +340,7 @@ public class TitleScreen extends Screen {
 	private void previousMenuItem() {
 		this.merchantState =0;
 		if (this.returnCode == 0)
-			this.returnCode = 5; // from 'Exit' to '2 player mode' (Starter) // Team Clover changed values because recordMenu added
+			this.returnCode = 7; // from 'Exit' to '2 player mode' (Starter) // Team Clover changed values because recordMenu added
 		else if (this.returnCode == 2)
 			this.returnCode = 0; // from 'Play' to 'Exit' (Starter)
 		else
@@ -362,6 +385,25 @@ public class TitleScreen extends Screen {
 		}
 	}
 
+	//custom
+	private void nextCustomState() {
+		if (this.returnCode == 6) {
+			if (this.customState == 7)
+				this.customState = 0;
+			else
+				this.customState++;
+		}
+	}
+
+	private void previousCustomState() {
+		if (this.returnCode == 6) {
+			if (this.customState == 0)
+				this.customState = 7;
+			else
+				this.customState--;
+		}
+	}
+
 	/**
 	 * Draws the elements associated with the screen.
 	 */
@@ -369,7 +411,7 @@ public class TitleScreen extends Screen {
 		drawManager.initDrawing(this);
 
 		drawManager.drawTitle(this);
-		drawManager.drawMenu(this, this.returnCode, this.pnumSelectionCode, this.merchantState);
+		drawManager.drawMenu(this, this.returnCode, this.pnumSelectionCode, this.merchantState, this.customState);
 		// CtrlS
 		drawManager.drawCurrentCoin(this, coin);
 		drawManager.drawCurrentGem(this, gem);

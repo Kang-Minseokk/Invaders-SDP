@@ -47,10 +47,9 @@ public class Ship extends Entity {
 	 *            Initial position of the ship in the Y axis.
 	 */
 	//Edit by Enemy
-	public Ship(final int positionX, final int positionY, final Color color) {
-		super(positionX, positionY - 50, 13 * 2, 8 * 2, color); // add by team HUD
-
-		this.spriteType = SpriteType.Ship;
+	public Ship(final int positionX, final int positionY, final Color color, SpriteType spriteType) {
+		super(positionX, positionY - 50, 13 * 2, 8 * 2, color);
+		this.spriteType = spriteType;
 
 		// Create PlayerGrowth object and set initial stats
 		this.growth = new PlayerGrowth();  // PlayerGrowth 객체를 먼저 초기화
@@ -65,6 +64,11 @@ public class Ship extends Entity {
 
 		this.numberOfBullet = new NumberOfBullet();
 	}
+
+	public void setSpriteType(SpriteType spriteType) {
+		this.spriteType = spriteType;
+	}
+
 
 	/**
 	 * Moves the ship speed uni ts right, or until the right screen border is

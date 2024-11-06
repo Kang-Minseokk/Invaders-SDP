@@ -29,7 +29,7 @@ public class TwoPlayerMode extends GameScreen {
         super.initialize(); // GameScreen의 초기화 로직 호출
         this.setTwoPlayerMode(true);
         // player2 초기화
-        this.player2 = new Ship(this.width / 4, this.height - 30, Color.BLUE); // add by team HUD
+        //this.player2 = new Ship(this.width / 4, this.height - 30, Color.BLUE); // add by team HUD
     }
 
 //    @Override

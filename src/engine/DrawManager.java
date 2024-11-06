@@ -20,17 +20,18 @@ import entity.Coin;
 import entity.Bomb;
 import entity.Entity;
 import screen.Screen;
+import javax.imageio.ImageIO;
 
 import screen.Background;
 
-import javax.imageio.ImageIO;
+import entity.Ship;
 
 /**
-* Manages screen drawing.
-*
-* @author <a href="mailto:RobertoIA1987@gmail.com">Roberto Izquierdo Amo</a>
-*
-*/
+ * Manages screen drawing.
+ *
+ * @author <a href="mailto:RobertoIA1987@gmail.com">Roberto Izquierdo Amo</a>
+ *
+ */
 public class DrawManager {
 
 	/** Singleton instance of the class. */
@@ -62,6 +63,9 @@ public class DrawManager {
 
 	/** Sprite types mapped to their images. */
 	private static Map<SpriteType, boolean[][]> spriteMap;
+	private int width;
+	private int height;
+
 
 	/** Sprite types. */
 	public static enum SpriteType {
@@ -101,7 +105,7 @@ public class DrawManager {
 		Boss, // by enemy team
 		/** Player Lives. */
 		/** Item */
-    	ItemHeart,
+		ItemHeart,
 		ShipBarrierStatus,
 		ItemCoin,
 		ItemPierce,
@@ -110,14 +114,16 @@ public class DrawManager {
 		ItemFeverTime,
 		// Produced by Starter Team
 
-        // Produced by Starter Team
+		// Produced by Starter Team
 		/** coin */
 		Coin,
 		/** add sign */
 		AddSign,
 		/** Gem - Added by CtrlS */
 		Gem,
-        ItemSpeedUp, ItemSpeedSlow, Obstacle
+		ItemSpeedUp, ItemSpeedSlow, Obstacle,
+
+		Skin1, Skin2, Skin3, Skin4, Skin5
 
 	};
 
@@ -126,11 +132,11 @@ public class DrawManager {
 	static String achievementText = null;
 
 	/**
-	* Private constructor.
-	*
-	* Modifying Access Restrictor to public
-	* - HUDTeam - LeeHyunWoo
-	*/
+	 * Private constructor.
+	 *
+	 * Modifying Access Restrictor to public
+	 * - HUDTeam - LeeHyunWoo
+	 */
 	public DrawManager() {
 		fileManager = Core.getFileManager();
 		logger = Core.getLogger();
@@ -168,6 +174,12 @@ public class DrawManager {
 			spriteMap.put(SpriteType.ItemPierce, new boolean[7][7]);
 			spriteMap.put(SpriteType.ItemSpeedUp, new boolean[9][9]);
 			spriteMap.put(SpriteType.ItemSpeedSlow, new boolean[9][9]);
+
+			spriteMap.put(SpriteType.Skin1, new boolean[13][8]);
+			spriteMap.put(SpriteType.Skin2, new boolean[13][8]);
+			spriteMap.put(SpriteType.Skin3, new boolean[13][8]);
+			spriteMap.put(SpriteType.Skin4, new boolean[13][8]);
+			spriteMap.put(SpriteType.Skin5, new boolean[13][8]);
 
 			fileManager.loadSprite(spriteMap);
 			logger.info("Finished loading the sprites.");
@@ -253,7 +265,7 @@ public class DrawManager {
 	 *            Coordinates for the upper side of the image.
 	 */
 	public static void drawEntity(final Entity entity, final int positionX,
-						   final int positionY) {
+								  final int positionY) {
 
 		try {
 			boolean[][] image = spriteMap.get(entity.getSpriteType());
@@ -383,7 +395,7 @@ public class DrawManager {
 	 * @param screen Screen to draw on.
 	 * @param option Option selected.
 	 */
-	public void drawMenu(final Screen screen, final int option, final int option2, final int option3) {
+	public void drawMenu(final Screen screen, final int option, final int option2, final int option3, final int option4) {
 		String onePlayerModeString = "1 player mode";
 		String twoPlayerModeString = "2 player mode";
 		String mode = onePlayerModeString;
@@ -398,7 +410,11 @@ public class DrawManager {
 		String coinGainString = String.format("coin gain up"); // Starter
 		String merchantState = merchant;
 
-        AddSign addSign = new AddSign();
+		String customString = "Custom";
+		String customState = customString;
+		String[] skins = {"No Skin", "Skin 1", "Skin 2", "Skin 3", "Skin 4", "Skin 5", "Random Skin"};
+
+		AddSign addSign = new AddSign();
 
 
 		// Play (Starter)
@@ -454,21 +470,97 @@ public class DrawManager {
 		/*drawEntity(addSign, screen.getWidth()/2 + 50, screen.getHeight()
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 6 - 12);*/
 
-        // Record scores (Team Clove)
-        if (option == 5)
-            backBufferGraphics.setColor(Color.GREEN);
-        else
-            backBufferGraphics.setColor(Color.WHITE);
-        drawCenteredRegularString(screen, RecentRecord, screen.getHeight()
-                / 4 * 2 + fontRegularMetrics.getHeight() * 6); // adjusted Height
+		// Record scores (Team Clove)
+		if (option == 5)
+			backBufferGraphics.setColor(Color.GREEN);
+		else
+			backBufferGraphics.setColor(Color.WHITE);
+		drawCenteredRegularString(screen, RecentRecord, screen.getHeight()
+				/ 4 * 2 + fontRegularMetrics.getHeight() * 6); // adjusted Height
 
-        // Exit (Starter)
+		// Custom
+		if (option == 6) {
+			if (option4 == 0) {
+				customState = "<- " + customString + " ->";
+			} else if (option4 >= 1 && option4 <= 5) {
+				customState = "<- " + skins[option4 - 1] + " ->";
+			} else if (option4 == 6) {
+				customState = "<- Random Skin ->";
+			}
+
+			SpriteType selectedSkin = null;
+			if (option4 >= 1 && option4 <= 5) {
+				selectedSkin = SpriteType.values()[option4 + 29]; // 선택된 스킨
+			} else if (option4 == 6) {
+				// 랜덤 스킨 선택
+				selectedSkin = SpriteType.values()[(int) (Math.random() * option4 + 29)];
+			}
+
+			boolean[][] skinGraphic = null;
+			if (selectedSkin != null) {
+				skinGraphic = DrawManager.getSkinGraphics(selectedSkin);  // 선택된 스킨의 그래픽 정보 가져오기
+			}
+
+			int centerX = screen.getWidth() / 2;
+			int centerY = screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8;
+
+			if (option4 == 6) {
+				backBufferGraphics.setColor(Color.MAGENTA);
+			} else {
+				backBufferGraphics.setColor(Color.GREEN);
+			}
+
+			// Draw customState with arrows if no image is selected
+			if (skinGraphic == null) {
+				drawCenteredRegularString(screen, customState, centerY);
+			} else {
+				// Draw arrows and image for selected skin
+				String leftArrow = "<- ";
+				String rightArrow = " ->";
+				int arrowOffset = 10;
+
+				// Draw left arrow
+				backBufferGraphics.setColor(Color.GREEN);
+				backBufferGraphics.drawString(leftArrow, centerX - (fontRegularMetrics.stringWidth(leftArrow) + arrowOffset), centerY);
+
+				// Draw the skin image represented by boolean[][] (Draw ship with the selected skin)
+				if (skinGraphic != null) {
+					for (int i = 0; i < skinGraphic.length; i++) {
+						for (int j = 0; j < skinGraphic[i].length; j++) {
+							if (skinGraphic[i][j]) {
+								backBufferGraphics.fillRect(centerX + j * 2 - skinGraphic[i].length, centerY + i * 2 - skinGraphic.length, 2, 2);
+							}
+						}
+					}
+				}
+
+				// Draw right arrow
+				backBufferGraphics.drawString(rightArrow, centerX + (skinGraphic[0].length * 2) + arrowOffset, centerY);
+			}
+
+			// Ship 객체 생성 시 선택된 스킨을 적용
+			Ship playerShip = new Ship(this.width / 2, this.height - 30, Color.RED, selectedSkin);
+			playerShip.setSpriteType(selectedSkin);
+		} else {
+			// Default color for non-custom options
+			backBufferGraphics.setColor(Color.WHITE);
+			drawCenteredRegularString(screen, customString, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
+		}
+
+
+
+
+		// Exit (Starter)
 		if (option == 0)
 			backBufferGraphics.setColor(Color.GREEN);
 		else
 			backBufferGraphics.setColor(Color.WHITE);
 		drawCenteredRegularString(screen, exitString, screen.getHeight()
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 10); // adjusted Height
+	}
+
+	private static boolean[][] getSkinGraphics(SpriteType selectedSkin) {
+		return spriteMap.get(selectedSkin);
 	}
 
 	/**
@@ -891,9 +983,9 @@ public class DrawManager {
 		backBufferGraphics.drawString(Integer.toString(gem), coinX + gemImage.getWidth() + 10, 35);
 	}
 	/**
-	* ### TEAM INTERNATIONAL ###
-	* Background draw and update method
-	*/
+	 * ### TEAM INTERNATIONAL ###
+	 * Background draw and update method
+	 */
 
 	public void loadBackground(int levelNumber) {
 		background = Background.getInstance();
@@ -916,29 +1008,29 @@ public class DrawManager {
 	}
 
 	/**
-	* ### TEAM INTERNATIONAL ###
-	*
-	* Wave draw method
-	* **/
+	 * ### TEAM INTERNATIONAL ###
+	 *
+	 * Wave draw method
+	 * **/
 	public void drawWave(final Screen screen, final int wave, final int number) {
 		int rectWidth = screen.getWidth();
 		int rectHeight = screen.getHeight() / 6;
 		backBufferGraphics.setColor(Color.BLACK);
 		backBufferGraphics.fillRect(0, screen.getHeight() / 2 - rectHeight / 2,
-		rectWidth, rectHeight);
+				rectWidth, rectHeight);
 		backBufferGraphics.setColor(Color.GREEN);
 		if (number >= 4)
 
-		drawCenteredBigString(screen, "Wave " + wave,
-		screen.getHeight() / 2
-		+ fontBigMetrics.getHeight() / 3);
+			drawCenteredBigString(screen, "Wave " + wave,
+					screen.getHeight() / 2
+							+ fontBigMetrics.getHeight() / 3);
 
 		else if (number != 0)
-		drawCenteredBigString(screen, Integer.toString(number),
-		screen.getHeight() / 2 + fontBigMetrics.getHeight() / 3);
+			drawCenteredBigString(screen, Integer.toString(number),
+					screen.getHeight() / 2 + fontBigMetrics.getHeight() / 3);
 		else
-		drawCenteredBigString(screen, "GO!", screen.getHeight() / 2
-		+ fontBigMetrics.getHeight() / 3);
+			drawCenteredBigString(screen, "GO!", screen.getHeight() / 2
+					+ fontBigMetrics.getHeight() / 3);
 	}
 
 
