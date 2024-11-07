@@ -219,8 +219,8 @@ public class GameScreen extends Screen {
 		enemyShipFormation = new EnemyShipFormation(this.gameSettings);
 		enemyShipFormation.setScoreManager(this.scoreManager);//add by team Enemy
 		enemyShipFormation.attach(this);
-		DrawManager.SpriteType spriteType = (customState == 2) ? DrawManager.SpriteType.Skin1 : DrawManager.SpriteType.Ship;
-		this.ship = new Ship(this.width / 2, this.height - 30, Color.RED, spriteType); // add by team HUD
+
+		this.ship = new Ship(this.width / 2, this.height - 30, Color.red, DrawManager.getselectedSpriteType()); // add by team HUD
 
 		/** initialize itemManager */
 		this.itemManager = new ItemManager(this.height, drawManager, this); //by Enemy team
