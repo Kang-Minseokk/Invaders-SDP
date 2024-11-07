@@ -220,7 +220,7 @@ public class GameScreen extends Screen {
 		enemyShipFormation.setScoreManager(this.scoreManager);//add by team Enemy
 		enemyShipFormation.attach(this);
 
-		this.ship = new Ship(this.width / 2, this.height - 30, Color.red, DrawManager.getselectedSpriteType()); // add by team HUD
+		this.ship = new Ship(this.width / 2, this.height - 30, Color.red, DrawManager.getselectedSpriteType());
 
 		/** initialize itemManager */
 		this.itemManager = new ItemManager(this.height, drawManager, this); //by Enemy team

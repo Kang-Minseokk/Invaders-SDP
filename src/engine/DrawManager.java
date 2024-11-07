@@ -259,8 +259,7 @@ public class DrawManager {
 	 * @param positionY
 	 *            Coordinates for the upper side of the image.
 	 */
-	public static void drawEntity(final Entity entity, final int positionX,
-								  final int positionY) {
+	public static void drawEntity(final Entity entity, final int positionX, final int positionY) {
 
 		try {
 			boolean[][] image = spriteMap.get(entity.getSpriteType());
@@ -407,9 +406,8 @@ public class DrawManager {
 		String merchantState = merchant;
 
 		String customString = "Custom";
-		String customState = customString;
 		String randomSkinString = "Random Skin";
-		SpriteType[] skins = {SpriteType.Skin1, SpriteType.Skin2, SpriteType.Skin3, SpriteType.Skin4, SpriteType.Skin5};
+		//SpriteType[] skins = {SpriteType.Skin1, SpriteType.Skin2, SpriteType.Skin3, SpriteType.Skin4, SpriteType.Skin5};
 
 
 		AddSign addSign = new AddSign();
@@ -477,7 +475,6 @@ public class DrawManager {
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 6); // adjusted Height
 
 		// Custom
-
 		if(option == 6) {
 			backBufferGraphics.setColor(Color.GREEN);
 			int yPosition = screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8;
@@ -542,7 +539,7 @@ public class DrawManager {
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 10); // adjusted Height
 	}
 	public static SpriteType getselectedSpriteType(){
-		return selectedSpriteType;}
+		return selectedSpriteType != null ? selectedSpriteType : SpriteType.Ship;}
 	/**
 	 * Draws game results.
 	 *
