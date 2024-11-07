@@ -25,6 +25,10 @@ public abstract class Entity {
 	/** Sprite type assigned to the entity. */
 	protected SpriteType spriteType;
 
+	public Entity() {
+
+	}
+
 	/**
 	 * Constructor, establishes the entity's generic properties.
 	 * 

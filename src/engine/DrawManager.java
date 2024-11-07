@@ -15,16 +15,11 @@ import java.util.logging.Logger;
 
 import Currency.RoundState;
 import Currency.Gem;
-import entity.AddSign;
-import entity.Coin;
-import entity.Bomb;
-import entity.Entity;
+import entity.*;
 import screen.Screen;
 import javax.imageio.ImageIO;
 
 import screen.Background;
-
-import entity.Ship;
 
 /**
  * Manages screen drawing.
@@ -412,7 +407,9 @@ public class DrawManager {
 
 		String customString = "Custom";
 		String customState = customString;
-		String[] skins = {"No Skin", "Skin 1", "Skin 2", "Skin 3", "Skin 4", "Skin 5", "Random Skin"};
+		String randomSkinString = "Random Skin";
+		SpriteType[] skins = {SpriteType.Skin1, SpriteType.Skin2, SpriteType.Skin3, SpriteType.Skin4, SpriteType.Skin5};
+
 
 		AddSign addSign = new AddSign();
 
@@ -479,77 +476,61 @@ public class DrawManager {
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 6); // adjusted Height
 
 		// Custom
-		if (option == 6) {
+		if(option == 6) {
+			backBufferGraphics.setColor(Color.GREEN);
+			int yPosition = screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8;
+			SpriteType selectedSpriteType;
 			if (option4 == 0) {
-				customState = "<- " + customString + " ->";
-			} else if (option4 >= 1 && option4 <= 5) {
-				customState = "<- " + skins[option4 - 1] + " ->";
-			} else if (option4 == 6) {
-				customState = "<- Random Skin ->";
-			}
+				// Custom 텍스트를 화살표 사이에 표시
+				String customDisplay = "<- " + customString + " ->";
+				drawCenteredRegularString(screen, customDisplay, yPosition);
+			} else if (option4 >= 1 && option4 <= 6) {
 
-			SpriteType selectedSkin = null;
-			if (option4 >= 1 && option4 <= 5) {
-				selectedSkin = SpriteType.values()[option4 + 29]; // 선택된 스킨
-			} else if (option4 == 6) {
-				// 랜덤 스킨 선택
-				selectedSkin = SpriteType.values()[(int) (Math.random() * option4 + 29)];
-			}
-
-			boolean[][] skinGraphic = null;
-			if (selectedSkin != null) {
-				skinGraphic = DrawManager.getSkinGraphics(selectedSkin);  // 선택된 스킨의 그래픽 정보 가져오기
-			}
-
-			int centerX = screen.getWidth() / 2;
-			int centerY = screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8;
-
-			if (option4 == 6) {
-				backBufferGraphics.setColor(Color.MAGENTA);
-			} else {
-				backBufferGraphics.setColor(Color.GREEN);
-			}
-
-			// Draw customState with arrows if no image is selected
-			if (skinGraphic == null) {
-				drawCenteredRegularString(screen, customState, centerY);
-			} else {
-				// Draw arrows and image for selected skin
-				String leftArrow = "<- ";
-				String rightArrow = " ->";
-				int arrowOffset = 10;
-
-				// Draw left arrow
-				backBufferGraphics.setColor(Color.GREEN);
-				backBufferGraphics.drawString(leftArrow, centerX - (fontRegularMetrics.stringWidth(leftArrow) + arrowOffset), centerY);
-
-				// Draw the skin image represented by boolean[][] (Draw ship with the selected skin)
-				if (skinGraphic != null) {
-					for (int i = 0; i < skinGraphic.length; i++) {
-						for (int j = 0; j < skinGraphic[i].length; j++) {
-							if (skinGraphic[i][j]) {
-								backBufferGraphics.fillRect(centerX + j * 2 - skinGraphic[i].length, centerY + i * 2 - skinGraphic.length, 2, 2);
-							}
-						}
-					}
+				switch (option4) {
+					case 1:
+						selectedSpriteType = SpriteType.Ship;
+						break;
+					case 2:
+						selectedSpriteType = SpriteType.Skin1;
+						break;
+					case 3:
+						selectedSpriteType = SpriteType.Skin2;
+						break;
+					case 4:
+						selectedSpriteType = SpriteType.Skin3;
+						break;
+					case 5:
+						selectedSpriteType = SpriteType.Skin4;
+						break;
+					case 6:
+						selectedSpriteType = SpriteType.Skin5;
+						break;
+					default:
+						selectedSpriteType = SpriteType.Ship;
+						break;
 				}
 
-				// Draw right arrow
-				backBufferGraphics.drawString(rightArrow, centerX + (skinGraphic[0].length * 2) + arrowOffset, centerY);
+				// 중앙에 화살표를 표시
+				String arrowDisplay = "<-        ->";
+				drawCenteredRegularString(screen, arrowDisplay, yPosition);
+
+				// 스킨을 화살표 사이에 그리기
+				int positionX = screen.getWidth() / 2 - 15; // 중앙에 위치 조정
+				int positionY = yPosition - 10; // 약간 위쪽으로 위치 조정
+				SkinEntity tempEntity = new SkinEntity(selectedSpriteType); // 임시 Entity 생성
+				drawEntity(tempEntity, positionX, positionY); // drawEntity 메서드 호출
+			} else if (option4 == 7) {
+				// Random Skin 텍스트를 화살표 사이에 표시
+				String randomDisplay = "<- " + randomSkinString + " ->";
+				drawCenteredRegularString(screen, randomDisplay, yPosition);
 			}
 
-			// Ship 객체 생성 시 선택된 스킨을 적용
-			Ship playerShip = new Ship(this.width / 2, this.height - 30, Color.RED, selectedSkin);
-			playerShip.setSpriteType(selectedSkin);
-		} else {
-			// Default color for non-custom options
-			backBufferGraphics.setColor(Color.WHITE);
-			drawCenteredRegularString(screen, customString, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
 		}
-
-
-
-
+		else {
+			backBufferGraphics.setColor(Color.WHITE);
+			drawCenteredRegularString(screen, customString, screen.getHeight()
+					/ 4 * 2 + fontRegularMetrics.getHeight() * 8);
+		}
 		// Exit (Starter)
 		if (option == 0)
 			backBufferGraphics.setColor(Color.GREEN);
@@ -559,9 +540,6 @@ public class DrawManager {
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 10); // adjusted Height
 	}
 
-	private static boolean[][] getSkinGraphics(SpriteType selectedSkin) {
-		return spriteMap.get(selectedSkin);
-	}
 
 	/**
 	 * Draws game results.
