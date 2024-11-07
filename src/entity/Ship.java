@@ -8,6 +8,7 @@ import Enemy.PiercingBullet;
 import engine.Cooldown;
 import engine.Core;
 import engine.DrawManager.SpriteType;
+import engine.DrawManager;
 import Enemy.PiercingBulletPool;
 // Sound Operator
 import engine.SoundManager;
@@ -133,11 +134,40 @@ public class Ship extends Entity {
 	/**
 	 * Updates status of the ship.
 	 */
+
 	public final void update() {
+		SpriteType selectedSpriteType = DrawManager.getselectedSpriteType();
 		if (!this.destructionCooldown.checkFinished())
 			this.spriteType = SpriteType.ShipDestroyed;
 		else
-			this.spriteType = SpriteType.Ship;
+		{
+			switch(selectedSpriteType){
+				case SpriteType.Ship:
+					this.spriteType = selectedSpriteType;        // 기본 Ship
+					break;
+				case SpriteType.Skin1:
+					this.spriteType = SpriteType.Skin1;      // Skin1
+					break;
+				case  SpriteType.Skin2:
+					this.spriteType =selectedSpriteType;      // Skin2
+					break;
+				case  SpriteType.Skin3:
+					this.spriteType = selectedSpriteType;      // Skin3
+					break;
+				case  SpriteType.Skin4:
+					this.spriteType = selectedSpriteType;      // Skin4
+					break;
+				case  SpriteType.Skin5:
+					this.spriteType = selectedSpriteType;      // Skin5
+					break;
+				//case 7:
+				//	selectedSpriteType = SpriteType.RandomSkin; // 랜덤 스킨
+				//	break;
+				default:
+					selectedSpriteType = SpriteType.Ship;       // 기본값: Ship
+					break;
+			}
+		}
 	}
 
 	/**

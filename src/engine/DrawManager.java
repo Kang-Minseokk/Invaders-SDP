@@ -390,6 +390,7 @@ public class DrawManager {
 	 * @param screen Screen to draw on.
 	 * @param option Option selected.
 	 */
+    static SpriteType selectedSpriteType = null;
 	public void drawMenu(final Screen screen, final int option, final int option2, final int option3, final int option4) {
 		String onePlayerModeString = "1 player mode";
 		String twoPlayerModeString = "2 player mode";
@@ -476,10 +477,11 @@ public class DrawManager {
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 6); // adjusted Height
 
 		// Custom
+
 		if(option == 6) {
 			backBufferGraphics.setColor(Color.GREEN);
 			int yPosition = screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8;
-			SpriteType selectedSpriteType;
+
 			if (option4 == 0) {
 				// Custom 텍스트를 화살표 사이에 표시
 				String customDisplay = "<- " + customString + " ->";
@@ -539,8 +541,8 @@ public class DrawManager {
 		drawCenteredRegularString(screen, exitString, screen.getHeight()
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 10); // adjusted Height
 	}
-
-
+	public static SpriteType getselectedSpriteType(){
+		return selectedSpriteType;}
 	/**
 	 * Draws game results.
 	 *
@@ -1025,7 +1027,7 @@ public class DrawManager {
 		Entity itemBomb = new Entity(0, 0, 13 * 2, 8 * 2, Color.gray) {
 
 		};
-		itemBomb.setSpriteType(DrawManager.SpriteType.ItemBomb);
+		itemBomb.setSpriteType(SpriteType.ItemBomb);
 
 		if(Bomb.getIsBomb() && Bomb.getCanShoot()){
 			drawEntity(itemBomb, screen.getWidth() / 5, screen.getHeight() - 50);
