@@ -60,7 +60,7 @@ public class DrawManager {
 	private static Map<SpriteType, boolean[][]> spriteMap;
 	private int width;
 	private int height;
-	private SkinEntity sn;
+
 
 
 

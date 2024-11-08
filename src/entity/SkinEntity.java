@@ -9,12 +9,6 @@ import java.util.ArrayList;
 
 public class SkinEntity extends Entity {
 
-
-
-    public SkinEntity() {
-        super();
-    }
-
     public SkinEntity(SpriteType spriteType) {
         super();
         setSpriteType(spriteType);

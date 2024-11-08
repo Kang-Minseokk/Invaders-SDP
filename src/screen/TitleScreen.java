@@ -9,11 +9,11 @@ import engine.Core;
 // Sound Operator
 import engine.SoundManager;
 import entity.ShipStatus;
-import engine.DrawManager;
+
 import engine.DrawManager.SpriteType;
 import entity.SkinEntity;
 import java.util.Properties;
-import engine.FileManager;
+
 import entity.Skins;
 
 /**
@@ -41,7 +41,6 @@ public class TitleScreen extends Screen {
 	private ShipStatus shipStatus;
 
 	private int customState;
-	private SkinEntity sn;
 	private Properties unlockedSkins;
 
 
@@ -86,12 +85,10 @@ public class TitleScreen extends Screen {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		sn = new SkinEntity();
+
 
 	}
-	public SkinEntity getSkinEntity() {
-		return sn;
-	}
+
 	/**
 	 * Starts the action.
 	 *
