@@ -349,17 +349,10 @@ public class TitleScreen extends Screen {
 			int randomIndex = random.nextInt(Skins.lockedSkins.length);
 			SpriteType selectedSkin = Skins.lockedSkins[randomIndex];
 
-			// 이미 해금된 스킨이 아닌 경우에만 추가
-			if (!unlockedSkins.containsKey(selectedSkin.name())) {
-				unlockedSkins.setProperty(selectedSkin.name(), "true");
-				Skins.unlockedSkins.add(selectedSkin);
-				try {
-					Core.getFileManager().saveUnlockedSkins(unlockedSkins);
-					System.out.println("Unlocked Skin: " + selectedSkin);
-				} catch (IOException e) {
-					System.err.println("Failed to save unlocked skin data.");
-					e.printStackTrace();
-				}
+			if (!Skins.isSkinUnlocked(selectedSkin)) {
+				Skins.unlockSkin(selectedSkin);
+				System.out.println("Unlocked Skin: " + selectedSkin);
+				// 필요 시 저장 로직 추가
 			} else {
 				System.out.println("Skin already unlocked: " + selectedSkin);
 			}
