@@ -104,7 +104,13 @@ public class GameScreen extends Screen {
 	private boolean backgroundMoveLeft = false;
 	private boolean backgroundMoveRight = false;
 
+	private boolean isPaused = false;
+	private boolean isResuming = false;
 
+	private long resumeStartTime;
+	private long lastPauseToggleTime;
+	private static final int PAUSE_TOGGLE_DELAY = 1000;
+	private long pauseStartTime = 0; // 일시 정지 시작 시간을 기록
 
 	// --- OBSTACLES
 	public Set<Obstacle> obstacles; // Store obstacles
@@ -274,8 +280,51 @@ public class GameScreen extends Screen {
 	/**
 	 * Updates the elements on screen and checks for events.
 	 */
+	@Override
 	protected void update() {
 		super.update();
+
+		long currentTime = System.currentTimeMillis();
+
+		// P 키 입력 처리
+		if (inputManager.isKeyDown(KeyEvent.VK_P) && currentTime - lastPauseToggleTime > PAUSE_TOGGLE_DELAY) {
+			this.isPaused = !this.isPaused;
+			lastPauseToggleTime = currentTime;
+
+			if (this.isPaused) {
+				Core.getLogger().info("Pausing the game.");
+				Core.getFrame().setScreen(new OptionScreen(this.width, this.height, this.fps));
+				pauseStartTime = currentTime; // 일시 정지 시작 시간 기록
+			} else {
+				Core.getLogger().info("Resuming the game.");
+				this.isResuming = true;
+				this.resumeStartTime = currentTime;
+				this.playStartTime += (currentTime - pauseStartTime); // 일시 정지 시간만큼 playStartTime 조정
+				drawManager.initDrawing(this);
+				draw(); // 게임 화면 그리기
+				drawManager.drawCenteredRegularString(this, "RESUME!", this.height / 2);
+				drawManager.completeDrawing(this); // 화면 표시 완료
+			}
+		}
+
+		// 게임 재개 시 RESUME! 메시지 표시
+		if (isResuming) {
+			if (currentTime - this.resumeStartTime >= 1000) {
+				isResuming = false; // 1초 후 게임 재개
+			} else {
+				return; // 게임의 움직임을 멈추게 함
+			}
+		}
+
+		// 게임이 일시정지된 경우 리턴
+		if (this.isPaused) {
+			return; // 게임을 일시정지 상태로 유지
+		}
+
+		// 게임이 일시정지되지 않았을 때 playTime 업데이트
+		if (!this.isResuming) {
+			this.playTime = (int) ((currentTime - this.playStartTime) / 1000) + this.playTimePre;
+		}
 
 		if (this.inputDelay.checkFinished() && !this.levelFinished) {
 			handleObstacles();
@@ -499,32 +548,21 @@ public class GameScreen extends Screen {
 		} // by HUD team HyunWoo
 
 		// Countdown to game start.
-		if (!this.inputDelay.checkFinished()) {
-			int countdown = (int) ((INPUT_DELAY
-			- (System.currentTimeMillis()
-			- this.gameStartTime)) / 1000);
+		if (!this.inputDelay.checkFinished() && !this.isResuming) {
+			int countdown = (int) ((INPUT_DELAY - (System.currentTimeMillis() - this.gameStartTime)) / 1000);
+			if (countdown < 0) {
+				countdown = 0;
+			}
 
-			/**
-			* Wave counter condition added by the Level Design team
-			*
-			* Display the wave number instead of the level number
-			* **/
+			// 레벨 표시 및 일반 카운트다운은 게임 시작 시에만
 			if (waveCounter != 1) {
 				drawManager.drawWave(this, waveCounter, countdown);
 			} else {
-				drawManager.drawCountDown(this, this.level, countdown,
-				this.bonusLife);
+				drawManager.drawCountDown(this, this.level, countdown, this.bonusLife);
 			}
 
-			drawManager.drawHorizontalLine(this, this.height / 2 - this.height
-					/ 12);
-			drawManager.drawHorizontalLine(this, this.height / 2 + this.height
-					/ 12);
-		}
-
-		// Soomin Lee / TeamHUD
-		if (this.inputDelay.checkFinished()) {
-			playTime = (int) ((System.currentTimeMillis() - playStartTime) / 1000) + playTimePre;
+			drawManager.drawHorizontalLine(this, this.height / 2 - this.height / 12);
+			drawManager.drawHorizontalLine(this, this.height / 2 + this.height / 12);
 		}
 
 		super.drawPost();

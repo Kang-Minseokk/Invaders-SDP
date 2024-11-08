@@ -457,4 +457,7 @@ public final class Core {
 	public static UpgradeManager getUpgradeManager() {
 		return UpgradeManager.getInstance();
 	}
+	public static Frame getFrame() {
+		return frame;
+	}
 }

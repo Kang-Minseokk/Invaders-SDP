@@ -985,4 +985,14 @@ public class DrawManager {
 		// Sound Operator
 		SoundManager.getInstance().playES("achievement");
 	}
+	public void drawOption(final Screen screen) {
+		// OPTION 제목 그리기
+		backBufferGraphics.setColor(Color.GREEN);
+		drawCenteredBigString(screen, "OPTION", screen.getHeight() / 8); // 화면 상단에 "OPTION" 표시
+
+		// 'PRESS P TO RESUME' 안내문구 그리기
+		backBufferGraphics.setColor(Color.GRAY);
+		drawCenteredRegularString(screen, "PRESS P TO RESUME", screen.getHeight() / 5); // 화면 중간에 안내문구 표시
+	}
+
 }
