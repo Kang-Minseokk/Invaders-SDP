@@ -38,6 +38,8 @@ public final class FileManager {
 	private static final int MAX_SCORES = 7;
 	/** Max number of recent recorded scores / Team Clove */
 	private static final int MAX_RECORD = 10;
+	public SpriteType[] lockedSkins = {SpriteType.Skin1, SpriteType.Skin2, SpriteType.Skin3, SpriteType.Skin4, SpriteType.Skin5};
+	public ArrayList<SpriteType> unlockedSkins = new ArrayList<>();
 
 	/**
 	 * private constructor.
@@ -467,6 +469,34 @@ public final class FileManager {
 	 * 				In case of saving problems.
 	 *
 	 */
+	//custom
+	// FileManager에 추가
+	public void saveUnlockedSkins(Properties unlockedSkins) throws IOException {
+		String jarPath = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+		jarPath = URLDecoder.decode(jarPath, "UTF-8");
+
+		String propertiesPath = new File(jarPath).getParent() + File.separator + "unlocked_skins.properties";
+		try (OutputStream outputStream = new FileOutputStream(propertiesPath)) {
+			unlockedSkins.store(new OutputStreamWriter(outputStream, Charset.forName("UTF-8")), "Unlocked Skins");
+		}
+	}
+
+	public Properties loadUnlockedSkins() throws IOException {
+		Properties unlockedSkins = new Properties();
+		String jarPath = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+		jarPath = URLDecoder.decode(jarPath, "UTF-8");
+
+		String propertiesPath = new File(jarPath).getParent() + File.separator + "unlocked_skins.properties";
+		File file = new File(propertiesPath);
+
+		if (file.exists()) {
+			try (InputStream inputStream = new FileInputStream(file)) {
+				unlockedSkins.load(new InputStreamReader(inputStream, Charset.forName("UTF-8")));
+			}
+		}
+		return unlockedSkins;
+	}
+
 	// Team Clove
     public void saveUserData(final List<Statistics> playerStatistics) throws IOException {
 		Properties properties = new Properties();

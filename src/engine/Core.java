@@ -84,7 +84,7 @@ public final class Core {
 
 	/**
 	 * Test implementation.
-	 * 
+	 *
 	 * @param args
 	 *            Program args, ignored.
 	 */

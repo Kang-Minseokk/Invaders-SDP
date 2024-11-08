@@ -2,12 +2,19 @@ package screen;
 
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.util.Random;
 
 import engine.Cooldown;
 import engine.Core;
 // Sound Operator
 import engine.SoundManager;
 import entity.ShipStatus;
+import engine.DrawManager;
+import engine.DrawManager.SpriteType;
+import entity.SkinEntity;
+import java.util.Properties;
+import engine.FileManager;
+import entity.Skins;
 
 /**
  * Implements the title screen.
@@ -34,6 +41,8 @@ public class TitleScreen extends Screen {
 	private ShipStatus shipStatus;
 
 	private int customState;
+	private SkinEntity sn;
+	private Properties unlockedSkins;
 
 
 	/**
@@ -72,8 +81,17 @@ public class TitleScreen extends Screen {
 		// inventory load upgrade price
 		shipStatus = new ShipStatus();
 		shipStatus.loadPrice();
-	}
+		try {
+			unlockedSkins = Core.getFileManager().loadUnlockedSkins();  // 기존 해금된 스킨 목록 로드
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		sn = new SkinEntity();
 
+	}
+	public SkinEntity getSkinEntity() {
+		return sn;
+	}
 	/**
 	 * Starts the action.
 	 *
@@ -104,6 +122,7 @@ public class TitleScreen extends Screen {
 			handleSpaceKey();
 			handleCustomOption();
 		}
+
 	}
 
 	private void handleCustomOption() {
@@ -171,6 +190,7 @@ public class TitleScreen extends Screen {
 				this.selectionCooldown.reset();
 			}
 			else if(returnCode == 6){
+				drawRandomSkin();
 				this.selectionCooldown.reset();
 			}
 			else {
@@ -325,6 +345,32 @@ public class TitleScreen extends Screen {
 			throw new RuntimeException(e);
 		}
 	}
+	//custom
+	private void drawRandomSkin() {
+		if(customState == 7) {
+			Random random = new Random();
+			int randomIndex = random.nextInt(Skins.lockedSkins.length);
+			SpriteType selectedSkin = Skins.lockedSkins[randomIndex];
+
+			// 이미 해금된 스킨이 아닌 경우에만 추가
+			if (!unlockedSkins.containsKey(selectedSkin.name())) {
+				unlockedSkins.setProperty(selectedSkin.name(), "true");
+				Skins.unlockedSkins.add(selectedSkin);
+				try {
+					Core.getFileManager().saveUnlockedSkins(unlockedSkins);
+					System.out.println("Unlocked Skin: " + selectedSkin);
+				} catch (IOException e) {
+					System.err.println("Failed to save unlocked skin data.");
+					e.printStackTrace();
+				}
+			} else {
+				System.out.println("Skin already unlocked: " + selectedSkin);
+			}
+		}
+
+	}
+
+
 	private void nextMenuItem() {
 		if (this.returnCode == 7) // Team Clover changed values because recordMenu added
 			this.returnCode = 0; // from '2 player mode' to 'Exit' (Starter)

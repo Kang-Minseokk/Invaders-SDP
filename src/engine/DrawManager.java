@@ -8,9 +8,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.logging.Logger;
 
 import Currency.RoundState;
@@ -20,6 +18,8 @@ import screen.Screen;
 import javax.imageio.ImageIO;
 
 import screen.Background;
+import entity.SkinEntity;
+import entity.Skins;
 
 /**
  * Manages screen drawing.
@@ -60,6 +60,8 @@ public class DrawManager {
 	private static Map<SpriteType, boolean[][]> spriteMap;
 	private int width;
 	private int height;
+	private SkinEntity sn;
+
 
 
 	/** Sprite types. */
@@ -404,9 +406,9 @@ public class DrawManager {
 		String attackSpeedString = String.format("attack speed up"); // Starter
 		String coinGainString = String.format("coin gain up"); // Starter
 		String merchantState = merchant;
-
+		String lockedString = "Locked Skin";
 		String customString = "Custom";
-		String randomSkinString = "Random Skin";
+		String randomSkinString = "Draw";
 		//SpriteType[] skins = {SpriteType.Skin1, SpriteType.Skin2, SpriteType.Skin3, SpriteType.Skin4, SpriteType.Skin5};
 
 
@@ -483,12 +485,18 @@ public class DrawManager {
 				// Custom 텍스트를 화살표 사이에 표시
 				String customDisplay = "<- " + customString + " ->";
 				drawCenteredRegularString(screen, customDisplay, yPosition);
-			} else if (option4 >= 1 && option4 <= 6) {
-
+			}
+			else if(option4 == 1){
+				selectedSpriteType = SpriteType.Ship;
+				String arrowDisplay = "<-        ->";
+				drawCenteredRegularString(screen, arrowDisplay, yPosition);
+				// 스킨을 화살표 사이에 그리기
+				int positionX = screen.getWidth() / 2 - 15; // 중앙에 위치 조정
+				int positionY = yPosition - 10; // 약간 위쪽으로 위치 조정
+				SkinEntity tempEntity = new SkinEntity(selectedSpriteType); // 임시 Entity 생성
+				drawEntity(tempEntity, positionX, positionY); }
+			else if (option4 >= 2 && option4 <= 6) {
 				switch (option4) {
-					case 1:
-						selectedSpriteType = SpriteType.Ship;
-						break;
 					case 2:
 						selectedSpriteType = SpriteType.Skin1;
 						break;
@@ -507,17 +515,23 @@ public class DrawManager {
 					default:
 						selectedSpriteType = SpriteType.Ship;
 						break;
+					}
+				if (Skins.unlockedSkins.contains(selectedSpriteType)) {
+					// 중앙에 화살표를 표시
+					String arrowDisplay = "<-        ->";
+					drawCenteredRegularString(screen, arrowDisplay, yPosition);
+
+					// 스킨을 화살표 사이에 그리기
+					int positionX = screen.getWidth() / 2 - 16; // 중앙에 위치 조정
+					int positionY = yPosition - 10; // 약간 위쪽으로 위치 조정
+					SkinEntity tempEntity = new SkinEntity(selectedSpriteType); // 임시 Entity 생성
+					drawEntity(tempEntity, positionX, positionY); // drawEntity 메서드 호출
 				}
-
-				// 중앙에 화살표를 표시
-				String arrowDisplay = "<-        ->";
-				drawCenteredRegularString(screen, arrowDisplay, yPosition);
-
-				// 스킨을 화살표 사이에 그리기
-				int positionX = screen.getWidth() / 2 - 15; // 중앙에 위치 조정
-				int positionY = yPosition - 10; // 약간 위쪽으로 위치 조정
-				SkinEntity tempEntity = new SkinEntity(selectedSpriteType); // 임시 Entity 생성
-				drawEntity(tempEntity, positionX, positionY); // drawEntity 메서드 호출
+				else {
+					String lockedDisplay = "<- " + lockedString + " ->";
+					drawCenteredRegularString(screen, lockedDisplay, yPosition);
+					selectedSpriteType = SpriteType.Ship;
+				}
 			} else if (option4 == 7) {
 				// Random Skin 텍스트를 화살표 사이에 표시
 				String randomDisplay = "<- " + randomSkinString + " ->";
