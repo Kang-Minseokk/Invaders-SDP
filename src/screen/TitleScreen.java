@@ -344,20 +344,33 @@ public class TitleScreen extends Screen {
 	}
 	//custom
 	private void drawRandomSkin() {
-		if(customState == 7) {
-			Random random = new Random();
-			int randomIndex = random.nextInt(Skins.lockedSkins.length);
-			SpriteType selectedSkin = Skins.lockedSkins[randomIndex];
+		if (customState == 7) {
+			try {
+				if (Core.getCurrencyManager().spendCoin(1)) {
+					Random random = new Random();
+					int randomIndex = random.nextInt(Skins.lockedSkins.length);
+					SpriteType selectedSkin = Skins.lockedSkins[randomIndex];
 
-			if (!Skins.isSkinUnlocked(selectedSkin)) {
-				Skins.unlockSkin(selectedSkin);
-				System.out.println("Unlocked Skin: " + selectedSkin);
-				// 필요 시 저장 로직 추가
-			} else {
-				System.out.println("Skin already unlocked: " + selectedSkin);
+					if (!Skins.isSkinUnlocked(selectedSkin)) {
+						Skins.unlockSkin(selectedSkin);
+						System.out.println("Unlocked Skin: " + selectedSkin);
+						// 필요 시 저장 로직 추가
+					} else {
+						System.out.println("Skin already unlocked: " + selectedSkin);
+					}
+				}
+			} catch (IOException e) {
+				throw new RuntimeException(e);
 			}
-		}
+			try{
+				this.coin = Core.getCurrencyManager().getCoin();
+				this.gem = Core.getCurrencyManager().getGem();
 
+			} catch (IOException e){
+				throw new RuntimeException(e);
+			}
+
+		}
 	}
 
 
