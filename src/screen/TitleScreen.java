@@ -339,6 +339,11 @@ public class TitleScreen extends Screen {
 	//custom
 	private void drawRandomSkin() {
 		if (customState == 7) {
+			if (Skins.lockedSkins.isEmpty()) {
+				Core.getLogger().info("All skins are already unlocked.");
+				return; // 모든 스킨이 해금된 경우 메서드 종료
+			}
+
 			try {
 				if (Core.getCurrencyManager().spendCoin(1)) {
 					Random random = new Random();
@@ -348,12 +353,17 @@ public class TitleScreen extends Screen {
 					if (!Skins.isSkinUnlocked(selectedSkin)) {
 						Skins.unlockSkin(selectedSkin);
 						Core.getLogger().info("Un locked Skin: " + selectedSkin);
-						// 필요 시 저장 로직 추가
 					} else {
 						Core.getLogger().info("Skin already unlocked: " + selectedSkin);
 					}
 				}
 			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+			try{
+				this.coin = Core.getCurrencyManager().getCoin();
+				this.gem = Core.getCurrencyManager().getGem();
+			} catch (IOException e){
 				throw new RuntimeException(e);
 			}
 		}
