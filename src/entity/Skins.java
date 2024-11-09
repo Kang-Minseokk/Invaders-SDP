@@ -1,20 +1,28 @@
 package entity;
 
+import engine.Core;
 import engine.DrawManager;
 import engine.FileManager;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Properties;
 
 
 public class Skins {
-    public static DrawManager.SpriteType[] lockedSkins = {DrawManager.SpriteType.Skin1, DrawManager.SpriteType.Skin2, DrawManager.SpriteType.Skin3, DrawManager.SpriteType.Skin4, DrawManager.SpriteType.Skin5};
+    public static List<DrawManager.SpriteType> lockedSkins = new ArrayList<>(
+            Arrays.asList(DrawManager.SpriteType.Skin1, DrawManager.SpriteType.Skin2,
+                    DrawManager.SpriteType.Skin3, DrawManager.SpriteType.Skin4,
+                    DrawManager.SpriteType.Skin5));
     public static ArrayList<DrawManager.SpriteType> unlockedSkins = new ArrayList<>();
 
     public static void unlockSkin(DrawManager.SpriteType skin) {
-        if (!unlockedSkins.contains(skin)) {
+        if (!unlockedSkins.contains(skin) && lockedSkins.contains(skin)) {
             unlockedSkins.add(skin);
+            lockedSkins.remove(skin); // Remove from locked skins
             saveSkins();
+            Core.getLogger().info("Unlocked skin: " + skin);
         }
     }
 
@@ -31,10 +39,10 @@ public class Skins {
                     unlockedSkins.add(DrawManager.SpriteType.valueOf(skinName));
                 }
             }
-            System.out.println("Unlocked skins loaded: " + unlockedSkins);
+            Core.getLogger().info("Unlocked skins loaded: " + unlockedSkins);
         } catch (IOException e) {
-            System.err.println("Failed to load unlocked skins.");
-            e.printStackTrace();
+            Core.getLogger().warning("Failed to load unlocked skins.");
+            //e.printStackTrace();
         }
     }
 
@@ -47,13 +55,10 @@ public class Skins {
 
         try {
             FileManager.saveUnlockedSkins(properties);
-            System.out.println("Unlocked skins saved.");
+            Core.getLogger().info("Unlocked skins saved: " + unlockedSkins);
         } catch (IOException e) {
-            System.err.println("Failed to save unlocked skins.");
-            e.printStackTrace();
+            Core.getLogger().warning("Failed to save unlocked skins.");
+            //e.printStackTrace();
         }
     }
-
-
-
 }

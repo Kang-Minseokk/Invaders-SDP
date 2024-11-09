@@ -11,7 +11,6 @@ import engine.SoundManager;
 import entity.ShipStatus;
 
 import engine.DrawManager.SpriteType;
-import entity.SkinEntity;
 import java.util.Properties;
 
 import entity.Skins;
@@ -80,12 +79,7 @@ public class TitleScreen extends Screen {
 		// inventory load upgrade price
 		shipStatus = new ShipStatus();
 		shipStatus.loadPrice();
-		try {
-			unlockedSkins = Core.getFileManager().loadUnlockedSkins();  // 기존 해금된 스킨 목록 로드
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
+		Skins.loadSkins();  // 기존 해금된 스킨 목록 로드
 
 	}
 
@@ -348,28 +342,20 @@ public class TitleScreen extends Screen {
 			try {
 				if (Core.getCurrencyManager().spendCoin(1)) {
 					Random random = new Random();
-					int randomIndex = random.nextInt(Skins.lockedSkins.length);
-					SpriteType selectedSkin = Skins.lockedSkins[randomIndex];
+					int randomIndex = random.nextInt(Skins.lockedSkins.size());
+					SpriteType selectedSkin = Skins.lockedSkins.get(randomIndex);
 
 					if (!Skins.isSkinUnlocked(selectedSkin)) {
 						Skins.unlockSkin(selectedSkin);
-						System.out.println("Unlocked Skin: " + selectedSkin);
+						Core.getLogger().info("Un locked Skin: " + selectedSkin);
 						// 필요 시 저장 로직 추가
 					} else {
-						System.out.println("Skin already unlocked: " + selectedSkin);
+						Core.getLogger().info("Skin already unlocked: " + selectedSkin);
 					}
 				}
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
-			try{
-				this.coin = Core.getCurrencyManager().getCoin();
-				this.gem = Core.getCurrencyManager().getGem();
-
-			} catch (IOException e){
-				throw new RuntimeException(e);
-			}
-
 		}
 	}
 

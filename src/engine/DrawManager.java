@@ -409,7 +409,6 @@ public class DrawManager {
 		String lockedString = "Locked Skin";
 		String customString = "Custom";
 		String randomSkinString = "Draw";
-		//SpriteType[] skins = {SpriteType.Skin1, SpriteType.Skin2, SpriteType.Skin3, SpriteType.Skin4, SpriteType.Skin5};
 
 
 		AddSign addSign = new AddSign();
@@ -528,13 +527,14 @@ public class DrawManager {
 					drawEntity(tempEntity, positionX, positionY); // drawEntity 메서드 호출
 				}
 				else {
-					String lockedDisplay = "<- " + lockedString + " ->";
+					String lockedDisplay = "<- " + lockedString + " " + (option4 - 1) + " ->";
 					drawCenteredRegularString(screen, lockedDisplay, yPosition);
 					selectedSpriteType = SpriteType.Ship;
 				}
 			} else if (option4 == 7) {
 				// Random Skin 텍스트를 화살표 사이에 표시
 				String randomDisplay = "<- " + randomSkinString + " ->";
+				backBufferGraphics.setColor(Color.magenta);
 				drawCenteredRegularString(screen, randomDisplay, yPosition);
 			}
 
