@@ -995,4 +995,13 @@ public class DrawManager {
 		drawCenteredRegularString(screen, "PRESS P TO RESUME", screen.getHeight() / 5); // 화면 중간에 안내문구 표시
 	}
 
+	public void drawBGMOption(final Screen screen, final int BGMIndex, final List<String> bgmOptions) {
+		String bgmString = "Background Music";
+		String selectedBGM = bgmOptions.get(BGMIndex);
+
+		backBufferGraphics.setColor(Color.CYAN);
+		String bgmDisplay = "< " + selectedBGM + " >";
+		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 4 * 2);
+
+	}
 }
