@@ -82,6 +82,15 @@ public final class Core {
 	private static SoundManager sm;
     private static AchievementManager achievementManager; // Team CLOVER
 
+	private static int savedVolumeSelectionCode = 3; // 기본값
+
+	public static int getSavedVolumeSelectionCode() {
+		return savedVolumeSelectionCode;
+	}
+
+	public static void setSavedVolumeSelectionCode(int newCode) {
+		savedVolumeSelectionCode = newCode;
+	}
 	/**
 	 * Test implementation.
 	 * 

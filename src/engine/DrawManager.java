@@ -995,4 +995,45 @@ public class DrawManager {
 		drawCenteredRegularString(screen, "PRESS P TO RESUME", screen.getHeight() / 5); // 화면 중간에 안내문구 표시
 	}
 
+	public void drawSoundControl(final Screen screen, final int option, final int option2) {
+
+		String volume0 = "VOLUME0";
+		String volume1 = "VOLUME1";
+		String volume2 = "VOLUME2";
+		String volume3 = "VOLUME3";
+		String volume4 = "VOLUME4";
+		String volume5 = "VOLUME5";
+		String volume = volume3;
+
+		// OPTION 제목 그리기
+		backBufferGraphics.setColor(Color.PINK);
+		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 6);
+		if(option == 2 && option2 == 0){
+			backBufferGraphics.setColor(new Color(200, 200, 200));
+			volume = volume0;
+		}else if(option == 2 && option2 == 1){
+			backBufferGraphics.setColor(new Color(173, 216, 255));
+			volume = volume1;
+		}else if(option == 2 && option2 == 2){
+			backBufferGraphics.setColor(new Color(144, 238, 144));
+			volume = volume2;
+		}else if(option == 2 && option2 == 3){
+			backBufferGraphics.setColor(new Color(64, 224, 208));
+			volume = volume3;
+		}else if(option == 2 && option2 == 4){
+			backBufferGraphics.setColor(new Color(255, 255, 0));
+			volume = volume4;
+		}else if(option == 2 && option2 == 5){
+			backBufferGraphics.setColor(new Color(255, 0, 0));
+			volume = volume5;
+		}else{
+			backBufferGraphics.setColor(Color.WHITE);
+		}
+		if(option == 2){
+			volume = "<- " + volume + " ->";
+		}
+		drawCenteredRegularString(screen, volume, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
+
+	}
+
 }

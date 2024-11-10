@@ -210,7 +210,7 @@ public class SoundManager {
     }
 
     public int modifyBGMVolume(String name, float volume){
-        if(volume > 2 || volume < -60){
+        if(volume > 6 || volume < -80){
             logger.info("Error : volume is out of index!!!!!");
             logger.info("input volume : "+ volume);
             return 0;
@@ -225,7 +225,7 @@ public class SoundManager {
     }
 
     public int modifyESVolume(String name, float volume){
-        if(volume > 2 || volume < -60){
+        if(volume > 6 || volume < -80){
             logger.info("Error : volume is out of index!!!!!");
             logger.info("input volume : "+ volume);
             return 0;
@@ -237,6 +237,81 @@ public class SoundManager {
             return 0;
         }
     }
+
+    public int modifyAllESVolume(int level) {
+        float volume = -79;
+        for (Map.Entry<String, String[]> entry : EffectSounds.entrySet()) {
+            String esName = entry.getKey();
+            float currentVolume = getESFileVolume(esName);
+
+            // 볼륨 조절
+            if(level == 1){
+                volume = (currentVolume - 80) / 3;
+            } else if(level == 2){
+                volume = (2 * currentVolume - 40) / 3;
+            } else if(level == 3){
+                volume = currentVolume;
+            } else if(level == 4){
+                volume = (6 + currentVolume) / 2;
+            } else if(level == 5){
+                volume = 6;
+            } else if(level == 0){
+                volume = -80;
+            }
+            modifyESVolume(esName, volume);
+        }
+        logger.info("Change level : " + level);
+        return 1;
+    }
+
+    public int modifyAllBGMVolume(int level) {
+        float volume =79;
+        for (Map.Entry<String, Clip> entry : BGMs.entrySet()) {
+            String bgmName = entry.getKey();
+            float currentVolume = getBGMFileVolume(bgmName);
+
+            // 볼륨 조절
+            if(level == 1){
+                volume = (currentVolume - 80) / 3;
+            } else if(level == 2){
+                volume = (2 * currentVolume - 40) / 3;
+            } else if(level == 3){
+                volume = currentVolume;
+            } else if(level == 4){
+                volume = (6 + currentVolume) / 2;
+            } else if(level == 5){
+                volume = 6;
+            } else if(level == 0){
+                volume = -80;
+            }
+            modifyBGMVolume(bgmName, volume);
+        }
+        logger.info("Change level : " +level);
+        return 1;
+    }
+
+
+    public float getESFileVolume(String esName) {
+        // BGMFiles 배열에서 bgmName에 해당하는 초기 볼륨 값을 찾아서 반환
+        for (String[] esFile : ESFiles) {
+            if (esFile[0].equals(esName)) {
+                return Float.parseFloat(esFile[2]); // BGMFiles 배열의 3번째 값이 volume
+            }
+        }
+        return -80.0f;
+    }
+    public float getBGMFileVolume(String bgmName) {
+        // BGMFiles 배열에서 bgmName에 해당하는 초기 볼륨 값을 찾아서 반환
+        for (String[] bgmFile : BGMFiles) {
+            if (bgmFile[0].equals(bgmName)) {
+                return Float.parseFloat(bgmFile[2]); // BGMFiles 배열의 3번째 값이 volume
+            }
+        }
+        return -80.0f;
+    }
+
+
+
 
     // ksm
     public void playShipDieSounds() {
