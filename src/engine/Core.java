@@ -117,7 +117,8 @@ public final class Core {
 			Statistics statistics = new Statistics();
 			statistics.resetStatistics();
 			LOGGER.info("Reset Player Statistics");
-			Skins.loadSkins();
+		/*	Skins.loadSkins();*/
+			Skins.DrawCount = FileManager.loadDrawCount();
 
 		} catch (Exception e) {
 			// TODO handle exception

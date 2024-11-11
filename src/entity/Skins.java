@@ -2,6 +2,7 @@ package entity;
 
 import engine.Core;
 import engine.DrawManager;
+import engine.DrawManager.SpriteType;
 import engine.FileManager;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,13 +12,25 @@ import java.util.Properties;
 
 
 public class Skins {
-    public static List<DrawManager.SpriteType> lockedSkins = new ArrayList<>(
-            Arrays.asList(DrawManager.SpriteType.Skin1, DrawManager.SpriteType.Skin2,
-                    DrawManager.SpriteType.Skin3, DrawManager.SpriteType.Skin4,
-                    DrawManager.SpriteType.Skin5));
-    public static ArrayList<DrawManager.SpriteType> unlockedSkins = new ArrayList<>();
+    public static List<SpriteType> lockedSkins = new ArrayList<>(
+            Arrays.asList(SpriteType.Skin1, SpriteType.Skin2,
+                    SpriteType.Skin3,SpriteType.Skin4,
+                    SpriteType.Skin5));
+    public static ArrayList<SpriteType> unlockedSkins = new ArrayList<>();
+    public static int Count = 1;
+    public static int DrawCount = Count;
 
-    public static void unlockSkin(DrawManager.SpriteType skin) {
+    //Draw 횟수
+    public static void addDrawCount(){
+        DrawCount ++;
+        FileManager.saveDrawCount(DrawCount);
+    }
+
+    public static int getDrawCount(){
+       return DrawCount;
+    }
+
+    public static void unlockSkin(SpriteType skin) {
         if (!unlockedSkins.contains(skin) && lockedSkins.contains(skin)) {
             unlockedSkins.add(skin);
             lockedSkins.remove(skin); // Remove from locked skins
@@ -42,14 +55,14 @@ public class Skins {
             Core.getLogger().info("Unlocked skins loaded: " + unlockedSkins);
         } catch (IOException e) {
             Core.getLogger().warning("Failed to load unlocked skins.");
-            //e.printStackTrace();
+
         }
     }
 
     public static void saveSkins() {
         Properties properties = new Properties();
 
-        for (DrawManager.SpriteType skin : unlockedSkins) {
+        for (SpriteType skin : unlockedSkins) {
             properties.setProperty(skin.name(), "true");
         }
 

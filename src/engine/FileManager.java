@@ -1,5 +1,6 @@
 package engine;
 
+import java.io.*;
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.io.BufferedReader;
@@ -39,6 +40,8 @@ public final class FileManager {
 	/** Max number of recent recorded scores / Team Clove */
 	private static final int MAX_RECORD = 10;
 	private static final String SKIN_PROPERTIES_FILE = "unlocked_skins.properties";
+	private static final String DRAW_COUNT_FILE = "drawCount.txt";
+
 
 
 	/**
@@ -487,6 +490,23 @@ public final class FileManager {
 			}
 		}
 		return unlockedSkins;
+	}
+
+	public static void saveDrawCount(int drawCount) {
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter(DRAW_COUNT_FILE))) {
+			writer.write(Integer.toString(drawCount));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static int loadDrawCount() {
+		try (BufferedReader reader = new BufferedReader(new FileReader(DRAW_COUNT_FILE))) {
+			return Integer.parseInt(reader.readLine());
+		} catch (IOException | NumberFormatException e) {
+			e.printStackTrace();
+			return 0; // 파일이 없거나 오류가 발생하면 0으로 초기화
+		}
 	}
 	/**
 	 *  save userData(Statistics) to disk
