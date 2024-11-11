@@ -172,11 +172,11 @@ public class DrawManager {
 			spriteMap.put(SpriteType.ItemSpeedUp, new boolean[9][9]);
 			spriteMap.put(SpriteType.ItemSpeedSlow, new boolean[9][9]);
 
-			spriteMap.put(SpriteType.Skin1, new boolean[13][8]);
-			spriteMap.put(SpriteType.Skin2, new boolean[13][8]);
-			spriteMap.put(SpriteType.Skin3, new boolean[13][8]);
-			spriteMap.put(SpriteType.Skin4, new boolean[13][8]);
-			spriteMap.put(SpriteType.Skin5, new boolean[13][8]);
+			spriteMap.put(SpriteType.Skin1, new boolean[13][8]); //cat
+			spriteMap.put(SpriteType.Skin2, new boolean[13][8]); //rabbit
+			spriteMap.put(SpriteType.Skin3, new boolean[13][8]); //frog
+			spriteMap.put(SpriteType.Skin4, new boolean[13][8]); //crab
+			spriteMap.put(SpriteType.Skin5, new boolean[13][8]); //dirt
 
 			fileManager.loadSprite(spriteMap);
 			logger.info("Finished loading the sprites.");
