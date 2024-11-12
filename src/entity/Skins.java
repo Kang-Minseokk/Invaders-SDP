@@ -17,18 +17,9 @@ public class Skins {
                     SpriteType.Skin3,SpriteType.Skin4,
                     SpriteType.Skin5));
     public static ArrayList<SpriteType> unlockedSkins = new ArrayList<>();
-    public static int Count = 1;
-    public static int DrawCount = Count;
 
-    //Draw 횟수
-    public static void addDrawCount(){
-        DrawCount ++;
-        FileManager.saveDrawCount(DrawCount);
-    }
 
-    public static int getDrawCount(){
-       return DrawCount;
-    }
+
 
     public static void unlockSkin(SpriteType skin) {
         if (!unlockedSkins.contains(skin) && lockedSkins.contains(skin)) {

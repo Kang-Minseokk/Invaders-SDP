@@ -80,7 +80,6 @@ public class TitleScreen extends Screen {
 		shipStatus = new ShipStatus();
 		shipStatus.loadPrice();
 		Skins.loadSkins();  // 기존 해금된 스킨 목록 로드
-		Skins.getDrawCount();
 
 	}
 
@@ -340,44 +339,42 @@ public class TitleScreen extends Screen {
 	//custom
 	private void drawRandomSkin() {
 		if (customState == 7 ) {
-			if (Skins.getDrawCount() <= 5) {
-				if (Skins.lockedSkins.isEmpty()) {
-					Core.getLogger().info("All skins are already unlocked.");
-					return; // 모든 스킨이 해금된 경우 메서드 종료
-				}
+			if (Skins.lockedSkins.isEmpty() || Skins.unlockedSkins.size() == 5) {
+				Core.getLogger().info("All skins are already unlocked.");
+				return; // 모든 스킨이 해금된 경우 메서드 종료
+			}
 
-				try {
-					if (Core.getCurrencyManager().spendCoin(50 * Skins.getDrawCount())) {
-						Random random = new Random();
-						int randomIndex = random.nextInt(Skins.lockedSkins.size());
-						SpriteType selectedSkin = Skins.lockedSkins.get(randomIndex);
-						Skins.addDrawCount();
-						if (Skins.getDrawCount() < 5)
-							Core.getLogger().info("next price : " + 2 * Skins.getDrawCount());
-
-
-						if (!Skins.isSkinUnlocked(selectedSkin)) {
-							Skins.unlockSkin(selectedSkin);
-							Core.getLogger().info("Un locked Skin: " + selectedSkin);
-						} else {
-							Core.getLogger().info("Skin already unlocked: " + selectedSkin);
-						}
+			try {
+				int DrawPrice = 50 * (1 + Skins.unlockedSkins.size());
+				if (Core.getCurrencyManager().spendCoin(DrawPrice)) {
+					Random random = new Random();
+					int randomIndex = random.nextInt(Skins.lockedSkins.size());
+					SpriteType selectedSkin = Skins.lockedSkins.get(randomIndex);
+					/*if (Skins.unlockedSkins.size() < 5 )
+					Core.getLogger().info("next price : " + 50 * Skins.getDrawCount());*/
+					if (!Skins.isSkinUnlocked(selectedSkin)) {
+						Skins.unlockSkin(selectedSkin);
+						Core.getLogger().info("Un locked Skin: " + selectedSkin);
 					}
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-				}
-				try {
-					this.coin = Core.getCurrencyManager().getCoin();
-					this.gem = Core.getCurrencyManager().getGem();
-				} catch (IOException e) {
-					throw new RuntimeException(e);
+					else {
+							Core.getLogger().info("Skin already unlocked: " + selectedSkin);
+					}
 				}
 			}
-			else Core.getLogger().info("No chance to draw");
+			catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+			try {
+				this.coin = Core.getCurrencyManager().getCoin();
+				this.gem = Core.getCurrencyManager().getGem();
+			}
+			catch (IOException e) {
+					throw new RuntimeException(e);
+			}
+
 		}
 
 	}
-
 
 	private void nextMenuItem() {
 		if (this.returnCode == 6) // Team Clover changed values because recordMenu added
