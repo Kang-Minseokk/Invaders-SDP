@@ -345,16 +345,18 @@ public class TitleScreen extends Screen {
 			}
 
 			try {
-				int DrawPrice = 50 * (1 + Skins.unlockedSkins.size());
+				int DrawPrice = 1 * (1 + Skins.unlockedSkins.size());
 				if (Core.getCurrencyManager().spendCoin(DrawPrice)) {
 					Random random = new Random();
 					int randomIndex = random.nextInt(Skins.lockedSkins.size());
 					SpriteType selectedSkin = Skins.lockedSkins.get(randomIndex);
+					int option4num = randomIndex + 2;
 					/*if (Skins.unlockedSkins.size() < 5 )
 					Core.getLogger().info("next price : " + 50 * Skins.getDrawCount());*/
 					if (!Skins.isSkinUnlocked(selectedSkin)) {
 						Skins.unlockSkin(selectedSkin);
-						Core.getLogger().info("Un locked Skin: " + selectedSkin);
+						Core.getLogger().info("Unlocked Skin: " + selectedSkin);
+						this.customState = option4num; //해당스킨으로 이동
 					}
 					else {
 							Core.getLogger().info("Skin already unlocked: " + selectedSkin);
@@ -375,6 +377,7 @@ public class TitleScreen extends Screen {
 		}
 
 	}
+
 
 	private void nextMenuItem() {
 		if (this.returnCode == 6) // Team Clover changed values because recordMenu added

@@ -60,8 +60,7 @@ public class DrawManager {
 	private static Map<SpriteType, boolean[][]> spriteMap;
 	private int width;
 	private int height;
-
-
+	private int currentOption;
 
 
 	/** Sprite types. */
@@ -545,12 +544,14 @@ public class DrawManager {
 				drawCenteredRegularString(screen, randomDisplay, yPosition);
 			}
 
+
 		}
 		else {
 			backBufferGraphics.setColor(Color.WHITE);
 			drawCenteredRegularString(screen, customString, screen.getHeight()
 					/ 4 * 2 + fontRegularMetrics.getHeight() * 8);
 		}
+
 		// Exit (Starter)
 		if (option == 0)
 			backBufferGraphics.setColor(Color.GREEN);
@@ -558,7 +559,10 @@ public class DrawManager {
 			backBufferGraphics.setColor(Color.WHITE);
 		drawCenteredRegularString(screen, exitString, screen.getHeight()
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 10); // adjusted Height
+
+
 	}
+
 	public static SpriteType getselectedSpriteType(){
 		return selectedSpriteType != null ? selectedSpriteType : SpriteType.Ship;}
 	/**
