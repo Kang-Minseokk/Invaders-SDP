@@ -532,8 +532,15 @@ public class DrawManager {
 					selectedSpriteType = SpriteType.Ship;
 				}
 			} else if (option4 == 7) {
-				// Random Skin 텍스트를 화살표 사이에 표시
-				String randomDisplay = "<- " + randomSkinString + " ->";
+				int drawCount = Skins.unlockedSkins.size() + 1;
+				int drawCost = 50 * drawCount;
+				String randomDisplay;
+
+				if (Skins.unlockedSkins.size() == 5) {
+					randomDisplay = "<- DRAW MAX ->";
+				} else {
+					randomDisplay = "<- DRAW +" + drawCost + " COIN ->";
+				}
 				backBufferGraphics.setColor(Color.magenta);
 				drawCenteredRegularString(screen, randomDisplay, yPosition);
 			}

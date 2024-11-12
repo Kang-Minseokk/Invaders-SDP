@@ -1,0 +1,3 @@
+1. 성민 - 코인 표시
+KAN-68 feat: display coins used for custom draw
+: Draw Manager에 1번 뽑을 때 +50 COIN, 2번 뽑을 때 +100 COIN ..  과 같은 식의 코인 표시를 함. 다 뽑은 후에는 DRAW MAX 를 표시해 더 이상 뽑을 스킨이 없음을 명시함.
