@@ -1,3 +1,14 @@
 1. 성민 - 코인 표시
 KAN-68 feat: display coins used for custom draw
 : Draw Manager에 1번 뽑을 때 +50 COIN, 2번 뽑을 때 +100 COIN ..  과 같은 식의 코인 표시를 함. 다 뽑은 후에는 DRAW MAX 를 표시해 더 이상 뽑을 스킨이 없음을 명시함.
+
+2. 예나 - 뽑기 후 결과 출력
+KAN-68 feat : show draw result
+    :  TitleScreen에서 스킨 뽑으면 해당 스킨 칸으로 이동하게함.
+KAN-68 feat : unlocking window floating
+    : Jpanel에 스킨을 그리기위해 Drawmanager에 drawEntity와 동일한 로직을 사용하지만 Graphic 객체를 인자로 받는 drawEntityWithGraphics메서드를 추가함.
+        => 이 메소드를 안쓰는 방법이 있는지 궁금합니다...
+      스킨이 잠금해제 될 때마다 잠금해제를 알리는 창을 띄우도록 Skins 클래스에 showUnlockDialog 메서드 추가.
+      스페이스바를 누르면 창이 닫힘.
+      TitleScreen에서 스킨 뽑으면 무조건 해당 스킨 칸으로 이동하지않는 오류 고침.
+

@@ -64,7 +64,7 @@ public class TitleScreen extends Screen {
 		this.selectionCooldown.reset();
 		this.customState = 0;
 
-
+		/*Skins.resetUnlockedSkins();*/ // 해금된 스킨 초기화
 		// CtrlS: Set user's coin, gem
 		try {
 			this.coin = Core.getCurrencyManager().getCoin();
@@ -341,22 +341,23 @@ public class TitleScreen extends Screen {
 		if (customState == 7 ) {
 			if (Skins.lockedSkins.isEmpty() || Skins.unlockedSkins.size() == 5) {
 				Core.getLogger().info("All skins are already unlocked.");
-				return; // 모든 스킨이 해금된 경우 메서드 종료
+				return;
 			}
 
 			try {
-				int DrawPrice = 1 * (1 + Skins.unlockedSkins.size());
+				int DrawPrice = 50 * (1 + Skins.unlockedSkins.size());
 				if (Core.getCurrencyManager().spendCoin(DrawPrice)) {
 					Random random = new Random();
 					int randomIndex = random.nextInt(Skins.lockedSkins.size());
 					SpriteType selectedSkin = Skins.lockedSkins.get(randomIndex);
-					int option4num = randomIndex + 2;
-					/*if (Skins.unlockedSkins.size() < 5 )
-					Core.getLogger().info("next price : " + 50 * Skins.getDrawCount());*/
+					Core.getLogger().info("randomIndex: " + randomIndex);
+					int option4num = Skins.AllSkins.indexOf(selectedSkin) + 2;
+					Core.getLogger().info("option4num: " + option4num);
 					if (!Skins.isSkinUnlocked(selectedSkin)) {
 						Skins.unlockSkin(selectedSkin);
 						Core.getLogger().info("Unlocked Skin: " + selectedSkin);
 						this.customState = option4num; //해당스킨으로 이동
+						Core.getLogger().info("Customstate: " + customState);
 					}
 					else {
 							Core.getLogger().info("Skin already unlocked: " + selectedSkin);

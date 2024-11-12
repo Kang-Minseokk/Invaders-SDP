@@ -62,6 +62,13 @@ public class DrawManager {
 	private int height;
 	private int currentOption;
 
+	private Graphics graphicsOverride = null;
+
+
+	public void setGraphics(Graphics g) {
+		this.graphicsOverride = g;
+	}
+
 
 	/** Sprite types. */
 	public static enum SpriteType {
@@ -279,6 +286,23 @@ public class DrawManager {
 		}
 
 
+	}
+	public static void drawEntityWithGraphics(final Graphics g, final Entity entity, final int positionX, final int positionY) {
+		try {
+			boolean[][] image = spriteMap.get(entity.getSpriteType());
+			g.setColor(entity.getColor());
+
+			for (int i = 0; i < image.length; i++) {
+				for (int j = 0; j < image[i].length; j++) {
+					if (image[i][j]) {
+						g.fillRect(positionX + i * 7, positionY + j * 7, 7, 7);
+					}
+				}
+			}
+		} catch (Exception e) {
+			System.out.println(e);
+			System.exit(1);
+		}
 	}
 
 	/**
