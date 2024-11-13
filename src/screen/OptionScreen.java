@@ -39,59 +39,89 @@ public class OptionScreen extends Screen {
         this.selectionCooldown.reset();
     }
 
-    private void handleHorizontalMenuNavigation() {
-        if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
-            if (this.volumeSelectionCode == 0)
-                this.volumeSelectionCode = 5;
-
-            else
-                this.volumeSelectionCode--;
-            sm.modifyAllBGMVolume(this.volumeSelectionCode);
-            sm.modifyAllESVolume(this.volumeSelectionCode);
-        }
-        if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
-            if (this.volumeSelectionCode == 5)
-                this.volumeSelectionCode = 0;
-            else
-                this.volumeSelectionCode++;
-            sm.modifyAllBGMVolume(this.volumeSelectionCode);
-            sm.modifyAllESVolume(this.volumeSelectionCode);
-        }
-    }
 
     @Override
     public void update() {
         super.update();
         draw();
 
-        if (this.selectionCooldown.checkFinished() && this.inputDelay.checkFinished()) {
-            handleBGMCode();
-        }
-
         if (inputManager.isKeyDown(KeyEvent.VK_P) && this.inputDelay.checkFinished()) {
             Core.setSavedVolumeSelectionCode(this.volumeSelectionCode);
-            this.returnCode = 2; // GameScreen으로 돌아가기 위한 코드 (예시로 2)
+            this.returnCode = 3; // GameScreen으로 돌아가기 위한 코드 (예시로 2)
             this.isRunning = false; // Exit the pause screen and return to the game
-            Core.getLogger().info("P pressed: Exiting PauseScreen with returnCode 2.");
+            Core.getLogger().info("P pressed: Exiting PauseScreen with returnCode 3.");
         }
+
         if(this.selectionCooldown.checkFinished() && this.inputDelay.checkFinished()){
-            handleHorizontalMenuNavigation();
+            handleVerticalMenuNavigation();
+            handleVolumeCode();
+            handleBGMCode();
             this.selectionCooldown.reset();
         }
 
     }
 
+    private void handleVerticalMenuNavigation() {
+        if (inputManager.isKeyDown(KeyEvent.VK_UP) || inputManager.isKeyDown(KeyEvent.VK_W)) {
+            previousOptionItem();
+            this.selectionCooldown.reset();
+        }
+        if (inputManager.isKeyDown(KeyEvent.VK_DOWN) || inputManager.isKeyDown(KeyEvent.VK_S)) {
+            nextOptionItem();
+            this.selectionCooldown.reset();
+        }
+    }
+
     private void handleBGMCode() {
-        if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
-            previousBGMState();
-            this.selectionCooldown.reset();
-            playSelectedBGM();
+        if (this.returnCode == 1) {
+            if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+                previousBGMState();
+                this.selectionCooldown.reset();
+                playSelectedBGM();
+            }
+            if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+                nextBGMState();
+                this.selectionCooldown.reset();
+                playSelectedBGM();
+            }
         }
-        if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
-            nextBGMState();
-            this.selectionCooldown.reset();
-            playSelectedBGM();
+    }
+
+    private void handleVolumeCode() {
+        if (this.returnCode == 2) {
+            if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+                if (this.volumeSelectionCode == 0)
+                    this.volumeSelectionCode = 5;
+
+                else
+                    this.volumeSelectionCode--;
+                sm.modifyAllBGMVolume(this.volumeSelectionCode);
+                sm.modifyAllESVolume(this.volumeSelectionCode);
+            }
+            if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+                if (this.volumeSelectionCode == 5)
+                    this.volumeSelectionCode = 0;
+                else
+                    this.volumeSelectionCode++;
+                sm.modifyAllBGMVolume(this.volumeSelectionCode);
+                sm.modifyAllESVolume(this.volumeSelectionCode);
+            }
         }
+    }
+
+
+    private void nextOptionItem() {
+        if (this.returnCode == 2)
+            this.returnCode = 1;
+        else
+            this.returnCode++;
+    }
+
+    private void previousOptionItem() {
+        if (this.returnCode == 1)
+            this.returnCode = 2;
+        else
+            this.returnCode--;
     }
 
     private void nextBGMState() {
@@ -118,8 +148,7 @@ public class OptionScreen extends Screen {
     private void draw() {
         drawManager.initDrawing(this);
         drawManager.drawOption(this);
-        drawManager.drawSoundControl(this,2,this.volumeSelectionCode);
-        drawManager.drawBGMOption(this, bgmState, bgmOptions);
+        drawManager.drawSoundOption(this, this.returnCode,this.volumeSelectionCode, this.bgmState, this.bgmOptions);
         drawManager.completeDrawing(this);
     }
 }

@@ -985,6 +985,7 @@ public class DrawManager {
 		// Sound Operator
 		SoundManager.getInstance().playES("achievement");
 	}
+
 	public void drawOption(final Screen screen) {
 		// OPTION 제목 그리기
 		backBufferGraphics.setColor(Color.GREEN);
@@ -995,7 +996,9 @@ public class DrawManager {
 		drawCenteredRegularString(screen, "PRESS P TO RESUME", screen.getHeight() / 5); // 화면 중간에 안내문구 표시
 	}
 
-	public void drawSoundControl(final Screen screen, final int option, final int option2) {
+	public void drawSoundOption(final Screen screen, final int option, final int volumeIndex, final int BGMIndex, final List<String> bgmOptions) {
+		String bgmString = "Background Music";
+		String selectedBGM = bgmOptions.get(BGMIndex);
 
 		String volume0 = "VOLUME0";
 		String volume1 = "VOLUME1";
@@ -1005,25 +1008,33 @@ public class DrawManager {
 		String volume5 = "VOLUME5";
 		String volume = volume3;
 
-		// OPTION 제목 그리기
+		if(option == 1)
+			backBufferGraphics.setColor(Color.CYAN);
+		else
+			backBufferGraphics.setColor(Color.WHITE);
+
+		String bgmDisplay = "< " + selectedBGM + " >";
+		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 4 * 2);
+
 		backBufferGraphics.setColor(Color.PINK);
 		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 6);
-		if(option == 2 && option2 == 0){
+
+		if(option == 2 && volumeIndex == 0){
 			backBufferGraphics.setColor(new Color(200, 200, 200));
 			volume = volume0;
-		}else if(option == 2 && option2 == 1){
+		}else if(option == 2 && volumeIndex == 1){
 			backBufferGraphics.setColor(new Color(173, 216, 255));
 			volume = volume1;
-		}else if(option == 2 && option2 == 2){
+		}else if(option == 2 && volumeIndex == 2){
 			backBufferGraphics.setColor(new Color(144, 238, 144));
 			volume = volume2;
-		}else if(option == 2 && option2 == 3){
+		}else if(option == 2 && volumeIndex == 3){
 			backBufferGraphics.setColor(new Color(64, 224, 208));
 			volume = volume3;
-		}else if(option == 2 && option2 == 4){
+		}else if(option == 2 && volumeIndex == 4){
 			backBufferGraphics.setColor(new Color(255, 255, 0));
 			volume = volume4;
-		}else if(option == 2 && option2 == 5){
+		}else if(option == 2 && volumeIndex == 5){
 			backBufferGraphics.setColor(new Color(255, 0, 0));
 			volume = volume5;
 		}else{
@@ -1033,16 +1044,6 @@ public class DrawManager {
 			volume = "<- " + volume + " ->";
 		}
 		drawCenteredRegularString(screen, volume, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
-
-	}
-
-	public void drawBGMOption(final Screen screen, final int BGMIndex, final List<String> bgmOptions) {
-		String bgmString = "Background Music";
-		String selectedBGM = bgmOptions.get(BGMIndex);
-
-		backBufferGraphics.setColor(Color.CYAN);
-		String bgmDisplay = "< " + selectedBGM + " >";
-		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 4 * 2);
 
 	}
 }
