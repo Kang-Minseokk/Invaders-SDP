@@ -562,7 +562,7 @@ public class DrawManager {
 				if (Skins.unlockedSkins.size() == 5) {
 					randomDisplay = "<- DRAW MAX ->";
 				} else {
-					randomDisplay = "<- DRAW +" + drawCost + " COIN ->";
+					randomDisplay = "<- DRAW -" + drawCost + " COIN ->";
 				}
 				backBufferGraphics.setColor(Color.magenta);
 				drawCenteredRegularString(screen, randomDisplay, yPosition);
