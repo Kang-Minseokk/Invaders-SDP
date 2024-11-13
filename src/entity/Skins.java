@@ -109,9 +109,9 @@ public class Skins {
         dialog.setFocusable(true); // KeyListener가 동작하도록 설정
         dialog.setVisible(true); // 창 표시
     }
-   /* public static void resetUnlockedSkins() {
-        unlockedSkins.clear(); // 해금된 스킨 초기화
-        saveSkins(); // 저장된 파일도 초기화
-        Core.getLogger().info("Unlocked skins have been reset.");
-    }*/
+//   public static void resetUnlockedSkins() {
+//        unlockedSkins.clear(); // 해금된 스킨 초기화
+//        saveSkins(); // 저장된 파일도 초기화
+//        Core.getLogger().info("Unlocked skins have been reset.");
+//    }
 }

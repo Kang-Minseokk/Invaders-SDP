@@ -12,3 +12,8 @@ KAN-68 feat : unlocking window floating
       스페이스바를 누르면 창이 닫힘.
       TitleScreen에서 스킨 뽑으면 무조건 해당 스킨 칸으로 이동하지않는 오류 고침.
 
+3. 성민 - 뽑기 사운드 추가
+KAN-68 feat: add draw_success sound effect for skin draw
+    :뽑을 때 사운드 추가 및 저작권 명시함.
+    + 리뷰하실 때 이미 해금한 스킨 초기화하고 싶으시면 Skins 112줄, TitleScreen 67줄 주석 풀고 리뷰하시면 됩니다.
+
