@@ -1,0 +1,5 @@
+<map id="screen.GameScreen.run" name="screen.GameScreen.run">
+<area shape="rect" id="Node000001" title="Starts the action." alt="" coords="5,13,168,40"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_score_manager.html#a9418e3e07ed3cceb42336f50a4390340" title=" " alt="" coords="216,5,423,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,24,200,24,200,29,168,29"/>
+</map>

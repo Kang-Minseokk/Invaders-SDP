@@ -1,0 +1,7 @@
+<map id="entity.Bullet.setSprite" name="entity.Bullet.setSprite">
+<area shape="rect" id="Node000001" title="Sets correct sprite for the bullet, based on speed." alt="" coords="5,31,151,57"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_bomb.html#a8f61c1500609ebfc7a285461ed9e1028" title=" " alt="" coords="199,5,369,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,32,183,28,184,34,151,38"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_bomb.html#acc740247abbfc0e65202ebbdd984d736" title=" " alt="" coords="205,56,362,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,50,190,55,189,60,151,56"/>
+</map>

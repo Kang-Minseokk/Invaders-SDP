@@ -1,0 +1,5 @@
+<map id="entity.Obstacle" name="entity.Obstacle">
+<area shape="rect" id="Node000001" title="Implements an obstacle, to be destroyed by the player." alt="" coords="5,464,148,683"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_entity.html" title="Implements a generic game entity." alt="" coords="21,5,133,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,431,80,464,74,464,74,431"/>
+</map>

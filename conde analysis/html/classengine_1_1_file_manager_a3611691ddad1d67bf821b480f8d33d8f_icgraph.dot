@@ -1,0 +1,20 @@
+digraph "engine.FileManager.saveHighScores"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="engine.FileManager.saveHigh\lScores",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Saves user high scores to disk."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="screen.ScoreScreen.saveScore",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_score_screen.html#ad4dae67615c89c96db3ab1de1ac043ec",tooltip="Saves the score as a high score."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="screen.ScoreScreen.saveGame\lProgress",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_score_screen.html#a41ff54b61e6d1d32adc72c07e2c3b3b6",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="screen.ScoreScreen.handle\lEscapeKey",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_score_screen.html#a057479f036d6fbc727ae22c60f924d09",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="screen.ScoreScreen.update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_score_screen.html#a38e621d92395da75408301bb9873dbdf",tooltip="Updates the elements on screen and checks for events."];
+  Node3 -> Node6 [id="edge5_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="screen.ScoreScreen.handle\lSpaceKey",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_score_screen.html#acbdd3f9cc0796d86422536b798d5c953",tooltip=" "];
+  Node6 -> Node5 [id="edge6_Node000006_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

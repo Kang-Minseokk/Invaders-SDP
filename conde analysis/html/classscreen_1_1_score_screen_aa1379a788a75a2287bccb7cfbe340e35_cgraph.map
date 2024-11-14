@@ -1,0 +1,5 @@
+<map id="screen.ScoreScreen.incrementNameChar" name="screen.ScoreScreen.incrementNameChar">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,206,48"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_cooldown.html#abcb3cea769834552c6a81075f5d17dc7" title="Restarts the cooldown." alt="" coords="254,13,408,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,24,238,24,238,29,206,29"/>
+</map>

@@ -1,0 +1,48 @@
+<map id="screen.HighScoreScreen" name="screen.HighScoreScreen">
+<area shape="rect" id="Node000001" title="Implements the high scores screen, it shows player records." alt="" coords="49,1383,205,1516"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_screen.html" title="Implements a generic screen." alt="" coords="208,385,351,753"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,768,244,778,232,905,229,1005,223,1105,203,1231,181,1311,156,1384,151,1382,176,1310,198,1230,218,1104,224,1005,227,905,239,777,240,768"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_frame.html" title="Implements a frame to show screens on." alt="" coords="374,1372,465,1527"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="285,753,298,1044,309,1164,315,1205,323,1229,330,1237,338,1241,348,1245,357,1253,385,1302,404,1355,399,1357,381,1305,353,1256,345,1249,336,1246,327,1241,319,1232,310,1206,303,1165,292,1045,280,753"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html" title="Manages screen drawing." alt="" coords="845,1740,1018,2279"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="844,1992,710,1953,631,1923,549,1885,468,1839,392,1785,325,1720,296,1684,270,1645,263,1626,257,1598,249,1518,245,1412,245,1288,253,1019,264,770,270,770,258,1019,250,1288,251,1412,254,1517,262,1597,268,1625,275,1643,300,1681,329,1717,396,1780,471,1835,551,1881,633,1918,711,1948,845,1987"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="1019,1952,1029,1960,1037,1973,1043,1989,1044,2009,1041,2036,1033,2054,1028,2052,1036,2034,1039,2009,1037,1990,1032,1975,1025,1964,1016,1956"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="435,1526,447,1571,463,1621,485,1669,514,1714,547,1755,585,1792,668,1860,753,1915,831,1958,828,1963,750,1920,665,1864,582,1796,544,1758,509,1718,481,1672,458,1622,442,1573,430,1527"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="386,535,441,604"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="417,619,421,1372,416,1372,411,619"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_file_manager.html" title="Manages files used in the application." alt="" coords="434,777,618,1231"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="539,1230,552,1330,572,1435,600,1542,639,1643,680,1719,729,1791,783,1856,835,1913,831,1917,779,1860,725,1794,675,1722,634,1645,595,1543,567,1436,547,1330,534,1231"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="620,928,630,939,638,955,643,977,644,1004,641,1041,631,1066,626,1065,636,1039,639,1004,637,978,633,957,625,942,616,931"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="513,188,563,257"/>
+<area shape="poly" id="edge23_Node000002_Node000007" title=" " alt="" coords="515,258,471,310,415,363,395,375,377,387,363,404,359,400,373,383,392,370,412,359,467,306,511,255"/>
+<area shape="poly" id="edge10_Node000003_Node000007" title=" " alt="" coords="554,256,587,344,656,558,680,653,703,777,720,908,726,1021,725,1120,721,1213,719,1305,722,1404,734,1514,759,1643,774,1696,794,1749,839,1848,834,1851,789,1751,769,1698,754,1645,728,1515,716,1404,713,1305,716,1213,720,1120,721,1021,715,909,698,778,675,654,651,559,582,346,549,258"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="540,257,532,760,527,760,535,257"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="768,1415,830,1484"/>
+<area shape="poly" id="edge11_Node000003_Node000008" title=" " alt="" coords="798,1484,791,1588,793,1652,802,1715,819,1774,840,1831,835,1833,814,1775,797,1717,788,1653,786,1588,792,1484"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="884,1415,978,1484"/>
+<area shape="poly" id="edge12_Node000003_Node000009" title=" " alt="" coords="934,1484,934,1723,928,1723,928,1484"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1050,1415,1087,1484"/>
+<area shape="poly" id="edge13_Node000003_Node000010" title=" " alt="" coords="1070,1484,1062,1588,1054,1653,1042,1717,1025,1777,1020,1775,1037,1715,1049,1652,1057,1588,1065,1484"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1129,1415,1208,1484"/>
+<area shape="poly" id="edge14_Node000003_Node000011" title=" " alt="" coords="1172,1484,1165,1590,1154,1654,1135,1717,1114,1765,1088,1811,1030,1896,1026,1893,1083,1809,1109,1762,1130,1715,1148,1653,1159,1589,1166,1484"/>
+<area shape="rect" id="Node000012" href="$classscreen_1_1_background.html" title=" " alt="" coords="1233,1255,1430,1644"/>
+<area shape="poly" id="edge15_Node000003_Node000012" title=" " alt="" coords="1308,1645,1294,1682,1276,1717,1252,1754,1224,1789,1162,1852,1096,1906,1033,1951,1030,1946,1093,1902,1158,1848,1220,1785,1247,1751,1272,1715,1289,1680,1303,1643"/>
+<area shape="poly" id="edge16_Node000012_Node000012" title=" " alt="" coords="1431,1406,1449,1422,1456,1449,1453,1468,1445,1482,1441,1479,1448,1466,1451,1449,1445,1425,1427,1410"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="1286,535,1376,604"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="1334,604,1334,1238,1328,1238,1328,604"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1534,1407,1709,1492"/>
+<area shape="poly" id="edge18_Node000003_Node000014" title=" " alt="" coords="1611,1493,1578,1568,1554,1609,1525,1646,1469,1701,1407,1753,1341,1801,1275,1844,1145,1916,1034,1969,1032,1964,1143,1911,1272,1839,1338,1796,1403,1749,1465,1698,1521,1642,1550,1606,1573,1566,1606,1491"/>
+<area shape="rect" id="Node000015" href="$enumengine_1_1_draw_manager_1_1_sprite_type.html" title="Sprite types." alt="" coords="1733,1308,1932,1591"/>
+<area shape="poly" id="edge19_Node000003_Node000015" title=" " alt="" coords="1769,1592,1748,1620,1724,1646,1642,1713,1552,1773,1458,1825,1363,1870,1270,1908,1182,1940,1035,1985,1033,1980,1180,1935,1268,1903,1361,1865,1456,1820,1549,1768,1638,1709,1720,1642,1744,1617,1764,1589"/>
+<area shape="rect" id="Node000016" href="$classengine_1_1_input_manager.html" title="Manages keyboard input for the provided screen." alt="" coords="5,124,137,321"/>
+<area shape="poly" id="edge20_Node000002_Node000016" title=" " alt="" coords="139,308,197,384,202,391,197,394,193,387,135,311"/>
+<area shape="poly" id="edge22_Node000016_Node000016" title=" " alt="" coords="138,198,156,206,164,222,161,233,155,240,151,237,156,231,158,223,152,209,136,203"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="31,5,111,75"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="74,89,74,124,68,124,68,89"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="242,188,289,257"/>
+<area shape="poly" id="edge24_Node000002_Node000018" title=" " alt="" coords="270,257,274,368,269,368,264,257"/>
+<area shape="rect" id="Node000019" href="$classengine_1_1_cooldown.html" title="Imposes a cooldown period between two actions." alt="" coords="313,124,429,321"/>
+<area shape="poly" id="edge25_Node000002_Node000019" title=" " alt="" coords="348,322,335,370,330,368,343,321"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="52,535,184,604"/>
+<area shape="poly" id="edge26_Node000001_Node000020" title=" " alt="" coords="121,604,129,1366,124,1366,116,604"/>
+</map>

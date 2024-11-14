@@ -1,0 +1,15 @@
+<map id="screen.RecordScreen.RecordScreen" name="screen.RecordScreen.RecordScreen">
+<area shape="rect" id="Node000001" title="Constructor, establishes the properties of the screen." alt="" coords="5,27,199,69"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="257,5,441,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,34,241,29,242,34,199,39"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_file_manager.html#a314c50ef1c81fa513af0ad4984900cc8" title="Loads recent scores from file, and returns a sorted list of pairs score &#45; value." alt="" coords="247,56,451,99"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="199,57,232,61,231,66,199,62"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="499,5,705,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="441,16,483,16,483,21,441,21"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="753,5,963,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="706,16,738,16,738,21,706,21"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1011,5,1163,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="963,16,995,16,995,21,963,21"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_file_manager.html#a4183d269d4e6d870c2000fbbfb8982b3" title="Returns the application default scores if there is no user recent scores file." alt="" coords="500,56,704,99"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="451,75,485,75,485,80,451,80"/>
+</map>

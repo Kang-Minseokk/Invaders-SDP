@@ -1,0 +1,5 @@
+<map id="engine.DrawManager.drawCountDown" name="engine.DrawManager.drawCountDown">
+<area shape="rect" id="Node000001" title="Countdown to game start." alt="" coords="5,13,251,40"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a01d2cd207f7553b79e0f73972acd514c" title="Draws a centered string on big font." alt="" coords="299,5,528,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,24,283,24,283,29,251,29"/>
+</map>

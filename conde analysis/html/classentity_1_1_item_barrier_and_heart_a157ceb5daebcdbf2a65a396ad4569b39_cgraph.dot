@@ -1,0 +1,19 @@
+digraph "entity.ItemBarrierAndHeart.updateBarrierAndShip"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="entity.ItemBarrierAndHeart.update\lBarrierAndShip",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="entity.ItemBarrierAndHeart.deactivatebarrier",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_item_barrier_and_heart.html#a642924a3815d53c1611aef9ff448b83a",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="entity.Ship.setSpriteType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_ship.html#a50d86eb873f9b9dad7977cd8e9215afc",tooltip="Constructor, establishes the entity's generic properties."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="entity.Ship.update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_ship.html#a77612eaa418b1abe881de16bf6b5bdfb",tooltip="Updates status of the ship."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="engine.Cooldown.checkFinished",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793",tooltip="Checks if the cooldown is finished."];
+  Node4 -> Node6 [id="edge5_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="engine.DrawManager.getselected\lSpriteType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_draw_manager.html#a16019fb34636287f1d5b5e84e900c9c0",tooltip=" "];
+}

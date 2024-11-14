@@ -1,0 +1,66 @@
+<map id="engine.FileManager.saveGem" name="engine.FileManager.saveGem">
+<area shape="rect" id="Node000001" title="Saves user gem to disk." alt="" coords="1825,428,2020,455"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_currency_manager.html#ad60b174c664ad0c85f62bd498fc3c1b0" title="Add an amount of gem to the current gem." alt="" coords="1537,395,1770,421"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1810,430,1766,425,1767,419,1810,425"/>
+<area shape="rect" id="Node000025" href="$class_currency_1_1_currency_manager.html#a754185e8558ca2cec487fb3ddbbc4d7a" title="Consume as much gem as the amount you have (cannot spend more than you currently have)." alt="" coords="1530,453,1777,480"/>
+<area shape="poly" id="edge33_Node000001_Node000025" title=" " alt="" coords="1810,455,1778,458,1778,452,1809,449"/>
+<area shape="rect" id="Node000003" href="$class_achievement_1_1_achievement_conditions.html#a370857deb5c4dc35e2bd3191fb6834c1" title=" " alt="" coords="1186,387,1482,429"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1522,411,1483,411,1483,405,1522,405"/>
+<area shape="rect" id="Node000020" href="$classscreen_1_1_score_screen.html#a7eb9637ed29cd1d517d7c64c6317bbc4" title="Saves the gem into currency file." alt="" coords="1234,208,1434,235"/>
+<area shape="poly" id="edge27_Node000002_Node000020" title=" " alt="" coords="1615,389,1358,238,1360,233,1618,384"/>
+<area shape="rect" id="Node000004" href="$class_achievement_1_1_achievement_conditions.html#a99d262bc05fed539b97aa1107fcfba48" title=" " alt="" coords="857,152,1135,195"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1304,377,1233,299,1187,258,1136,222,1082,198,1085,193,1139,218,1190,254,1237,296,1308,373"/>
+<area shape="rect" id="Node000007" href="$class_achievement_1_1_achievement_conditions.html#ab3b45005bc2580da03cf08b1f13c44cb" title=" " alt="" coords="528,525,806,568"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="1297,441,1227,491,1184,514,1138,532,1054,551,968,561,883,564,807,563,807,557,883,559,967,556,1053,546,1137,527,1182,509,1224,486,1294,437"/>
+<area shape="rect" id="Node000010" href="$class_achievement_1_1_achievement_conditions.html#a97e05c2e6b58217292dc1c60f7c6542c" title=" " alt="" coords="854,232,1138,259"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="1297,379,1226,324,1182,296,1137,273,1102,262,1104,257,1139,268,1185,291,1229,319,1300,375"/>
+<area shape="rect" id="Node000013" href="$class_achievement_1_1_achievement_conditions.html#ad3dd6057a9bfa438d4750cfa2c643e57" title=" " alt="" coords="866,357,1126,400"/>
+<area shape="poly" id="edge13_Node000003_Node000013" title=" " alt="" coords="1170,396,1126,393,1126,387,1170,391"/>
+<area shape="rect" id="Node000014" href="$class_achievement_1_1_achievement_conditions.html#a5c82f71185fe8a0b03cea729d6a4d4fe" title=" " alt="" coords="858,592,1134,619"/>
+<area shape="poly" id="edge15_Node000003_Node000014" title=" " alt="" coords="1291,441,1240,479,1188,523,1165,551,1155,563,1139,576,1095,594,1093,589,1136,571,1152,560,1161,548,1184,519,1237,475,1288,436"/>
+<area shape="rect" id="Node000017" href="$class_achievement_1_1_achievement_conditions.html#a58e9009c80c1208580a23f8646ef423a" title=" " alt="" coords="867,475,1125,517"/>
+<area shape="poly" id="edge20_Node000003_Node000017" title=" " alt="" coords="1235,436,1081,477,1080,472,1233,431"/>
+<area shape="rect" id="Node000018" href="$class_achievement_1_1_achievement_conditions.html#a2abd1058b6a5125525283f05ebc90f30" title=" " alt="" coords="858,307,1134,333"/>
+<area shape="poly" id="edge22_Node000003_Node000018" title=" " alt="" coords="1257,384,1137,348,1084,337,1085,331,1138,343,1258,379"/>
+<area shape="rect" id="Node000019" href="$class_achievement_1_1_achievement_conditions.html#a13bba364bdccb0c5f713dd9c006e508d" title=" " alt="" coords="532,424,803,451"/>
+<area shape="poly" id="edge25_Node000003_Node000019" title=" " alt="" coords="1170,418,803,434,803,429,1170,413"/>
+<area shape="rect" id="Node000005" href="$class_achievement_1_1_achievement_manager.html#af08cdf01288424b5d580ff7c820561ec" title=" " alt="" coords="532,139,802,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="841,170,803,168,803,163,841,164"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="297,147,420,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="517,163,421,163,421,157,517,157"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_game_screen.html#a41e19e7b8b70f17d04c7787b81d5116c" title=" " alt="" coords="267,441,450,484"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="571,523,439,487,440,482,572,518"/>
+<area shape="rect" id="Node000009" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,449,189,476"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="252,465,189,465,189,460,252,460"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="839,260,765,271,686,287,606,309,529,338,486,362,446,390,383,443,380,439,442,386,483,357,527,334,604,304,685,282,764,266,839,255"/>
+<area shape="rect" id="Node000011" href="$class_achievement_1_1_achievement_conditions.html#aab304539b282cda2ac1eabc1994ccfe2" title=" " alt="" coords="532,205,802,248"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="839,239,802,237,802,232,839,234"/>
+<area shape="rect" id="Node000012" href="$class_achievement_1_1_achievement_conditions.html#a4b274e04be1f1bc7c0ef6010e68d0583" title=" " alt="" coords="237,205,480,248"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="517,229,480,229,480,224,517,224"/>
+<area shape="poly" id="edge14_Node000013_Node000008" title=" " alt="" coords="851,383,695,393,611,402,529,415,473,428,422,443,420,438,472,422,527,409,610,397,695,388,851,378"/>
+<area shape="poly" id="edge19_Node000014_Node000008" title=" " alt="" coords="843,620,768,621,688,616,606,604,527,583,483,563,443,537,380,486,384,482,446,533,486,558,529,577,607,598,689,610,769,615,843,615"/>
+<area shape="rect" id="Node000015" href="$class_achievement_1_1_statistics.html#a59564a449d79bf40b07d6bca1feab4f9" title="Add the number of ships destroyed so far to the previous record." alt="" coords="576,643,758,685"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="903,625,759,650,758,645,902,619"/>
+<area shape="poly" id="edge17_Node000015_Node000008" title=" " alt="" coords="561,642,527,626,479,593,436,555,374,486,378,483,440,551,482,589,529,622,563,637"/>
+<area shape="rect" id="Node000016" href="$class_achievement_1_1_statistics.html#abf85693bc6a7f785a02fad922acc9bcc" title=" " alt="" coords="265,643,452,685"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="561,667,452,667,452,661,561,661"/>
+<area shape="poly" id="edge21_Node000017_Node000008" title=" " alt="" coords="852,491,450,470,450,465,852,486"/>
+<area shape="poly" id="edge23_Node000018_Node000008" title=" " alt="" coords="843,329,689,346,608,361,529,381,456,410,396,443,393,439,454,406,527,376,607,356,689,341,842,323"/>
+<area shape="poly" id="edge24_Node000018_Node000018" title=" " alt="" coords="1054,295,1035,288,996,285,961,287,942,292,937,297,945,304,942,308,932,298,939,288,960,282,996,280,1036,283,1056,290"/>
+<area shape="poly" id="edge26_Node000019_Node000008" title=" " alt="" coords="516,452,450,458,450,453,516,447"/>
+<area shape="rect" id="Node000021" href="$classscreen_1_1_score_screen.html#a41ff54b61e6d1d32adc72c07e2c3b3b6" title=" " alt="" coords="893,72,1099,115"/>
+<area shape="poly" id="edge28_Node000020_Node000021" title=" " alt="" coords="1286,204,1137,142,1066,118,1067,113,1139,138,1288,199"/>
+<area shape="rect" id="Node000022" href="$classscreen_1_1_score_screen.html#a057479f036d6fbc727ae22c60f924d09" title=" " alt="" coords="576,5,758,48"/>
+<area shape="poly" id="edge29_Node000021_Node000022" title=" " alt="" coords="877,72,758,48,759,42,878,67"/>
+<area shape="rect" id="Node000024" href="$classscreen_1_1_score_screen.html#acbdd3f9cc0796d86422536b798d5c953" title=" " alt="" coords="576,72,758,115"/>
+<area shape="poly" id="edge31_Node000021_Node000024" title=" " alt="" coords="878,96,758,96,758,91,878,91"/>
+<area shape="rect" id="Node000023" href="$classscreen_1_1_score_screen.html#a38e621d92395da75408301bb9873dbdf" title="Updates the elements on screen and checks for events." alt="" coords="267,47,450,73"/>
+<area shape="poly" id="edge30_Node000022_Node000023" title=" " alt="" coords="561,41,450,53,450,48,561,35"/>
+<area shape="poly" id="edge32_Node000024_Node000023" title=" " alt="" coords="561,85,450,72,450,67,561,79"/>
+<area shape="rect" id="Node000026" href="$classscreen_1_1_title_screen.html#a64bde84610fa44a3ef12fcf017ef3217" title="runs when player do buying things when store system is ready – unwrap annotated code and rename this ..." alt="" coords="1244,533,1424,576"/>
+<area shape="poly" id="edge34_Node000025_Node000026" title=" " alt="" coords="1589,487,1415,535,1414,530,1587,482"/>
+<area shape="rect" id="Node000027" href="$classscreen_1_1_title_screen.html#aecedcd5e961b0da973cf9ef5c37ece6c" title=" " alt="" coords="910,672,1082,715"/>
+<area shape="poly" id="edge35_Node000026_Node000027" title=" " alt="" coords="1267,585,1051,674,1049,669,1265,580"/>
+<area shape="rect" id="Node000028" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="580,709,754,736"/>
+<area shape="poly" id="edge36_Node000027_Node000028" title=" " alt="" coords="895,705,755,718,754,712,894,700"/>
+</map>

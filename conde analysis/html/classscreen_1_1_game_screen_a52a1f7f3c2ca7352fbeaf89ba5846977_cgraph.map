@@ -1,0 +1,5 @@
+<map id="screen.GameScreen.cleanBullets" name="screen.GameScreen.cleanBullets">
+<area shape="rect" id="Node000001" title="Cleans bullets that go off screen." alt="" coords="5,5,221,32"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_piercing_bullet_pool.html#a2ec7d1e3465b734deb8cd19377e9c84c" title="Adds one or more bullets to the list of available ones." alt="" coords="269,5,486,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,16,253,16,253,21,221,21"/>
+</map>

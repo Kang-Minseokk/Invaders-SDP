@@ -1,0 +1,7 @@
+<map id="engine.TwoPlayerMode.initialize" name="engine.TwoPlayerMode.initialize">
+<area shape="rect" id="Node000001" title="Initializes basic screen properties, and adds necessary elements." alt="" coords="5,43,213,69"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a16019fb34636287f1d5b5e84e900c9c0" title=" " alt="" coords="263,5,478,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,42,247,38,248,43,213,47"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_screen.html#a71e2e3ffc833529dfaabd43f0ef54a1a" title=" " alt="" coords="261,72,481,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,65,245,69,245,74,213,70"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="entity.ShipStatus" name="entity.ShipStatus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="207,416,429,912"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_number_of_bullet.html" title="TwoBulletPool extends BulletPool to manage firing two bullets at once." alt="" coords="5,69,209,288"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,287,206,399,201,401,152,289"/>
+<area shape="rect" id="Node000003" href="$class_enemy_1_1_player_growth.html" title=" " alt="" coords="233,5,403,352"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="321,352,321,399,315,399,315,352"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="427,144,497,213"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="457,214,411,393,409,401,404,399,406,391,452,213"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="Currency.UpgradeManager" name="Currency.UpgradeManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="181,1515,419,1989"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_upgrade_manager.html" title=" " alt="" coords="330,976,568,1451"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="386,1451,373,1499,368,1498,381,1450"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="570,1168,588,1185,595,1213,592,1233,584,1248,579,1245,587,1231,590,1213,583,1188,566,1172"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html" title="Manages files used in the application." alt="" coords="5,437,189,891"/>
+<area shape="poly" id="edge11_Node000001_Node000003" title=" " alt="" coords="84,891,84,1019,90,1161,107,1308,121,1380,138,1450,155,1499,176,1547,171,1549,150,1501,133,1451,116,1381,102,1308,85,1162,78,1020,79,890"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="191,792,314,975,324,990,319,992,310,977,187,795"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="191,614,201,621,209,632,216,664,213,686,205,703,200,700,208,685,211,664,204,634,197,625,188,618"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="67,144,117,213"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="95,213,97,421,92,421,90,213"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_ship_status.html" title=" " alt="" coords="338,416,560,912"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="341,830,281,921,251,977,235,1041,225,1108,220,1175,218,1243,226,1375,242,1498,237,1498,220,1376,213,1243,214,1175,220,1107,230,1040,246,975,277,919,336,827"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="452,912,452,959,447,959,447,912"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_number_of_bullet.html" title="TwoBulletPool extends BulletPool to manage firing two bullets at once." alt="" coords="141,69,345,288"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="291,287,339,399,335,401,286,289"/>
+<area shape="rect" id="Node000007" href="$class_enemy_1_1_player_growth.html" title=" " alt="" coords="368,5,538,352"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="455,352,454,399,449,399,449,352"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="562,144,632,213"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="592,214,545,393,543,401,538,399,540,391,587,213"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="617,629,716,699"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="678,698,706,826,720,916,729,1017,732,1126,723,1237,702,1347,685,1401,664,1452,644,1488,619,1523,562,1585,499,1639,435,1682,432,1678,496,1634,559,1582,615,1520,639,1486,659,1450,680,1399,697,1346,718,1237,726,1126,724,1017,715,916,701,827,673,699"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="657,699,574,913,555,962,550,960,570,911,652,698"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="screen.ScoreScreen.saveScore" name="screen.ScoreScreen.saveScore">
+<area shape="rect" id="Node000001" title="Saves the score as a high score." alt="" coords="5,35,211,61"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="263,5,448,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,33,247,29,248,34,212,38"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_file_manager.html#a3611691ddad1d67bf821b480f8d33d8f" title="Saves user high scores to disk." alt="" coords="259,56,452,99"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="212,58,243,61,243,67,211,63"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="500,5,706,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="448,16,485,16,485,21,448,21"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="754,5,964,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="707,16,739,16,739,21,707,21"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1012,5,1164,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="964,16,996,16,996,21,964,21"/>
+</map>

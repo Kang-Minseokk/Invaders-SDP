@@ -1,0 +1,5 @@
+<map id="Enemy.PiercingBullet.onCollision" name="Enemy.PiercingBullet.onCollision">
+<area shape="rect" id="Node000001" title="Handles the logic when the bullet collides with an entity." alt="" coords="5,5,219,32"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_piercing_bullet.html#a46029914520e5754530507c315f08546" title="Destroys the ship, causing an explosion." alt="" coords="267,5,459,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,16,251,16,251,21,219,21"/>
+</map>

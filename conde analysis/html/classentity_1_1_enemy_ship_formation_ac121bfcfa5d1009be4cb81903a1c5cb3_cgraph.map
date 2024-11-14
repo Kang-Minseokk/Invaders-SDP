@@ -1,0 +1,5 @@
+<map id="entity.EnemyShipFormation.draw" name="entity.EnemyShipFormation.draw">
+<area shape="rect" id="Node000001" title="Draws every individual component of the formation." alt="" coords="5,5,219,32"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a3ef1def588c0f283cf6066af12d7ad63" title="Draws an entity, using the apropiate image." alt="" coords="267,5,477,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,16,251,16,251,21,219,21"/>
+</map>

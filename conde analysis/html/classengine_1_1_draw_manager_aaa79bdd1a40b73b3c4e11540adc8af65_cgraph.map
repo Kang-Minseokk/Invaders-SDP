@@ -1,0 +1,11 @@
+<map id="engine.DrawManager.drawItem" name="engine.DrawManager.drawItem">
+<area shape="rect" id="Node000001" title="Draw the item that player got." alt="" coords="5,81,208,108"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a3ef1def588c0f283cf6066af12d7ad63" title="Draws an entity, using the apropiate image." alt="" coords="256,5,466,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,78,255,41,283,34,284,39,256,47,146,83"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_bomb.html#a8f61c1500609ebfc7a285461ed9e1028" title=" " alt="" coords="276,56,446,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,82,260,77,260,82,208,87"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_bomb.html#acc740247abbfc0e65202ebbdd984d736" title=" " alt="" coords="282,107,440,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,102,267,108,266,113,208,107"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_entity.html#a6ca6a574524059ce8c1977c88961246c" title="Constructor, establishes the entity&#39;s generic properties." alt="" coords="274,157,448,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="146,106,256,143,284,150,283,156,255,148,144,111"/>
+</map>

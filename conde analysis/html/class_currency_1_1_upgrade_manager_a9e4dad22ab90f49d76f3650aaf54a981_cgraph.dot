@@ -1,0 +1,13 @@
+digraph "Currency.UpgradeManager.getCoinAcquisitionMultiplier"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Currency.UpgradeManager.get\lCoinAcquisitionMultiplier",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Get the current coin acquisition multiplier value."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="engine.FileManager.loadUpgrade\lStatus",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#a0a36dbead21b925203c3245c6f408b30",tooltip="Loads upgrade statuses from upgrade_status.properties file."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="engine.FileManager.loadDefault\lUpgradeStatus",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#a9a18c215e1d555161c587bcaf1e63d71",tooltip="Loads default upgrade statuses from upgrade_default.properties file."];
+}

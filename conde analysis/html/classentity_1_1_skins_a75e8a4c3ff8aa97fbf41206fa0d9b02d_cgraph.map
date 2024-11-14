@@ -1,0 +1,7 @@
+<map id="entity.Skins.saveSkins" name="entity.Skins.saveSkins">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,160,61"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="242,5,394,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,36,226,27,227,33,161,41"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a4b2f6a6f1984e075a6d0628c5ffc157b" title=" " alt="" coords="208,56,429,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,55,193,59,192,64,160,60"/>
+</map>

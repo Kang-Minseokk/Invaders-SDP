@@ -1,0 +1,7 @@
+<map id="engine.DrawManager.drawCurrentCoin" name="engine.DrawManager.drawCurrentCoin">
+<area shape="rect" id="Node000001" title="draw current coin." alt="" coords="5,31,252,57"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a3ef1def588c0f283cf6066af12d7ad63" title="Draws an entity, using the apropiate image." alt="" coords="300,5,510,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,30,284,27,284,32,253,35"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="332,56,478,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="253,53,317,59,316,64,252,58"/>
+</map>

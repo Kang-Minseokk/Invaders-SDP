@@ -1,0 +1,35 @@
+<map id="engine.TwoPlayerMode.handleObstacleCollisionsForPlayer2" name="engine.TwoPlayerMode.handleObstacleCollisionsForPlayer2">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,251,204,293"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#a0a848558ccd9ab856726f3e4e1d67dd1" title="Checks if two entities are colliding." alt="" coords="252,107,481,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,248,327,139,330,144,144,253"/>
+<area shape="rect" id="Node000007" href="$classentity_1_1_ship.html#aa687b4ba56e05226f2fa22fa55eb49e1" title="Switches the ship to its destroyed state." alt="" coords="302,259,431,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="204,269,286,269,286,275,204,275"/>
+<area shape="rect" id="Node000016" href="$classentity_1_1_ship.html#a185c17f8b86d9254911fc713de2f5b1b" title="Checks if the ship is destroyed." alt="" coords="288,335,444,361"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="182,291,304,327,302,332,180,297"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_entity.html#a30f17d928494ebe1e145a6011014aa6b" title="Getter for the height of the image associated to the entity." alt="" coords="566,5,715,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,104,453,73,528,41,553,34,555,39,530,47,455,78,394,109"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_entity.html#aade70f342a09b3c37b7f40d17db45983" title="Getter for the X axis position of the entity." alt="" coords="556,56,724,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="442,103,549,83,550,89,443,109"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_entity.html#afdcbb4ca073d5a81b37ed096ac85f5ef" title="Getter for the Y axis position of the entity." alt="" coords="556,107,724,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="481,117,541,117,541,123,481,123"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="568,157,713,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="443,131,553,152,552,157,442,137"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea" title=" " alt="" coords="529,208,751,235"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="431,257,549,235,550,241,432,263"/>
+<area shape="rect" id="Node000013" href="$classengine_1_1_sound_manager.html#af326739e7c567da7bedf9a07eff7e232" title=" " alt="" coords="542,259,738,285"/>
+<area shape="poly" id="edge12_Node000007_Node000013" title=" " alt="" coords="432,269,526,269,526,275,432,275"/>
+<area shape="rect" id="Node000015" href="$classengine_1_1_cooldown.html#abcb3cea769834552c6a81075f5d17dc7" title="Restarts the cooldown." alt="" coords="563,309,717,336"/>
+<area shape="poly" id="edge14_Node000007_Node000015" title=" " alt="" coords="432,281,550,303,549,309,431,287"/>
+<area shape="rect" id="Node000009" href="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9" title="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..." alt="" coords="799,192,991,235"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="752,215,784,214,784,219,752,221"/>
+<area shape="rect" id="Node000010" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1076,149,1228,176"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="990,192,1065,177,1066,182,991,197"/>
+<area shape="rect" id="Node000011" href="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb" title=" " alt="" coords="1039,200,1265,227"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="991,211,1023,211,1023,216,991,216"/>
+<area shape="rect" id="Node000012" href="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f" title=" " alt="" coords="1057,251,1247,293"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="992,233,1042,244,1041,249,990,238"/>
+<area shape="rect" id="Node000014" href="$classengine_1_1_sound_manager.html#aff8a50dd8c931099450db7066e6a360e" title=" " alt="" coords="806,259,984,301"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="739,272,790,274,790,279,739,278"/>
+<area shape="rect" id="Node000017" href="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793" title="Checks if the cooldown is finished." alt="" coords="536,360,745,387"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="445,353,520,360,520,365,445,358"/>
+</map>

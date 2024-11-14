@@ -1,0 +1,16 @@
+<map id="screen.HighScoreScreen.draw" name="screen.HighScoreScreen.draw">
+<area shape="rect" id="Node000001" title="Draws the elements associated with the screen." alt="" coords="5,113,204,140"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#ad0ebafd3a3a50e5d0af5074854013cf9" title="Draws the completed drawing on screen." alt="" coords="258,5,459,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,110,251,58,268,51,270,56,253,62,134,115"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#abf01bc58de60cf927e292221a955b8bf" title="Draws high score screen title and instructions." alt="" coords="257,72,460,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,111,241,106,242,111,204,116"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_draw_manager.html#ad13d007f658c701df06cc21dc8242638" title="Draws high scores." alt="" coords="257,139,460,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="204,137,242,142,241,147,204,142"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_draw_manager.html#a4e020955bc763452deba09367dbcf30d" title="First part of the drawing process." alt="" coords="252,205,465,232"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="133,138,188,164,253,191,277,198,275,203,251,196,185,169,131,143"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_draw_manager.html#a01d2cd207f7553b79e0f73972acd514c" title="Draws a centered string on big font." alt="" coords="513,72,742,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="460,91,497,91,497,96,460,96"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_draw_manager.html#a4016c7be1acc513467bcc183b5e515d0" title="Draws a centered string on regular font." alt="" coords="513,139,742,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="448,113,525,132,523,137,447,118"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="460,157,497,157,497,163,460,163"/>
+</map>

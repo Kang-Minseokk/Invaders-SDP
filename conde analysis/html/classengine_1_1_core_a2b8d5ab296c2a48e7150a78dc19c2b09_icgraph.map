@@ -1,0 +1,7 @@
+<map id="engine.Core.getInputManager" name="engine.Core.getInputManager">
+<area shape="rect" id="Node000001" title="Controls access to the input manager." alt="" coords="204,31,396,57"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_frame.html#a8a19e23fa4b260339a0d79462259924c" title="Initializes the new frame." alt="" coords="10,5,151,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,34,151,29,152,24,189,29"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_screen.html#a1ebb8482ec863c6ad05618ad5d11518e" title="Constructor, establishes the properties of the screen." alt="" coords="5,56,156,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,60,156,63,156,58,188,54"/>
+</map>

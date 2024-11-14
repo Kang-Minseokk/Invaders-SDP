@@ -1,0 +1,9 @@
+<map id="engine.Core.getFileManager" name="engine.Core.getFileManager">
+<area shape="rect" id="Node000001" title="Controls access to the file manager." alt="" coords="5,5,190,32"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="238,5,444,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,16,222,16,222,21,190,21"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="492,5,701,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="444,16,476,16,476,21,444,21"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="749,5,902,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="702,16,734,16,734,21,702,21"/>
+</map>

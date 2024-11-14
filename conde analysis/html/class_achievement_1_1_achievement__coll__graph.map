@@ -1,0 +1,5 @@
+<map id="Achievement.Achievement" name="Achievement.Achievement">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,283,197,800"/>
+<area shape="rect" id="Node000002" href="$enum_achievement_1_1_achievement_1_1_achievement_type.html" title=" " alt="" coords="16,5,187,219"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,218,104,265,99,265,99,218"/>
+</map>

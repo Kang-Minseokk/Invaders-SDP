@@ -1,0 +1,7 @@
+<map id="Currency.UpgradeManager.resetUpgrades" name="Currency.UpgradeManager.resetUpgrades">
+<area shape="rect" id="Node000001" title="Reset all upgrades to their default values." alt="" coords="5,39,215,81"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html#a9a18c215e1d555161c587bcaf1e63d71" title="Loads default upgrade statuses from upgrade_default.properties file." alt="" coords="268,5,472,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,44,252,39,253,44,215,49"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a2162fa41415928cae5df1c70c3e6b487" title="Saves upgrade statuses to upgrade_status.properties file." alt="" coords="263,72,478,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,71,247,75,247,80,215,76"/>
+</map>

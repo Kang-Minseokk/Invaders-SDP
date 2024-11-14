@@ -1,0 +1,7 @@
+<map id="screen.Background.initialize" name="screen.Background.initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,190,57"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_frame.html#afafbfb86bc806cc4cccc6da0906d4587" title="Getter for frame height." alt="" coords="238,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,31,222,27,223,32,190,36"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_frame.html#ad76885b5f6387926e7d8bc631d4b4052" title="Getter for frame width." alt="" coords="240,56,396,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,52,224,56,224,61,190,57"/>
+</map>

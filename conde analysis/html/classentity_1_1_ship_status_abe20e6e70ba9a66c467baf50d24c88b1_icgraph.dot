@@ -1,0 +1,17 @@
+digraph "entity.ShipStatus.getCoinIn"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="entity.ShipStatus.getCoinIn",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Currency.UpgradeManager.add\lCoinAcquisitionMultiplier",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_currency_1_1_upgrade_manager.html#a907d224b0cd4aa1f0c1cd194e08207b7",tooltip="Add to the current coin acquisition multiplier."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="screen.TitleScreen.testStat\lUpgrade",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_title_screen.html#a64bde84610fa44a3ef12fcf017ef3217",tooltip="runs when player do buying things when store system is ready – unwrap annotated code and rename this ..."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="screen.TitleScreen.handle\lSpaceKey",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_title_screen.html#aecedcd5e961b0da973cf9ef5c37ece6c",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="screen.TitleScreen.update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d",tooltip="Updates the elements on screen and checks for events."];
+}

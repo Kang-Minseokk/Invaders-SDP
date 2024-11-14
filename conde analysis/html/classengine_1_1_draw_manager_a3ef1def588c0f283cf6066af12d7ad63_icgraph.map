@@ -1,0 +1,36 @@
+<map id="engine.DrawManager.drawEntity" name="engine.DrawManager.drawEntity">
+<area shape="rect" id="Node000001" title="Draws an entity, using the apropiate image." alt="" coords="752,237,963,264"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_enemy_ship_formation.html#ac121bfcfa5d1009be4cb81903a1c5cb3" title="Draws every individual component of the formation." alt="" coords="474,5,687,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="841,225,819,186,788,139,749,92,703,53,664,35,667,30,706,48,753,89,793,136,824,183,845,222"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a41ddf8251a118219238774fd8483e92a" title="Draws the elements associated with the screen." alt="" coords="237,132,409,159"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="838,226,815,193,785,157,747,123,703,97,638,76,583,74,527,83,458,97,401,113,353,134,351,129,399,108,456,92,527,78,583,69,639,71,705,92,750,119,789,153,820,190,842,222"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_draw_manager.html#a8c54c7dee55db871cc24278d273660a1" title="draw current coin." alt="" coords="458,325,704,352"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="814,273,763,295,705,316,661,327,660,322,704,311,761,290,812,268"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_draw_manager.html#ad709b2dbbb743c122aec703ad60956fc" title=" " alt="" coords="457,376,704,403"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="833,277,777,323,742,347,705,366,673,378,671,373,703,362,740,342,774,319,830,273"/>
+<area shape="rect" id="Node000009" href="$classengine_1_1_draw_manager.html#aaa79bdd1a40b73b3c4e11540adc8af65" title="Draw the item that player got." alt="" coords="480,107,682,133"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="828,229,773,187,739,166,703,148,670,136,672,131,705,143,741,161,776,183,831,225"/>
+<area shape="rect" id="Node000010" href="$class_enemy_1_1_item_manager.html#a53adc667170457731d144c4f4fb024c0" title=" " alt="" coords="478,157,684,184"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="807,234,704,199,657,187,658,182,705,193,809,229"/>
+<area shape="rect" id="Node000011" href="$classengine_1_1_draw_manager.html#a2eacd26820b8ce33db5cd9a5ee7ad084" title="For debugging purpouses, draws the canvas borders." alt="" coords="477,208,684,235"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="736,241,684,235,685,230,737,235"/>
+<area shape="rect" id="Node000012" href="$classengine_1_1_draw_manager_impl.html#a510168f7193dea848c6cf7c8857c943b" title="Draws 2P&#39;s lives on screen." alt="" coords="480,259,681,301"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="737,266,682,272,681,267,736,261"/>
+<area shape="rect" id="Node000013" href="$classengine_1_1_draw_manager_impl.html#a1004bb7e790cef26467b9a6b6c5ec1fe" title=" " alt="" coords="480,427,681,469"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="841,279,786,348,749,385,706,417,683,428,680,424,703,412,745,381,782,344,837,275"/>
+<area shape="rect" id="Node000014" href="$classengine_1_1_draw_manager.html#aa8899ff89b1b8cb4a30c6248ab3386f4" title=" " alt="" coords="476,493,685,520"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="849,279,829,325,799,380,758,437,733,462,706,484,683,495,681,491,703,479,730,458,754,433,794,378,824,322,844,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="495,39,458,53,424,72,391,94,341,134,338,130,388,90,421,67,456,48,493,34"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,132,189,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,148,189,148,189,143,221,143"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_title_screen.html#a6194c8e8f96a4ba27c9433bfe2a47b59" title="Draws the elements associated with the screen." alt="" coords="242,376,404,403"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="494,358,395,378,394,373,493,353"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="10,376,184,403"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="226,392,184,392,184,387,226,387"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="442,392,404,392,404,387,442,387"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="464,134,410,140,409,134,463,129"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="462,162,409,156,410,151,462,156"/>
+<area shape="poly" id="edge15_Node000011_Node000003" title=" " alt="" coords="487,207,456,199,356,162,357,157,458,193,488,201"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="469,255,456,249,420,228,387,204,337,161,340,157,390,200,423,224,458,244,472,250"/>
+<area shape="poly" id="edge20_Node000014_Node000006" title=" " alt="" coords="475,491,456,484,421,466,388,445,338,405,341,401,391,440,424,461,458,479,477,486"/>
+</map>

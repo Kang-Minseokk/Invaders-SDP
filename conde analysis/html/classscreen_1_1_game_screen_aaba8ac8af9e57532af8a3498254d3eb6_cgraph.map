@@ -1,0 +1,5 @@
+<map id="screen.GameScreen.getGameState" name="screen.GameScreen.getGameState">
+<area shape="rect" id="Node000001" title="Add playtime parameter &#45; Soomin Lee / TeamHUD Returns a GameState object representing the status of t..." alt="" coords="5,5,203,48"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_score_manager.html#a9418e3e07ed3cceb42336f50a4390340" title=" " alt="" coords="251,5,458,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,24,235,24,235,29,203,29"/>
+</map>

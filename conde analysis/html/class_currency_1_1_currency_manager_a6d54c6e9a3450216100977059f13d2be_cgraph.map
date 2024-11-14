@@ -1,0 +1,9 @@
+<map id="Currency.CurrencyManager.getGem" name="Currency.CurrencyManager.getGem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,236,57"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html#aa1a63106adf5599efd6409ac09ede0f7" title="Loads user gem from file, and returns current gem." alt="" coords="284,31,474,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,41,268,41,268,47,236,47"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_encryption_support.html#aace733246300350ac93d39bf3d251434" title="Performs decryption for a given input." alt="" coords="522,5,753,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="474,32,506,29,507,34,475,37"/>
+<area shape="rect" id="Node000004" href="$class_currency_1_1_encryption_support.html#ac6690d521e47eaa9de388d6359655779" title="Performs encryption for a given input." alt="" coords="522,56,753,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="475,51,507,54,506,59,474,56"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="entity.EnemyShip" name="entity.EnemyShip">
+<area shape="rect" id="Node000001" title="Implements a enemy ship, to be destroyed by the player." alt="" coords="5,464,203,1045"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_entity.html" title="Implements a generic game entity." alt="" coords="48,5,160,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,431,107,464,102,464,102,431"/>
+</map>

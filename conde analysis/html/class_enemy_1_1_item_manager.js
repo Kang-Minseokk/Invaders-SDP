@@ -1,0 +1,27 @@
+var class_enemy_1_1_item_manager =
+[
+    [ "ItemManager", "class_enemy_1_1_item_manager.html#a92fc23273e2c3d32be0290c4490f1d77", null ],
+    [ "addItemRecycle", "class_enemy_1_1_item_manager.html#a3a3dd08c8c89f9bf925efaa8d390f584", null ],
+    [ "cleanItems", "class_enemy_1_1_item_manager.html#af63c345ee14380bea60c96546df88ab9", null ],
+    [ "drawItems", "class_enemy_1_1_item_manager.html#a53adc667170457731d144c4f4fb024c0", null ],
+    [ "dropItem", "class_enemy_1_1_item_manager.html#aab357bd87102d8477d909ad527f3563a", null ],
+    [ "initialize", "class_enemy_1_1_item_manager.html#a422d5ec9f9d82e31e51d1cb4cf936931", null ],
+    [ "OperateItem", "class_enemy_1_1_item_manager.html#a485cd51965cc7532571b592bf4bb1891", null ],
+    [ "removeAllReItems", "class_enemy_1_1_item_manager.html#abbb16e93fc91934d3d963f389792a954", null ],
+    [ "setEnemyShips", "class_enemy_1_1_item_manager.html#a8137ac4d252cd6e10e7e08e7d1ee734d", null ],
+    [ "currencyManager", "class_enemy_1_1_item_manager.html#abdc05d740298ce516f1dc2236ece48a0", null ],
+    [ "drawManager", "class_enemy_1_1_item_manager.html#afa43cdea69223c4902dbd1f0cbce82ee", null ],
+    [ "enemyShips", "class_enemy_1_1_item_manager.html#acd55dfddebf2cd588dac470819d1f4eb", null ],
+    [ "feverTimeItem", "class_enemy_1_1_item_manager.html#af6e3001191ed99e11089c365902fd838", null ],
+    [ "gameScreen", "class_enemy_1_1_item_manager.html#a5e4130210ac9391007b4c7093e08fcc9", null ],
+    [ "growth", "class_enemy_1_1_item_manager.html#a5dcf0b7406e0cb4fc1bcca5af98cc1b1", null ],
+    [ "Item2", "class_enemy_1_1_item_manager.html#a6974f5dcdb050e952f4cc9f4fd4cdfb8", null ],
+    [ "items", "class_enemy_1_1_item_manager.html#a43a507f36aa54ad21b0d93525f1bfb54", null ],
+    [ "logger", "class_enemy_1_1_item_manager.html#a1107390814168990962de68a79108f2f", null ],
+    [ "numberOfBullet", "class_enemy_1_1_item_manager.html#a009183eb5fcbc5d12ccf4a85568d2f7c", null ],
+    [ "recyclableItems", "class_enemy_1_1_item_manager.html#a0a45399bc98690057eafd692ac28b03f", null ],
+    [ "screenHeight", "class_enemy_1_1_item_manager.html#a4223acd2175ae40307a109bc51a8f69d", null ],
+    [ "ship", "class_enemy_1_1_item_manager.html#a060fe51701f4ae7c50013ee8f8d82ef7", null ],
+    [ "sm", "class_enemy_1_1_item_manager.html#adfeb24c95a93668a828e7ec7b320e5ef", null ],
+    [ "speedItem", "class_enemy_1_1_item_manager.html#a5f19e9317573e42c56c3ffb4f5e149a6", null ]
+];

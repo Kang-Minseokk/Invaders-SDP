@@ -1,0 +1,5 @@
+<map id="engine.DrawManager.drawWave" name="engine.DrawManager.drawWave">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,215,40"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a01d2cd207f7553b79e0f73972acd514c" title="Draws a centered string on big font." alt="" coords="263,5,492,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,24,247,24,247,29,215,29"/>
+</map>

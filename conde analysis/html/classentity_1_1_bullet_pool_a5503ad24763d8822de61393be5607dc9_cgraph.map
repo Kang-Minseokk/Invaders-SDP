@@ -1,0 +1,17 @@
+<map id="entity.BulletPool.getBullet" name="entity.BulletPool.getBullet">
+<area shape="rect" id="Node000001" title="Returns a bullet from the pool if one is available, a new one if there isn&#39;t." alt="" coords="5,107,176,133"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="235,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,104,161,73,223,42,239,35,241,40,225,46,163,78,114,108"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_entity.html#a34b1106b5fc108c72ce6083d913e42ed" title="Setter for the X axis position of the entity." alt="" coords="224,56,391,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,103,232,84,233,89,152,109"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_entity.html#ac88ed00a2aee4a591913edb6e596b114" title="Setter for the Y axis position of the entity." alt="" coords="224,107,391,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,117,208,117,208,123,176,123"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_bullet.html#a59bdfb1e41a99260374b3f7b2ea50007" title="Setter of the speed of the bullet." alt="" coords="233,157,382,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="152,131,233,151,232,156,150,137"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_bullet.html#a2aec4db9c13df6487b5221d3cf5fbc7d" title="Sets correct sprite for the bullet, based on speed." alt="" coords="235,208,380,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="114,132,163,162,225,194,241,200,239,205,223,198,161,167,111,136"/>
+<area shape="rect" id="Node000007" href="$classentity_1_1_bomb.html#a8f61c1500609ebfc7a285461ed9e1028" title=" " alt="" coords="439,183,609,209"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="380,210,423,205,424,210,381,215"/>
+<area shape="rect" id="Node000008" href="$classentity_1_1_bomb.html#acc740247abbfc0e65202ebbdd984d736" title=" " alt="" coords="446,233,603,260"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="381,227,430,233,430,238,380,232"/>
+</map>

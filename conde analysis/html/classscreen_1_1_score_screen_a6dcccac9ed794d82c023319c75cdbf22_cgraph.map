@@ -1,0 +1,25 @@
+<map id="screen.ScoreScreen.draw" name="screen.ScoreScreen.draw">
+<area shape="rect" id="Node000001" title="Draws the elements associated with the screen." alt="" coords="5,181,177,208"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793" title="Checks if the cooldown is finished." alt="" coords="237,5,446,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,179,145,113,181,74,223,42,234,36,237,41,226,46,184,78,149,116,102,182"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#ad0ebafd3a3a50e5d0af5074854013cf9" title="Draws the completed drawing on screen." alt="" coords="241,56,442,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,179,159,144,224,108,239,102,241,107,226,113,162,149,112,183"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_draw_manager.html#ad66e87db64bc234bbbf85e9380811ad5" title="Draws basic content of game end screen." alt="" coords="225,123,459,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,178,224,159,259,151,261,156,225,164,146,183"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_draw_manager.html#a9646fd9ac950153ef781b91e7df6f8e5" title="Draws interactive characters for name input." alt="" coords="236,173,448,216"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="177,192,220,192,220,197,177,197"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_draw_manager.html#af55357396719789c8a67b8685c865a0a" title="Draws game results." alt="" coords="231,240,452,267"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="146,206,225,225,261,233,259,239,224,231,145,211"/>
+<area shape="rect" id="Node000010" href="$classengine_1_1_game_state.html#aa4ed0dcf9e291eaae5f0ce97c0b22f99" title=" " alt="" coords="240,291,444,317"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="111,206,161,241,226,276,246,283,244,288,224,281,158,246,108,211"/>
+<area shape="rect" id="Node000011" href="$classengine_1_1_draw_manager.html#a4e020955bc763452deba09367dbcf30d" title="First part of the drawing process." alt="" coords="235,341,448,368"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="104,207,151,266,186,299,226,327,238,333,236,338,223,332,183,303,147,269,99,210"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_draw_manager.html#a01d2cd207f7553b79e0f73972acd514c" title="Draws a centered string on big font." alt="" coords="507,107,736,149"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="459,130,491,129,492,134,460,135"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_draw_manager.html#a4016c7be1acc513467bcc183b5e515d0" title="Draws a centered string on regular font." alt="" coords="507,173,736,216"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="410,147,502,167,501,172,409,153"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="448,192,491,192,491,197,448,197"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="409,237,501,217,502,222,410,242"/>
+<area shape="rect" id="Node000009" href="$classengine_1_1_game_state.html#adcc1dbdd8521d082800151c75992b44f" title=" " alt="" coords="532,240,711,267"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="453,251,517,251,517,256,453,256"/>
+</map>

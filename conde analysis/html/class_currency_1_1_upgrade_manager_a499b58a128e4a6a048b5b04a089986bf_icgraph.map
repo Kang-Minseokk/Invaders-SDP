@@ -1,0 +1,11 @@
+<map id="Currency.UpgradeManager.whatMoney" name="Currency.UpgradeManager.whatMoney">
+<area shape="rect" id="Node000001" title=" " alt="" coords="963,5,1171,48"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#aa78bf3e4414404d78091953b914cc4d5" title=" " alt="" coords="693,13,915,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="947,29,915,29,915,24,947,24"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#aa8899ff89b1b8cb4a30c6248ab3386f4" title=" " alt="" coords="437,13,645,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="678,29,646,29,646,24,678,24"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_title_screen.html#a6194c8e8f96a4ba27c9433bfe2a47b59" title="Draws the elements associated with the screen." alt="" coords="227,13,389,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="421,29,389,29,389,24,421,24"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="5,13,179,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="211,29,179,29,179,24,211,24"/>
+</map>

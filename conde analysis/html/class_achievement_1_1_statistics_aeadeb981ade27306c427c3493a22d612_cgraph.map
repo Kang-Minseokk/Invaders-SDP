@@ -1,0 +1,12 @@
+<map id="Achievement.Statistics.Statistics" name="Achievement.Statistics.Statistics">
+<area shape="rect" id="Node000001" title="Public Constructor." alt="" coords="5,31,221,57"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="269,5,453,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,30,253,27,254,32,221,36"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1013,31,1165,57"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="221,41,997,41,997,47,221,47"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="501,5,707,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,16,486,16,486,21,453,21"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="755,5,965,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="708,16,740,16,740,21,708,21"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="965,28,997,31,997,37,965,33"/>
+</map>

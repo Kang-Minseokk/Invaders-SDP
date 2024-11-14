@@ -1,0 +1,11 @@
+<map id="engine.SoundManager.playPreloadedBGM" name="engine.SoundManager.playPreloadedBGM">
+<area shape="rect" id="Node000001" title=" " alt="" coords="507,64,685,107"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_sound_manager.html#ad2d4e5d9ec370d01a862b02dcfc11d53" title=" " alt="" coords="251,72,459,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="492,88,459,88,459,83,492,83"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_high_score_screen.html#a64a97eae14496b17608a6d39d38dc54f" title="Constructor, establishes the properties of the screen." alt="" coords="5,5,203,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="279,71,198,51,199,46,281,65"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="42,72,166,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="235,88,166,88,166,83,235,83"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_title_screen.html#a6d58b0bb3a8064f2e9a0b165762421f5" title="Constructor, establishes the properties of the screen." alt="" coords="24,123,184,165"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="280,105,185,128,183,123,279,100"/>
+</map>

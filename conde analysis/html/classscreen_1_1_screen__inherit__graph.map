@@ -1,0 +1,17 @@
+<map id="screen.Screen" name="screen.Screen">
+<area shape="rect" id="Node000001" title="Implements a generic screen." alt="" coords="516,5,658,480"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_receipt_screen.html" title="Implements the high scores screen, it shows player records." alt="" coords="5,1013,158,1168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="503,280,422,319,331,374,286,407,244,444,206,485,173,529,142,589,117,653,100,719,88,785,77,911,78,1014,73,1014,72,911,83,785,95,718,112,651,137,587,169,527,202,482,241,440,283,403,328,370,419,315,501,275"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html" title="Implements the game screen, where the action happens." alt="" coords="182,528,400,1653"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="509,356,459,439,415,529,402,563,397,561,410,527,454,436,505,353"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_high_score_screen.html" title="Implements the high scores screen, it shows player records." alt="" coords="424,1024,580,1157"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="564,494,511,1025,506,1024,559,494"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_record_screen.html" title="Implements past user recorded score." alt="" coords="604,1024,741,1157"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="615,494,668,1024,663,1025,610,494"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_score_screen.html" title="Implements the score screen." alt="" coords="765,715,977,1467"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="668,359,715,440,755,527,786,619,812,714,807,716,781,621,750,529,710,442,664,362"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_title_screen.html" title="Implements the title screen." alt="" coords="1001,832,1224,1349"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="673,278,751,319,838,374,881,407,922,444,959,483,992,527,1031,598,1062,675,1084,754,1099,832,1094,833,1079,755,1057,676,1027,600,987,529,955,487,918,447,877,411,834,379,748,324,670,283"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_two_player_mode.html" title=" " alt="" coords="183,1701,399,1931"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,1668,294,1702,288,1702,288,1668"/>
+</map>

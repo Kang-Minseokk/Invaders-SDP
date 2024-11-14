@@ -1,0 +1,19 @@
+<map id="entity.Bomb.setCanShoot" name="entity.Bomb.setCanShoot">
+<area shape="rect" id="Node000001" title=" " alt="" coords="971,51,1141,77"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_item_manager.html#a485cd51965cc7532571b592bf4bb1891" title=" " alt="" coords="705,24,923,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="955,56,923,52,923,47,955,50"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_ship.html#a9f468e29f8e09081fcb45234b5d97f5a" title="Shoots a bullet upwards." alt="" coords="507,80,625,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="956,73,626,92,626,87,955,67"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#aaa246e4bb4604682b7380845beab0e9f" title=" " alt="" coords="475,9,657,52"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="690,37,658,36,658,30,690,31"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#a20e6975baf2786217ea22eabdcc4f3ce" title="Manages collisions between bullets and ships." alt="" coords="237,5,427,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="460,32,427,31,427,26,460,26"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,80,189,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="241,55,148,82,146,77,239,50"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_game_screen.html#afe65922c8de47fc748e1555c84a991c2" title=" " alt="" coords="241,72,423,115"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="491,96,424,96,424,91,491,91"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_game_screen.html#a76eb9b586bb07db6674cd2e311f05331" title=" " alt="" coords="237,139,427,181"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="503,114,410,141,409,135,501,109"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="225,96,189,96,189,91,225,91"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="239,137,146,110,148,105,241,131"/>
+</map>

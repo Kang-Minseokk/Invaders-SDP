@@ -1,0 +1,7 @@
+<map id="Enemy.PiercingBullet" name="Enemy.PiercingBullet">
+<area shape="rect" id="Node000001" title="The PiercingBullet class extends the Bullet class to implement a bullet that can pierce through multi..." alt="" coords="5,795,140,949"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_bullet.html" title="Implements a bullet that moves vertically up or down." alt="" coords="11,464,134,747"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,762,75,795,70,795,70,762"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_entity.html" title="Implements a generic game entity." alt="" coords="17,5,129,416"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,431,75,464,70,464,70,431"/>
+</map>

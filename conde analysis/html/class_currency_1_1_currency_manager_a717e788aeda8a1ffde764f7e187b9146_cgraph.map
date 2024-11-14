@@ -1,0 +1,12 @@
+<map id="Currency.CurrencyManager.CurrencyManager" name="Currency.CurrencyManager.CurrencyManager">
+<area shape="rect" id="Node000001" title="private constructor." alt="" coords="5,23,190,65"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="238,5,422,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,31,222,28,222,33,191,37"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="982,31,1134,57"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="190,41,966,41,966,47,190,47"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="470,5,676,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="422,16,455,16,455,21,422,21"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="724,5,934,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="677,16,709,16,709,21,677,21"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="934,28,966,31,966,37,934,33"/>
+</map>

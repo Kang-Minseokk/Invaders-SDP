@@ -1,0 +1,11 @@
+digraph "entity.Ship.moveRight"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="entity.Ship.moveRight",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Moves the ship speed uni ts right, or until the right screen border is reached."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Enemy.PlayerGrowth.getMove\lSpeed",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_enemy_1_1_player_growth.html#ae6396c147b3b5b7b332ac92119f3707d",tooltip=" "];
+}

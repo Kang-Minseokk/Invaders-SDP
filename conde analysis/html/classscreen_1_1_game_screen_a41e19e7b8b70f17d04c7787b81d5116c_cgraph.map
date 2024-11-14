@@ -1,0 +1,123 @@
+<map id="screen.GameScreen.handleLevelEnd" name="screen.GameScreen.handleLevelEnd">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,480,188,523"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_statistics.html#a138bee76b4274699681e478a4737269e" title="Add the number of bullets fired so far to the previous record." alt="" coords="287,136,468,179"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,479,110,421,134,342,152,300,174,260,201,222,234,189,270,168,273,173,237,193,205,225,179,262,157,303,139,344,115,422,103,480"/>
+<area shape="rect" id="Node000019" href="$class_achievement_1_1_statistics.html#a59564a449d79bf40b07d6bca1feab4f9" title="Add the number of ships destroyed so far to the previous record." alt="" coords="287,270,468,312"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="106,478,126,444,154,401,191,358,234,322,271,305,273,310,237,326,194,362,158,404,130,446,111,481"/>
+<area shape="rect" id="Node000020" href="$class_achievement_1_1_achievement_conditions.html#a5c82f71185fe8a0b03cea729d6a4d4fe" title=" " alt="" coords="567,446,842,472"/>
+<area shape="poly" id="edge64_Node000001_Node000020" title=" " alt="" coords="188,492,235,488,552,466,552,472,236,494,188,497"/>
+<area shape="rect" id="Node000038" href="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793" title="Checks if the cooldown is finished." alt="" coords="273,336,482,363"/>
+<area shape="poly" id="edge48_Node000001_Node000038" title=" " alt="" coords="115,478,165,428,198,401,234,379,269,365,271,370,237,384,201,406,169,432,118,482"/>
+<area shape="rect" id="Node000039" href="$class_achievement_1_1_achievement_conditions.html#ab3b45005bc2580da03cf08b1f13c44cb" title=" " alt="" coords="238,824,516,867"/>
+<area shape="poly" id="edge49_Node000001_Node000039" title=" " alt="" coords="104,523,116,579,141,655,159,696,180,735,206,772,237,804,253,814,249,819,234,808,202,775,176,738,154,698,136,657,111,581,99,524"/>
+<area shape="rect" id="Node000040" href="$class_achievement_1_1_statistics.html#ae59e3371feeb5c1e14d4640419c6ee37" title="Compare the previously highest reached level with the currently reached level." alt="" coords="285,203,470,246"/>
+<area shape="poly" id="edge51_Node000001_Node000040" title=" " alt="" coords="101,479,117,432,143,371,182,309,206,280,234,255,269,237,271,242,237,260,210,284,186,312,148,374,122,434,106,481"/>
+<area shape="rect" id="Node000041" href="$class_achievement_1_1_achievement_conditions.html#a97e05c2e6b58217292dc1c60f7c6542c" title=" " alt="" coords="236,723,519,750"/>
+<area shape="poly" id="edge56_Node000001_Node000041" title=" " alt="" coords="109,522,127,562,154,611,191,661,213,683,237,702,260,715,258,719,234,706,209,687,187,664,150,614,122,564,104,524"/>
+<area shape="rect" id="Node000043" href="$classscreen_1_1_game_screen.html#af0fbd31299bcfb4e29e4474bb25ad73a" title="Check remaining enemies." alt="" coords="265,539,490,582"/>
+<area shape="poly" id="edge59_Node000001_Node000043" title=" " alt="" coords="189,518,258,533,257,538,188,523"/>
+<area shape="rect" id="Node000044" href="$classengine_1_1_game_settings.html#a656c5341d7e07c5a461f71c7033ce968" title="Added by the Level Design team." alt="" coords="273,606,482,648"/>
+<area shape="poly" id="edge60_Node000001_Node000044" title=" " alt="" coords="126,521,176,557,237,591,259,600,258,605,235,596,173,562,123,525"/>
+<area shape="rect" id="Node000045" href="$class_achievement_1_1_achievement_conditions.html#ad3dd6057a9bfa438d4750cfa2c643e57" title=" " alt="" coords="575,496,834,539"/>
+<area shape="poly" id="edge61_Node000001_Node000045" title=" " alt="" coords="188,501,560,511,559,516,188,507"/>
+<area shape="rect" id="Node000046" href="$class_achievement_1_1_achievement_conditions.html#a58e9009c80c1208580a23f8646ef423a" title=" " alt="" coords="576,379,833,422"/>
+<area shape="poly" id="edge65_Node000001_Node000046" title=" " alt="" coords="168,477,235,460,403,431,560,411,561,417,404,437,236,466,170,482"/>
+<area shape="rect" id="Node000047" href="$class_achievement_1_1_achievement_conditions.html#a2abd1058b6a5125525283f05ebc90f30" title=" " alt="" coords="567,776,842,803"/>
+<area shape="poly" id="edge68_Node000001_Node000047" title=" " alt="" coords="105,523,118,574,143,640,160,674,182,706,207,735,237,759,260,770,291,778,369,789,460,794,551,794,551,799,460,799,369,795,290,784,258,775,234,764,204,739,178,710,156,677,138,642,113,576,99,524"/>
+<area shape="rect" id="Node000048" href="$class_achievement_1_1_achievement_conditions.html#a13bba364bdccb0c5f713dd9c006e508d" title=" " alt="" coords="569,584,840,611"/>
+<area shape="poly" id="edge71_Node000001_Node000048" title=" " alt="" coords="111,522,130,554,158,593,194,630,237,658,312,685,345,691,375,692,440,682,518,658,532,650,541,641,551,630,566,621,584,613,586,618,568,625,554,634,545,644,535,654,520,663,441,687,376,698,344,697,311,691,234,663,191,634,154,596,126,557,106,525"/>
+<area shape="rect" id="Node000003" href="$class_achievement_1_1_statistics.html#acd683f0989ff0f49bf522a0b3064ab8b" title=" " alt="" coords="949,94,1128,136"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,133,495,112,567,95,664,85,762,85,854,89,934,97,934,103,854,95,762,90,664,91,567,100,497,117,433,138"/>
+<area shape="rect" id="Node000004" href="$class_achievement_1_1_statistics.html#aec470afcbefd9828060b11add7f37673" title="Load Statistic.property (userdata)" alt="" coords="612,160,797,203"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="468,162,597,171,597,176,468,167"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_file_manager.html#a65b46b7536594e0021ee5c7067c09416" title="save userData(Statistics) to disk" alt="" coords="594,278,816,304"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="469,173,520,188,667,267,664,272,518,193,468,178"/>
+<area shape="rect" id="Node000014" href="$class_achievement_1_1_statistics.html#aeadeb981ade27306c427c3493a22d612" title="Public Constructor." alt="" coords="597,110,812,136"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="468,145,582,133,582,139,469,151"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_file_manager.html#a58f26de7ca8d0c2fa5f84bd180e98616" title="load userData(Statistics) from file, and return userData(Statistics)" alt="" coords="929,160,1148,187"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="797,177,914,174,914,179,797,182"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_file_manager.html#a659bc395de42280133d732e581ffb91d" title="Returns the application default userData(Statistics) if there is no Statistic.properties file." alt="" coords="1263,152,1468,195"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1148,171,1248,171,1248,176,1148,176"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="739,275,789,249,841,213,855,196,863,179,872,162,889,146,933,126,935,131,892,150,876,165,868,181,859,199,844,217,792,254,741,279"/>
+<area shape="rect" id="Node000008" href="$class_achievement_1_1_statistics.html#a7d204bad3d40b0e4ff7548cdc9991260" title=" " alt="" coords="949,211,1128,254"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="784,274,934,248,935,253,785,280"/>
+<area shape="rect" id="Node000009" href="$class_achievement_1_1_statistics.html#aab7cbd1d316239e855b337f582add678" title=" " alt="" coords="949,278,1128,320"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="816,291,934,294,934,299,816,296"/>
+<area shape="rect" id="Node000010" href="$class_achievement_1_1_statistics.html#a632f59955b1ed2d1e48760d10fb668dc" title=" " alt="" coords="949,544,1128,587"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="750,302,799,327,824,344,844,365,858,388,865,410,866,452,869,492,877,511,892,530,912,545,936,555,934,559,910,549,889,534,872,514,863,493,861,452,859,411,853,390,840,369,820,348,797,331,748,307"/>
+<area shape="rect" id="Node000011" href="$class_achievement_1_1_statistics.html#a3a751c4ea32c4893807a7cd8f014f553" title=" " alt="" coords="949,478,1128,520"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="745,302,796,327,821,345,844,365,861,392,867,417,874,441,892,464,912,476,935,485,933,490,910,481,889,468,869,444,862,419,856,394,840,369,818,349,793,332,743,307"/>
+<area shape="rect" id="Node000012" href="$class_achievement_1_1_statistics.html#a93d9cd3d501a574c125bdcb6b980bafe" title=" " alt="" coords="949,344,1128,387"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="768,302,935,340,933,345,767,307"/>
+<area shape="rect" id="Node000013" href="$class_achievement_1_1_statistics.html#a2b556051a7552d00bec08507e1372364" title=" " alt="" coords="949,411,1128,454"/>
+<area shape="poly" id="edge13_Node000007_Node000013" title=" " alt="" coords="808,302,844,321,861,340,869,360,876,379,892,397,913,409,935,417,934,422,910,413,889,401,871,382,864,362,857,343,841,325,805,307"/>
+<area shape="rect" id="Node000015" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="2115,459,2299,486"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="757,106,820,91,890,79,1023,63,1126,55,1364,54,1657,54,1705,57,1752,67,1798,82,1842,102,1924,153,1999,214,2064,280,2119,344,2191,444,2187,447,2115,348,2060,284,1995,218,1921,157,1839,106,1796,87,1751,72,1704,62,1656,59,1364,59,1127,61,1023,68,891,84,821,97,758,112"/>
+<area shape="rect" id="Node000018" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="2880,484,3032,511"/>
+<area shape="poly" id="edge19_Node000014_Node000018" title=" " alt="" coords="733,107,803,76,890,48,1021,21,1125,7,1230,3,1364,3,2473,3,2521,7,2567,19,2611,37,2652,61,2691,90,2728,123,2793,197,2847,276,2891,353,2946,469,2941,471,2887,355,2843,279,2788,201,2724,127,2688,94,2649,66,2609,42,2565,24,2520,12,2472,8,1364,8,1230,8,1125,13,1022,26,891,53,805,81,735,112"/>
+<area shape="rect" id="Node000016" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="2368,459,2574,486"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="2299,470,2353,470,2353,475,2299,475"/>
+<area shape="rect" id="Node000017" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="2622,459,2832,486"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="2575,470,2607,470,2607,475,2575,475"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="2832,481,2864,485,2864,490,2832,487"/>
+<area shape="poly" id="edge22_Node000019_Node000004" title=" " alt="" coords="468,269,518,255,641,207,643,212,520,260,469,274"/>
+<area shape="poly" id="edge46_Node000019_Node000007" title=" " alt="" coords="468,288,578,288,578,294,468,294"/>
+<area shape="poly" id="edge21_Node000019_Node000013" title=" " alt="" coords="469,301,690,334,788,351,843,364,868,380,892,397,935,411,934,417,889,401,865,385,841,369,787,356,689,340,468,306"/>
+<area shape="poly" id="edge47_Node000019_Node000014" title=" " alt="" coords="468,280,494,270,517,256,529,243,535,230,540,202,545,174,553,159,565,146,581,136,584,140,569,150,557,163,550,175,545,203,540,232,533,246,521,260,496,275,470,285"/>
+<area shape="poly" id="edge23_Node000019_Node000020" title=" " alt="" coords="470,297,496,307,521,322,533,336,540,350,545,379,550,406,557,419,569,432,574,435,571,440,565,436,553,422,545,408,540,380,535,352,529,339,517,326,494,312,468,302"/>
+<area shape="poly" id="edge45_Node000020_Node000013" title=" " alt="" coords="842,445,934,438,934,443,843,451"/>
+<area shape="rect" id="Node000021" href="$class_achievement_1_1_achievement_conditions.html#a370857deb5c4dc35e2bd3191fb6834c1" title=" " alt="" coords="890,611,1187,654"/>
+<area shape="poly" id="edge24_Node000020_Node000021" title=" " alt="" coords="825,470,844,482,857,496,865,511,869,541,874,570,880,584,892,597,896,600,893,604,889,601,876,587,868,572,864,542,859,513,853,499,841,486,823,475"/>
+<area shape="rect" id="Node000022" href="$classengine_1_1_draw_manager.html#a4a0a0ce908ee42bdc7b312ee3dae8dec" title=" " alt="" coords="1269,644,1462,687"/>
+<area shape="poly" id="edge25_Node000021_Node000022" title=" " alt="" coords="1187,645,1253,651,1253,657,1187,650"/>
+<area shape="rect" id="Node000029" href="$class_currency_1_1_currency_manager.html#ad60b174c664ad0c85f62bd498fc3c1b0" title="Add an amount of gem to the current gem." alt="" coords="1249,459,1482,486"/>
+<area shape="poly" id="edge33_Node000021_Node000029" title=" " alt="" coords="1167,608,1185,597,1202,577,1209,555,1215,533,1233,510,1270,489,1272,494,1236,514,1220,535,1214,557,1207,579,1188,601,1170,613"/>
+<area shape="rect" id="Node000034" href="$classengine_1_1_core.html#af6af7caff5e9b89c8bf5d801095f726d" title="Controls access to the currency manager." alt="" coords="1257,524,1474,551"/>
+<area shape="poly" id="edge39_Node000021_Node000034" title=" " alt="" coords="1155,608,1185,597,1209,580,1233,563,1261,553,1263,558,1236,568,1212,584,1188,601,1157,613"/>
+<area shape="rect" id="Node000037" href="$class_achievement_1_1_achievement_conditions.html#a84364f3c41539a286a35c633c6a314e2" title=" " alt="" coords="1235,578,1496,620"/>
+<area shape="poly" id="edge44_Node000021_Node000037" title=" " alt="" coords="1187,614,1219,611,1220,616,1187,620"/>
+<area shape="rect" id="Node000023" href="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea" title=" " alt="" coords="1544,623,1766,650"/>
+<area shape="poly" id="edge26_Node000022_Node000023" title=" " alt="" coords="1462,653,1528,646,1529,652,1463,658"/>
+<area shape="rect" id="Node000027" href="$classengine_1_1_sound_manager.html#af326739e7c567da7bedf9a07eff7e232" title=" " alt="" coords="1557,678,1753,704"/>
+<area shape="poly" id="edge31_Node000022_Node000027" title=" " alt="" coords="1463,671,1542,678,1541,684,1462,677"/>
+<area shape="rect" id="Node000024" href="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9" title="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..." alt="" coords="1834,611,2026,654"/>
+<area shape="poly" id="edge27_Node000023_Node000024" title=" " alt="" coords="1767,632,1819,631,1819,637,1767,637"/>
+<area shape="poly" id="edge28_Node000024_Node000018" title=" " alt="" coords="2022,652,2094,663,2207,672,2256,670,2320,663,2488,633,2653,592,2796,549,2901,514,2903,519,2798,554,2654,597,2490,638,2320,668,2257,675,2207,677,2093,668,2021,657"/>
+<area shape="rect" id="Node000025" href="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb" title=" " alt="" coords="2094,560,2320,587"/>
+<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="2026,609,2125,588,2126,593,2027,615"/>
+<area shape="rect" id="Node000026" href="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f" title=" " alt="" coords="2112,611,2302,654"/>
+<area shape="poly" id="edge30_Node000024_Node000026" title=" " alt="" coords="2026,630,2096,630,2096,635,2026,635"/>
+<area shape="rect" id="Node000028" href="$classengine_1_1_sound_manager.html#aff8a50dd8c931099450db7066e6a360e" title=" " alt="" coords="1841,678,2019,720"/>
+<area shape="poly" id="edge32_Node000027_Node000028" title=" " alt="" coords="1754,691,1825,693,1825,699,1754,696"/>
+<area shape="rect" id="Node000030" href="$classengine_1_1_file_manager.html#aa1a63106adf5599efd6409ac09ede0f7" title="Loads user gem from file, and returns current gem." alt="" coords="1560,459,1750,486"/>
+<area shape="poly" id="edge34_Node000029_Node000030" title=" " alt="" coords="1483,470,1544,470,1544,475,1483,475"/>
+<area shape="rect" id="Node000033" href="$classengine_1_1_file_manager.html#ad7ef07a23c6ff9c29a6d86622c49661e" title="Saves user gem to disk." alt="" coords="1558,408,1752,435"/>
+<area shape="poly" id="edge37_Node000029_Node000033" title=" " alt="" coords="1445,456,1559,436,1560,441,1446,461"/>
+<area shape="rect" id="Node000031" href="$class_currency_1_1_encryption_support.html#aace733246300350ac93d39bf3d251434" title="Performs decryption for a given input." alt="" coords="1814,459,2046,486"/>
+<area shape="poly" id="edge35_Node000030_Node000031" title=" " alt="" coords="1751,470,1798,470,1798,475,1751,475"/>
+<area shape="rect" id="Node000032" href="$class_currency_1_1_encryption_support.html#ac6690d521e47eaa9de388d6359655779" title="Performs encryption for a given input." alt="" coords="1814,408,2046,435"/>
+<area shape="poly" id="edge36_Node000030_Node000032" title=" " alt="" coords="1731,456,1838,436,1839,441,1732,461"/>
+<area shape="poly" id="edge38_Node000033_Node000032" title=" " alt="" coords="1753,419,1798,419,1798,424,1753,424"/>
+<area shape="rect" id="Node000035" href="$class_currency_1_1_currency_manager.html#a31c832489fc9cffeeb9a753e3abe3154" title="Returns shared instance of FileManager." alt="" coords="1554,514,1756,556"/>
+<area shape="poly" id="edge40_Node000034_Node000035" title=" " alt="" coords="1474,534,1538,533,1538,539,1474,539"/>
+<area shape="rect" id="Node000036" href="$class_currency_1_1_currency_manager.html#a717e788aeda8a1ffde764f7e187b9146" title="private constructor." alt="" coords="1838,510,2022,552"/>
+<area shape="poly" id="edge41_Node000035_Node000036" title=" " alt="" coords="1757,531,1822,530,1823,535,1757,536"/>
+<area shape="poly" id="edge42_Node000036_Node000015" title=" " alt="" coords="2022,509,2125,487,2126,492,2023,514"/>
+<area shape="poly" id="edge43_Node000036_Node000018" title=" " alt="" coords="2022,525,2864,498,2864,503,2023,531"/>
+<area shape="poly" id="edge50_Node000039_Node000021" title=" " alt="" coords="517,858,593,859,676,853,761,839,841,812,894,782,941,743,981,701,1011,664,1015,668,985,705,945,747,897,786,843,817,762,844,677,859,593,864,517,863"/>
+<area shape="poly" id="edge53_Node000040_Node000004" title=" " alt="" coords="470,210,597,193,598,198,471,215"/>
+<area shape="poly" id="edge54_Node000040_Node000007" title=" " alt="" coords="471,240,622,271,621,277,470,246"/>
+<area shape="poly" id="edge52_Node000040_Node000009" title=" " alt="" coords="471,228,644,241,843,263,935,277,934,282,842,268,643,247,470,233"/>
+<area shape="poly" id="edge55_Node000040_Node000014" title=" " alt="" coords="470,207,518,189,532,178,541,168,550,156,566,146,581,139,583,144,568,151,554,160,545,171,535,182,520,193,471,212"/>
+<area shape="poly" id="edge57_Node000041_Node000021" title=" " alt="" coords="519,726,675,712,842,687,959,656,960,661,843,692,676,717,520,732"/>
+<area shape="rect" id="Node000042" href="$class_achievement_1_1_achievement_conditions.html#a4765ec2aa2541ad734395e7ef57da818" title=" " alt="" coords="568,635,841,678"/>
+<area shape="poly" id="edge58_Node000041_Node000042" title=" " alt="" coords="441,720,518,702,606,679,607,685,520,707,442,725"/>
+<area shape="poly" id="edge63_Node000045_Node000011" title=" " alt="" coords="835,508,934,502,934,507,835,513"/>
+<area shape="poly" id="edge62_Node000045_Node000021" title=" " alt="" coords="766,537,844,570,867,584,891,596,912,603,910,609,889,601,865,589,841,575,764,542"/>
+<area shape="poly" id="edge67_Node000046_Node000009" title=" " alt="" coords="759,376,890,330,934,318,935,323,891,335,761,381"/>
+<area shape="poly" id="edge66_Node000046_Node000021" title=" " alt="" coords="829,420,844,432,860,452,868,474,869,516,870,558,877,578,892,597,895,599,891,603,888,601,872,580,864,559,864,516,863,475,856,455,840,435,826,424"/>
+<area shape="poly" id="edge69_Node000047_Node000021" title=" " alt="" coords="741,773,841,731,983,659,986,664,843,736,743,778"/>
+<area shape="poly" id="edge70_Node000047_Node000047" title=" " alt="" coords="650,778,641,767,648,757,669,752,705,750,744,752,764,759,763,764,743,758,705,755,670,757,651,762,646,767,654,774"/>
+<area shape="poly" id="edge73_Node000048_Node000010" title=" " alt="" coords="840,582,934,573,934,578,841,587"/>
+<area shape="poly" id="edge72_Node000048_Node000021" title=" " alt="" coords="840,609,875,613,875,618,839,614"/>
+</map>

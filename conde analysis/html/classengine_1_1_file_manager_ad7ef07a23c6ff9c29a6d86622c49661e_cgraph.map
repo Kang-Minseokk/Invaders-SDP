@@ -1,0 +1,5 @@
+<map id="engine.FileManager.saveGem" name="engine.FileManager.saveGem">
+<area shape="rect" id="Node000001" title="Saves user gem to disk." alt="" coords="5,5,200,32"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_encryption_support.html#ac6690d521e47eaa9de388d6359655779" title="Performs encryption for a given input." alt="" coords="248,5,479,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,16,232,16,232,21,200,21"/>
+</map>

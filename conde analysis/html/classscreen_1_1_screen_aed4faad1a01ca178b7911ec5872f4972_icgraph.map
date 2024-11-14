@@ -1,0 +1,7 @@
+<map id="screen.Screen.initialize" name="screen.Screen.initialize">
+<area shape="rect" id="Node000001" title="Initializes basic screen properties." alt="" coords="388,5,544,32"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_frame.html#a852671c66bcb116bf4ac5751dc5e18b8" title="Sets current screen." alt="" coords="177,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,21,341,21,341,16,373,16"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="5,5,129,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="161,21,129,21,129,16,161,16"/>
+</map>

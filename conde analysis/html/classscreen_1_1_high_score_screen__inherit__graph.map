@@ -1,0 +1,5 @@
+<map id="screen.HighScoreScreen" name="screen.HighScoreScreen">
+<area shape="rect" id="Node000001" title="Implements the high scores screen, it shows player records." alt="" coords="5,528,161,661"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_screen.html" title="Implements a generic screen." alt="" coords="12,5,155,480"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,495,86,529,80,529,80,495"/>
+</map>

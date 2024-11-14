@@ -1,0 +1,17 @@
+<map id="engine.FileManager.saveUserData" name="engine.FileManager.saveUserData">
+<area shape="rect" id="Node000001" title="save userData(Statistics) to disk" alt="" coords="5,213,228,240"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_statistics.html#a7d204bad3d40b0e4ff7548cdc9991260" title=" " alt="" coords="276,5,454,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,211,183,140,226,96,274,58,282,53,284,58,277,62,229,100,187,143,129,215"/>
+<area shape="rect" id="Node000003" href="$class_achievement_1_1_statistics.html#aab7cbd1d316239e855b337f582add678" title=" " alt="" coords="276,72,454,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,210,196,170,274,124,286,119,288,124,277,129,199,174,139,215"/>
+<area shape="rect" id="Node000004" href="$class_achievement_1_1_statistics.html#a632f59955b1ed2d1e48760d10fb668dc" title=" " alt="" coords="276,139,454,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,210,267,183,269,189,170,215"/>
+<area shape="rect" id="Node000005" href="$class_achievement_1_1_statistics.html#a3a751c4ea32c4893807a7cd8f014f553" title=" " alt="" coords="276,205,454,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="228,224,260,224,260,229,228,229"/>
+<area shape="rect" id="Node000006" href="$class_achievement_1_1_statistics.html#acd683f0989ff0f49bf522a0b3064ab8b" title=" " alt="" coords="276,272,454,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="170,238,269,265,267,270,169,243"/>
+<area shape="rect" id="Node000007" href="$class_achievement_1_1_statistics.html#a93d9cd3d501a574c125bdcb6b980bafe" title=" " alt="" coords="276,339,454,381"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="139,238,199,279,277,324,288,330,286,334,274,329,196,284,136,243"/>
+<area shape="rect" id="Node000008" href="$class_achievement_1_1_statistics.html#a2b556051a7552d00bec08507e1372364" title=" " alt="" coords="276,405,454,448"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="129,239,187,310,229,353,277,391,284,396,282,400,274,396,226,357,183,314,125,242"/>
+</map>

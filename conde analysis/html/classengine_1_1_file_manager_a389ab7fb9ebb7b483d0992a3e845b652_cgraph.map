@@ -1,0 +1,7 @@
+<map id="engine.FileManager.loadCoin" name="engine.FileManager.loadCoin">
+<area shape="rect" id="Node000001" title="Loads user coin from file, and returns current coin." alt="" coords="5,31,195,57"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_encryption_support.html#aace733246300350ac93d39bf3d251434" title="Performs decryption for a given input." alt="" coords="243,5,474,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,32,227,29,227,34,195,37"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_encryption_support.html#ac6690d521e47eaa9de388d6359655779" title="Performs encryption for a given input." alt="" coords="243,56,474,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,51,227,54,227,59,195,56"/>
+</map>
