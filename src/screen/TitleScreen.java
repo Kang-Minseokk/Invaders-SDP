@@ -64,7 +64,8 @@ public class TitleScreen extends Screen {
 		this.selectionCooldown.reset();
 		this.customState = 0;
 
-		/*Skins.resetUnlockedSkins();*/ // 해금된 스킨 초기화
+		//Skins.resetUnlockedSkins(); // 해금된 스킨 초기화
+
 		// CtrlS: Set user's coin, gem
 		try {
 			this.coin = Core.getCurrencyManager().getCoin();
@@ -358,6 +359,7 @@ public class TitleScreen extends Screen {
 						Core.getLogger().info("Unlocked Skin: " + selectedSkin);
 						this.customState = option4num; //해당스킨으로 이동
 						Core.getLogger().info("Customstate: " + customState);
+						SoundManager.getInstance().playES("draw_success");
 					}
 					else {
 							Core.getLogger().info("Skin already unlocked: " + selectedSkin);

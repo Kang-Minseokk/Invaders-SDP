@@ -1,6 +1,6 @@
 1. 성민 - 코인 표시
 KAN-68 feat: display coins used for custom draw
-: Draw Manager에 1번 뽑을 때 +50 COIN, 2번 뽑을 때 +100 COIN ..  과 같은 식의 코인 표시를 함. 다 뽑은 후에는 DRAW MAX 를 표시해 더 이상 뽑을 스킨이 없음을 명시함.
+: Draw Manager에 1번 뽑을 때 -50 COIN, 2번 뽑을 때 -100 COIN ..  과 같은 식의 코인 표시를 함. 다 뽑은 후에는 DRAW MAX 를 표시해 더 이상 뽑을 스킨이 없음을 명시함.
 
 2. 예나 - 뽑기 후 결과 출력
 KAN-68 feat : show draw result
@@ -11,4 +11,9 @@ KAN-68 feat : unlocking window floating
       스킨이 잠금해제 될 때마다 잠금해제를 알리는 창을 띄우도록 Skins 클래스에 showUnlockDialog 메서드 추가.
       스페이스바를 누르면 창이 닫힘.
       TitleScreen에서 스킨 뽑으면 무조건 해당 스킨 칸으로 이동하지않는 오류 고침.
+
+3. 성민 - 뽑기 사운드 추가
+KAN-68 feat: add draw_success sound effect for skin draw
+    :뽑을 때 사운드 추가 및 저작권 명시함.
+    + 리뷰하실 때 이미 해금한 스킨 초기화하고 싶으시면 Skins 112줄, TitleScreen 67줄 주석 풀고 리뷰하시면 됩니다.
 

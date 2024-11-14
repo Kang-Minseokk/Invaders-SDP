@@ -90,9 +90,13 @@ public class Skins {
         contentPanel.setBorder(BorderFactory.createLineBorder(Color.GREEN, 2)); //테두리
         contentPanel.setLayout(new BoxLayout(contentPanel, BoxLayout.Y_AXIS));
 
-        JLabel messageLabel = new JLabel("Unlock " + unlockedSkinEntity.getSpriteType(), SwingConstants.CENTER);
+        contentPanel.add(Box.createVerticalStrut(5));
+        JLabel messageLabel = new JLabel(unlockedSkinEntity.getSpriteType() + " IS UNLOCKED !", SwingConstants.CENTER);
         messageLabel.setForeground(Color.WHITE); // 텍스트 색
         messageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+        Font gameFont = DrawManager.fontRegular.deriveFont(12f);
+        messageLabel.setFont(gameFont);
 
         contentPanel.add(messageLabel);
         contentPanel.add(Box.createVerticalStrut(10)); // 여백 추가
@@ -109,9 +113,9 @@ public class Skins {
         dialog.setFocusable(true); // KeyListener가 동작하도록 설정
         dialog.setVisible(true); // 창 표시
     }
-   /* public static void resetUnlockedSkins() {
-        unlockedSkins.clear(); // 해금된 스킨 초기화
-        saveSkins(); // 저장된 파일도 초기화
-        Core.getLogger().info("Unlocked skins have been reset.");
-    }*/
+//   public static void resetUnlockedSkins() {
+//        unlockedSkins.clear(); // 해금된 스킨 초기화
+//        saveSkins(); // 저장된 파일도 초기화
+//        Core.getLogger().info("Unlocked skins have been reset.");
+//    }
 }

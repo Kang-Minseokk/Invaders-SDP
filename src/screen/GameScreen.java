@@ -482,7 +482,7 @@ public class GameScreen extends Screen {
 //		drawManager.drawScore(this, this.scoreManager.getAccumulatedScore());    //clove -> edit by jesung ko - TeamHUD(to udjust score)
 //		drawManager.drawScore(this, this.score); // by jesung ko - TeamHUD
 		DrawManagerImpl.drawScore2(this,this.score); // by jesung ko - TeamHUD
-		drawManager.drawLives(this, this.lives);	
+		drawManager.drawLives(this, this.lives);
 		drawManager.drawHorizontalLine(this, SEPARATION_LINE_HEIGHT - 1);
 		DrawManagerImpl.drawRemainingEnemies(this, getRemainingEnemies()); // by HUD team SeungYun
 		DrawManagerImpl.drawLevel(this, this.level);
@@ -581,7 +581,13 @@ public class GameScreen extends Screen {
 		handleItemCollisions();
 		this.bullets.removeAll(recyclable);
 		PiercingBulletPool.recycle(recyclable);
+		// Sound Operator
+		if (this.lives == 0){
+			sm = SoundManager.getInstance();
+			sm.playShipDieSounds();
+		}
 	}
+
 
 	private void handleBulletCollisions(Set<PiercingBullet> recyclable) {
 		for (PiercingBullet bullet : this.bullets) {
@@ -602,9 +608,6 @@ public class GameScreen extends Screen {
 				this.ship.destroy();
 				this.lives--;
 				this.logger.info("Hit on player ship, " + this.lives + " lives remaining.");
-				if (this.lives == 0) {
-					SoundManager.getInstance().playShipDieSounds();
-				}
 			}
 		}
 	}
