@@ -7,13 +7,15 @@ KAN-68 feat : show draw result
     :  TitleScreen에서 스킨 뽑으면 해당 스킨 칸으로 이동하게함.
 KAN-68 feat : unlocking window floating
     : Jpanel에 스킨을 그리기위해 Drawmanager에 drawEntity와 동일한 로직을 사용하지만 Graphic 객체를 인자로 받는 drawEntityWithGraphics메서드를 추가함.
-        => 이 메소드를 안쓰는 방법이 있는지 궁금합니다...
       스킨이 잠금해제 될 때마다 잠금해제를 알리는 창을 띄우도록 Skins 클래스에 showUnlockDialog 메서드 추가.
       스페이스바를 누르면 창이 닫힘.
-      TitleScreen에서 스킨 뽑으면 무조건 해당 스킨 칸으로 이동하지않는 오류 고침.
+      TitleScreen에서 스킨 뽑으면 무조건 해당 스킨 칸으로 이동하지않는 오류를 고침.
+KAN-68 chore : font application
+    : 창 상단 글씨에 폰트 추가함.
 
 3. 성민 - 뽑기 사운드 추가
 KAN-68 feat: add draw_success sound effect for skin draw
     :뽑을 때 사운드 추가 및 저작권 명시함.
-    + 리뷰하실 때 이미 해금한 스킨 초기화하고 싶으시면 Skins 112줄, TitleScreen 67줄 주석 풀고 리뷰하시면 됩니다.
+    + 리뷰하실 때 이미 해금한 스킨 초기화하고 싶으시면 Skins 122줄, TitleScreen 67줄 주석 풀고 리뷰하시면 됩니다.
+
 

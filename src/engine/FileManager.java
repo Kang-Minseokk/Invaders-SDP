@@ -47,7 +47,7 @@ public final class FileManager {
 	/**
 	 * private constructor.
 	 */
-	private FileManager() {
+    public FileManager() {
 		logger = Core.getLogger();
 	}
 
