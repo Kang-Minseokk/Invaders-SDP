@@ -1,0 +1,7 @@
+<map id="engine.DrawManager.drawRecordMenu" name="engine.DrawManager.drawRecordMenu">
+<area shape="rect" id="Node000001" title="Draws recent score(record) screen title and instructions." alt="" coords="471,5,721,32"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_record_screen.html#ae2d0b2ece394edb7d9b61281b643f78e" title="Draws the elements associated with the screen." alt="" coords="244,5,423,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="455,21,424,21,424,16,455,16"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_record_screen.html#a8fcd1a5dbd99e5dc2b991997d682c418" title="Updates the elements on screen and checks for events." alt="" coords="5,5,196,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,21,196,21,196,16,228,16"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="screen.GameScreen.getRemainingEnemies" name="screen.GameScreen.getRemainingEnemies">
+<area shape="rect" id="Node000001" title="Check remaining enemies." alt="" coords="467,56,691,99"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#a41ddf8251a118219238774fd8483e92a" title="Draws the elements associated with the screen." alt="" coords="242,5,414,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="469,54,388,35,389,30,471,49"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#a41e19e7b8b70f17d04c7787b81d5116c" title=" " alt="" coords="237,56,419,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="451,80,419,80,419,75,451,75"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_game_screen.html#aadf4f57babea3e17c46a02011413e1d4" title=" " alt="" coords="237,123,419,165"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="482,106,412,125,410,119,481,101"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,64,189,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="259,39,153,66,152,61,257,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="221,80,189,80,189,75,221,75"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="236,120,145,94,147,89,238,115"/>
+</map>

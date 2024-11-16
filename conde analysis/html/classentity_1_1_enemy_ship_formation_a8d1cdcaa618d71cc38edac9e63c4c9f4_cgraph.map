@@ -1,0 +1,9 @@
+<map id="entity.EnemyShipFormation.update" name="entity.EnemyShipFormation.update">
+<area shape="rect" id="Node000001" title="Updates the position of the ships." alt="" coords="5,56,230,83"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_enemy_ship_formation.html#adf518be1cab09a1b857c9aed05e58e38" title="Cleans empty columns, adjusts the width and height of the formation." alt="" coords="278,5,511,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,53,302,33,303,38,195,58"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_core.html#ae539492aa31eceb67b3685cf07086c6d" title="Controls creation of new cooldowns with variance." alt="" coords="286,56,503,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,67,270,67,270,72,230,72"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_cooldown.html#abcb3cea769834552c6a81075f5d17dc7" title="Restarts the cooldown." alt="" coords="317,107,472,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,81,303,101,302,106,194,86"/>
+</map>

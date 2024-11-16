@@ -17,6 +17,7 @@ import Currency.UpgradeManager;
 import Achievement.Statistics;
 import Achievement.AchievementManager;
 
+import entity.Skins;
 import screen.*;
 import engine.TwoPlayerMode;
 
@@ -84,7 +85,7 @@ public final class Core {
 
 	/**
 	 * Test implementation.
-	 * 
+	 *
 	 * @param args
 	 *            Program args, ignored.
 	 */
@@ -116,6 +117,8 @@ public final class Core {
 			Statistics statistics = new Statistics();
 			statistics.resetStatistics();
 			LOGGER.info("Reset Player Statistics");
+		/*	Skins.loadSkins();*/
+
 
 		} catch (Exception e) {
 			// TODO handle exception

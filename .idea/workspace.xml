@@ -7,18 +7,6 @@
     <list default="true" id="c2d1df9e-7633-4932-824c-2c1f0ea58909" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Achievement/Achievement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Achievement/Achievement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Achievement/AchievementConditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Achievement/AchievementConditions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Achievement/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Achievement/Statistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Currency/ReceiptScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/ReceiptScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Currency/RoundState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/RoundState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Currency/UpgradeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/UpgradeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enemy/HpEnemyShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy/HpEnemyShip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/GameScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/HighScoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/HighScoreScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/RecordScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/RecordScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/ScoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/ScoreScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/TitleScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/TitleScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,25 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Core.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "KAN-49-file-refactor",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/limul/Desktop/College/2_grade/2_semester/소프트웨어 개발 실무/workspace2/Invaders-SDP/src/entity",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.28390804",
-    "vue.rearranger.settings.migration": "true",
-    "애플리케이션.Core.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Core.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;KAN-68-draw__mechanism&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/limul/Desktop/College/2_grade/2_semester/소프트웨어 개발 실무/workspace2/Invaders-SDP/src/entity&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.28390804&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.Core.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="clove" />
@@ -115,7 +103,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Core" />
+        <item itemvalue="애플리케이션.Core" />
       </list>
     </recent_temporary>
   </component>

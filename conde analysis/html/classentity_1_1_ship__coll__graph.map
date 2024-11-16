@@ -1,0 +1,33 @@
+<map id="entity.Ship" name="entity.Ship">
+<area shape="rect" id="Node000001" title="Implements a ship, to be controlled by the player." alt="" coords="564,992,734,1360"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_entity.html" title="Implements a generic game entity." alt="" coords="121,480,233,848"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,861,247,911,277,954,313,993,353,1028,396,1059,485,1109,565,1144,563,1149,482,1114,393,1064,350,1032,309,997,273,957,243,913,219,863"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="230,144,271,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,214,210,464,205,463,243,213"/>
+<area shape="rect" id="Node000004" href="$enumengine_1_1_draw_manager_1_1_sprite_type.html" title="Sprite types." alt="" coords="5,37,205,320"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="129,319,150,463,145,464,123,320"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_cooldown.html" title="Imposes a cooldown period between two actions." alt="" coords="258,565,374,763"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="296,763,291,812,292,865,301,918,320,967,341,998,365,1026,424,1074,488,1112,550,1140,548,1145,485,1117,421,1079,362,1030,337,1001,315,969,296,919,287,866,286,812,291,762"/>
+<area shape="rect" id="Node000006" href="$class_enemy_1_1_player_growth.html" title=" " alt="" coords="390,5,560,352"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="452,352,442,477,440,619,444,693,452,767,464,840,482,911,496,950,514,988,557,1058,553,1061,509,990,491,952,477,913,459,841,446,768,439,693,435,619,437,477,446,352"/>
+<area shape="rect" id="Node000007" href="$classentity_1_1_ship_status.html" title=" " alt="" coords="538,416,760,912"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="526,351,540,391,543,399,538,401,535,393,521,353"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="652,912,652,975,646,975,646,912"/>
+<area shape="rect" id="Node000008" href="$classentity_1_1_number_of_bullet.html" title="TwoBulletPool extends BulletPool to manage firing two bullets at once." alt="" coords="715,69,919,288"/>
+<area shape="poly" id="edge17_Node000001_Node000008" title=" " alt="" coords="827,288,830,416,826,574,809,744,794,830,774,913,743,1000,738,998,769,911,789,829,804,744,820,573,825,416,822,288"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="767,289,731,377,722,401,717,400,726,375,762,287"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="592,144,661,213"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="629,213,631,392,631,399,626,399,626,392,623,213"/>
+<area shape="rect" id="Node000010" href="$classentity_1_1_item_barrier_and_heart.html" title=" " alt="" coords="967,544,1132,784"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1016,784,988,850,951,914,906,970,854,1022,800,1069,749,1109,746,1105,797,1065,850,1019,902,967,947,910,984,848,1012,782"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1070,144,1119,213"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1092,214,1072,376,1060,527,1055,527,1067,376,1087,213"/>
+<area shape="rect" id="Node000012" href="$classengine_1_1_sound_manager.html" title=" " alt="" coords="1156,501,1302,827"/>
+<area shape="poly" id="edge16_Node000012_Node000011" title=" " alt="" coords="1106,212,1182,484,1177,486,1101,214"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1195,828,1174,873,1146,914,1103,958,1055,997,1004,1032,951,1063,845,1113,751,1148,749,1143,843,1108,948,1059,1001,1028,1052,993,1100,954,1142,910,1169,870,1190,826"/>
+<area shape="poly" id="edge13_Node000012_Node000012" title=" " alt="" coords="1303,612,1314,618,1322,630,1327,645,1329,664,1326,688,1318,705,1313,703,1321,686,1324,664,1322,646,1317,632,1310,622,1300,616"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="1311,144,1451,213"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1373,214,1288,486,1283,484,1368,212"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1163,144,1288,213"/>
+<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="1228,213,1230,484,1225,484,1223,213"/>
+</map>

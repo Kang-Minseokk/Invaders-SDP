@@ -1,0 +1,57 @@
+<map id="engine.DrawManager.MerchantTxt" name="engine.DrawManager.MerchantTxt">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,849,227,876"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#a3b39da2cc59c57cfa84fb9567ad1fec5" title="Controls access to the currency manager." alt="" coords="275,475,487,501"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,847,359,513,363,516,129,850"/>
+<area shape="rect" id="Node000014" href="$class_currency_1_1_upgrade_manager.html#ac4d1d86f403a3ecdd2aed4f5a1ee8b38" title=" " alt="" coords="1045,837,1226,880"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="227,861,564,862,980,860,1029,859,1030,864,980,865,564,868,227,866"/>
+<area shape="rect" id="Node000015" href="$class_currency_1_1_upgrade_manager.html#aaa148b065ac73ddf6eca7561758599e4" title=" " alt="" coords="544,541,724,584"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="140,846,581,590,583,595,143,851"/>
+<area shape="rect" id="Node000025" href="$class_currency_1_1_upgrade_manager.html#a499b58a128e4a6a048b5b04a089986bf" title=" " alt="" coords="277,925,485,968"/>
+<area shape="poly" id="edge30_Node000001_Node000025" title=" " alt="" coords="161,874,297,918,296,923,160,879"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_upgrade_manager.html#a282e2ed1f01eb22196dccd90b20d4ee5" title="Returns shared instance of UpgradeManager." alt="" coords="535,305,733,348"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,472,585,354,588,359,405,476"/>
+<area shape="rect" id="Node000004" href="$class_currency_1_1_upgrade_manager.html#a3eba38bf042f6f80cbe3365ca87b3bfd" title="private constructor." alt="" coords="790,136,971,179"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="662,303,780,216,829,185,832,189,783,221,665,307"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="1043,72,1228,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="946,133,1027,108,1056,100,1058,106,1028,113,948,138"/>
+<area shape="rect" id="Node000009" href="$classentity_1_1_ship_status.html#a82e97149439480a3752520633c9fb797" title=" " alt="" coords="1046,123,1224,149"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="971,147,1031,142,1031,147,971,152"/>
+<area shape="rect" id="Node000010" href="$classentity_1_1_ship_status.html#af67e157fafcf53493496419ba1fae6dc" title=" " alt="" coords="1042,173,1228,200"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="971,165,1027,172,1027,177,971,170"/>
+<area shape="rect" id="Node000011" href="$classengine_1_1_file_manager.html#a0a36dbead21b925203c3245c6f408b30" title="Loads upgrade statuses from upgrade_status.properties file." alt="" coords="1030,541,1241,584"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="907,177,944,215,982,261,1027,332,1066,405,1122,526,1117,528,1061,407,1022,334,978,264,940,219,904,181"/>
+<area shape="rect" id="Node000013" href="$classengine_1_1_file_manager.html#a2162fa41415928cae5df1c70c3e6b487" title="Saves upgrade statuses to upgrade_status.properties file." alt="" coords="1028,5,1243,48"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="908,133,961,95,1026,58,1040,52,1042,56,1029,62,964,100,911,138"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="1291,97,1497,124"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1228,92,1276,96,1275,102,1228,97"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="1545,123,1755,149"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1498,118,1530,121,1529,127,1497,124"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1803,199,1955,225"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1694,147,1823,191,1821,196,1692,152"/>
+<area shape="rect" id="Node000012" href="$classengine_1_1_file_manager.html#a9a18c215e1d555161c587bcaf1e63d71" title="Loads default upgrade statuses from upgrade_default.properties file." alt="" coords="1292,541,1496,584"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1242,560,1276,560,1276,565,1242,565"/>
+<area shape="poly" id="edge24_Node000015_Node000008" title=" " alt="" coords="644,540,779,261,826,234,869,219,909,213,948,214,1031,226,1079,232,1134,235,1395,235,1606,229,1787,217,1787,222,1606,234,1396,240,1134,240,1079,237,1031,232,947,220,909,219,870,224,829,239,783,264,648,542"/>
+<area shape="rect" id="Node000016" href="$classentity_1_1_ship_status.html#a77b6cbc7b5c009dceff1f21eeeb0d0ec" title=" " alt="" coords="790,675,971,717"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="664,582,717,621,783,660,795,666,793,671,780,665,715,626,661,587"/>
+<area shape="rect" id="Node000017" href="$class_currency_1_1_upgrade_manager.html#a6aca11c8c3e8843e1ccf77db46e77f81" title=" " alt="" coords="781,541,980,584"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="725,560,765,560,765,565,725,565"/>
+<area shape="rect" id="Node000018" href="$classentity_1_1_ship_status.html#a8eb448a9f4191d28331568893e3501d8" title=" " alt="" coords="793,341,968,384"/>
+<area shape="poly" id="edge18_Node000015_Node000018" title=" " alt="" coords="647,539,699,468,737,429,780,394,787,389,790,394,783,398,741,432,703,472,651,543"/>
+<area shape="rect" id="Node000019" href="$class_currency_1_1_upgrade_manager.html#a441f7b00f574f2983eb820da14859c90" title=" " alt="" coords="781,608,980,651"/>
+<area shape="poly" id="edge19_Node000015_Node000019" title=" " alt="" coords="716,582,785,601,784,606,715,587"/>
+<area shape="rect" id="Node000020" href="$classentity_1_1_ship_status.html#ac4da16d9538c7d417f59eb5fdbba4172" title=" " alt="" coords="796,408,965,451"/>
+<area shape="poly" id="edge21_Node000015_Node000020" title=" " alt="" coords="661,539,715,500,780,460,793,454,795,459,783,465,717,504,664,543"/>
+<area shape="rect" id="Node000021" href="$class_currency_1_1_upgrade_manager.html#a844307409f17776337700a8cdfe782d3" title=" " alt="" coords="781,275,980,317"/>
+<area shape="poly" id="edge22_Node000015_Node000021" title=" " alt="" coords="641,540,659,496,689,439,729,379,753,352,780,327,785,323,788,328,783,331,757,355,733,382,693,441,664,498,646,542"/>
+<area shape="rect" id="Node000022" href="$classentity_1_1_ship_status.html#ab97b6d13f72f9bc0dfafbb989eef5e21" title=" " alt="" coords="791,475,970,517"/>
+<area shape="poly" id="edge25_Node000015_Node000022" title=" " alt="" coords="715,538,784,519,785,525,716,543"/>
+<area shape="rect" id="Node000023" href="$class_currency_1_1_upgrade_manager.html#a479de1e29f667e75a488a99f56075541" title=" " alt="" coords="781,741,980,784"/>
+<area shape="poly" id="edge26_Node000015_Node000023" title=" " alt="" coords="651,583,703,653,741,693,783,727,790,732,787,736,780,732,737,697,699,657,647,586"/>
+<area shape="rect" id="Node000024" href="$class_currency_1_1_upgrade_manager.html#aa7efa0567df8f00e9d2d88b399f66e0a" title=" " alt="" coords="790,808,971,851"/>
+<area shape="poly" id="edge28_Node000015_Node000024" title=" " alt="" coords="646,583,664,628,693,684,733,743,757,770,783,794,788,798,785,802,780,798,753,774,729,746,689,687,659,630,641,586"/>
+<area shape="poly" id="edge17_Node000017_Node000011" title=" " alt="" coords="980,560,1014,560,1014,565,980,565"/>
+<area shape="poly" id="edge20_Node000019_Node000011" title=" " alt="" coords="964,605,1036,586,1037,591,965,610"/>
+<area shape="poly" id="edge23_Node000021_Node000011" title=" " alt="" coords="963,316,981,327,1030,374,1069,428,1100,481,1122,526,1117,528,1095,483,1065,431,1025,377,978,331,960,320"/>
+<area shape="poly" id="edge27_Node000023_Node000011" title=" " alt="" coords="957,738,978,727,1018,697,1054,662,1109,595,1113,598,1058,665,1021,701,981,732,960,743"/>
+<area shape="poly" id="edge29_Node000024_Node000014" title=" " alt="" coords="971,837,1030,844,1030,849,971,842"/>
+</map>

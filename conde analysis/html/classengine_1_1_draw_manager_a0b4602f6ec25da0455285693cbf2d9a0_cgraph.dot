@@ -1,0 +1,19 @@
+digraph "engine.DrawManager.setFrame"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="engine.DrawManager.setFrame",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Sets the frame to draw the image on."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="screen.Background.getInstance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_background.html#a2c76faa8fa5e6bf6318dcdac9a1912cc",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="screen.Background.Background",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_background.html#a500cc4fb2f76cc20a16a284215975448",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="screen.Background.initialize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_background.html#a46b6744103a1380f77313b244d0158aa",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="engine.Frame.getHeight",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_frame.html#afafbfb86bc806cc4cccc6da0906d4587",tooltip="Getter for frame height."];
+  Node4 -> Node6 [id="edge5_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="engine.Frame.getWidth",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_frame.html#ad76885b5f6387926e7d8bc631d4b4052",tooltip="Getter for frame width."];
+}

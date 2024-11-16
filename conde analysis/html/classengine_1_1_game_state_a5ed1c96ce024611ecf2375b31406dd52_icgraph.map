@@ -1,0 +1,13 @@
+<map id="engine.GameState.getLivesRemaining" name="engine.GameState.getLivesRemaining">
+<area shape="rect" id="Node000001" title=" " alt="" coords="519,81,701,124"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_round_state.html#a742b64a221946da262387cfcb4cffdbb" title=" " alt="" coords="242,13,471,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="540,78,470,55,426,43,428,38,472,49,541,73"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#a4383bf295c6d0ba338f6278c7e2a2fd5" title="Constructor, establishes the properties of the screen." alt="" coords="246,64,466,91"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="503,95,467,91,467,86,504,89"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="295,115,418,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="504,116,419,125,418,119,503,111"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_score_screen.html#a8a078b464e3ee2d49c50e8decfaf7ed9" title="Constructor, establishes the properties of the screen." alt="" coords="268,165,445,208"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="538,132,472,156,435,167,434,162,470,151,537,127"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_round_state.html#a56b85ae03c3844d9d9c67607c25c8b19" title=" " alt="" coords="5,5,194,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,29,194,29,194,24,226,24"/>
+</map>

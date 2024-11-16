@@ -1,0 +1,5 @@
+<map id="screen.GameScreen.draw" name="screen.GameScreen.draw">
+<area shape="rect" id="Node000001" title="Draws the elements associated with the screen." alt="" coords="237,5,409,32"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,5,189,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,21,189,21,189,16,221,16"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="entity.Ship.isDestroyed" name="entity.Ship.isDestroyed">
+<area shape="rect" id="Node000001" title="Checks if the ship is destroyed." alt="" coords="5,5,162,32"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793" title="Checks if the cooldown is finished." alt="" coords="210,5,419,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,16,194,16,194,21,162,21"/>
+</map>

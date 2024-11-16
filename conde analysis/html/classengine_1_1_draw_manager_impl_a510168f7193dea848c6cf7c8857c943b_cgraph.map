@@ -1,0 +1,7 @@
+<map id="engine.DrawManagerImpl.drawLives2P" name="engine.DrawManagerImpl.drawLives2P">
+<area shape="rect" id="Node000001" title="Draws 2P&#39;s lives on screen." alt="" coords="5,23,207,65"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a3ef1def588c0f283cf6066af12d7ad63" title="Draws an entity, using the apropiate image." alt="" coords="255,5,465,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,31,239,28,240,33,208,37"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_entity.html#a6ca6a574524059ce8c1977c88961246c" title="Constructor, establishes the entity&#39;s generic properties." alt="" coords="273,56,446,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,51,258,57,257,62,207,57"/>
+</map>

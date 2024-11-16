@@ -1,0 +1,7 @@
+<map id="entity.EnemyShip.move" name="entity.EnemyShip.move">
+<area shape="rect" id="Node000001" title="Moves the ship the specified distance." alt="" coords="467,13,626,40"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#a753aeed9a3b2d6409487544622e35e53" title=" " alt="" coords="237,5,419,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="451,29,419,29,419,24,451,24"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+</map>

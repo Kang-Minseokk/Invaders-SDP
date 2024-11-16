@@ -1,0 +1,13 @@
+<map id="engine.TwoPlayerMode.handleItemCollisionsForPlayer2" name="engine.TwoPlayerMode.handleItemCollisionsForPlayer2">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,204,116"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#a0a848558ccd9ab856726f3e4e1d67dd1" title="Checks if two entities are colliding." alt="" coords="252,81,481,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,92,236,92,236,97,204,97"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_entity.html#a30f17d928494ebe1e145a6011014aa6b" title="Getter for the height of the image associated to the entity." alt="" coords="538,5,687,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="411,78,528,41,551,34,552,40,530,47,413,83"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_entity.html#aade70f342a09b3c37b7f40d17db45983" title="Getter for the X axis position of the entity." alt="" coords="529,56,696,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="481,80,513,77,514,82,482,85"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_entity.html#afdcbb4ca073d5a81b37ed096ac85f5ef" title="Getter for the Y axis position of the entity." alt="" coords="529,107,696,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="482,104,514,107,513,112,481,109"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="540,157,685,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="413,106,530,143,552,150,551,155,528,148,411,111"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="engine.FileManager.loadRecentScores" name="engine.FileManager.loadRecentScores">
+<area shape="rect" id="Node000001" title="Loads recent scores from file, and returns a sorted list of pairs score &#45; value." alt="" coords="5,5,210,48"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html#a4183d269d4e6d870c2000fbbfb8982b3" title="Returns the application default scores if there is no user recent scores file." alt="" coords="258,5,462,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,24,242,24,242,29,210,29"/>
+</map>

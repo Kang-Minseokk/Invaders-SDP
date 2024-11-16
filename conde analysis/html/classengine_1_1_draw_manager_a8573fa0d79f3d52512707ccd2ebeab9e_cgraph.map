@@ -1,0 +1,5 @@
+<map id="engine.DrawManager.drawRecentScores" name="engine.DrawManager.drawRecentScores">
+<area shape="rect" id="Node000001" title="Draws recent scores." alt="" coords="5,5,224,48"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#ad26c31aa42615ba57f539431985e4978" title="Draws a righted string on regular font." alt="" coords="272,5,493,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,24,256,24,256,29,224,29"/>
+</map>

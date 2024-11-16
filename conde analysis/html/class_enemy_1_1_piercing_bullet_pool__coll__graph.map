@@ -1,0 +1,5 @@
+<map id="Enemy.PiercingBulletPool" name="Enemy.PiercingBulletPool">
+<area shape="rect" id="Node000001" title="Implements a pool of recyclable bullets." alt="" coords="14,139,175,251"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,184,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,74,97,122,92,122,92,74"/>
+</map>

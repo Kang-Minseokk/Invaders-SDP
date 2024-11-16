@@ -1,0 +1,20 @@
+<map id="entity.Skins.unlockSkin" name="entity.Skins.unlockSkin">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,60,163,87"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="496,5,648,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,57,210,45,352,30,480,20,480,26,352,35,211,51,147,62"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_skins.html#a75e8a4c3ff8aa97fbf41206fa0d9b02d" title=" " alt="" coords="235,60,389,87"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,71,219,71,219,76,163,76"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_skins.html#a17c347d6bb996b4bb11d59cebd2e11d8" title=" " alt="" coords="211,189,413,216"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="111,85,275,179,272,184,108,89"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="378,57,489,33,491,38,379,62"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#a4b2f6a6f1984e075a6d0628c5ffc157b" title=" " alt="" coords="461,56,682,99"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="390,72,445,73,445,78,390,77"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_draw_manager.html#ae4e9401318c4fb599637107750888bcb" title=" " alt="" coords="466,123,677,165"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="374,186,459,167,460,172,375,191"/>
+<area shape="rect" id="Node000007" href="$classentity_1_1_entity.html#a30f17d928494ebe1e145a6011014aa6b" title="Getter for the height of the image associated to the entity." alt="" coords="497,189,646,216"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="413,200,482,200,482,205,413,205"/>
+<area shape="rect" id="Node000008" href="$classentity_1_1_entity.html#a452a38bd56f97c7c29bb84c80a876f42" title="Getter for the sprite that the entity will be drawn as." alt="" coords="485,240,658,267"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="385,214,485,234,484,239,384,219"/>
+<area shape="rect" id="Node000009" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="499,291,644,317"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="337,214,393,245,462,276,485,284,483,289,460,281,391,250,335,219"/>
+</map>

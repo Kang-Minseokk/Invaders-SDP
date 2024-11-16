@@ -1,0 +1,120 @@
+<map id="entity.EnemyShipFormation._destroy" name="entity.EnemyShipFormation._destroy">
+<area shape="rect" id="Node000001" title="When EnemyShip is hit, its HP decrease by 1, and if the HP reaches 0, the ship is destroyed." alt="" coords="5,737,191,780"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_enemy_ship.html#ae47b2ffda8233c5d5a0f0ba9de608264" title="Destroys ship, causing a chain explode." alt="" coords="1079,397,1284,424"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,734,238,694,453,619,623,569,794,523,1013,460,1121,427,1123,432,1014,465,796,528,624,574,454,624,240,698,145,739"/>
+<area shape="rect" id="Node000013" href="$classentity_1_1_bomb.html#af1efba260e80c0e811e99f3326b3ca3e" title=" " alt="" coords="1088,192,1276,219"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="108,736,157,655,194,608,237,567,344,494,458,430,577,375,696,329,811,291,918,260,1088,220,1089,225,919,265,813,296,698,334,579,380,461,435,346,498,240,571,198,612,161,658,112,738"/>
+<area shape="rect" id="Node000023" href="$classentity_1_1_bomb.html#a145812b545b1662e338831889f667d22" title=" " alt="" coords="1088,317,1276,360"/>
+<area shape="poly" id="edge25_Node000001_Node000023" title=" " alt="" coords="117,735,169,686,202,659,237,636,346,581,461,531,577,488,692,451,905,393,1072,356,1073,361,906,398,694,456,579,493,463,536,349,586,240,641,205,664,172,690,121,739"/>
+<area shape="rect" id="Node000024" href="$classentity_1_1_entity.html#a452a38bd56f97c7c29bb84c80a876f42" title="Getter for the sprite that the entity will be drawn as." alt="" coords="540,892,713,919"/>
+<area shape="poly" id="edge30_Node000001_Node000024" title=" " alt="" coords="118,779,169,831,202,857,240,878,311,900,386,911,459,915,524,913,525,919,459,920,385,916,310,905,238,882,199,862,165,835,114,782"/>
+<area shape="rect" id="Node000025" href="$classentity_1_1_enemy_ship_formation.html#ace75d4809eb81b70b9b4d076937867e5" title=" " alt="" coords="239,708,462,751"/>
+<area shape="poly" id="edge31_Node000001_Node000025" title=" " alt="" coords="191,745,223,741,224,747,191,751"/>
+<area shape="rect" id="Node000043" href="$classentity_1_1_enemy_ship_formation.html#a99ea46508547dedf77bb05c3e13d5edc" title=" " alt="" coords="239,825,462,868"/>
+<area shape="poly" id="edge63_Node000001_Node000043" title=" " alt="" coords="163,778,274,817,272,822,161,783"/>
+<area shape="rect" id="Node000044" href="$classentity_1_1_enemy_ship_formation.html#a9e4f09149c20b045c13700323651c77e" title=" " alt="" coords="239,943,463,985"/>
+<area shape="poly" id="edge64_Node000001_Node000044" title=" " alt="" coords="115,779,164,849,200,888,240,922,260,934,257,938,237,926,196,892,160,852,110,782"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_enemy_ship.html#a64297ffda858a49a7f3cb2ddde1c36b6" title="Destroys the ship, causing an explosion." alt="" coords="1376,335,1546,361"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1244,394,1382,363,1384,368,1245,399"/>
+<area shape="rect" id="Node000011" href="$classentity_1_1_enemy_ship.html#a794bd95c39984a70314dbe0adeb33706" title="Setter for enemy ship&#39;s isChainExploded to false." alt="" coords="1371,385,1550,428"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="1285,407,1356,406,1356,411,1285,412"/>
+<area shape="rect" id="Node000012" href="$classentity_1_1_enemy_ship.html#ac3c87681ebf8d4fd9b4641b063b0d88b" title="Setter for the Hp of the Enemy ship." alt="" coords="1380,687,1542,713"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="1199,422,1247,474,1304,542,1318,565,1327,584,1336,602,1352,622,1386,652,1422,676,1419,681,1383,656,1348,626,1332,605,1322,586,1314,568,1300,546,1243,477,1195,426"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea" title=" " alt="" coords="1619,364,1842,391"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1546,355,1604,361,1604,366,1546,360"/>
+<area shape="rect" id="Node000009" href="$classengine_1_1_sound_manager.html#af326739e7c567da7bedf9a07eff7e232" title=" " alt="" coords="1632,309,1829,336"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="1546,337,1617,331,1617,336,1546,343"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9" title="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..." alt="" coords="1892,364,2083,407"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1842,378,1876,379,1876,385,1842,383"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="2170,321,2322,348"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="2083,364,2159,349,2160,354,2084,369"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb" title=" " alt="" coords="2133,372,2359,399"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="2083,383,2117,383,2117,388,2083,388"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f" title=" " alt="" coords="2151,423,2341,465"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="2084,404,2137,416,2135,422,2083,410"/>
+<area shape="rect" id="Node000010" href="$classengine_1_1_sound_manager.html#aff8a50dd8c931099450db7066e6a360e" title=" " alt="" coords="1898,297,2076,340"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1829,318,1882,318,1882,323,1829,324"/>
+<area shape="poly" id="edge13_Node000013_Node000003" title=" " alt="" coords="1266,217,1304,237,1321,258,1328,280,1335,301,1352,321,1363,327,1360,332,1348,325,1330,304,1323,282,1317,261,1300,241,1264,222"/>
+<area shape="poly" id="edge21_Node000013_Node000004" title=" " alt="" coords="1276,195,1358,192,1444,192,1521,200,1551,208,1573,219,1588,234,1596,250,1600,282,1602,316,1609,331,1621,346,1632,354,1629,359,1617,350,1604,334,1597,317,1594,283,1591,251,1583,237,1570,224,1549,213,1520,206,1444,198,1358,197,1276,200"/>
+<area shape="poly" id="edge23_Node000013_Node000009" title=" " alt="" coords="1223,189,1291,170,1379,156,1428,153,1477,154,1526,161,1572,175,1617,199,1656,231,1689,265,1713,295,1709,298,1685,268,1653,235,1614,203,1570,180,1524,166,1476,159,1428,158,1380,161,1292,176,1224,194"/>
+<area shape="rect" id="Node000014" href="$class_enemy_1_1_item_manager.html#aab357bd87102d8477d909ad527f3563a" title=" " alt="" coords="1362,81,1559,108"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1208,189,1271,158,1349,124,1390,110,1392,115,1351,129,1274,162,1210,194"/>
+<area shape="rect" id="Node000020" href="$classentity_1_1_entity.html#a3016a1d6a74d9a823feaf4cb0b537ef5" title="Getter for the color of the entity." alt="" coords="1390,284,1532,311"/>
+<area shape="poly" id="edge20_Node000013_Node000020" title=" " alt="" coords="1248,217,1303,236,1327,253,1351,270,1376,279,1374,284,1349,274,1324,258,1301,241,1247,222"/>
+<area shape="rect" id="Node000021" href="$classentity_1_1_bomb.html#a2c2aa214e3e9ff188fbb73e4185d6702" title=" " alt="" coords="1386,233,1535,260"/>
+<area shape="poly" id="edge22_Node000013_Node000021" title=" " alt="" coords="1276,217,1371,231,1370,236,1275,222"/>
+<area shape="rect" id="Node000022" href="$classentity_1_1_bomb.html#a2e4fa892a2819d71344776f770ef0e38" title=" " alt="" coords="1383,31,1538,57"/>
+<area shape="poly" id="edge24_Node000013_Node000022" title=" " alt="" coords="1194,190,1256,130,1300,96,1349,67,1367,59,1369,64,1351,72,1303,100,1260,134,1197,194"/>
+<area shape="rect" id="Node000015" href="$class_enemy_1_1_item_pool.html#a137f799e5f461caed45ef95615d32258" title=" " alt="" coords="1648,31,1813,57"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1535,78,1640,58,1641,63,1536,83"/>
+<area shape="rect" id="Node000018" href="$classentity_1_1_entity.html#aade70f342a09b3c37b7f40d17db45983" title="Getter for the X axis position of the entity." alt="" coords="1647,81,1814,108"/>
+<area shape="poly" id="edge18_Node000014_Node000018" title=" " alt="" coords="1559,92,1631,92,1631,97,1559,97"/>
+<area shape="rect" id="Node000019" href="$classentity_1_1_entity.html#afdcbb4ca073d5a81b37ed096ac85f5ef" title="Getter for the Y axis position of the entity." alt="" coords="1647,132,1814,159"/>
+<area shape="poly" id="edge19_Node000014_Node000019" title=" " alt="" coords="1536,106,1641,126,1640,131,1535,111"/>
+<area shape="rect" id="Node000016" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="1915,5,2060,32"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1813,33,1899,25,1899,30,1814,38"/>
+<area shape="rect" id="Node000017" href="$classentity_1_1_entity.html#a34b1106b5fc108c72ce6083d913e42ed" title="Setter for the X axis position of the entity." alt="" coords="1904,56,2071,83"/>
+<area shape="poly" id="edge17_Node000015_Node000017" title=" " alt="" coords="1814,50,1888,57,1888,62,1813,55"/>
+<area shape="poly" id="edge26_Node000023_Node000003" title=" " alt="" coords="1276,339,1360,342,1360,347,1276,344"/>
+<area shape="poly" id="edge27_Node000023_Node000014" title=" " alt="" coords="1274,318,1300,303,1318,284,1327,266,1334,244,1348,220,1392,164,1434,117,1438,121,1396,167,1352,223,1339,247,1332,268,1323,287,1304,307,1277,323"/>
+<area shape="poly" id="edge28_Node000023_Node000020" title=" " alt="" coords="1275,322,1374,307,1375,313,1276,327"/>
+<area shape="poly" id="edge29_Node000023_Node000021" title=" " alt="" coords="1272,314,1301,303,1324,286,1349,270,1371,261,1372,266,1351,274,1327,291,1303,308,1274,319"/>
+<area shape="rect" id="Node000026" href="$classentity_1_1_enemy_ship_formation.html#ade44f4120593e0451f891cad53816d87" title=" " alt="" coords="1077,251,1287,293"/>
+<area shape="poly" id="edge32_Node000025_Node000026" title=" " alt="" coords="381,705,487,630,651,524,849,407,955,352,1061,303,1077,296,1079,301,1063,308,957,357,852,412,654,528,490,635,384,710"/>
+<area shape="rect" id="Node000027" href="$classentity_1_1_enemy_ship_formation.html#af852f8b09aeb0532701aad312a341f10" title=" " alt="" coords="511,708,742,751"/>
+<area shape="poly" id="edge35_Node000025_Node000027" title=" " alt="" coords="463,727,495,727,495,732,463,732"/>
+<area shape="poly" id="edge33_Node000026_Node000014" title=" " alt="" coords="1259,248,1301,228,1340,202,1377,173,1435,117,1438,121,1380,177,1343,207,1303,233,1261,253"/>
+<area shape="poly" id="edge34_Node000026_Node000020" title=" " alt="" coords="1288,279,1374,287,1374,292,1287,284"/>
+<area shape="rect" id="Node000028" href="$classentity_1_1_enemy_ship.html#a5fca26ddb9abd05e2d367e9a0f5b8e5e" title="Getter for the Hp of this Enemy ship." alt="" coords="1380,921,1542,948"/>
+<area shape="poly" id="edge36_Node000027_Node000028" title=" " alt="" coords="677,749,845,817,952,854,1062,885,1141,901,1221,913,1364,927,1364,932,1220,918,1140,907,1061,891,951,860,844,822,675,754"/>
+<area shape="rect" id="Node000029" href="$classentity_1_1_enemy_ship_formation.html#a695de08faa9695c26d2f8f2d1d491560" title=" " alt="" coords="790,615,1014,657"/>
+<area shape="poly" id="edge37_Node000027_Node000029" title=" " alt="" coords="691,705,822,660,823,665,693,710"/>
+<area shape="rect" id="Node000042" href="$classentity_1_1_enemy_ship_formation.html#aae55bec682ecd1692c011a6a4cc23212" title=" " alt="" coords="790,708,1014,751"/>
+<area shape="poly" id="edge60_Node000027_Node000042" title=" " alt="" coords="743,727,775,727,775,732,743,732"/>
+<area shape="rect" id="Node000030" href="$classentity_1_1_enemy_ship_formation.html#ad8676ce8b832d61f3b7d9c0989cb1e97" title="A function that explosive up, down, left, and right when an explosive EnemyShip dies." alt="" coords="1062,623,1302,649"/>
+<area shape="poly" id="edge38_Node000029_Node000030" title=" " alt="" coords="1014,633,1046,633,1046,639,1014,639"/>
+<area shape="rect" id="Node000032" href="$classentity_1_1_enemy_ship.html#a370800097669d1fea7604d09a19058ad" title="Getter for the Initial x&#45;coordinate of this EnemyShip." alt="" coords="1910,636,2064,663"/>
+<area shape="poly" id="edge48_Node000029_Node000032" title=" " alt="" coords="1015,653,1062,659,1297,670,1530,669,1737,662,1895,653,1895,659,1737,668,1530,675,1297,675,1061,664,1014,659"/>
+<area shape="rect" id="Node000035" href="$classentity_1_1_enemy_ship.html#a28edf6400f1cc93cde71d035fc8467bc" title="Getter for the Initial y&#45;coordinate of this EnemyShip." alt="" coords="1910,519,2064,545"/>
+<area shape="poly" id="edge49_Node000029_Node000035" title=" " alt="" coords="929,612,987,574,1023,555,1061,541,1133,528,1229,519,1461,513,1701,517,1895,525,1895,530,1701,523,1461,519,1229,525,1134,533,1062,547,1025,560,990,578,932,617"/>
+<area shape="rect" id="Node000037" href="$classentity_1_1_enemy_ship.html#ada16aeee2f6d94e63efb5f33e78ba9b6" title="Getter for the score bonus if this ship is destroyed." alt="" coords="1094,556,1270,599"/>
+<area shape="poly" id="edge47_Node000029_Node000037" title=" " alt="" coords="1006,611,1078,596,1080,601,1007,617"/>
+<area shape="rect" id="Node000038" href="$class_enemy_1_1_hp_enemy_ship.html#a07c30d46d1490fddfbc87aabdf15a835" title="When the EnemyShip is hit and its hp reaches 0, destroy the ship." alt="" coords="1098,724,1266,751"/>
+<area shape="poly" id="edge50_Node000029_Node000038" title=" " alt="" coords="949,655,1063,703,1108,717,1107,722,1061,708,947,660"/>
+<area shape="rect" id="Node000041" href="$classentity_1_1_enemy_ship_formation.html#a1fdfe251c7b640055b3769dad2c9ad4f" title=" " alt="" coords="1356,452,1565,495"/>
+<area shape="poly" id="edge57_Node000029_Node000041" title=" " alt="" coords="919,612,976,553,1016,522,1061,498,1131,476,1204,464,1275,459,1341,459,1341,465,1275,464,1204,469,1132,481,1063,502,1019,526,980,557,922,616"/>
+<area shape="rect" id="Node000031" href="$classentity_1_1_enemy_ship_formation.html#a3c917e5861e940e183419ec3356fa2d3" title=" " alt="" coords="1350,855,1571,897"/>
+<area shape="poly" id="edge39_Node000030_Node000031" title=" " alt="" coords="1217,648,1262,673,1284,690,1304,710,1316,729,1322,746,1326,779,1332,810,1339,825,1352,841,1355,843,1351,847,1348,845,1334,828,1326,812,1321,780,1317,747,1311,731,1300,714,1281,694,1259,677,1215,652"/>
+<area shape="rect" id="Node000033" href="$classentity_1_1_enemy_ship_formation.html#a904c1e233a043db3cb148453114b332f" title=" " alt="" coords="1358,569,1564,612"/>
+<area shape="poly" id="edge42_Node000030_Node000033" title=" " alt="" coords="1268,619,1342,607,1343,613,1269,625"/>
+<area shape="poly" id="edge40_Node000031_Node000001" title=" " alt="" coords="1374,857,1278,835,1161,814,1033,797,903,791,625,791,401,784,206,771,206,765,401,779,625,785,903,785,1033,792,1162,809,1279,830,1375,851"/>
+<area shape="poly" id="edge41_Node000031_Node000032" title=" " alt="" coords="1538,852,1570,840,1678,796,1784,748,1945,668,1948,672,1786,753,1680,801,1572,845,1540,857"/>
+<area shape="rect" id="Node000034" href="$classentity_1_1_enemy_ship_formation.html#aef8ac8fa91fd51417fdd9462b64049f5" title=" " alt="" coords="1620,569,1841,612"/>
+<area shape="poly" id="edge43_Node000033_Node000034" title=" " alt="" coords="1564,588,1605,588,1605,593,1564,593"/>
+<area shape="poly" id="edge44_Node000034_Node000032" title=" " alt="" coords="1827,610,1911,629,1910,635,1826,615"/>
+<area shape="poly" id="edge45_Node000034_Node000035" title=" " alt="" coords="1826,566,1910,547,1911,552,1827,571"/>
+<area shape="rect" id="Node000036" href="$classentity_1_1_enemy_ship_formation.html#a706d12b166bf8a052b019719d59f5d5c" title=" " alt="" coords="1890,569,2085,612"/>
+<area shape="poly" id="edge46_Node000034_Node000036" title=" " alt="" coords="1841,588,1874,588,1874,593,1841,593"/>
+<area shape="poly" id="edge51_Node000038_Node000003" title=" " alt="" coords="1218,721,1262,697,1283,680,1300,660,1318,621,1325,584,1323,548,1317,513,1312,478,1312,443,1323,407,1348,372,1360,362,1363,366,1352,375,1328,410,1318,443,1317,477,1322,512,1328,547,1330,584,1323,623,1304,663,1287,684,1265,701,1221,726"/>
+<area shape="poly" id="edge56_Node000038_Node000012" title=" " alt="" coords="1266,723,1364,710,1364,716,1266,729"/>
+<area shape="poly" id="edge53_Node000038_Node000020" title=" " alt="" coords="1219,721,1263,697,1283,680,1300,660,1321,614,1327,570,1324,528,1316,487,1309,446,1308,405,1319,363,1331,342,1348,321,1373,303,1376,308,1352,325,1336,345,1324,365,1313,405,1314,445,1321,486,1329,527,1332,570,1326,615,1304,663,1287,684,1266,701,1222,726"/>
+<area shape="poly" id="edge54_Node000038_Node000028" title=" " alt="" coords="1206,749,1253,784,1304,832,1318,853,1326,873,1335,890,1352,907,1367,916,1364,921,1348,911,1330,893,1321,875,1314,856,1300,835,1250,788,1203,753"/>
+<area shape="rect" id="Node000039" href="$class_enemy_1_1_hp_enemy_ship.html#a913bb55279ee2d216896db8b883d5797" title="Determine the color of the ship according to hp." alt="" coords="1356,788,1566,831"/>
+<area shape="poly" id="edge52_Node000038_Node000039" title=" " alt="" coords="1237,749,1361,781,1360,786,1236,754"/>
+<area shape="rect" id="Node000040" href="$classentity_1_1_entity.html#ad3c95a68bcededd6325adee1274560eb" title="Setter for the X axis position of the entity." alt="" coords="1390,737,1532,764"/>
+<area shape="poly" id="edge55_Node000038_Node000040" title=" " alt="" coords="1266,739,1374,744,1374,749,1266,744"/>
+<area shape="poly" id="edge58_Node000041_Node000004" title=" " alt="" coords="1536,449,1570,437,1682,394,1684,399,1572,443,1538,454"/>
+<area shape="poly" id="edge59_Node000041_Node000009" title=" " alt="" coords="1552,449,1570,438,1586,417,1593,395,1600,372,1618,350,1632,341,1635,345,1621,354,1604,375,1598,397,1591,419,1573,442,1555,454"/>
+<area shape="poly" id="edge61_Node000042_Node000028" title=" " alt="" coords="961,749,1303,886,1351,907,1376,914,1375,920,1349,912,1301,890,959,754"/>
+<area shape="poly" id="edge62_Node000042_Node000038" title=" " alt="" coords="1014,730,1083,732,1083,737,1014,735"/>
+<area shape="poly" id="edge68_Node000044_Node000024" title=" " alt="" coords="454,939,545,920,546,925,455,945"/>
+<area shape="rect" id="Node000045" href="$classentity_1_1_enemy_ship_formation.html#a1d24270da038a42c4c2cf2bd85292cc0" title=" " alt="" coords="524,993,730,1036"/>
+<area shape="poly" id="edge65_Node000044_Node000045" title=" " alt="" coords="464,982,509,990,508,996,463,987"/>
+<area shape="rect" id="Node000046" href="$classentity_1_1_enemy_ship_formation.html#ae9631df79492b59515beac0bd3163f9d" title="Gets the ship on a given column that will be in charge of shooting." alt="" coords="800,1017,1004,1060"/>
+<area shape="poly" id="edge66_Node000044_Node000046" title=" " alt="" coords="384,984,441,1018,476,1034,512,1045,581,1057,652,1062,722,1060,785,1055,785,1060,722,1065,652,1067,580,1063,510,1051,474,1039,439,1023,381,988"/>
+<area shape="rect" id="Node000048" href="$classentity_1_1_bomb.html#a2d12331bb57c57e906a1abbccac5eeda" title=" " alt="" coords="520,943,734,969"/>
+<area shape="poly" id="edge69_Node000044_Node000048" title=" " alt="" coords="463,958,504,957,504,962,463,963"/>
+<area shape="rect" id="Node000047" href="$classentity_1_1_enemy_ship_formation.html#ae3846c622e67a11e12ba8bfe2cbf31fe" title="Returns an iterator over the ships in the formation." alt="" coords="1069,1025,1294,1052"/>
+<area shape="poly" id="edge67_Node000046_Node000047" title=" " alt="" coords="1004,1036,1054,1036,1054,1041,1004,1041"/>
+<area shape="poly" id="edge70_Node000048_Node000046" title=" " alt="" coords="699,967,743,979,832,1009,830,1014,742,984,697,973"/>
+</map>

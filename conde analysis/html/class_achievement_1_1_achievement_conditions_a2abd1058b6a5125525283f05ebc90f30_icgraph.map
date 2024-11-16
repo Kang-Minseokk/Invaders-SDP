@@ -1,0 +1,8 @@
+<map id="Achievement.AchievementConditions.score" name="Achievement.AchievementConditions.score">
+<area shape="rect" id="Node000001" title=" " alt="" coords="467,29,742,56"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="654,17,637,11,605,8,575,10,559,15,556,20,563,27,559,31,550,21,556,11,574,5,605,3,639,5,656,13"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#a41e19e7b8b70f17d04c7787b81d5116c" title=" " alt="" coords="237,21,419,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="451,45,420,45,420,40,451,40"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,29,189,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,45,189,45,189,40,221,40"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="engine.SoundManager.SoundManager" name="engine.SoundManager.SoundManager">
+<area shape="rect" id="Node000001" title="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..." alt="" coords="5,48,197,91"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="282,5,434,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,48,271,33,272,38,197,53"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb" title=" " alt="" coords="245,56,471,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,67,229,67,229,72,197,72"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f" title=" " alt="" coords="263,107,453,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,89,248,100,247,105,196,94"/>
+</map>

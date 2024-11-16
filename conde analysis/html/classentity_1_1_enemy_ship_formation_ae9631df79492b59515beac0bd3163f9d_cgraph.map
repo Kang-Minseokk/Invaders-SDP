@@ -1,0 +1,5 @@
+<map id="entity.EnemyShipFormation.getNextShooter" name="entity.EnemyShipFormation.getNextShooter">
+<area shape="rect" id="Node000001" title="Gets the ship on a given column that will be in charge of shooting." alt="" coords="5,5,209,48"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_enemy_ship_formation.html#ae3846c622e67a11e12ba8bfe2cbf31fe" title="Returns an iterator over the ships in the formation." alt="" coords="257,13,482,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,24,241,24,241,29,209,29"/>
+</map>

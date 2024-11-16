@@ -1,0 +1,13 @@
+<map id="entity.ItemBarrierAndHeart.updateBarrierAndShip" name="entity.ItemBarrierAndHeart.updateBarrierAndShip">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,224,91"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_item_barrier_and_heart.html#a642924a3815d53c1611aef9ff448b83a" title=" " alt="" coords="272,5,547,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,48,312,33,313,38,225,53"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_ship.html#a50d86eb873f9b9dad7977cd8e9215afc" title="Constructor, establishes the entity&#39;s generic properties." alt="" coords="326,56,492,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,67,311,67,311,72,224,72"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_ship.html#a77612eaa418b1abe881de16bf6b5bdfb" title="Updates status of the ship." alt="" coords="347,107,472,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="225,86,331,104,331,109,224,91"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793" title="Checks if the cooldown is finished." alt="" coords="598,77,807,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="472,111,583,100,583,105,473,116"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_draw_manager.html#a16019fb34636287f1d5b5e84e900c9c0" title=" " alt="" coords="595,128,810,171"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="473,124,580,134,579,140,472,129"/>
+</map>

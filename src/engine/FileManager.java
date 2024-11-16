@@ -1,5 +1,6 @@
 package engine;
 
+import java.io.*;
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.io.BufferedReader;
@@ -38,11 +39,15 @@ public final class FileManager {
 	private static final int MAX_SCORES = 7;
 	/** Max number of recent recorded scores / Team Clove */
 	private static final int MAX_RECORD = 10;
+	private static final String SKIN_PROPERTIES_FILE = "unlocked_skins.properties";
+
+
+
 
 	/**
 	 * private constructor.
 	 */
-	private FileManager() {
+    public FileManager() {
 		logger = Core.getLogger();
 	}
 
@@ -456,6 +461,35 @@ public final class FileManager {
 			if (bufferedWriter != null)
 				bufferedWriter.close();
 		}
+	}
+
+
+	//custom
+	// FileManager에 추가
+	public static void saveUnlockedSkins(Properties unlockedSkins) throws IOException {
+		String jarPath = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+		jarPath = URLDecoder.decode(jarPath, "UTF-8");
+
+		String propertiesPath = new File(jarPath).getParent() + File.separator + SKIN_PROPERTIES_FILE;
+		try (OutputStream outputStream = new FileOutputStream(propertiesPath)) {
+			unlockedSkins.store(new OutputStreamWriter(outputStream, Charset.forName("UTF-8")), "Unlocked Skins");
+		}
+	}
+
+	public static Properties loadUnlockedSkins() throws IOException {
+		Properties unlockedSkins = new Properties();
+		String jarPath = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+		jarPath = URLDecoder.decode(jarPath, "UTF-8");
+
+		String propertiesPath = new File(jarPath).getParent() + File.separator + SKIN_PROPERTIES_FILE;
+		File file = new File(propertiesPath);
+
+		if (file.exists()) {
+			try (InputStream inputStream = new FileInputStream(file)) {
+				unlockedSkins.load(new InputStreamReader(inputStream, Charset.forName("UTF-8")));
+			}
+		}
+		return unlockedSkins;
 	}
 
 	/**

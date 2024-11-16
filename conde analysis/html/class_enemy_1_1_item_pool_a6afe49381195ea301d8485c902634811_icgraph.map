@@ -1,0 +1,14 @@
+<map id="Enemy.ItemPool.recycle" name="Enemy.ItemPool.recycle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="969,35,1132,61"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_item_manager.html#af63c345ee14380bea60c96546df88ab9" title=" " alt="" coords="475,5,684,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="953,45,685,28,685,23,953,39"/>
+<area shape="rect" id="Node000004" href="$class_enemy_1_1_item_manager.html#abbb16e93fc91934d3d963f389792a954" title=" " alt="" coords="732,56,921,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="954,63,921,68,921,62,953,58"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,35,189,61"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,29,189,45,189,40,459,23"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_game_screen.html#aaa246e4bb4604682b7380845beab0e9f" title=" " alt="" coords="488,56,671,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="717,80,671,80,671,75,717,75"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_game_screen.html#a20e6975baf2786217ea22eabdcc4f3ce" title="Manages collisions between bullets and ships." alt="" coords="237,56,427,99"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="473,80,427,80,427,75,473,75"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="221,66,189,62,190,57,221,61"/>
+</map>

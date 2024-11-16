@@ -2,12 +2,18 @@ package screen;
 
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.util.Random;
 
 import engine.Cooldown;
 import engine.Core;
 // Sound Operator
 import engine.SoundManager;
 import entity.ShipStatus;
+
+import engine.DrawManager.SpriteType;
+import java.util.Properties;
+
+import entity.Skins;
 
 /**
  * Implements the title screen.
@@ -33,6 +39,9 @@ public class TitleScreen extends Screen {
 	//inventory
 	private ShipStatus shipStatus;
 
+	private int customState;
+	private Properties unlockedSkins;
+
 
 	/**
 	 * Constructor, establishes the properties of the screen.
@@ -53,22 +62,26 @@ public class TitleScreen extends Screen {
 		this.returnCode = 2;
 		this.selectionCooldown = Core.getCooldown(SELECTION_TIME);
 		this.selectionCooldown.reset();
+		this.customState = 0;
 
+		//Skins.resetUnlockedSkins(); // 해금된 스킨 초기화
 
 		// CtrlS: Set user's coin, gem
-        try {
-            this.coin = Core.getCurrencyManager().getCoin();
+		try {
+			this.coin = Core.getCurrencyManager().getCoin();
 			this.gem = Core.getCurrencyManager().getGem();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 
-        // Sound Operator
+		// Sound Operator
 		SoundManager.getInstance().playBGM("mainMenu_bgm");
 
 		// inventory load upgrade price
 		shipStatus = new ShipStatus();
 		shipStatus.loadPrice();
+		Skins.loadSkins();  // 기존 해금된 스킨 목록 로드
+
 	}
 
 	/**
@@ -99,6 +112,23 @@ public class TitleScreen extends Screen {
 			handleHorizontalMenuNavigation();
 			handleSpecialReturnCode();
 			handleSpaceKey();
+			handleCustomOption();
+		}
+
+	}
+
+	private void handleCustomOption() {
+		if (returnCode == 6) {
+			if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+				previousCustomState();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+			if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+				nextCustomState();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
 		}
 	}
 
@@ -150,7 +180,12 @@ public class TitleScreen extends Screen {
 			if (returnCode == 4) {
 				testStatUpgrade();
 				this.selectionCooldown.reset();
-			} else {
+			}
+			else if(returnCode == 6){
+				drawRandomSkin();
+				this.selectionCooldown.reset();
+			}
+			else {
 				this.isRunning = false;
 			}
 		}
@@ -302,8 +337,53 @@ public class TitleScreen extends Screen {
 			throw new RuntimeException(e);
 		}
 	}
+	//custom
+	private void drawRandomSkin() {
+		if (customState == 7 ) {
+			if (Skins.lockedSkins.isEmpty() || Skins.unlockedSkins.size() == 5) {
+				Core.getLogger().info("All skins are already unlocked.");
+				return;
+			}
+
+			try {
+				int DrawPrice = 50 * (1 + Skins.unlockedSkins.size());
+				if (Core.getCurrencyManager().spendCoin(DrawPrice)) {
+					Random random = new Random();
+					int randomIndex = random.nextInt(Skins.lockedSkins.size());
+					SpriteType selectedSkin = Skins.lockedSkins.get(randomIndex);
+					Core.getLogger().info("randomIndex: " + randomIndex);
+					int option4num = Skins.AllSkins.indexOf(selectedSkin) + 2;
+					Core.getLogger().info("option4num: " + option4num);
+					if (!Skins.isSkinUnlocked(selectedSkin)) {
+						Skins.unlockSkin(selectedSkin);
+						Core.getLogger().info("Unlocked Skin: " + selectedSkin);
+						this.customState = option4num; //해당스킨으로 이동
+						Core.getLogger().info("Customstate: " + customState);
+						SoundManager.getInstance().playES("draw_success");
+					}
+					else {
+							Core.getLogger().info("Skin already unlocked: " + selectedSkin);
+					}
+				}
+			}
+			catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+			try {
+				this.coin = Core.getCurrencyManager().getCoin();
+				this.gem = Core.getCurrencyManager().getGem();
+			}
+			catch (IOException e) {
+					throw new RuntimeException(e);
+			}
+
+		}
+
+	}
+
+
 	private void nextMenuItem() {
-		if (this.returnCode == 5) // Team Clover changed values because recordMenu added
+		if (this.returnCode == 6) // Team Clover changed values because recordMenu added
 			this.returnCode = 0; // from '2 player mode' to 'Exit' (Starter)
 		else if (this.returnCode == 0)
 			this.returnCode = 2; // from 'Exit' to 'Play' (Starter)
@@ -317,7 +397,7 @@ public class TitleScreen extends Screen {
 	private void previousMenuItem() {
 		this.merchantState =0;
 		if (this.returnCode == 0)
-			this.returnCode = 5; // from 'Exit' to '2 player mode' (Starter) // Team Clover changed values because recordMenu added
+			this.returnCode = 6; // from 'Exit' to '2 player mode' (Starter) // Team Clover changed values because recordMenu added
 		else if (this.returnCode == 2)
 			this.returnCode = 0; // from 'Play' to 'Exit' (Starter)
 		else
@@ -362,6 +442,25 @@ public class TitleScreen extends Screen {
 		}
 	}
 
+	//custom
+	private void nextCustomState() {
+		if (this.returnCode == 6) {
+			if (this.customState == 7)
+				this.customState = 0;
+			else
+				this.customState++;
+		}
+	}
+
+	private void previousCustomState() {
+		if (this.returnCode == 6) {
+			if (this.customState == 0)
+				this.customState = 7;
+			else
+				this.customState--;
+		}
+	}
+
 	/**
 	 * Draws the elements associated with the screen.
 	 */
@@ -369,7 +468,7 @@ public class TitleScreen extends Screen {
 		drawManager.initDrawing(this);
 
 		drawManager.drawTitle(this);
-		drawManager.drawMenu(this, this.returnCode, this.pnumSelectionCode, this.merchantState);
+		drawManager.drawMenu(this, this.returnCode, this.pnumSelectionCode, this.merchantState, this.customState);
 		// CtrlS
 		drawManager.drawCurrentCoin(this, coin);
 		drawManager.drawCurrentGem(this, gem);

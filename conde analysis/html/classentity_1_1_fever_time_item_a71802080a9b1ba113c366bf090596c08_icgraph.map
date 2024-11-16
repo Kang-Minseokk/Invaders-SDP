@@ -1,0 +1,9 @@
+<map id="entity.FeverTimeItem.deactivate" name="entity.FeverTimeItem.deactivate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="703,13,912,40"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_fever_time_item.html#ad0d0455620062280e46805247f96c5e4" title=" " alt="" coords="468,13,655,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="688,29,656,29,656,24,688,24"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a170f7dceead615d1b65eadbd70693ea2" title=" " alt="" coords="237,5,420,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,29,420,29,420,24,453,24"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+</map>

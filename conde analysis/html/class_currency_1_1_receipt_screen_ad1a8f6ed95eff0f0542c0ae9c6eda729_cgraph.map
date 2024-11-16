@@ -1,0 +1,31 @@
+<map id="Currency.ReceiptScreen.update" name="Currency.ReceiptScreen.update">
+<area shape="rect" id="Node000001" title="Updates the elements on screen and checks for events." alt="" coords="5,305,212,332"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_receipt_screen.html#a6c8320866245be6a855d7253627548ad" title="Draws the elements associated with the screen." alt="" coords="269,280,464,307"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,306,253,302,253,307,212,311"/>
+<area shape="rect" id="Node000015" href="$classengine_1_1_input_manager.html#ae11d2d2ce4f137384c4c51e2341f2d28" title="Returns true if the provided key is currently pressed." alt="" coords="260,331,473,357"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="212,326,244,329,244,335,212,331"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#ad0ebafd3a3a50e5d0af5074854013cf9" title="Draws the completed drawing on screen." alt="" coords="531,213,732,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="430,277,517,257,518,262,431,282"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_draw_manager.html#a3a4c805d68a2cb1265ef7c3cd8f3ff42" title="Show ReceiptScreen." alt="" coords="521,280,742,307"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="464,291,506,291,506,296,464,296"/>
+<area shape="rect" id="Node000014" href="$classengine_1_1_draw_manager.html#a4e020955bc763452deba09367dbcf30d" title="First part of the drawing process." alt="" coords="525,331,738,357"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="441,305,544,325,543,330,440,310"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_draw_manager.html#a01d2cd207f7553b79e0f73972acd514c" title="Draws a centered string on big font." alt="" coords="792,5,1022,48"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="725,277,740,266,759,241,766,216,767,191,764,165,761,139,762,112,770,85,788,58,790,56,794,60,792,62,775,87,767,113,767,138,770,164,772,191,772,217,763,244,744,270,729,282"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_draw_manager.html#a4016c7be1acc513467bcc183b5e515d0" title="Draws a centered string on regular font." alt="" coords="792,72,1022,115"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="724,277,741,266,754,250,761,233,764,198,767,161,774,143,788,125,791,122,795,126,792,128,779,145,772,162,769,198,766,234,759,252,744,270,727,282"/>
+<area shape="rect" id="Node000007" href="$class_currency_1_1_round_state.html#afaaf16c46626c2070f31b72e5ad11dc6" title=" " alt="" coords="795,139,1019,181"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="720,277,741,266,757,249,764,230,772,210,789,191,794,187,797,192,792,195,776,213,769,232,761,251,744,270,722,282"/>
+<area shape="rect" id="Node000008" href="$class_currency_1_1_round_state.html#ac26f8f9df0a351d71c436bed1cd2415f" title=" " alt="" coords="808,205,1006,248"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="694,277,742,265,805,250,806,255,743,271,695,282"/>
+<area shape="rect" id="Node000009" href="$class_currency_1_1_round_state.html#a7c7a0950f8c9ba93c5c02aecd412f51a" title=" " alt="" coords="807,272,1007,315"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="743,291,791,291,791,296,743,296"/>
+<area shape="rect" id="Node000010" href="$class_currency_1_1_round_state.html#a0846af10dad0ad668546c3c17d1ffee1" title=" " alt="" coords="790,339,1024,365"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="699,305,827,332,826,337,697,310"/>
+<area shape="rect" id="Node000011" href="$class_currency_1_1_round_state.html#a64eccda4c320e9d6a5418b5482a50392" title=" " alt="" coords="804,389,1010,432"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="719,305,744,316,760,331,769,346,777,361,792,375,799,380,797,384,789,379,773,364,764,349,756,334,741,321,717,310"/>
+<area shape="rect" id="Node000012" href="$classengine_1_1_game_state.html#a60ff07023c26cc841f1dd3e1b47ff094" title=" " alt="" coords="814,456,1000,483"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="726,305,744,317,758,332,765,349,769,381,773,413,779,428,792,442,802,449,799,454,789,446,775,430,768,414,764,382,760,350,753,335,741,321,723,309"/>
+<area shape="rect" id="Node000013" href="$class_currency_1_1_round_state.html#aa4f24516d537a894b0378bd1e815288c" title=" " alt="" coords="808,507,1006,549"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="728,305,744,317,761,339,769,361,770,406,770,450,777,472,792,493,798,498,794,502,788,496,772,474,764,451,764,406,764,362,756,341,740,321,725,309"/>
+</map>

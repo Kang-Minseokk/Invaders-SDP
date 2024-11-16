@@ -1,0 +1,7 @@
+<map id="Enemy.ItemPool.getItem" name="Enemy.ItemPool.getItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,171,57"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="230,5,375,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,32,214,26,214,32,171,37"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_entity.html#a34b1106b5fc108c72ce6083d913e42ed" title="Setter for the X axis position of the entity." alt="" coords="219,56,386,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,51,204,55,203,60,171,56"/>
+</map>

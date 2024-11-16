@@ -1,0 +1,5 @@
+<map id="engine.DrawManager.drawHighScores" name="engine.DrawManager.drawHighScores">
+<area shape="rect" id="Node000001" title="Draws high scores." alt="" coords="5,5,209,48"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a4016c7be1acc513467bcc183b5e515d0" title="Draws a centered string on regular font." alt="" coords="257,5,486,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,24,241,24,241,29,209,29"/>
+</map>

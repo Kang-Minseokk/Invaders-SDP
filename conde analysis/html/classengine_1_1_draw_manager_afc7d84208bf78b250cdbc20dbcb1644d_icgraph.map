@@ -1,0 +1,5 @@
+<map id="engine.DrawManager.getAchievementText" name="engine.DrawManager.getAchievementText">
+<area shape="rect" id="Node000001" title=" " alt="" coords="218,5,485,32"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_screen.html#afa6e5be0e548c5eedfc06060ee7fc2c4" title="Update the elements on screen after update all child screen." alt="" coords="5,5,170,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,21,170,21,170,16,202,16"/>
+</map>

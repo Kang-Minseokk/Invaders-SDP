@@ -1,0 +1,43 @@
+<map id="entity.EnemyShipFormation.shoot" name="entity.EnemyShipFormation.shoot">
+<area shape="rect" id="Node000001" title="Shoots a bullet downwards." alt="" coords="5,316,223,343"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793" title="Checks if the cooldown is finished." alt="" coords="277,148,486,175"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,314,181,251,223,215,269,184,283,178,285,183,272,189,226,219,185,255,128,317"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea" title=" " alt="" coords="271,199,493,225"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,313,192,274,270,235,290,228,292,233,272,240,195,279,136,318"/>
+<area shape="rect" id="Node000008" href="$class_enemy_1_1_piercing_bullet_pool.html#a4a52999ff5a663a5f5ff989fee638d18" title="Retrieves a piercing bullet from the pool if one is available, or creates a new one if the pool is em..." alt="" coords="285,249,478,292"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="178,313,269,293,271,298,179,318"/>
+<area shape="rect" id="Node000017" href="$classentity_1_1_entity.html#aade70f342a09b3c37b7f40d17db45983" title="Getter for the X axis position of the entity." alt="" coords="298,316,466,343"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="223,327,282,327,282,332,223,332"/>
+<area shape="rect" id="Node000018" href="$classentity_1_1_entity.html#afdcbb4ca073d5a81b37ed096ac85f5ef" title="Getter for the Y axis position of the entity." alt="" coords="298,367,466,393"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="189,341,293,361,292,366,188,346"/>
+<area shape="rect" id="Node000019" href="$classengine_1_1_sound_manager.html#af326739e7c567da7bedf9a07eff7e232" title=" " alt="" coords="284,417,480,444"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="141,341,199,372,272,403,296,410,294,415,270,408,197,377,138,346"/>
+<area shape="rect" id="Node000021" href="$classengine_1_1_cooldown.html#abcb3cea769834552c6a81075f5d17dc7" title="Restarts the cooldown." alt="" coords="305,468,459,495"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="130,341,188,396,228,427,272,454,291,462,289,467,269,458,225,432,184,400,126,345"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9" title="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..." alt="" coords="541,48,732,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="472,196,491,185,508,165,515,145,522,123,539,101,544,97,547,101,543,105,527,125,520,146,513,168,495,189,474,200"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="817,5,970,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="732,48,807,33,808,38,733,53"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb" title=" " alt="" coords="780,56,1007,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="733,67,765,67,765,72,733,72"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f" title=" " alt="" coords="798,107,989,149"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="733,89,784,100,783,105,732,94"/>
+<area shape="rect" id="Node000009" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="564,115,709,141"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="474,247,491,235,508,215,514,194,522,172,539,151,548,145,551,150,543,155,526,175,519,196,512,218,495,239,477,251"/>
+<area shape="rect" id="Node000010" href="$class_enemy_1_1_piercing_bullet.html#aaf715b32aa00f90727b81075c048ec83" title="Setter for the piercing count." alt="" coords="553,165,720,208"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="456,246,492,235,540,217,558,211,560,216,542,223,494,240,458,251"/>
+<area shape="rect" id="Node000011" href="$classentity_1_1_entity.html#a34b1106b5fc108c72ce6083d913e42ed" title="Setter for the X axis position of the entity." alt="" coords="553,232,720,259"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="479,258,537,253,538,258,479,264"/>
+<area shape="rect" id="Node000012" href="$classentity_1_1_entity.html#ac88ed00a2aee4a591913edb6e596b114" title="Setter for the Y axis position of the entity." alt="" coords="553,283,720,309"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="479,278,538,283,537,289,479,283"/>
+<area shape="rect" id="Node000013" href="$classentity_1_1_bullet.html#a59bdfb1e41a99260374b3f7b2ea50007" title="Setter of the speed of the bullet." alt="" coords="562,333,711,360"/>
+<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="458,290,494,301,542,319,566,326,565,331,540,324,492,307,456,295"/>
+<area shape="rect" id="Node000014" href="$classentity_1_1_bullet.html#a2aec4db9c13df6487b5221d3cf5fbc7d" title="Sets correct sprite for the bullet, based on speed." alt="" coords="564,384,709,411"/>
+<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="475,290,495,302,511,319,519,337,527,354,543,370,551,375,548,380,539,374,523,357,514,339,507,322,491,306,472,295"/>
+<area shape="rect" id="Node000015" href="$classentity_1_1_bomb.html#a8f61c1500609ebfc7a285461ed9e1028" title=" " alt="" coords="808,359,979,385"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="710,388,793,379,793,385,710,393"/>
+<area shape="rect" id="Node000016" href="$classentity_1_1_bomb.html#acc740247abbfc0e65202ebbdd984d736" title=" " alt="" coords="815,409,972,436"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="710,402,799,411,799,416,710,407"/>
+<area shape="rect" id="Node000020" href="$classengine_1_1_sound_manager.html#aff8a50dd8c931099450db7066e6a360e" title=" " alt="" coords="548,435,726,477"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="481,438,533,443,532,448,480,443"/>
+</map>

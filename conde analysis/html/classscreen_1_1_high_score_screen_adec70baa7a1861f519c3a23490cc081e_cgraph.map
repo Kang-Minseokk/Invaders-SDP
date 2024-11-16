@@ -1,0 +1,20 @@
+<map id="screen.HighScoreScreen.update" name="screen.HighScoreScreen.update">
+<area shape="rect" id="Node000001" title="Updates the elements on screen and checks for events." alt="" coords="5,139,215,165"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_high_score_screen.html#ac1bf2de37016bbe023dd444517e4c4de" title="Draws the elements associated with the screen." alt="" coords="270,113,468,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,139,255,135,255,140,215,144"/>
+<area shape="rect" id="Node000009" href="$classengine_1_1_input_manager.html#ae11d2d2ce4f137384c4c51e2341f2d28" title="Returns true if the provided key is currently pressed." alt="" coords="263,164,476,191"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="215,160,247,163,247,168,215,165"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#ad0ebafd3a3a50e5d0af5074854013cf9" title="Draws the completed drawing on screen." alt="" coords="530,5,731,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,110,523,58,541,51,543,56,525,62,401,115"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_draw_manager.html#abf01bc58de60cf927e292221a955b8bf" title="Draws high score screen title and instructions." alt="" coords="529,72,732,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="468,111,513,106,514,111,469,117"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_draw_manager.html#ad13d007f658c701df06cc21dc8242638" title="Draws high scores." alt="" coords="529,139,732,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="469,137,514,142,513,148,468,142"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_draw_manager.html#a4e020955bc763452deba09367dbcf30d" title="First part of the drawing process." alt="" coords="524,205,737,232"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="449,138,477,150,492,160,502,171,511,181,525,191,539,197,537,202,523,196,508,185,498,174,489,164,475,154,447,143"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_draw_manager.html#a01d2cd207f7553b79e0f73972acd514c" title="Draws a centered string on big font." alt="" coords="785,72,1015,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="733,91,770,91,770,96,733,96"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_draw_manager.html#a4016c7be1acc513467bcc183b5e515d0" title="Draws a centered string on regular font." alt="" coords="785,139,1015,181"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="720,113,797,132,796,137,719,118"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="733,157,770,157,770,163,733,163"/>
+</map>

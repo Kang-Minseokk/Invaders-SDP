@@ -1,0 +1,9 @@
+<map id="Enemy.PiercingBullet.PiercingBullet" name="Enemy.PiercingBullet.PiercingBullet">
+<area shape="rect" id="Node000001" title="Constructor for PiercingBullet." alt="" coords="5,23,202,65"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_bullet.html#a2aec4db9c13df6487b5221d3cf5fbc7d" title="Sets correct sprite for the bullet, based on speed." alt="" coords="250,31,395,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,41,234,41,234,47,202,47"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_bomb.html#a8f61c1500609ebfc7a285461ed9e1028" title=" " alt="" coords="443,5,613,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="395,32,427,28,428,34,396,38"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_bomb.html#acc740247abbfc0e65202ebbdd984d736" title=" " alt="" coords="450,56,607,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="396,50,434,55,434,60,395,56"/>
+</map>

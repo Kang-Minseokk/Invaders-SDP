@@ -1,0 +1,9 @@
+<map id="entity.EnemyShipFormation.attach" name="entity.EnemyShipFormation.attach">
+<area shape="rect" id="Node000001" title="Associates the formation to a given screen." alt="" coords="706,13,928,40"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#aef90152dffd0a774ee312828da3ed861" title="Initializes basic screen properties, and adds necessary elements." alt="" coords="467,13,658,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="691,29,659,29,659,24,691,24"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#aadf4f57babea3e17c46a02011413e1d4" title=" " alt="" coords="237,5,419,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="452,29,420,29,420,24,452,24"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+</map>

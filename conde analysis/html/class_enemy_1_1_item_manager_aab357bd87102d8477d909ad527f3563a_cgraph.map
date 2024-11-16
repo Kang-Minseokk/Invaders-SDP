@@ -1,0 +1,13 @@
+<map id="Enemy.ItemManager.dropItem" name="Enemy.ItemManager.dropItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,202,108"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_item_pool.html#a137f799e5f461caed45ef95615d32258" title=" " alt="" coords="251,31,416,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,78,254,59,255,64,168,83"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_entity.html#aade70f342a09b3c37b7f40d17db45983" title="Getter for the X axis position of the entity." alt="" coords="250,81,417,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="202,92,234,92,234,97,202,97"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_entity.html#afdcbb4ca073d5a81b37ed096ac85f5ef" title="Getter for the Y axis position of the entity." alt="" coords="250,132,417,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="168,106,255,125,254,131,167,111"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="476,5,621,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,32,460,26,461,32,417,37"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_entity.html#a34b1106b5fc108c72ce6083d913e42ed" title="Setter for the X axis position of the entity." alt="" coords="465,56,632,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="417,51,450,55,449,60,416,56"/>
+</map>

@@ -1,0 +1,23 @@
+digraph "entity.EnemyShipFormation.dropItemIfNecessary"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="entity.EnemyShipFormation.drop\lItemIfNecessary",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Enemy.ItemManager.dropItem",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_enemy_1_1_item_manager.html#aab357bd87102d8477d909ad527f3563a",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Enemy.ItemPool.getItem",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_enemy_1_1_item_pool.html#a137f799e5f461caed45ef95615d32258",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="entity.Entity.getWidth",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219",tooltip="Getter for the width of the image associated to the entity."];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="entity.Entity.setPositionX",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_entity.html#a34b1106b5fc108c72ce6083d913e42ed",tooltip="Setter for the X axis position of the entity."];
+  Node2 -> Node6 [id="edge5_Node000002_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="entity.Entity.getPositionX",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_entity.html#aade70f342a09b3c37b7f40d17db45983",tooltip="Getter for the X axis position of the entity."];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="entity.Entity.getPositionY",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_entity.html#afdcbb4ca073d5a81b37ed096ac85f5ef",tooltip="Getter for the Y axis position of the entity."];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="entity.Entity.getColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_entity.html#a3016a1d6a74d9a823feaf4cb0b537ef5",tooltip="Getter for the color of the entity."];
+}

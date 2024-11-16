@@ -1,0 +1,9 @@
+<map id="entity.Coin" name="entity.Coin">
+<area shape="rect" id="Node000001" title=" " alt="" coords="62,769,134,839"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_entity.html" title="Implements a generic game entity." alt="" coords="42,352,154,720"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,735,101,770,96,770,96,735"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,112,47,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="35,181,64,335,58,336,30,182"/>
+<area shape="rect" id="Node000004" href="$enumengine_1_1_draw_manager_1_1_sprite_type.html" title="Sprite types." alt="" coords="72,5,271,288"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="148,288,139,336,133,335,142,287"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Enemy.PiercingBullet.getPiercingCount" name="Enemy.PiercingBullet.getPiercingCount">
+<area shape="rect" id="Node000001" title="Getter for the number of remaining piercings." alt="" coords="1174,39,1341,81"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#a86f8c8c2cd6408de33420665e3dedb85" title=" " alt="" coords="705,5,888,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1159,56,888,36,889,31,1159,50"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_game_screen.html#a22cbc570dfbcfcb8b266be01b13164ee" title=" " alt="" coords="936,68,1126,111"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1159,75,1127,80,1126,74,1158,70"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#af6ce22d045fc5614a16a76ce73331295" title=" " alt="" coords="475,39,657,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="690,45,658,49,658,44,690,39"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#a20e6975baf2786217ea22eabdcc4f3ce" title="Manages collisions between bullets and ships." alt="" coords="237,39,427,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="460,63,427,63,427,57,460,57"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,47,189,73"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="221,63,189,63,189,57,221,57"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_game_screen.html#af124aabf618c13024b2b60137927c2fb" title=" " alt="" coords="705,72,888,115"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="920,94,888,94,888,89,920,89"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="690,81,658,76,658,71,690,75"/>
+</map>

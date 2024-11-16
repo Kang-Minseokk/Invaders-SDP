@@ -1,0 +1,9 @@
+<map id="Achievement.AchievementConditions.setStatistics" name="Achievement.AchievementConditions.setStatistics">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,267,48"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_statistics.html#aec470afcbefd9828060b11add7f37673" title="Load Statistic.property (userdata)" alt="" coords="315,5,499,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,24,299,24,299,29,267,29"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a58f26de7ca8d0c2fa5f84bd180e98616" title="load userData(Statistics) from file, and return userData(Statistics)" alt="" coords="547,13,765,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="500,24,531,24,531,29,500,29"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#a659bc395de42280133d732e581ffb91d" title="Returns the application default userData(Statistics) if there is no Statistic.properties file." alt="" coords="813,5,1018,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="766,24,798,24,798,29,766,29"/>
+</map>

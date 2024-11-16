@@ -1,0 +1,5 @@
+<map id="engine.DrawManager.drawNameInput" name="engine.DrawManager.drawNameInput">
+<area shape="rect" id="Node000001" title="Draws interactive characters for name input." alt="" coords="5,5,217,48"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a4016c7be1acc513467bcc183b5e515d0" title="Draws a centered string on regular font." alt="" coords="265,5,494,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,24,249,24,249,29,217,29"/>
+</map>

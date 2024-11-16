@@ -1,0 +1,5 @@
+<map id="engine.InputManager.getInstance" name="engine.InputManager.getInstance">
+<area shape="rect" id="Node000001" title="Returns shared instance of InputManager." alt="" coords="5,13,220,40"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_input_manager.html#a1ab5f8bce66f516527390223c6dc18db" title="Private constructor." alt="" coords="268,5,443,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,24,252,24,252,29,220,29"/>
+</map>

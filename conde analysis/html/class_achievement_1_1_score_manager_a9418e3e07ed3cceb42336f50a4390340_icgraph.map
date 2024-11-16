@@ -1,0 +1,7 @@
+<map id="Achievement.ScoreManager.getAccumulatedScore" name="Achievement.ScoreManager.getAccumulatedScore">
+<area shape="rect" id="Node000001" title=" " alt="" coords="251,35,458,77"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#aaba8ac8af9e57532af8a3498254d3eb6" title="Add playtime parameter &#45; Soomin Lee / TeamHUD Returns a GameState object representing the status of t..." alt="" coords="5,5,203,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,45,203,41,203,36,235,39"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a0cf4453ac709e9db35ae64a8698be978" title="Starts the action." alt="" coords="23,72,185,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,73,186,78,185,73,235,67"/>
+</map>

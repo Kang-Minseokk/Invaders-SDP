@@ -1,0 +1,9 @@
+<map id="engine.FileManager.loadDefaultRecentScores" name="engine.FileManager.loadDefaultRecentScores">
+<area shape="rect" id="Node000001" title="Returns the application default scores if there is no user recent scores file." alt="" coords="499,39,703,81"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html#a314c50ef1c81fa513af0ad4984900cc8" title="Loads recent scores from file, and returns a sorted list of pairs score &#45; value." alt="" coords="247,39,451,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,63,451,63,451,57,484,57"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_record_screen.html#ada67944e76b360637864a5ab748f4351" title="Constructor, establishes the properties of the screen." alt="" coords="5,5,199,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="231,47,199,42,199,37,231,41"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_score_screen.html#a8a078b464e3ee2d49c50e8decfaf7ed9" title="Constructor, establishes the properties of the screen." alt="" coords="13,72,191,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="231,79,192,84,191,79,231,73"/>
+</map>

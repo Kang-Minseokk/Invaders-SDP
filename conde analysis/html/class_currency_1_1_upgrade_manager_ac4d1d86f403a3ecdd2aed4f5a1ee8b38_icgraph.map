@@ -1,0 +1,22 @@
+<map id="Currency.UpgradeManager.LevelCalculation" name="Currency.UpgradeManager.LevelCalculation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1429,30,1610,72"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#aa78bf3e4414404d78091953b914cc4d5" title=" " alt="" coords="703,8,925,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1427,28,1381,20,1259,11,1137,8,925,16,925,10,1137,3,1260,5,1382,15,1428,23"/>
+<area shape="rect" id="Node000006" href="$class_currency_1_1_upgrade_manager.html#aa7efa0567df8f00e9d2d88b399f66e0a" title=" " alt="" coords="1201,30,1381,72"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1414,54,1382,54,1382,48,1414,48"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_title_screen.html#a64bde84610fa44a3ef12fcf017ef3217" title="runs when player do buying things when store system is ready – unwrap annotated code and rename this ..." alt="" coords="724,59,904,102"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="1428,79,1382,87,1252,97,1122,99,1002,96,904,91,905,85,1003,91,1122,94,1252,92,1381,82,1427,74"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#aa8899ff89b1b8cb4a30c6248ab3386f4" title=" " alt="" coords="447,8,655,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="688,24,656,24,656,19,688,19"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_title_screen.html#a6194c8e8f96a4ba27c9433bfe2a47b59" title="Draws the elements associated with the screen." alt="" coords="232,8,394,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="431,24,394,24,394,19,431,19"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="5,38,179,64"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="217,37,180,42,179,37,216,32"/>
+<area shape="rect" id="Node000007" href="$class_currency_1_1_upgrade_manager.html#aaa148b065ac73ddf6eca7561758599e4" title=" " alt="" coords="973,30,1153,72"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1186,54,1153,54,1153,48,1186,48"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="957,41,925,38,926,32,957,36"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="957,66,905,72,904,67,957,61"/>
+<area shape="rect" id="Node000009" href="$classscreen_1_1_title_screen.html#aecedcd5e961b0da973cf9ef5c37ece6c" title=" " alt="" coords="227,59,399,102"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="709,83,400,83,400,78,709,78"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="211,70,179,65,180,60,212,64"/>
+</map>

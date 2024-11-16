@@ -1,0 +1,7 @@
+<map id="engine.DrawManager.drawMenu" name="engine.DrawManager.drawMenu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="437,5,645,32"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_title_screen.html#a6194c8e8f96a4ba27c9433bfe2a47b59" title="Draws the elements associated with the screen." alt="" coords="227,5,389,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="421,21,389,21,389,16,421,16"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="5,5,179,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,21,179,21,179,16,211,16"/>
+</map>
