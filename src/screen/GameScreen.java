@@ -29,9 +29,9 @@ import engine.TwoPlayerMode;
 
 /**
  * Implements the game screen, where the action happens.
- * 
+ *
  * @author <a href="mailto:RobertoIA1987@gmail.com">Roberto Izquierdo Amo</a>
- * 
+ *
  */
 public class GameScreen extends Screen {
 
@@ -111,6 +111,7 @@ public class GameScreen extends Screen {
 	private long lastPauseToggleTime;
 	private static final int PAUSE_TOGGLE_DELAY = 1000;
 	private long pauseStartTime = 0; // 일시 정지 시작 시간을 기록
+	private boolean returningFromMenu = false; //메뉴입력으로 재개
 
 	// --- OBSTACLES
 	public Set<Obstacle> obstacles; // Store obstacles
@@ -284,30 +285,51 @@ public class GameScreen extends Screen {
 	protected void update() {
 		super.update();
 
+		if (returningFromMenu) {
+			this.lives = 0; // 남은 목숨을 0으로 설정하여 게임 종료
+			this.isRunning = false; // 게임 종료 루프 탈출
+			returningFromMenu = false; // 플래그 초기화
+			return;
+		}
+
 		long currentTime = System.currentTimeMillis();
 
-		// P 키 입력 처리
-		if (inputManager.isKeyDown(KeyEvent.VK_P) && currentTime - lastPauseToggleTime > PAUSE_TOGGLE_DELAY) {
+		// P, Q 키 입력 처리
+		if ((inputManager.isKeyDown(KeyEvent.VK_P) || inputManager.isKeyDown(KeyEvent.VK_Q))
+				&& currentTime - lastPauseToggleTime > PAUSE_TOGGLE_DELAY) {
 			this.isPaused = !this.isPaused;
 			lastPauseToggleTime = currentTime;
+			boolean isResumedWithQ = inputManager.isKeyDown(KeyEvent.VK_Q); // Q 키로 재개했는지 확인
 
 			if (this.isPaused) {
 				Core.getLogger().info("Pausing the game.");
 				Core.getFrame().setScreen(new OptionScreen(this.width, this.height, this.fps));
 				pauseStartTime = currentTime; // 일시 정지 시작 시간 기록
+				return;
 			} else {
 				Core.getLogger().info("Resuming the game.");
 				this.isResuming = true;
 				this.resumeStartTime = currentTime;
 				this.playStartTime += (currentTime - pauseStartTime); // 일시 정지 시간만큼 playStartTime 조정
+
+				if (isResumedWithQ) {
+					// Q 키로 재개될 때만 목숨을 0으로 설정하여 게임 종료
+					this.lives = 0;
+					this.logger.info("Game resumed with Q key, setting lives to 0.");
+				}
+
 				drawManager.initDrawing(this);
 				draw(); // 게임 화면 그리기
-				drawManager.drawCenteredRegularString(this, "RESUME!", this.height / 2);
+				// P로 게임 재개 시 RESUME! 메시지 표시, Q로 재개 시 TERMINATE! 메시지 표시
+				if (isResumedWithQ) {
+					drawManager.drawCenteredRegularString(this, "TERMINATE!", this.height / 2);
+				} else {
+					drawManager.drawCenteredRegularString(this, "RESUME!", this.height / 2);
+				}
 				drawManager.completeDrawing(this); // 화면 표시 완료
 			}
 		}
 
-		// 게임 재개 시 RESUME! 메시지 표시
 		if (isResuming) {
 			if (currentTime - this.resumeStartTime >= 1000) {
 				isResuming = false; // 1초 후 게임 재개
@@ -478,6 +500,9 @@ public class GameScreen extends Screen {
 			this.isRunning = false;
 		}
 	}
+	public void setRunning(boolean isRunning) {
+		this.isRunning = isRunning;
+	}
 
 
 	/**
@@ -528,7 +553,7 @@ public class GameScreen extends Screen {
 //		drawManager.drawScore(this, this.scoreManager.getAccumulatedScore());    //clove -> edit by jesung ko - TeamHUD(to udjust score)
 //		drawManager.drawScore(this, this.score); // by jesung ko - TeamHUD
 		DrawManagerImpl.drawScore2(this,this.score); // by jesung ko - TeamHUD
-		drawManager.drawLives(this, this.lives);	
+		drawManager.drawLives(this, this.lives);
 		drawManager.drawHorizontalLine(this, SEPARATION_LINE_HEIGHT - 1);
 		DrawManagerImpl.drawRemainingEnemies(this, getRemainingEnemies()); // by HUD team SeungYun
 		DrawManagerImpl.drawLevel(this, this.level);
@@ -843,5 +868,9 @@ public class GameScreen extends Screen {
 
 	public SpeedItem getSpeedItem() {
 		return this.speedItem;
+	}
+
+	public void setReturningFromMenu(boolean returning) {
+		this.returningFromMenu = returning;
 	}
 }

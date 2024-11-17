@@ -5,6 +5,7 @@ import engine.Core;
 import java.awt.event.KeyEvent;
 import engine.Cooldown;
 import engine.SoundManager;
+import engine.Frame;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,17 +40,21 @@ public class OptionScreen extends Screen {
         this.selectionCooldown.reset();
     }
 
+    @Override
+    public final int run() {
+        super.run(); // Screen 클래스의 run 메서드를 실행하여 업데이트 루프를 처리
+        return this.returnCode; // returnCode를 반환하여 Core가 다음 스크린을 결정하게 함
+    }
 
     @Override
     public void update() {
         super.update();
         draw();
 
-        if (inputManager.isKeyDown(KeyEvent.VK_P) && this.inputDelay.checkFinished()) {
-            Core.setSavedVolumeSelectionCode(this.volumeSelectionCode);
-            this.returnCode = 3; // GameScreen으로 돌아가기 위한 코드 (예시로 2)
+        if ((inputManager.isKeyDown(KeyEvent.VK_P) || inputManager.isKeyDown(KeyEvent.VK_Q))
+                && this.inputDelay.checkFinished()) {
+            Core.setSavedVolumeSelectionCode(this.volumeSelectionCode); // GameScreen으로 돌아가기 위한 코드
             this.isRunning = false; // Exit the pause screen and return to the game
-            Core.getLogger().info("P pressed: Exiting PauseScreen with returnCode 3.");
         }
 
         if(this.selectionCooldown.checkFinished() && this.inputDelay.checkFinished()){
@@ -109,16 +114,15 @@ public class OptionScreen extends Screen {
         }
     }
 
-
     private void nextOptionItem() {
-        if (this.returnCode == 2)
+        if (this.returnCode >= 2)
             this.returnCode = 1;
         else
             this.returnCode++;
     }
 
     private void previousOptionItem() {
-        if (this.returnCode == 1)
+        if (this.returnCode <= 1)
             this.returnCode = 2;
         else
             this.returnCode--;
