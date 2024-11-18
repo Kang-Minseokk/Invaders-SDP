@@ -1,0 +1,13 @@
+digraph "engine.DrawManager.drawCurrentGem"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="engine.DrawManager.drawCurrentGem",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="engine.DrawManager.drawEntity",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_draw_manager.html#a3ef1def588c0f283cf6066af12d7ad63",tooltip="Draws an entity, using the apropiate image."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="entity.Entity.getWidth",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219",tooltip="Getter for the width of the image associated to the entity."];
+}

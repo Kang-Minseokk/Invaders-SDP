@@ -1,0 +1,14 @@
+<map id="Currency.UpgradeManager.getAttackSpeed" name="Currency.UpgradeManager.getAttackSpeed">
+<area shape="rect" id="Node000001" title="Get the current attack speed value." alt="" coords="925,64,1123,107"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_upgrade_manager.html#aefbfd2de7aec68c5ed0c30396815711d" title="Add to the current attack speed." alt="" coords="675,5,877,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="915,62,869,51,870,46,917,57"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_title_screen.html#a64bde84610fa44a3ef12fcf017ef3217" title="runs when player do buying things when store system is ready – unwrap annotated code and rename this ..." alt="" coords="447,35,627,77"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="909,81,628,64,628,59,910,76"/>
+<area shape="rect" id="Node000006" href="$class_enemy_1_1_player_growth.html#aa088528296fad286c33aac404b782596" title=" " alt="" coords="683,123,869,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="917,113,870,125,869,119,915,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="660,44,628,48,628,42,659,38"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_title_screen.html#aecedcd5e961b0da973cf9ef5c37ece6c" title=" " alt="" coords="227,35,399,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="432,59,399,59,399,53,432,53"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="5,43,179,69"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="211,59,179,59,179,53,211,53"/>
+</map>

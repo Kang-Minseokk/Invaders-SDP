@@ -1,0 +1,9 @@
+<map id="entity.Skins" name="entity.Skins">
+<area shape="rect" id="Node000001" title=" " alt="" coords="192,155,333,309"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,176,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,89,183,142,179,146,128,92"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="200,13,325,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,83,265,137,260,137,260,83"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="348,5,550,91"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="409,92,347,152,344,148,405,89"/>
+</map>

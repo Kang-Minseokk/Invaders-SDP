@@ -1,0 +1,3 @@
+<map id="entity.EnemyShipFormation.Direction" name="entity.EnemyShipFormation.Direction">
+<area shape="rect" id="Node000001" title="Directions the formation can move." alt="" coords="5,5,180,133"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="Currency.UpgradeManager.UpgradeManager" name="Currency.UpgradeManager.UpgradeManager">
+<area shape="rect" id="Node000001" title="private constructor." alt="" coords="5,99,186,141"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="249,5,434,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,96,177,68,233,42,254,34,255,39,235,46,179,73,131,101"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_ship_status.html#a82e97149439480a3752520633c9fb797" title=" " alt="" coords="252,56,430,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="185,99,258,84,259,89,187,104"/>
+<area shape="rect" id="Node000007" href="$classentity_1_1_ship_status.html#af67e157fafcf53493496419ba1fae6dc" title=" " alt="" coords="248,107,434,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="186,117,232,117,232,123,186,123"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_file_manager.html#a0a36dbead21b925203c3245c6f408b30" title="Loads upgrade statuses from upgrade_status.properties file." alt="" coords="236,157,447,200"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="187,139,235,151,234,156,185,144"/>
+<area shape="rect" id="Node000010" href="$classengine_1_1_file_manager.html#a2162fa41415928cae5df1c70c3e6b487" title="Saves upgrade statuses to upgrade_status.properties file." alt="" coords="234,224,449,267"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="126,140,175,175,235,210,248,216,246,220,232,214,172,180,123,144"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="497,5,703,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,16,481,16,481,21,434,21"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="751,5,961,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="704,16,736,16,736,21,704,21"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1009,5,1161,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="961,16,993,16,993,21,961,21"/>
+<area shape="rect" id="Node000009" href="$classengine_1_1_file_manager.html#a9a18c215e1d555161c587bcaf1e63d71" title="Loads default upgrade statuses from upgrade_default.properties file." alt="" coords="498,157,702,200"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="448,176,482,176,482,181,448,181"/>
+</map>

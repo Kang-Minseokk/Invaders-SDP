@@ -1,0 +1,42 @@
+<map id="engine.InputManager.isKeyDown" name="engine.InputManager.isKeyDown">
+<area shape="rect" id="Node000001" title="Returns true if the provided key is currently pressed." alt="" coords="494,413,707,440"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_title_screen.html#aa096a9853f7b30afa52f751bccf0698d" title=" " alt="" coords="255,5,428,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="593,398,580,330,553,239,533,191,509,144,479,100,444,62,426,49,429,45,448,58,484,97,514,142,538,189,558,238,585,328,598,397"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_score_screen.html#a057479f036d6fbc727ae22c60f924d09" title=" " alt="" coords="251,339,432,381"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="530,411,427,385,428,379,532,406"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_title_screen.html#a4cea29053a302903adb24c481f73ef32" title=" " alt="" coords="254,72,428,115"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="590,399,573,342,544,269,502,194,475,159,444,129,427,117,430,113,448,125,479,156,506,191,549,267,578,340,595,397"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_score_screen.html#a8cbc7f2d7ffbddaf31889e91ed409a70" title=" " alt="" coords="251,405,432,448"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="478,429,432,429,432,424,478,424"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_game_screen.html#afe65922c8de47fc748e1555c84a991c2" title=" " alt="" coords="250,539,432,581"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="571,452,515,491,447,529,420,541,418,536,445,524,512,486,568,447"/>
+<area shape="rect" id="Node000010" href="$classscreen_1_1_score_screen.html#acbdd3f9cc0796d86422536b798d5c953" title=" " alt="" coords="251,472,432,515"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="532,447,428,474,427,469,530,442"/>
+<area shape="rect" id="Node000011" href="$classscreen_1_1_title_screen.html#aecedcd5e961b0da973cf9ef5c37ece6c" title=" " alt="" coords="255,139,428,181"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="586,400,565,355,535,300,494,244,470,218,444,195,426,184,429,180,448,191,474,214,498,240,539,297,570,353,591,398"/>
+<area shape="rect" id="Node000012" href="$classscreen_1_1_title_screen.html#a13e1bc224668add219c9a8544a8d8f34" title=" " alt="" coords="255,205,428,248"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="580,402,524,332,487,295,445,262,423,251,426,246,447,258,490,291,528,329,584,399"/>
+<area shape="rect" id="Node000013" href="$classscreen_1_1_title_screen.html#a26c6225edd92e784057fc7bc2df4b88c" title=" " alt="" coords="255,272,428,315"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="568,406,512,367,445,329,418,318,420,313,447,324,515,363,571,401"/>
+<area shape="rect" id="Node000014" href="$classscreen_1_1_game_screen.html#a76eb9b586bb07db6674cd2e311f05331" title=" " alt="" coords="246,605,436,648"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="584,455,528,524,490,563,447,596,426,607,423,602,445,591,487,559,524,521,580,451"/>
+<area shape="rect" id="Node000015" href="$class_currency_1_1_receipt_screen.html#ad1a8f6ed95eff0f0542c0ae9c6eda729" title="Updates the elements on screen and checks for events." alt="" coords="238,672,444,699"/>
+<area shape="poly" id="edge21_Node000001_Node000015" title=" " alt="" coords="592,455,571,501,541,557,499,614,475,640,447,662,426,674,423,669,445,658,471,636,495,611,536,554,567,499,587,453"/>
+<area shape="rect" id="Node000016" href="$classscreen_1_1_high_score_screen.html#adec70baa7a1861f519c3a23490cc081e" title="Updates the elements on screen and checks for events." alt="" coords="237,723,446,749"/>
+<area shape="poly" id="edge22_Node000001_Node000016" title=" " alt="" coords="595,456,577,511,548,581,505,652,478,685,448,713,428,725,425,720,444,709,475,681,501,649,543,578,572,509,590,455"/>
+<area shape="rect" id="Node000017" href="$classscreen_1_1_record_screen.html#a8fcd1a5dbd99e5dc2b991997d682c418" title="Updates the elements on screen and checks for events." alt="" coords="246,773,436,800"/>
+<area shape="poly" id="edge23_Node000001_Node000017" title=" " alt="" coords="597,456,583,520,555,603,536,647,511,690,482,729,448,763,429,775,426,771,444,759,478,726,507,687,531,645,551,601,578,518,592,455"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="10,147,184,173"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,57,238,62,168,107,116,148,112,144,165,102,235,58,247,52"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_score_screen.html#a38e621d92395da75408301bb9873dbdf" title="Updates the elements on screen and checks for events." alt="" coords="6,413,188,440"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="247,388,150,415,148,410,245,383"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="247,122,150,149,148,143,245,117"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="235,429,189,429,189,424,235,424"/>
+<area shape="rect" id="Node000009" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,580,189,607"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="235,577,189,583,189,578,234,572"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="245,470,148,443,150,438,247,465"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="239,163,184,163,184,157,239,157"/>
+<area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="245,203,148,177,150,171,247,198"/>
+<area shape="poly" id="edge18_Node000013_Node000003" title=" " alt="" coords="247,268,235,262,165,218,112,176,116,172,168,213,238,258,250,263"/>
+<area shape="poly" id="edge20_Node000014_Node000009" title=" " alt="" coords="230,614,189,609,190,603,231,609"/>
+</map>

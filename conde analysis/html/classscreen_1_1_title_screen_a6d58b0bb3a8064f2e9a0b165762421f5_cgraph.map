@@ -1,0 +1,58 @@
+<map id="screen.TitleScreen.TitleScreen" name="screen.TitleScreen.TitleScreen">
+<area shape="rect" id="Node000001" title="Constructor, establishes the properties of the screen." alt="" coords="5,240,165,283"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_currency_manager.html#ad75a02b614082f8fdef5d7c048ad9d0f" title=" " alt="" coords="213,27,442,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,238,109,202,135,156,169,110,211,70,233,57,236,62,214,74,173,113,139,159,114,204,97,241"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_core.html#a657de8cca4ce42bdd0aab9df62824328" title="Controls creation of new cooldowns." alt="" coords="242,147,414,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="115,237,159,209,212,183,233,176,234,181,214,188,162,214,117,242"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_core.html#af6af7caff5e9b89c8bf5d801095f726d" title="Controls access to the currency manager." alt="" coords="220,197,436,224"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="165,242,245,225,246,230,166,247"/>
+<area shape="rect" id="Node000014" href="$class_currency_1_1_currency_manager.html#a6d54c6e9a3450216100977059f13d2be" title=" " alt="" coords="213,84,443,111"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="101,238,147,185,177,157,211,132,251,114,253,119,214,137,181,161,151,189,105,241"/>
+<area shape="rect" id="Node000016" href="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea" title=" " alt="" coords="217,248,439,275"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="165,259,201,259,201,264,165,264"/>
+<area shape="rect" id="Node000020" href="$classentity_1_1_ship_status.html#a82e97149439480a3752520633c9fb797" title=" " alt="" coords="239,359,417,385"/>
+<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="114,281,159,314,214,344,233,351,231,356,212,349,156,318,111,285"/>
+<area shape="rect" id="Node000021" href="$classentity_1_1_skins.html#a4d74e51d92bacab922ba33e3e72aa195" title=" " alt="" coords="253,308,403,335"/>
+<area shape="poly" id="edge24_Node000001_Node000021" title=" " alt="" coords="166,278,256,301,255,306,165,284"/>
+<area shape="rect" id="Node000023" href="$classengine_1_1_sound_manager.html#ad2d4e5d9ec370d01a862b02dcfc11d53" title=" " alt="" coords="224,421,432,448"/>
+<area shape="poly" id="edge27_Node000001_Node000023" title=" " alt="" coords="103,281,149,338,180,369,214,395,252,414,250,418,211,400,176,373,145,341,99,285"/>
+<area shape="rect" id="Node000026" href="$classengine_1_1_cooldown.html#abcb3cea769834552c6a81075f5d17dc7" title="Restarts the cooldown." alt="" coords="251,472,405,499"/>
+<area shape="poly" id="edge30_Node000001_Node000026" title=" " alt="" coords="96,282,112,321,137,369,171,417,191,439,214,458,237,470,235,475,211,462,188,443,167,421,132,372,107,323,91,284"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a389ab7fb9ebb7b483d0992a3e845b652" title="Loads user coin from file, and returns current coin." alt="" coords="505,16,694,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,33,489,31,489,36,443,38"/>
+<area shape="rect" id="Node000004" href="$class_currency_1_1_encryption_support.html#aace733246300350ac93d39bf3d251434" title="Performs decryption for a given input." alt="" coords="756,56,988,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="695,41,762,51,761,56,695,46"/>
+<area shape="rect" id="Node000005" href="$class_currency_1_1_encryption_support.html#ac6690d521e47eaa9de388d6359655779" title="Performs encryption for a given input." alt="" coords="756,5,988,32"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="695,23,740,21,741,26,695,28"/>
+<area shape="rect" id="Node000008" href="$class_currency_1_1_currency_manager.html#a31c832489fc9cffeeb9a753e3abe3154" title="Returns shared instance of FileManager." alt="" coords="498,139,701,181"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="403,194,483,179,484,184,404,199"/>
+<area shape="rect" id="Node000009" href="$class_currency_1_1_currency_manager.html#a717e788aeda8a1ffde764f7e187b9146" title="private constructor." alt="" coords="780,107,964,149"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="701,145,764,138,765,143,702,151"/>
+<area shape="rect" id="Node000010" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="1036,123,1220,149"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="965,128,1020,130,1020,135,965,134"/>
+<area shape="rect" id="Node000013" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1780,148,1932,175"/>
+<area shape="poly" id="edge13_Node000009_Node000013" title=" " alt="" coords="964,114,1035,108,1232,93,1386,79,1460,77,1539,80,1628,90,1732,108,1777,121,1817,138,1814,143,1775,126,1731,113,1627,95,1538,86,1460,83,1386,85,1232,98,1036,113,965,119"/>
+<area shape="rect" id="Node000011" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="1268,123,1474,149"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1220,133,1253,133,1253,139,1220,139"/>
+<area shape="rect" id="Node000012" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="1522,123,1732,149"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1475,133,1507,133,1507,139,1475,139"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1732,145,1764,149,1764,154,1732,150"/>
+<area shape="rect" id="Node000015" href="$classengine_1_1_file_manager.html#aa1a63106adf5599efd6409ac09ede0f7" title="Loads user gem from file, and returns current gem." alt="" coords="504,67,695,93"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="443,87,489,84,489,90,443,93"/>
+<area shape="poly" id="edge16_Node000015_Node000004" title=" " alt="" coords="695,74,741,72,741,77,695,79"/>
+<area shape="poly" id="edge17_Node000015_Node000005" title=" " alt="" coords="660,63,756,41,792,33,793,38,757,47,661,69"/>
+<area shape="rect" id="Node000017" href="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9" title="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..." alt="" coords="504,231,695,273"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="439,255,488,253,489,258,440,260"/>
+<area shape="poly" id="edge20_Node000017_Node000013" title=" " alt="" coords="674,227,756,209,859,194,940,187,1126,184,1372,184,1583,178,1764,166,1764,172,1583,183,1373,189,1127,189,941,192,860,200,757,215,675,233"/>
+<area shape="rect" id="Node000018" href="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb" title=" " alt="" coords="759,224,985,251"/>
+<area shape="poly" id="edge21_Node000017_Node000018" title=" " alt="" coords="696,244,743,242,743,247,696,250"/>
+<area shape="rect" id="Node000019" href="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f" title=" " alt="" coords="777,275,967,317"/>
+<area shape="poly" id="edge22_Node000017_Node000019" title=" " alt="" coords="696,265,762,276,761,281,695,270"/>
+<area shape="poly" id="edge25_Node000021_Node000013" title=" " alt="" coords="403,324,718,341,921,349,1127,352,1372,352,1441,347,1508,333,1574,312,1637,286,1745,230,1821,182,1824,186,1748,234,1639,291,1576,317,1510,338,1441,352,1373,357,1126,357,921,354,718,347,403,329"/>
+<area shape="rect" id="Node000022" href="$classengine_1_1_file_manager.html#a09869aeb0432445951f88eec7eb484dd" title=" " alt="" coords="491,377,708,420"/>
+<area shape="poly" id="edge26_Node000021_Node000022" title=" " alt="" coords="398,333,444,344,524,369,522,374,442,349,397,338"/>
+<area shape="rect" id="Node000024" href="$classengine_1_1_sound_manager.html#a135a306e4319833000eb0096fbe39715" title=" " alt="" coords="510,444,689,487"/>
+<area shape="poly" id="edge28_Node000023_Node000024" title=" " alt="" coords="433,444,496,451,495,456,432,449"/>
+<area shape="rect" id="Node000025" href="$classengine_1_1_sound_manager.html#a40790e756b1212611ea34236c06adceb" title=" " alt="" coords="510,511,689,553"/>
+<area shape="poly" id="edge29_Node000023_Node000025" title=" " alt="" coords="414,446,444,458,459,467,469,477,478,487,492,496,503,502,501,507,490,501,475,491,465,481,456,471,442,462,412,451"/>
+</map>

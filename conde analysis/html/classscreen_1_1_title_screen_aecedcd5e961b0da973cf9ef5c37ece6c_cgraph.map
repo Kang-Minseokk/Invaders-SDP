@@ -1,0 +1,146 @@
+<map id="screen.TitleScreen.handleSpaceKey" name="screen.TitleScreen.handleSpaceKey">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,696,178,738"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_title_screen.html#a7fd5b09abe3bec0ab469b9cf6c8153b9" title=" " alt="" coords="226,224,463,250"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,694,326,263,331,266,107,696"/>
+<area shape="rect" id="Node000027" href="$classengine_1_1_input_manager.html#ae11d2d2ce4f137384c4c51e2341f2d28" title="Returns true if the provided key is currently pressed." alt="" coords="238,678,451,705"/>
+<area shape="poly" id="edge18_Node000001_Node000027" title=" " alt="" coords="178,706,222,701,223,707,178,711"/>
+<area shape="rect" id="Node000028" href="$classengine_1_1_cooldown.html#abcb3cea769834552c6a81075f5d17dc7" title="Restarts the cooldown." alt="" coords="267,729,422,756"/>
+<area shape="poly" id="edge19_Node000001_Node000028" title=" " alt="" coords="178,723,252,730,251,736,178,728"/>
+<area shape="rect" id="Node000029" href="$classscreen_1_1_title_screen.html#a64bde84610fa44a3ef12fcf017ef3217" title="runs when player do buying things when store system is ready – unwrap annotated code and rename this ..." alt="" coords="254,1154,434,1197"/>
+<area shape="poly" id="edge20_Node000001_Node000029" title=" " alt="" coords="107,737,326,1139,321,1142,102,740"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_currency_manager.html#ad75a02b614082f8fdef5d7c048ad9d0f" title=" " alt="" coords="520,249,749,276"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="464,245,504,248,504,254,463,250"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_core.html#af6af7caff5e9b89c8bf5d801095f726d" title="Controls access to the currency manager." alt="" coords="526,300,743,326"/>
+<area shape="poly" id="edge4_Node000002_Node000007" title=" " alt="" coords="388,248,512,285,546,293,545,299,510,290,386,253"/>
+<area shape="rect" id="Node000014" href="$class_currency_1_1_currency_manager.html#a6d54c6e9a3450216100977059f13d2be" title=" " alt="" coords="520,354,750,381"/>
+<area shape="poly" id="edge6_Node000002_Node000014" title=" " alt="" coords="365,249,428,292,469,315,512,336,545,347,544,352,510,341,467,320,426,296,362,253"/>
+<area shape="rect" id="Node000013" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1099,136,1252,162"/>
+<area shape="poly" id="edge8_Node000002_Node000013" title=" " alt="" coords="353,222,377,190,412,148,457,106,510,71,551,51,588,38,653,26,721,24,806,20,916,4,964,5,1023,20,1063,40,1100,67,1156,122,1152,126,1097,71,1061,45,1021,25,963,10,916,10,807,25,721,29,654,32,589,44,553,56,512,75,461,110,416,152,381,193,357,225"/>
+<area shape="rect" id="Node000016" href="$classentity_1_1_skins.html#adeb698d689c522787ab625b2ceb28ff4" title=" " alt="" coords="542,85,727,112"/>
+<area shape="poly" id="edge9_Node000002_Node000016" title=" " alt="" coords="360,221,422,172,465,144,510,121,530,114,532,119,512,126,467,149,425,176,363,225"/>
+<area shape="rect" id="Node000017" href="$class_currency_1_1_currency_manager.html#ab7e40f848f115d255c2f6d62fcb23520" title="Consume as much coin as the amount you have (cannot spend more than you currently have)." alt="" coords="512,198,758,225"/>
+<area shape="poly" id="edge10_Node000002_Node000017" title=" " alt="" coords="463,224,496,221,496,226,464,229"/>
+<area shape="rect" id="Node000019" href="$classentity_1_1_skins.html#a4e0ef4d22d9493b0f374a0148787a1dd" title=" " alt="" coords="556,136,713,162"/>
+<area shape="poly" id="edge13_Node000002_Node000019" title=" " alt="" coords="390,220,510,184,572,165,574,170,512,189,392,226"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#a389ab7fb9ebb7b483d0992a3e845b652" title="Loads user coin from file, and returns current coin." alt="" coords="819,237,1009,264"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="750,255,803,252,804,258,750,260"/>
+<area shape="rect" id="Node000008" href="$class_currency_1_1_currency_manager.html#a31c832489fc9cffeeb9a753e3abe3154" title="Returns shared instance of FileManager." alt="" coords="813,288,1015,330"/>
+<area shape="poly" id="edge5_Node000007_Node000008" title=" " alt="" coords="743,309,798,308,798,313,743,314"/>
+<area shape="rect" id="Node000015" href="$classengine_1_1_file_manager.html#aa1a63106adf5599efd6409ac09ede0f7" title="Loads user gem from file, and returns current gem." alt="" coords="819,354,1009,381"/>
+<area shape="poly" id="edge7_Node000014_Node000015" title=" " alt="" coords="750,365,803,365,803,370,750,370"/>
+<area shape="poly" id="edge11_Node000017_Node000004" title=" " alt="" coords="736,223,805,233,804,238,736,228"/>
+<area shape="rect" id="Node000018" href="$classengine_1_1_file_manager.html#a2ddc2c85128a94465774dbeb7cb4f1c3" title="Saves user coin to disk." alt="" coords="817,186,1011,213"/>
+<area shape="poly" id="edge12_Node000017_Node000018" title=" " alt="" coords="758,204,801,202,802,207,758,209"/>
+<area shape="poly" id="edge14_Node000019_Node000013" title=" " alt="" coords="714,146,1084,146,1084,152,714,152"/>
+<area shape="rect" id="Node000020" href="$classentity_1_1_skins.html#a75e8a4c3ff8aa97fbf41206fa0d9b02d" title=" " alt="" coords="837,85,991,112"/>
+<area shape="poly" id="edge15_Node000019_Node000020" title=" " alt="" coords="712,132,821,112,822,118,713,138"/>
+<area shape="rect" id="Node000022" href="$classentity_1_1_skins.html#a17c347d6bb996b4bb11d59cebd2e11d8" title=" " alt="" coords="813,34,1015,61"/>
+<area shape="poly" id="edge17_Node000019_Node000022" title=" " alt="" coords="713,138,757,121,772,110,780,97,789,84,805,71,817,65,819,70,808,75,793,87,785,100,775,113,760,126,715,143"/>
+<area shape="poly" id="edge16_Node000020_Node000013" title=" " alt="" coords="987,110,1089,130,1088,135,986,115"/>
+<area shape="poly" id="edge68_Node000029_Node000003" title=" " alt="" coords="351,1153,403,994,434,882,460,767,465,720,466,659,465,518,467,447,473,381,487,326,497,304,509,286,511,284,515,287,513,289,501,306,492,328,479,382,472,447,470,518,472,659,471,720,466,768,439,884,408,995,356,1155"/>
+<area shape="poly" id="edge71_Node000029_Node000007" title=" " alt="" coords="351,1153,402,994,434,882,460,767,465,725,467,672,468,547,470,483,477,425,489,376,509,341,517,333,520,337,513,344,494,378,482,426,476,484,473,547,472,672,470,726,466,768,439,884,407,995,356,1155"/>
+<area shape="poly" id="edge72_Node000029_Node000014" title=" " alt="" coords="351,1153,402,994,433,882,460,767,467,683,469,573,473,517,479,465,491,422,509,391,511,389,515,393,513,395,496,424,484,467,478,517,475,573,472,683,466,768,438,884,407,995,356,1155"/>
+<area shape="poly" id="edge73_Node000029_Node000013" title=" " alt="" coords="350,1153,400,993,460,767,467,727,467,690,462,624,463,594,469,564,483,535,509,504,541,479,572,462,603,451,634,446,697,449,759,463,822,477,886,484,919,482,952,475,986,462,1020,442,1052,414,1080,381,1104,345,1123,307,1151,234,1166,177,1171,178,1156,236,1128,310,1108,348,1084,385,1056,418,1023,446,988,467,953,480,919,487,886,489,821,482,758,468,696,455,635,451,604,456,574,466,544,483,513,508,488,538,474,566,468,595,468,624,472,690,472,727,466,768,405,995,355,1155"/>
+<area shape="poly" id="edge91_Node000029_Node000017" title=" " alt="" coords="351,1153,403,994,434,882,460,767,465,715,466,648,463,492,464,413,471,340,485,280,495,255,509,235,511,233,515,237,513,239,500,258,490,281,476,341,470,413,468,492,471,648,471,715,466,768,440,884,408,995,356,1155"/>
+<area shape="rect" id="Node000030" href="$class_currency_1_1_upgrade_manager.html#a152c21ca0c3a0c21a640b8278aa29fc6" title=" " alt="" coords="534,1569,735,1612"/>
+<area shape="poly" id="edge21_Node000029_Node000030" title=" " alt="" coords="352,1197,367,1263,397,1355,418,1405,445,1454,476,1501,513,1542,537,1559,534,1564,509,1546,472,1504,440,1457,414,1407,392,1357,362,1264,347,1198"/>
+<area shape="rect" id="Node000031" href="$class_currency_1_1_upgrade_manager.html#a6aca11c8c3e8843e1ccf77db46e77f81" title=" " alt="" coords="815,1410,1013,1453"/>
+<area shape="poly" id="edge64_Node000029_Node000031" title=" " alt="" coords="360,1196,384,1232,418,1277,462,1322,512,1359,583,1390,657,1410,732,1423,800,1429,799,1434,731,1428,656,1416,581,1395,510,1363,458,1326,414,1281,380,1235,356,1199"/>
+<area shape="rect" id="Node000035" href="$class_currency_1_1_upgrade_manager.html#aefbfd2de7aec68c5ed0c30396815711d" title="Add to the current attack speed." alt="" coords="534,1704,735,1746"/>
+<area shape="poly" id="edge26_Node000029_Node000035" title=" " alt="" coords="352,1197,368,1272,399,1382,421,1443,447,1505,478,1566,513,1622,548,1661,587,1693,584,1697,545,1665,509,1625,473,1568,442,1507,416,1445,394,1383,363,1274,347,1198"/>
+<area shape="rect" id="Node000036" href="$class_currency_1_1_upgrade_manager.html#aec6be52c42a450d6d0545ea0adeb46c0" title="Get the current attack speed value." alt="" coords="815,1813,1013,1856"/>
+<area shape="poly" id="edge65_Node000029_Node000036" title=" " alt="" coords="351,1197,371,1314,405,1484,428,1571,454,1650,482,1714,497,1738,513,1756,543,1780,577,1799,614,1814,651,1825,728,1837,799,1840,799,1846,727,1843,650,1830,612,1819,575,1804,540,1785,509,1760,493,1742,477,1717,449,1652,423,1572,400,1485,365,1315,346,1198"/>
+<area shape="rect" id="Node000038" href="$class_currency_1_1_upgrade_manager.html#a1dda24dee81dc5f3d8f2213a6871ba88" title=" " alt="" coords="534,2026,735,2069"/>
+<area shape="poly" id="edge32_Node000029_Node000038" title=" " alt="" coords="350,1197,365,1353,396,1592,418,1717,445,1832,477,1928,494,1966,513,1994,540,2017,536,2021,509,1997,490,1968,472,1930,440,1834,413,1718,391,1593,359,1354,345,1198"/>
+<area shape="rect" id="Node000039" href="$class_currency_1_1_upgrade_manager.html#a441f7b00f574f2983eb820da14859c90" title=" " alt="" coords="815,2098,1013,2141"/>
+<area shape="poly" id="edge66_Node000029_Node000039" title=" " alt="" coords="349,1197,357,1371,367,1499,382,1640,403,1780,431,1908,448,1963,468,2011,489,2050,513,2079,543,2102,577,2119,613,2132,650,2139,727,2144,799,2140,799,2145,727,2150,650,2145,611,2137,575,2124,540,2106,509,2083,485,2053,463,2014,443,1965,426,1909,398,1781,377,1640,362,1500,352,1371,344,1198"/>
+<area shape="rect" id="Node000040" href="$class_currency_1_1_upgrade_manager.html#a9498e5b69e2ab28d266cdb1be897a790" title=" " alt="" coords="534,1489,735,1532"/>
+<area shape="poly" id="edge37_Node000029_Node000040" title=" " alt="" coords="354,1197,373,1251,405,1324,452,1402,480,1437,513,1468,528,1479,525,1484,509,1472,476,1441,447,1405,400,1327,368,1253,349,1198"/>
+<area shape="rect" id="Node000041" href="$class_currency_1_1_upgrade_manager.html#a65f5e5033a5ce7761c31a0d700989647" title=" " alt="" coords="815,1477,1013,1520"/>
+<area shape="poly" id="edge67_Node000029_Node000041" title=" " alt="" coords="355,1196,375,1246,407,1311,453,1377,481,1406,512,1431,546,1439,617,1452,800,1480,799,1485,616,1457,544,1444,510,1435,477,1410,449,1380,402,1313,370,1248,350,1198"/>
+<area shape="rect" id="Node000042" href="$class_currency_1_1_upgrade_manager.html#a907d224b0cd4aa1f0c1cd194e08207b7" title="Add to the current coin acquisition multiplier." alt="" coords="534,1184,735,1226"/>
+<area shape="poly" id="edge42_Node000029_Node000042" title=" " alt="" coords="435,1182,518,1191,518,1196,435,1187"/>
+<area shape="rect" id="Node000043" href="$class_currency_1_1_upgrade_manager.html#a9e4dad22ab90f49d76f3650aaf54a981" title="Get the current coin acquisition multiplier value." alt="" coords="815,1125,1013,1168"/>
+<area shape="poly" id="edge69_Node000029_Node000043" title=" " alt="" coords="435,1168,800,1150,800,1155,435,1174"/>
+<area shape="rect" id="Node000045" href="$class_currency_1_1_upgrade_manager.html#a226131d74f52f3876f33092ea31329dd" title=" " alt="" coords="534,1306,735,1349"/>
+<area shape="poly" id="edge48_Node000029_Node000045" title=" " alt="" coords="375,1195,436,1239,512,1284,545,1298,543,1303,510,1289,433,1244,371,1199"/>
+<area shape="rect" id="Node000046" href="$class_currency_1_1_upgrade_manager.html#a844307409f17776337700a8cdfe782d3" title=" " alt="" coords="815,1293,1013,1336"/>
+<area shape="poly" id="edge70_Node000029_Node000046" title=" " alt="" coords="398,1195,452,1216,512,1236,661,1271,800,1296,799,1301,660,1276,510,1241,450,1221,396,1200"/>
+<area shape="rect" id="Node000047" href="$class_currency_1_1_upgrade_manager.html#a4d0707318e998c6e1ffb8b378e63cffb" title="Add to the current movement speed." alt="" coords="534,1872,735,1914"/>
+<area shape="poly" id="edge53_Node000029_Node000047" title=" " alt="" coords="348,1197,351,1305,358,1382,371,1469,391,1562,420,1655,461,1745,485,1787,513,1826,533,1846,557,1862,555,1866,530,1850,509,1829,481,1790,456,1747,415,1657,386,1563,365,1470,353,1383,346,1305,343,1198"/>
+<area shape="rect" id="Node000048" href="$class_currency_1_1_upgrade_manager.html#af5c3b8b4f742b29f96ad6755eed4701c" title="Get the current movement speed value." alt="" coords="815,1981,1013,2024"/>
+<area shape="poly" id="edge74_Node000029_Node000048" title=" " alt="" coords="350,1197,364,1344,394,1564,416,1678,443,1783,475,1868,494,1900,513,1924,543,1949,576,1968,612,1984,650,1995,727,2007,799,2010,799,2015,726,2012,649,2000,611,1989,574,1973,540,1953,509,1928,489,1903,471,1870,438,1784,411,1680,389,1565,359,1344,345,1198"/>
+<area shape="rect" id="Node000050" href="$class_currency_1_1_upgrade_manager.html#a5c23558cf787d7f602eaa6041411a107" title=" " alt="" coords="534,1066,735,1109"/>
+<area shape="poly" id="edge59_Node000029_Node000050" title=" " alt="" coords="417,1151,547,1111,548,1116,418,1156"/>
+<area shape="rect" id="Node000051" href="$class_currency_1_1_upgrade_manager.html#a479de1e29f667e75a488a99f56075541" title=" " alt="" coords="815,1008,1013,1050"/>
+<area shape="poly" id="edge75_Node000029_Node000051" title=" " alt="" coords="365,1152,426,1099,466,1073,510,1052,583,1032,659,1020,732,1016,799,1017,799,1022,733,1022,659,1026,584,1037,512,1057,469,1077,429,1103,368,1156"/>
+<area shape="rect" id="Node000052" href="$classengine_1_1_core.html#a3b39da2cc59c57cfa84fb9567ad1fec5" title="Controls access to the currency manager." alt="" coords="528,518,741,545"/>
+<area shape="poly" id="edge76_Node000029_Node000052" title=" " alt="" coords="350,1153,397,993,460,767,469,708,469,659,472,636,478,614,490,590,509,566,529,550,533,554,513,570,494,593,483,615,477,637,475,660,474,709,466,768,402,995,355,1155"/>
+<area shape="rect" id="Node000057" href="$class_currency_1_1_upgrade_manager.html#ac4d1d86f403a3ecdd2aed4f5a1ee8b38" title=" " alt="" coords="1085,653,1266,696"/>
+<area shape="poly" id="edge78_Node000029_Node000057" title=" " alt="" coords="353,1152,407,1053,449,984,502,910,565,835,636,765,717,705,760,680,805,660,872,642,941,636,1009,639,1070,647,1070,652,1008,644,941,642,873,648,807,665,762,685,720,709,640,769,569,839,506,913,454,987,411,1055,358,1155"/>
+<area shape="rect" id="Node000058" href="$class_currency_1_1_upgrade_manager.html#aaa148b065ac73ddf6eca7561758599e4" title=" " alt="" coords="544,941,725,984"/>
+<area shape="poly" id="edge79_Node000029_Node000058" title=" " alt="" coords="360,1152,421,1083,463,1043,510,1008,548,988,550,992,512,1013,467,1047,425,1087,364,1156"/>
+<area shape="rect" id="Node000064" href="$class_currency_1_1_currency_manager.html#a754185e8558ca2cec487fb3ddbbc4d7a" title="Consume as much gem as the amount you have (cannot spend more than you currently have)." alt="" coords="511,405,758,432"/>
+<area shape="poly" id="edge92_Node000029_Node000064" title=" " alt="" coords="351,1153,401,993,432,882,460,767,468,696,472,603,483,512,493,475,509,449,521,438,525,442,513,452,498,477,488,513,477,603,473,696,466,768,437,883,406,995,356,1155"/>
+<area shape="poly" id="edge22_Node000030_Node000031" title=" " alt="" coords="715,1566,757,1542,772,1523,780,1503,787,1483,805,1463,810,1459,813,1463,808,1467,792,1486,785,1505,777,1525,760,1546,718,1571"/>
+<area shape="rect" id="Node000032" href="$classengine_1_1_file_manager.html#a0a36dbead21b925203c3245c6f408b30" title="Loads upgrade statuses from upgrade_status.properties file." alt="" coords="1070,1506,1281,1549"/>
+<area shape="poly" id="edge24_Node000030_Node000032" title=" " alt="" coords="685,1610,753,1634,838,1655,883,1661,930,1662,976,1658,1021,1647,1057,1630,1090,1607,1144,1559,1147,1563,1093,1611,1059,1634,1023,1652,977,1663,930,1667,883,1666,837,1660,751,1639,683,1615"/>
+<area shape="rect" id="Node000034" href="$classengine_1_1_file_manager.html#a2162fa41415928cae5df1c70c3e6b487" title="Saves upgrade statuses to upgrade_status.properties file." alt="" coords="806,1594,1022,1637"/>
+<area shape="poly" id="edge25_Node000030_Node000034" title=" " alt="" coords="736,1597,791,1602,790,1607,736,1602"/>
+<area shape="poly" id="edge23_Node000031_Node000032" title=" " alt="" coords="989,1451,1023,1463,1111,1497,1109,1502,1021,1468,987,1456"/>
+<area shape="poly" id="edge30_Node000035_Node000032" title=" " alt="" coords="695,1744,765,1764,849,1776,893,1778,937,1774,980,1765,1020,1748,1047,1731,1070,1710,1110,1660,1140,1608,1159,1562,1164,1565,1144,1610,1115,1663,1074,1714,1050,1735,1023,1753,982,1770,938,1779,893,1783,848,1782,764,1769,694,1750"/>
+<area shape="poly" id="edge31_Node000035_Node000034" title=" " alt="" coords="690,1701,842,1641,844,1646,692,1706"/>
+<area shape="poly" id="edge27_Node000035_Node000036" title=" " alt="" coords="690,1744,807,1792,840,1805,838,1809,805,1797,688,1749"/>
+<area shape="rect" id="Node000037" href="$classentity_1_1_ship_status.html#a33ac5144e54e20fb27b69443d293bbf6" title=" " alt="" coords="806,1712,1022,1738"/>
+<area shape="poly" id="edge29_Node000035_Node000037" title=" " alt="" coords="736,1722,791,1722,791,1728,736,1728"/>
+<area shape="poly" id="edge28_Node000036_Node000032" title=" " alt="" coords="992,1810,1020,1792,1046,1767,1070,1738,1110,1675,1140,1614,1160,1563,1165,1565,1145,1616,1115,1678,1075,1741,1050,1770,1023,1796,995,1815"/>
+<area shape="poly" id="edge35_Node000038_Node000032" title=" " alt="" coords="714,2067,786,2079,867,2082,908,2078,948,2070,986,2055,1020,2034,1047,2001,1072,1951,1095,1888,1115,1817,1147,1674,1166,1564,1171,1565,1152,1675,1120,1818,1100,1889,1077,1953,1052,2004,1023,2038,988,2060,949,2075,909,2084,867,2088,785,2084,713,2072"/>
+<area shape="poly" id="edge36_Node000038_Node000034" title=" " alt="" coords="665,2024,713,1981,736,1955,756,1925,770,1893,776,1865,778,1812,780,1759,788,1730,804,1698,829,1668,859,1644,862,1648,833,1672,809,1701,793,1732,785,1760,783,1812,782,1865,775,1895,761,1928,741,1958,717,1985,668,2028"/>
+<area shape="poly" id="edge33_Node000038_Node000039" title=" " alt="" coords="721,2067,814,2091,813,2096,720,2072"/>
+<area shape="poly" id="edge34_Node000039_Node000032" title=" " alt="" coords="997,2096,1020,2078,1066,2017,1102,1948,1128,1875,1147,1801,1160,1730,1167,1665,1172,1564,1177,1565,1173,1665,1165,1731,1153,1802,1133,1876,1106,1950,1070,2019,1024,2082,1000,2100"/>
+<area shape="poly" id="edge40_Node000040_Node000032" title=" " alt="" coords="736,1522,806,1529,914,1532,1022,1529,1054,1528,1054,1534,1022,1534,914,1537,806,1534,736,1528"/>
+<area shape="poly" id="edge41_Node000040_Node000034" title=" " alt="" coords="694,1530,759,1555,807,1573,841,1586,839,1591,805,1578,757,1560,692,1535"/>
+<area shape="poly" id="edge38_Node000040_Node000041" title=" " alt="" coords="736,1503,799,1501,799,1506,736,1509"/>
+<area shape="poly" id="edge39_Node000041_Node000032" title=" " alt="" coords="1014,1507,1054,1511,1054,1517,1013,1512"/>
+<area shape="poly" id="edge46_Node000042_Node000032" title=" " alt="" coords="736,1183,804,1178,879,1181,954,1196,990,1210,1023,1228,1056,1254,1083,1286,1107,1321,1126,1358,1154,1431,1170,1490,1165,1492,1149,1432,1121,1360,1102,1324,1079,1289,1052,1258,1020,1233,987,1215,952,1201,878,1186,804,1184,736,1189"/>
+<area shape="poly" id="edge47_Node000042_Node000034" title=" " alt="" coords="682,1224,724,1253,744,1272,761,1293,777,1326,785,1356,786,1413,786,1468,793,1498,809,1530,833,1560,862,1583,858,1587,829,1563,804,1533,788,1500,781,1469,780,1413,780,1357,772,1328,756,1296,740,1275,721,1257,679,1229"/>
+<area shape="poly" id="edge43_Node000042_Node000043" title=" " alt="" coords="735,1181,799,1168,800,1173,736,1186"/>
+<area shape="rect" id="Node000044" href="$classentity_1_1_ship_status.html#abe20e6e70ba9a66c467baf50d24c88b1" title=" " alt="" coords="824,1242,1004,1269"/>
+<area shape="poly" id="edge45_Node000042_Node000044" title=" " alt="" coords="736,1221,822,1236,821,1242,735,1226"/>
+<area shape="poly" id="edge44_Node000043_Node000032" title=" " alt="" coords="996,1166,1023,1184,1056,1220,1083,1259,1106,1301,1126,1344,1154,1426,1170,1490,1165,1492,1149,1427,1121,1346,1102,1303,1079,1262,1051,1223,1020,1188,993,1170"/>
+<area shape="poly" id="edge51_Node000045_Node000032" title=" " alt="" coords="736,1337,897,1363,970,1379,1023,1396,1059,1417,1093,1442,1147,1493,1143,1497,1089,1446,1056,1421,1021,1401,969,1384,896,1368,735,1343"/>
+<area shape="poly" id="edge52_Node000045_Node000034" title=" " alt="" coords="656,1348,808,1530,871,1583,868,1587,804,1534,652,1351"/>
+<area shape="poly" id="edge49_Node000045_Node000046" title=" " alt="" coords="736,1320,799,1317,799,1322,736,1326"/>
+<area shape="poly" id="edge50_Node000046_Node000032" title=" " alt="" coords="989,1334,1023,1352,1063,1385,1099,1422,1154,1492,1150,1495,1095,1425,1060,1389,1020,1357,987,1339"/>
+<area shape="poly" id="edge57_Node000047_Node000032" title=" " alt="" coords="736,1895,816,1896,899,1893,972,1883,1000,1876,1020,1865,1055,1835,1085,1799,1109,1758,1128,1715,1154,1631,1167,1564,1172,1565,1159,1633,1133,1717,1114,1760,1089,1802,1059,1839,1023,1870,1002,1881,973,1888,899,1898,816,1901,736,1901"/>
+<area shape="poly" id="edge58_Node000047_Node000034" title=" " alt="" coords="654,1870,756,1757,780,1727,804,1698,868,1644,871,1648,808,1702,784,1730,760,1760,658,1873"/>
+<area shape="poly" id="edge54_Node000047_Node000048" title=" " alt="" coords="682,1913,807,1967,825,1973,824,1978,805,1972,680,1917"/>
+<area shape="rect" id="Node000049" href="$classentity_1_1_ship_status.html#a858ebc58e7d5613878dbf1b7d2e4594f" title=" " alt="" coords="819,1930,1009,1957"/>
+<area shape="poly" id="edge56_Node000047_Node000049" title=" " alt="" coords="736,1909,822,1924,821,1930,735,1914"/>
+<area shape="poly" id="edge55_Node000048_Node000032" title=" " alt="" coords="1005,1978,1020,1967,1059,1921,1091,1869,1116,1813,1136,1755,1160,1647,1169,1564,1175,1565,1165,1648,1141,1757,1121,1814,1096,1871,1064,1924,1024,1971,1009,1982"/>
+<area shape="poly" id="edge62_Node000050_Node000032" title=" " alt="" coords="736,1080,816,1078,900,1082,973,1091,1002,1100,1023,1111,1065,1151,1099,1198,1125,1250,1144,1304,1158,1358,1167,1409,1176,1491,1170,1491,1162,1410,1153,1360,1139,1306,1120,1252,1094,1201,1061,1154,1020,1115,1000,1105,972,1097,899,1087,816,1084,736,1085"/>
+<area shape="poly" id="edge63_Node000050_Node000034" title=" " alt="" coords="688,1107,727,1134,746,1151,761,1170,784,1220,793,1266,792,1309,787,1351,781,1393,780,1435,787,1481,809,1530,832,1560,861,1583,857,1588,828,1563,804,1533,782,1482,774,1436,776,1392,781,1350,787,1309,788,1266,779,1222,756,1173,742,1154,724,1138,685,1112"/>
+<area shape="poly" id="edge60_Node000050_Node000051" title=" " alt="" coords="735,1064,799,1050,800,1056,736,1069"/>
+<area shape="poly" id="edge61_Node000051_Node000032" title=" " alt="" coords="999,1049,1024,1067,1064,1117,1096,1173,1122,1233,1141,1293,1165,1406,1175,1491,1170,1492,1160,1407,1136,1295,1117,1235,1091,1176,1059,1120,1020,1071,996,1053"/>
+<area shape="rect" id="Node000053" href="$class_currency_1_1_upgrade_manager.html#a282e2ed1f01eb22196dccd90b20d4ee5" title="Returns shared instance of UpgradeManager." alt="" coords="815,506,1013,549"/>
+<area shape="poly" id="edge77_Node000052_Node000053" title=" " alt="" coords="741,528,799,527,799,532,741,533"/>
+<area shape="poly" id="edge86_Node000058_Node000013" title=" " alt="" coords="641,940,661,885,696,811,743,732,772,694,805,660,834,638,862,625,916,611,968,597,994,583,1020,559,1056,513,1086,462,1110,407,1130,353,1156,252,1168,177,1173,178,1161,253,1135,354,1115,409,1091,464,1060,516,1024,563,997,587,970,602,917,617,864,630,836,643,808,664,776,698,748,735,700,814,666,887,646,941"/>
+<area shape="poly" id="edge81_Node000058_Node000031" title=" " alt="" coords="681,982,724,1012,744,1031,761,1053,780,1094,788,1132,789,1167,785,1201,782,1235,783,1269,790,1306,809,1346,832,1376,861,1399,858,1403,828,1379,804,1349,785,1308,778,1270,777,1235,780,1200,783,1167,783,1132,775,1096,756,1056,740,1034,721,1016,678,986"/>
+<area shape="poly" id="edge83_Node000058_Node000039" title=" " alt="" coords="684,982,726,1011,745,1031,761,1053,777,1094,788,1144,795,1200,798,1262,795,1399,786,1545,777,1691,774,1828,776,1889,782,1945,793,1994,809,2034,831,2064,859,2087,855,2091,827,2067,804,2037,788,1996,777,1946,771,1890,768,1828,772,1691,781,1544,789,1398,792,1262,790,1200,783,1144,772,1096,756,1056,741,1034,723,1015,681,986"/>
+<area shape="poly" id="edge85_Node000058_Node000046" title=" " alt="" coords="681,982,723,1012,744,1031,761,1053,776,1085,782,1115,780,1172,778,1199,780,1225,789,1252,808,1279,810,1281,806,1285,804,1283,784,1254,775,1226,773,1199,774,1172,777,1116,771,1087,756,1056,740,1035,720,1016,678,986"/>
+<area shape="poly" id="edge88_Node000058_Node000051" title=" " alt="" coords="726,981,808,1001,806,1006,725,987"/>
+<area shape="rect" id="Node000059" href="$classentity_1_1_ship_status.html#a77b6cbc7b5c009dceff1f21eeeb0d0ec" title=" " alt="" coords="824,808,1004,850"/>
+<area shape="poly" id="edge80_Node000058_Node000059" title=" " alt="" coords="667,938,729,899,805,860,820,854,822,859,807,865,732,904,670,943"/>
+<area shape="rect" id="Node000060" href="$classentity_1_1_ship_status.html#a8eb448a9f4191d28331568893e3501d8" title=" " alt="" coords="826,874,1002,917"/>
+<area shape="poly" id="edge82_Node000058_Node000060" title=" " alt="" coords="725,938,810,918,812,923,726,943"/>
+<area shape="rect" id="Node000061" href="$classentity_1_1_ship_status.html#ac4da16d9538c7d417f59eb5fdbba4172" title=" " alt="" coords="829,941,999,984"/>
+<area shape="poly" id="edge84_Node000058_Node000061" title=" " alt="" coords="725,960,813,960,813,965,725,965"/>
+<area shape="rect" id="Node000062" href="$classentity_1_1_ship_status.html#ab97b6d13f72f9bc0dfafbb989eef5e21" title=" " alt="" coords="824,674,1004,717"/>
+<area shape="poly" id="edge87_Node000058_Node000062" title=" " alt="" coords="644,939,667,895,702,838,748,778,775,751,805,727,811,722,814,727,808,731,779,755,752,782,706,841,671,897,648,942"/>
+<area shape="rect" id="Node000063" href="$class_currency_1_1_upgrade_manager.html#aa7efa0567df8f00e9d2d88b399f66e0a" title=" " alt="" coords="824,741,1004,784"/>
+<area shape="poly" id="edge89_Node000058_Node000063" title=" " alt="" coords="650,939,713,868,757,828,805,793,814,788,817,793,808,798,760,832,717,872,654,942"/>
+<area shape="poly" id="edge90_Node000063_Node000057" title=" " alt="" coords="986,738,1021,726,1099,699,1101,704,1023,732,987,743"/>
+<area shape="poly" id="edge93_Node000064_Node000015" title=" " alt="" coords="712,402,821,382,822,387,713,407"/>
+<area shape="rect" id="Node000065" href="$classengine_1_1_file_manager.html#ad7ef07a23c6ff9c29a6d86622c49661e" title="Saves user gem to disk." alt="" coords="817,405,1011,432"/>
+<area shape="poly" id="edge94_Node000064_Node000065" title=" " alt="" coords="759,416,801,416,801,421,759,421"/>
+</map>

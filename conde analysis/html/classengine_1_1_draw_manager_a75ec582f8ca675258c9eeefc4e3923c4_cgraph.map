@@ -1,0 +1,16 @@
+<map id="engine.DrawManager.DrawManager" name="engine.DrawManager.DrawManager">
+<area shape="rect" id="Node000001" title="Private constructor." alt="" coords="5,81,235,108"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="289,5,473,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,78,317,34,319,39,169,83"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1039,31,1191,57"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="235,86,1023,46,1023,51,235,92"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_file_manager.html#a557804f2c71a599400dd60c4b24f9a1d" title="Loads a font of a given size." alt="" coords="287,107,475,133"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="236,103,272,107,271,112,235,109"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_file_manager.html#a77c85c9ebc8af1cf9f2e272505c7fa38" title="Loads sprites from disk." alt="" coords="283,157,479,184"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="164,106,283,143,311,150,309,156,282,148,163,111"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="527,5,733,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="474,16,512,16,512,21,474,21"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="781,5,991,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="734,16,766,16,766,21,734,21"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="991,28,1023,31,1023,37,991,33"/>
+</map>

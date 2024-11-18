@@ -1,0 +1,9 @@
+<map id="entity.Bullet.Bullet" name="entity.Bullet.Bullet">
+<area shape="rect" id="Node000001" title="Constructor, establishes the bullet&#39;s properties." alt="" coords="5,31,132,57"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_bullet.html#a2aec4db9c13df6487b5221d3cf5fbc7d" title="Sets correct sprite for the bullet, based on speed." alt="" coords="180,31,325,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,41,164,41,164,47,132,47"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_bomb.html#a8f61c1500609ebfc7a285461ed9e1028" title=" " alt="" coords="373,5,543,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,32,357,28,358,34,326,38"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_bomb.html#acc740247abbfc0e65202ebbdd984d736" title=" " alt="" coords="380,56,537,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="326,50,364,55,364,60,325,56"/>
+</map>

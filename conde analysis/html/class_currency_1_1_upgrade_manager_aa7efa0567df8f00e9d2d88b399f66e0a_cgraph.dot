@@ -1,0 +1,11 @@
+digraph "Currency.UpgradeManager.PriceCalculation"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Currency.UpgradeManager.\lPriceCalculation",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Currency.UpgradeManager.\lLevelCalculation",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_currency_1_1_upgrade_manager.html#ac4d1d86f403a3ecdd2aed4f5a1ee8b38",tooltip=" "];
+}

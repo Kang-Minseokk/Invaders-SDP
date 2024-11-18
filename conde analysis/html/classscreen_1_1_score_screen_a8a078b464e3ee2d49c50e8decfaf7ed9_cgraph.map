@@ -1,0 +1,35 @@
+<map id="screen.ScoreScreen.ScoreScreen" name="screen.ScoreScreen.ScoreScreen">
+<area shape="rect" id="Node000001" title="Constructor, establishes the properties of the screen." alt="" coords="5,259,183,301"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_game_state.html#a7bb7806ccaa9f1e83062a3a05020832c" title=" " alt="" coords="231,5,449,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,257,114,212,141,153,179,93,202,65,229,42,236,37,239,41,232,46,206,69,183,96,145,156,119,214,104,259"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_game_state.html#adcc1dbdd8521d082800151c75992b44f" title=" " alt="" coords="251,56,429,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,257,121,221,149,176,185,131,229,93,238,87,241,92,232,97,189,134,153,179,126,223,107,260"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_core.html#a657de8cca4ce42bdd0aab9df62824328" title="Controls creation of new cooldowns." alt="" coords="254,107,426,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,256,158,199,192,169,229,143,242,137,244,142,232,148,195,173,162,203,113,260"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8" title="Controls access to the file manager." alt="" coords="248,157,432,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="123,256,171,224,230,194,250,186,252,191,232,198,174,228,126,260"/>
+<area shape="rect" id="Node000009" href="$classengine_1_1_game_state.html#a09ac6f7c53a24f5378c876736db94054" title=" " alt="" coords="249,208,431,235"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="182,256,230,244,263,236,264,241,231,249,184,261"/>
+<area shape="rect" id="Node000010" href="$classengine_1_1_game_state.html#a5ed1c96ce024611ecf2375b31406dd52" title=" " alt="" coords="249,259,431,301"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="183,277,233,277,233,283,183,283"/>
+<area shape="rect" id="Node000011" href="$classengine_1_1_game_state.html#a60ff07023c26cc841f1dd3e1b47ff094" title=" " alt="" coords="247,325,432,352"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="184,299,231,311,264,319,263,324,230,316,182,304"/>
+<area shape="rect" id="Node000012" href="$classengine_1_1_game_state.html#a425999cc92657304d7cfd282b23ddd57" title=" " alt="" coords="248,376,432,419"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="127,299,175,331,232,362,246,368,244,373,230,366,172,336,124,304"/>
+<area shape="rect" id="Node000013" href="$classengine_1_1_file_manager.html#adac4170cd0aad9ad621200c76684c0ae" title="Loads high scores from file, and returns a sorted list of pairs score &#45; value." alt="" coords="245,443,434,485"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="111,300,160,364,194,399,232,428,240,433,237,438,229,433,190,403,156,367,107,303"/>
+<area shape="rect" id="Node000015" href="$classengine_1_1_file_manager.html#a314c50ef1c81fa513af0ad4984900cc8" title="Loads recent scores from file, and returns a sorted list of pairs score &#45; value." alt="" coords="238,509,442,552"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="105,301,122,342,149,395,186,449,208,474,232,495,238,499,235,503,229,499,204,477,182,452,145,397,118,344,100,303"/>
+<area shape="rect" id="Node000017" href="$classengine_1_1_cooldown.html#abcb3cea769834552c6a81075f5d17dc7" title="Restarts the cooldown." alt="" coords="263,576,417,603"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="102,301,114,355,139,426,156,463,177,500,203,533,232,562,249,573,247,577,229,566,199,537,173,503,151,466,134,428,109,356,96,302"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0" title="Returns shared instance of FileManager." alt="" coords="497,157,703,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="432,168,481,168,481,173,432,173"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a" title="private constructor." alt="" coords="751,157,961,184"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="704,168,736,168,736,173,704,173"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="1009,157,1161,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="961,168,993,168,993,173,961,173"/>
+<area shape="rect" id="Node000014" href="$classengine_1_1_file_manager.html#a03d57bcd19887100a79ced041bd21a9c" title="Returns the application default scores if there is no user high scores file." alt="" coords="498,443,702,485"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="435,461,483,461,483,467,435,467"/>
+<area shape="rect" id="Node000016" href="$classengine_1_1_file_manager.html#a4183d269d4e6d870c2000fbbfb8982b3" title="Returns the application default scores if there is no user recent scores file." alt="" coords="498,509,702,552"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="443,528,483,528,483,533,443,533"/>
+</map>

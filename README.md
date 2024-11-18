@@ -65,3 +65,4 @@
   - [Fever Time(ES)](https://pixabay.com/sound-effects/8bit-music-for-game-68698/) - &copy; annoyedCactus 2022
   - [enemy_explosion(ES)](https://pixabay.com/ko/sound-effects/retro-explode-2-236688/) - &copy; Driken5482 2024
   - [get_item(ES)](https://pixabay.com/ko/sound-effects/coin-collect-retro-8-bit-sound-effect-145251/) - &copy; Lesiakower 2023
+  - [draw_success(ES)](https://freesound.org/people/plasterbrain/sounds/397355/) - &copy; plasterbrain 2017

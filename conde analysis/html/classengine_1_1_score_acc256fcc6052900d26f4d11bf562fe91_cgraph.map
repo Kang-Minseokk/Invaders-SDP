@@ -1,0 +1,17 @@
+<map id="engine.Score.Score" name="engine.Score.Score">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,147,141,173"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_statistics.html#a7d204bad3d40b0e4ff7548cdc9991260" title=" " alt="" coords="192,5,370,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,144,128,102,187,58,196,53,199,57,190,62,131,106,89,148"/>
+<area shape="rect" id="Node000003" href="$class_achievement_1_1_statistics.html#aab7cbd1d316239e855b337f582add678" title=" " alt="" coords="192,72,370,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,143,197,117,198,123,118,149"/>
+<area shape="rect" id="Node000004" href="$class_achievement_1_1_statistics.html#a93d9cd3d501a574c125bdcb6b980bafe" title=" " alt="" coords="192,139,370,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,157,176,157,176,163,141,163"/>
+<area shape="rect" id="Node000005" href="$class_achievement_1_1_statistics.html#a2b556051a7552d00bec08507e1372364" title=" " alt="" coords="192,205,370,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="118,171,198,197,197,203,117,177"/>
+<area shape="rect" id="Node000006" href="$class_achievement_1_1_statistics.html#aec470afcbefd9828060b11add7f37673" title="Load Statistic.property (userdata)" alt="" coords="189,272,373,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="89,172,131,214,190,258,199,263,196,267,187,262,128,218,85,176"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_file_manager.html#a58f26de7ca8d0c2fa5f84bd180e98616" title="load userData(Statistics) from file, and return userData(Statistics)" alt="" coords="421,280,639,307"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="374,291,405,291,405,296,374,296"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_file_manager.html#a659bc395de42280133d732e581ffb91d" title="Returns the application default userData(Statistics) if there is no Statistic.properties file." alt="" coords="687,272,892,315"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="640,291,672,291,672,296,640,296"/>
+</map>

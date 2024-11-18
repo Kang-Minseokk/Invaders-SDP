@@ -1,0 +1,7 @@
+<map id="engine.DrawManager.drawTitle" name="engine.DrawManager.drawTitle">
+<area shape="rect" id="Node000001" title="Draws game title." alt="" coords="5,47,207,73"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a01d2cd207f7553b79e0f73972acd514c" title="Draws a centered string on big font." alt="" coords="255,5,484,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,45,239,41,239,46,207,50"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#a4016c7be1acc513467bcc183b5e515d0" title="Draws a centered string on regular font." alt="" coords="255,72,484,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,70,239,74,239,79,207,75"/>
+</map>

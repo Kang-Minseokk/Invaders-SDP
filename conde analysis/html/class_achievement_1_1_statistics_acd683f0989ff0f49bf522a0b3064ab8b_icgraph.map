@@ -1,0 +1,51 @@
+<map id="Achievement.Statistics.getTotalBulletsShot" name="Achievement.Statistics.getTotalBulletsShot">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1763,180,1941,223"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_statistics.html#a138bee76b4274699681e478a4737269e" title="Add the number of bullets fired so far to the previous record." alt="" coords="1259,5,1440,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1773,177,1413,51,1415,46,1775,172"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_file_manager.html#a65b46b7536594e0021ee5c7067c09416" title="save userData(Statistics) to disk" alt="" coords="1492,213,1715,240"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1747,215,1715,218,1715,213,1747,209"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a41e19e7b8b70f17d04c7787b81d5116c" title=" " alt="" coords="1003,72,1185,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1251,55,1179,74,1178,69,1250,50"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="734,80,918,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="987,96,918,96,918,91,987,91"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="1574,205,1490,122,1468,89,1458,76,1443,62,1423,51,1426,46,1446,58,1462,72,1472,86,1494,118,1578,201"/>
+<area shape="rect" id="Node000006" href="$class_achievement_1_1_statistics.html#a70c9ca387c795d149852dff0e7c298f2" title="Add the number of games played." alt="" coords="1259,205,1440,248"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="1477,229,1441,229,1441,224,1477,224"/>
+<area shape="rect" id="Node000012" href="$class_achievement_1_1_statistics.html#a59564a449d79bf40b07d6bca1feab4f9" title="Add the number of ships destroyed so far to the previous record." alt="" coords="1259,139,1440,181"/>
+<area shape="poly" id="edge13_Node000005_Node000012" title=" " alt="" coords="1534,211,1433,185,1434,179,1535,206"/>
+<area shape="rect" id="Node000014" href="$class_achievement_1_1_statistics.html#a99f38e4d8621a9937c77465ae9e5527e" title="Add the current game&#39;s playtime to the previous total playtime." alt="" coords="1259,405,1440,448"/>
+<area shape="poly" id="edge16_Node000005_Node000014" title=" " alt="" coords="1586,254,1528,324,1489,362,1446,396,1425,407,1422,402,1443,391,1486,358,1524,320,1582,251"/>
+<area shape="rect" id="Node000016" href="$class_achievement_1_1_statistics.html#a046884caedaf90d798dc5bd6c65f80b7" title="Compare the number of achievements cleared up to now with the number of achievements cleared after th..." alt="" coords="1257,272,1442,315"/>
+<area shape="poly" id="edge18_Node000005_Node000016" title=" " alt="" coords="1535,247,1434,274,1433,269,1534,242"/>
+<area shape="rect" id="Node000017" href="$class_achievement_1_1_statistics.html#ae59e3371feeb5c1e14d4640419c6ee37" title="Compare the previously highest reached level with the currently reached level." alt="" coords="1257,72,1442,115"/>
+<area shape="poly" id="edge20_Node000005_Node000017" title=" " alt="" coords="1570,206,1512,168,1443,129,1417,118,1419,113,1446,124,1515,163,1573,202"/>
+<area shape="rect" id="Node000018" href="$class_achievement_1_1_statistics.html#a50c7a6face4c8543e72f56144d46ed5d" title="Compare the current game&#39;s destruction streak with the high score for shipsDestructionStreak." alt="" coords="1257,339,1442,381"/>
+<area shape="poly" id="edge22_Node000005_Node000018" title=" " alt="" coords="1573,252,1515,290,1446,329,1419,341,1417,336,1443,324,1512,285,1570,247"/>
+<area shape="rect" id="Node000019" href="$class_achievement_1_1_statistics.html#a2bc2b1895c2e715fc47423ac9e3c1377" title=" " alt="" coords="1255,472,1444,515"/>
+<area shape="poly" id="edge24_Node000005_Node000019" title=" " alt="" coords="1593,255,1571,300,1539,355,1497,412,1446,462,1428,474,1425,469,1443,458,1493,409,1535,353,1567,298,1588,253"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_score_screen.html#a87b225983adb40984b69ee15b4dd5f93" title="Saves the Player&#39;s Statistics." alt="" coords="981,313,1207,340"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1272,256,1256,262,1128,315,1126,310,1254,258,1270,251"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_score_screen.html#a41ff54b61e6d1d32adc72c07e2c3b3b6" title=" " alt="" coords="465,387,671,429"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="988,346,672,395,671,389,987,340"/>
+<area shape="rect" id="Node000009" href="$classscreen_1_1_score_screen.html#a057479f036d6fbc727ae22c60f924d09" title=" " alt="" coords="236,353,417,396"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="449,394,417,390,418,385,450,389"/>
+<area shape="rect" id="Node000011" href="$classscreen_1_1_score_screen.html#acbdd3f9cc0796d86422536b798d5c953" title=" " alt="" coords="236,420,417,463"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="450,427,418,431,417,426,449,422"/>
+<area shape="rect" id="Node000010" href="$classscreen_1_1_score_screen.html#a38e621d92395da75408301bb9873dbdf" title="Updates the elements on screen and checks for events." alt="" coords="5,395,188,421"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="221,393,188,397,188,392,220,387"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="220,429,188,424,188,419,221,423"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="1250,137,1178,118,1179,113,1251,132"/>
+<area shape="rect" id="Node000013" href="$class_achievement_1_1_statistics.html#abf85693bc6a7f785a02fad922acc9bcc" title=" " alt="" coords="1001,139,1187,181"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="1243,163,1187,163,1187,157,1243,157"/>
+<area shape="rect" id="Node000015" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="1032,415,1156,441"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="1243,430,1156,430,1156,425,1243,425"/>
+<area shape="poly" id="edge19_Node000016_Node000007" title=" " alt="" coords="1242,310,1202,315,1201,310,1241,305"/>
+<area shape="poly" id="edge21_Node000017_Node000003" title=" " alt="" coords="1242,96,1185,96,1185,91,1242,91"/>
+<area shape="poly" id="edge23_Node000018_Node000007" title=" " alt="" coords="1241,349,1201,343,1202,338,1242,343"/>
+<area shape="poly" id="edge25_Node000019_Node000015" title=" " alt="" coords="1248,470,1149,445,1150,439,1249,465"/>
+<area shape="rect" id="Node000020" href="$classengine_1_1_file_manager.html#a7b457940b2fc05ff5f3d141dc001ec5f" title="Saves user recent scores to disk." alt="" coords="990,469,1198,512"/>
+<area shape="poly" id="edge26_Node000019_Node000020" title=" " alt="" coords="1239,495,1198,494,1198,489,1239,490"/>
+<area shape="rect" id="Node000021" href="$classscreen_1_1_score_screen.html#acf1e5689ded9e3a788f24a32eae2e4d4" title="Saves the score as a recent score." alt="" coords="719,416,933,459"/>
+<area shape="poly" id="edge27_Node000020_Node000021" title=" " alt="" coords="974,470,932,461,933,456,975,464"/>
+<area shape="poly" id="edge28_Node000021_Node000008" title=" " alt="" coords="703,426,672,422,672,417,704,421"/>
+</map>

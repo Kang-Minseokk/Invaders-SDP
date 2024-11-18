@@ -1,0 +1,5 @@
+<map id="engine.FileManager.loadUpgradeStatus" name="engine.FileManager.loadUpgradeStatus">
+<area shape="rect" id="Node000001" title="Loads upgrade statuses from upgrade_status.properties file." alt="" coords="5,5,217,48"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html#a9a18c215e1d555161c587bcaf1e63d71" title="Loads default upgrade statuses from upgrade_default.properties file." alt="" coords="265,5,469,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,24,249,24,249,29,217,29"/>
+</map>

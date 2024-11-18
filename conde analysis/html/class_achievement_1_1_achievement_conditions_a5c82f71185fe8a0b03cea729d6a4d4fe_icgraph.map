@@ -1,0 +1,12 @@
+<map id="Achievement.AchievementConditions.onKill" name="Achievement.AchievementConditions.onKill">
+<area shape="rect" id="Node000001" title=" " alt="" coords="700,43,976,69"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_statistics.html#a59564a449d79bf40b07d6bca1feab4f9" title="Add the number of ships destroyed so far to the previous record." alt="" coords="471,64,652,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="691,74,653,78,653,73,691,69"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a41e19e7b8b70f17d04c7787b81d5116c" title=" " alt="" coords="239,5,421,48"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="684,50,421,35,422,29,685,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="459,62,416,51,418,46,461,57"/>
+<area shape="rect" id="Node000005" href="$class_achievement_1_1_statistics.html#abf85693bc6a7f785a02fad922acc9bcc" title=" " alt="" coords="237,72,423,115"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="456,92,424,93,423,87,455,86"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,29,189,29,189,24,223,24"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="Currency.CurrencyManager.addGem" name="Currency.CurrencyManager.addGem">
+<area shape="rect" id="Node000001" title="Add an amount of gem to the current gem." alt="" coords="5,31,239,57"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html#aa1a63106adf5599efd6409ac09ede0f7" title="Loads user gem from file, and returns current gem." alt="" coords="289,5,479,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,30,273,27,273,32,240,35"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_file_manager.html#ad7ef07a23c6ff9c29a6d86622c49661e" title="Saves user gem to disk." alt="" coords="287,56,481,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="240,53,271,56,271,61,239,58"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_encryption_support.html#aace733246300350ac93d39bf3d251434" title="Performs decryption for a given input." alt="" coords="529,5,760,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,16,514,16,514,21,479,21"/>
+<area shape="rect" id="Node000004" href="$class_currency_1_1_encryption_support.html#ac6690d521e47eaa9de388d6359655779" title="Performs encryption for a given input." alt="" coords="529,56,760,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="457,30,558,50,557,55,456,35"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="482,67,514,67,514,72,482,72"/>
+</map>

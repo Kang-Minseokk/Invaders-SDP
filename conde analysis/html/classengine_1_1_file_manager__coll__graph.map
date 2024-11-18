@@ -1,0 +1,9 @@
+<map id="engine.FileManager" name="engine.FileManager">
+<area shape="rect" id="Node000001" title="Manages files used in the application." alt="" coords="5,656,189,1109"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html" title="Manages files used in the application." alt="" coords="113,139,297,592"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,592,151,640,145,639,156,591"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="299,319,317,336,324,365,321,386,313,401,308,398,316,384,319,365,312,338,295,323"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="43,5,93,75"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="67,75,61,139,52,365,54,465,61,592,65,639,60,639,56,592,49,465,47,365,56,139,61,74"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="85,74,109,131,104,133,80,76"/>
+</map>

@@ -1,0 +1,83 @@
+<map id="screen.GameScreen.draw" name="screen.GameScreen.draw">
+<area shape="rect" id="Node000001" title="Draws the elements associated with the screen." alt="" coords="5,757,178,784"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793" title="Checks if the cooldown is finished." alt="" coords="251,5,460,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,757,98,621,119,406,136,292,159,187,188,100,205,67,224,42,235,33,238,37,228,46,209,70,192,102,164,188,141,293,124,406,103,622,96,757"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#ad0ebafd3a3a50e5d0af5074854013cf9" title="Draws the completed drawing on screen." alt="" coords="255,56,456,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="91,757,102,635,126,443,143,341,165,247,192,169,207,139,224,116,239,102,243,106,228,119,212,141,197,171,170,248,149,342,131,443,107,636,96,757"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_enemy_ship_formation.html#ac121bfcfa5d1009be4cb81903a1c5cb3" title="Draws every individual component of the formation." alt="" coords="249,173,462,200"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="91,757,104,650,129,485,147,398,169,319,194,254,208,229,224,210,233,202,237,207,228,214,213,232,199,256,174,321,152,399,134,486,109,651,97,757"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_draw_manager.html#a3ef1def588c0f283cf6066af12d7ad63" title="Draws an entity, using the apropiate image." alt="" coords="542,232,753,259"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="91,757,100,640,122,457,140,362,162,275,190,205,206,178,224,159,247,144,272,132,325,122,380,124,436,136,490,155,539,177,615,221,613,226,536,182,488,160,435,141,380,129,325,127,274,137,250,148,227,163,210,182,195,207,167,277,145,363,127,458,105,641,96,757"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_draw_manager.html#ad4a1573245af660f915c3523d8ed5ce2" title=" " alt="" coords="233,443,478,469"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="92,756,102,704,125,628,143,587,165,547,191,511,224,479,230,475,233,479,227,483,195,514,169,550,147,590,130,630,108,705,97,757"/>
+<area shape="rect" id="Node000009" href="$classengine_1_1_draw_manager_impl.html#a11a846124a4d5ea4c2aaf4411fbdf8e5" title=" " alt="" coords="255,493,456,536"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="94,756,109,715,135,658,173,598,197,570,224,546,239,536,242,541,227,550,201,574,178,601,140,661,114,717,99,758"/>
+<area shape="rect" id="Node000010" href="$classengine_1_1_draw_manager_impl.html#aac0e3085dce7100b86df3f4f12f74b71" title="Draws 2P&#39;s bulletSpeed on screen." alt="" coords="255,560,456,603"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="98,755,145,687,181,647,224,612,239,604,242,609,227,617,185,650,149,690,103,758"/>
+<area shape="rect" id="Node000011" href="$classengine_1_1_draw_manager.html#a5565e08f65338aa6812b22f7857e543a" title="Countdown to game start." alt="" coords="233,627,478,653"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="104,755,154,709,188,684,225,663,242,656,244,661,227,668,190,688,157,713,107,759"/>
+<area shape="rect" id="Node000013" href="$classengine_1_1_draw_manager.html#a0ad7ae90b2396056fe7d224ca84d35b0" title="Draws a thick line from side to side of the screen." alt="" coords="226,728,485,755"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="178,758,214,754,215,760,178,764"/>
+<area shape="rect" id="Node000014" href="$classengine_1_1_draw_manager.html#aaa79bdd1a40b73b3c4e11540adc8af65" title="Draw the item that player got." alt="" coords="254,392,456,419"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="91,757,98,696,119,607,136,558,158,511,188,466,224,429,239,418,242,423,227,433,192,470,163,513,141,560,124,609,104,697,96,757"/>
+<area shape="rect" id="Node000018" href="$class_enemy_1_1_item_manager.html#a53adc667170457731d144c4f4fb024c0" title=" " alt="" coords="252,224,458,251"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="92,756,105,658,132,508,151,430,172,359,196,300,224,261,237,251,240,255,228,265,201,303,177,360,156,432,138,509,111,659,97,757"/>
+<area shape="rect" id="Node000019" href="$classengine_1_1_draw_manager_impl.html#ac63cde4d8f1f6271d59be1a3dfd5a2a4" title=" " alt="" coords="255,779,456,821"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="178,778,240,784,239,790,178,783"/>
+<area shape="rect" id="Node000020" href="$classengine_1_1_draw_manager.html#a2eacd26820b8ce33db5cd9a5ee7ad084" title="For debugging purpouses, draws the canvas borders." alt="" coords="252,275,459,301"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="89,757,90,679,95,622,104,558,120,491,144,426,178,364,200,337,224,311,236,302,239,306,227,315,204,340,183,367,149,428,125,493,109,559,100,623,95,679,95,757"/>
+<area shape="rect" id="Node000021" href="$classengine_1_1_draw_manager_impl.html#a510168f7193dea848c6cf7c8857c943b" title="Draws 2P&#39;s lives on screen." alt="" coords="255,325,456,368"/>
+<area shape="poly" id="edge25_Node000001_Node000021" title=" " alt="" coords="90,757,96,689,114,587,131,531,154,475,185,423,224,378,239,366,243,371,227,382,189,426,159,478,136,533,119,588,101,690,96,757"/>
+<area shape="rect" id="Node000022" href="$classengine_1_1_draw_manager_impl.html#ac2e2e7173189a1200e779c94fc81f3db" title="Draws a filled rectangle with specified color at given coordinates." alt="" coords="241,845,470,872"/>
+<area shape="poly" id="edge28_Node000001_Node000022" title=" " alt="" coords="119,782,168,807,227,831,254,839,252,844,225,836,166,812,116,787"/>
+<area shape="rect" id="Node000023" href="$classengine_1_1_draw_manager_impl.html#a72900ba01dd94c76d34f4e7440175b1b" title="Draw remaining enemies." alt="" coords="255,896,456,939"/>
+<area shape="poly" id="edge29_Node000001_Node000023" title=" " alt="" coords="107,783,156,831,190,858,227,882,241,888,239,893,224,886,187,863,153,835,103,786"/>
+<area shape="rect" id="Node000024" href="$classengine_1_1_draw_manager_impl.html#adb5a74ab625e95650dcbb67fd091c94f" title="Draws the player&#39;s score on the screen." alt="" coords="255,963,456,1005"/>
+<area shape="poly" id="edge30_Node000001_Node000024" title=" " alt="" coords="101,783,118,817,146,862,182,909,227,949,242,957,239,962,224,953,178,913,141,865,114,820,97,786"/>
+<area shape="rect" id="Node000025" href="$classengine_1_1_draw_manager_impl.html#a199dc4f8e3b4ac0eb9621e96dc099fbd" title="Draws current score on screen." alt="" coords="255,1029,456,1072"/>
+<area shape="poly" id="edge31_Node000001_Node000025" title=" " alt="" coords="99,784,112,829,137,892,175,958,199,989,227,1015,242,1025,239,1029,224,1019,195,993,170,961,132,894,107,830,94,785"/>
+<area shape="rect" id="Node000026" href="$classengine_1_1_draw_manager_impl.html#a5b6caa1cf519e9a3780aee425692adae" title=" " alt="" coords="255,1096,456,1139"/>
+<area shape="poly" id="edge32_Node000001_Node000026" title=" " alt="" coords="97,784,106,840,129,920,146,964,167,1007,194,1047,227,1082,242,1092,239,1097,224,1086,190,1051,163,1010,141,966,123,922,101,841,92,785"/>
+<area shape="rect" id="Node000027" href="$classengine_1_1_draw_manager_impl.html#a2f6854bea93ec7ed970915a124120de8" title="Draws 2P&#39;s speed on screen." alt="" coords="255,1163,456,1205"/>
+<area shape="poly" id="edge33_Node000001_Node000027" title=" " alt="" coords="96,784,102,850,120,949,137,1003,160,1056,190,1106,227,1149,243,1160,239,1164,224,1153,185,1109,155,1058,132,1004,115,950,96,851,91,785"/>
+<area shape="rect" id="Node000028" href="$classengine_1_1_draw_manager_impl.html#a63f99f786e24b13f2b46e711abf631de" title="Draws current score on screen." alt="" coords="240,1229,470,1256"/>
+<area shape="poly" id="edge34_Node000001_Node000028" title=" " alt="" coords="95,785,96,861,101,916,111,978,127,1042,151,1106,184,1165,204,1191,227,1215,231,1219,228,1223,224,1219,200,1195,179,1168,146,1108,122,1044,106,979,96,917,91,861,90,785"/>
+<area shape="rect" id="Node000029" href="$classengine_1_1_draw_manager.html#a7e1038b4e1fefb842a5b1a0555cb4d67" title=" " alt="" coords="251,677,460,704"/>
+<area shape="poly" id="edge35_Node000001_Node000029" title=" " alt="" coords="121,754,169,734,225,713,256,705,257,710,226,719,171,738,123,759"/>
+<area shape="rect" id="Node000030" href="$classentity_1_1_ship.html#a40d9c2f37374225ab72ba85e26492efe" title="Calculates and returns the bullet speed in Pixels per frame." alt="" coords="268,1280,442,1307"/>
+<area shape="poly" id="edge37_Node000001_Node000030" title=" " alt="" coords="97,784,111,880,138,1027,156,1103,178,1172,201,1229,227,1266,255,1283,252,1287,224,1270,197,1231,173,1174,151,1104,133,1028,106,881,92,785"/>
+<area shape="rect" id="Node000032" href="$classentity_1_1_entity.html#aade70f342a09b3c37b7f40d17db45983" title="Getter for the X axis position of the entity." alt="" coords="272,1331,439,1357"/>
+<area shape="poly" id="edge39_Node000001_Node000032" title=" " alt="" coords="97,784,109,889,135,1051,153,1135,175,1212,199,1275,213,1299,228,1317,242,1327,258,1335,256,1340,239,1332,224,1321,209,1302,195,1278,169,1214,148,1137,130,1052,104,890,92,785"/>
+<area shape="rect" id="Node000033" href="$classentity_1_1_entity.html#afdcbb4ca073d5a81b37ed096ac85f5ef" title="Getter for the Y axis position of the entity." alt="" coords="272,1381,439,1408"/>
+<area shape="poly" id="edge40_Node000001_Node000033" title=" " alt="" coords="97,784,107,897,132,1074,150,1167,171,1252,197,1322,212,1348,228,1367,242,1378,258,1386,256,1391,239,1383,224,1371,208,1351,193,1324,166,1254,144,1168,127,1075,102,898,91,784"/>
+<area shape="rect" id="Node000034" href="$classscreen_1_1_game_screen.html#af0fbd31299bcfb4e29e4474bb25ad73a" title="Check remaining enemies." alt="" coords="243,1432,468,1475"/>
+<area shape="poly" id="edge41_Node000001_Node000034" title=" " alt="" coords="96,784,106,905,130,1097,148,1198,170,1291,196,1367,211,1396,228,1418,232,1423,229,1427,224,1422,207,1399,191,1369,165,1292,142,1199,125,1098,101,906,91,784"/>
+<area shape="rect" id="Node000035" href="$classentity_1_1_ship.html#afd86f13a6b7af8196f97df35189200f3" title="Getter for the ship&#39;s speed." alt="" coords="285,1499,426,1525"/>
+<area shape="poly" id="edge42_Node000001_Node000035" title=" " alt="" coords="96,784,104,917,125,1130,142,1242,164,1345,193,1429,209,1461,228,1485,247,1499,270,1507,268,1512,244,1503,224,1489,205,1464,188,1431,159,1346,137,1243,119,1130,98,918,91,785"/>
+<area shape="rect" id="Node000037" href="$classengine_1_1_draw_manager.html#a4e020955bc763452deba09367dbcf30d" title="First part of the drawing process." alt="" coords="249,1549,462,1576"/>
+<area shape="poly" id="edge44_Node000001_Node000037" title=" " alt="" coords="96,784,102,925,122,1153,139,1273,161,1384,191,1475,208,1510,228,1536,237,1543,233,1548,224,1539,204,1513,186,1477,156,1386,133,1274,116,1154,97,925,90,784"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="428,198,486,209,565,226,564,231,484,215,427,203"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_background.html#a918f6f3f1b91f3d38edfc90604c5235f" title=" " alt="" coords="540,509,755,552"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="436,467,486,479,534,495,557,502,556,507,532,500,484,484,435,473"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_background.html#aa24d734763866bee6c605656eca3632b" title=" " alt="" coords="548,443,747,485"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="478,457,533,458,533,464,478,462"/>
+<area shape="rect" id="Node000012" href="$classengine_1_1_draw_manager.html#a01d2cd207f7553b79e0f73972acd514c" title="Draws a centered string on big font." alt="" coords="533,644,762,687"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="478,648,518,651,517,657,478,653"/>
+<area shape="poly" id="edge15_Node000014_Node000005" title=" " alt="" coords="455,393,483,378,495,367,501,355,507,329,513,303,519,290,531,277,552,263,555,268,535,281,524,293,518,305,512,331,506,357,499,370,487,382,458,398"/>
+<area shape="rect" id="Node000015" href="$classentity_1_1_bomb.html#a8f61c1500609ebfc7a285461ed9e1028" title=" " alt="" coords="562,392,733,419"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="457,403,547,403,547,408,457,408"/>
+<area shape="rect" id="Node000016" href="$classentity_1_1_bomb.html#acc740247abbfc0e65202ebbdd984d736" title=" " alt="" coords="569,341,726,368"/>
+<area shape="poly" id="edge17_Node000014_Node000016" title=" " alt="" coords="436,389,554,368,554,373,437,394"/>
+<area shape="rect" id="Node000017" href="$classentity_1_1_entity.html#a6ca6a574524059ce8c1977c88961246c" title="Constructor, establishes the entity&#39;s generic properties." alt="" coords="561,291,734,317"/>
+<area shape="poly" id="edge18_Node000014_Node000017" title=" " alt="" coords="456,389,484,378,498,366,507,353,516,340,532,327,545,320,548,325,534,332,520,343,511,356,502,370,486,382,458,394"/>
+<area shape="poly" id="edge20_Node000018_Node000005" title=" " alt="" coords="459,237,527,239,527,245,459,243"/>
+<area shape="poly" id="edge23_Node000020_Node000005" title=" " alt="" coords="451,271,536,259,537,264,452,277"/>
+<area shape="poly" id="edge24_Node000020_Node000017" title=" " alt="" coords="460,291,545,296,545,301,459,296"/>
+<area shape="poly" id="edge26_Node000021_Node000005" title=" " alt="" coords="455,322,484,311,508,294,532,276,570,261,572,266,534,281,511,298,486,316,457,327"/>
+<area shape="poly" id="edge27_Node000021_Node000017" title=" " alt="" coords="456,329,545,316,546,321,457,335"/>
+<area shape="poly" id="edge36_Node000029_Node000012" title=" " alt="" coords="460,679,517,674,518,679,461,684"/>
+<area shape="rect" id="Node000031" href="$class_enemy_1_1_player_growth.html#acdf3474eea58fcc63344d3bf646542a4" title=" " alt="" coords="548,1272,747,1315"/>
+<area shape="poly" id="edge38_Node000030_Node000031" title=" " alt="" coords="443,1291,533,1291,533,1296,443,1296"/>
+<area shape="rect" id="Node000036" href="$class_enemy_1_1_player_growth.html#ae6396c147b3b5b7b332ac92119f3707d" title=" " alt="" coords="548,1491,747,1533"/>
+<area shape="poly" id="edge43_Node000035_Node000036" title=" " alt="" coords="426,1509,533,1509,533,1515,426,1515"/>
+</map>

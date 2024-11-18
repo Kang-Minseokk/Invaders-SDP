@@ -156,6 +156,8 @@ public class GameScreen extends Screen {
 	/** CtrlS: Count the number of coin collected in game */
 	private int coinItemsCollected;
 
+	private int customState;
+
 	/**
 	 * Constructor, establishes the properties of the screen.
 	 *
@@ -224,7 +226,8 @@ public class GameScreen extends Screen {
 		enemyShipFormation = new EnemyShipFormation(this.gameSettings);
 		enemyShipFormation.setScoreManager(this.scoreManager);//add by team Enemy
 		enemyShipFormation.attach(this);
-		this.ship = new Ship(this.width / 2, this.height - 30, Color.RED); // add by team HUD
+
+		this.ship = new Ship(this.width / 2, this.height - 30, Color.red, DrawManager.getselectedSpriteType());
 
 		/** initialize itemManager */
 		this.itemManager = new ItemManager(this.height, drawManager, this); //by Enemy team
@@ -641,7 +644,13 @@ public class GameScreen extends Screen {
 		handleItemCollisions();
 		this.bullets.removeAll(recyclable);
 		PiercingBulletPool.recycle(recyclable);
+		// Sound Operator
+		if (this.lives == 0){
+			sm = SoundManager.getInstance();
+			sm.playShipDieSounds();
+		}
 	}
+
 
 	private void handleBulletCollisions(Set<PiercingBullet> recyclable) {
 		for (PiercingBullet bullet : this.bullets) {
@@ -662,9 +671,6 @@ public class GameScreen extends Screen {
 				this.ship.destroy();
 				this.lives--;
 				this.logger.info("Hit on player ship, " + this.lives + " lives remaining.");
-				if (this.lives == 0) {
-					SoundManager.getInstance().playShipDieSounds();
-				}
 			}
 		}
 	}

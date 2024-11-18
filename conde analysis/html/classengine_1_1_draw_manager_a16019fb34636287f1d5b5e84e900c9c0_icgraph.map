@@ -1,0 +1,18 @@
+<map id="engine.DrawManager.getselectedSpriteType" name="engine.DrawManager.getselectedSpriteType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="990,48,1205,91"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_two_player_mode.html#a363e184992d8ff6b1432219bf1cbb8bb" title="Initializes basic screen properties, and adds necessary elements." alt="" coords="734,5,942,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="974,48,909,35,910,30,975,43"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#aef90152dffd0a774ee312828da3ed861" title="Initializes basic screen properties, and adds necessary elements." alt="" coords="742,56,934,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="974,72,934,72,934,67,974,67"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_ship.html#a77612eaa418b1abe881de16bf6b5bdfb" title="Updates status of the ship." alt="" coords="775,108,901,135"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="975,97,902,111,901,106,974,91"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aadf4f57babea3e17c46a02011413e1d4" title=" " alt="" coords="237,41,420,84"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="727,71,420,67,420,61,727,65"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,83,189,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="222,81,190,85,189,80,221,75"/>
+<area shape="rect" id="Node000007" href="$classentity_1_1_item_barrier_and_heart.html#a157ceb5daebcdbf2a65a396ad4569b39" title=" " alt="" coords="468,104,686,147"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="760,125,687,126,687,121,760,120"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_game_screen.html#a170f7dceead615d1b65eadbd70693ea2" title=" " alt="" coords="237,108,420,151"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="452,130,420,131,420,125,452,125"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="221,117,189,112,190,107,222,111"/>
+</map>

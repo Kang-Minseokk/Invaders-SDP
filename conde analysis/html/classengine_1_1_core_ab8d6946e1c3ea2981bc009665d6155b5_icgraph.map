@@ -1,0 +1,7 @@
+<map id="engine.Core.getDrawManager" name="engine.Core.getDrawManager">
+<area shape="rect" id="Node000001" title="Controls access to the drawing manager." alt="" coords="239,43,433,69"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_enemy_ship_formation.html#a376224dc2ff5bd7fbd919e4d6b225cdc" title="Constructor, sets the initial conditions." alt="" coords="5,5,191,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,45,191,41,191,35,223,39"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_screen.html#a1ebb8482ec863c6ad05618ad5d11518e" title="Constructor, establishes the properties of the screen." alt="" coords="23,72,173,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,73,174,79,173,73,223,67"/>
+</map>

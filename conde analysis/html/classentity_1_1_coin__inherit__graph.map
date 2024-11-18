@@ -1,0 +1,5 @@
+<map id="entity.Coin" name="entity.Coin">
+<area shape="rect" id="Node000001" title=" " alt="" coords="25,464,98,533"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_entity.html" title="Implements a generic game entity." alt="" coords="5,5,117,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,431,64,464,59,464,59,431"/>
+</map>

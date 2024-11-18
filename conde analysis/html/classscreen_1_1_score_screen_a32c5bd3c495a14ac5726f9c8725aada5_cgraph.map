@@ -1,0 +1,7 @@
+<map id="screen.ScoreScreen.resetGameSettings" name="screen.ScoreScreen.resetGameSettings">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,178,81"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_player_growth.html#af7b9912949526efc3fd9a8c9f16325bc" title=" " alt="" coords="228,5,412,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,45,212,40,213,45,179,50"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_number_of_bullet.html#a7d792797a15eea22e6059aaec84a30d3" title=" " alt="" coords="226,72,414,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,70,210,75,210,80,178,75"/>
+</map>

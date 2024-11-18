@@ -1,0 +1,17 @@
+<map id="screen.TitleScreen.playMenuSelectSound" name="screen.TitleScreen.playMenuSelectSound">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,196,124"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea" title=" " alt="" coords="244,60,466,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,89,228,85,228,91,197,94"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_sound_manager.html#af326739e7c567da7bedf9a07eff7e232" title=" " alt="" coords="257,115,453,141"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="197,110,241,114,241,119,196,115"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9" title="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..." alt="" coords="514,48,705,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="466,69,499,68,499,74,466,74"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="790,5,943,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="705,48,780,33,781,38,706,53"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb" title=" " alt="" coords="753,56,980,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="706,67,738,67,738,72,706,72"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f" title=" " alt="" coords="771,107,962,149"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="706,89,757,100,756,105,705,94"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_sound_manager.html#aff8a50dd8c931099450db7066e6a360e" title=" " alt="" coords="520,115,699,157"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="454,128,505,130,505,135,454,134"/>
+</map>

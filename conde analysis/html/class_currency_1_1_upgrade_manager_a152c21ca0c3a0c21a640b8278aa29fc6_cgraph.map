@@ -1,0 +1,12 @@
+<map id="Currency.UpgradeManager.addAttackCount" name="Currency.UpgradeManager.addAttackCount">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,207,107"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_upgrade_manager.html#a6aca11c8c3e8843e1ccf77db46e77f81" title=" " alt="" coords="263,5,462,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,61,250,49,252,55,203,66"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_file_manager.html#a0a36dbead21b925203c3245c6f408b30" title="Loads upgrade statuses from upgrade_status.properties file." alt="" coords="518,35,729,77"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="207,77,502,60,502,66,207,82"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_file_manager.html#a2162fa41415928cae5df1c70c3e6b487" title="Saves upgrade statuses to upgrade_status.properties file." alt="" coords="255,123,470,165"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="203,105,252,116,250,121,202,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,35,502,40,502,45,462,40"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html#a9a18c215e1d555161c587bcaf1e63d71" title="Loads default upgrade statuses from upgrade_default.properties file." alt="" coords="777,35,982,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="730,53,761,53,761,59,730,59"/>
+</map>

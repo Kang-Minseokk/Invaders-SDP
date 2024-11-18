@@ -1,0 +1,7 @@
+<map id="entity.EnemyShip.EnemyShip" name="entity.EnemyShip.EnemyShip">
+<area shape="rect" id="Node000001" title="Constructor, establishes the ship&#39;s properties." alt="" coords="5,43,200,69"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_hp_enemy_ship.html#a913bb55279ee2d216896db8b883d5797" title="Determine the color of the ship according to hp." alt="" coords="248,5,458,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,42,232,38,232,43,201,47"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_core.html#a657de8cca4ce42bdd0aab9df62824328" title="Controls creation of new cooldowns." alt="" coords="267,72,438,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,65,252,71,252,76,200,70"/>
+</map>

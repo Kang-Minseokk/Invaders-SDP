@@ -1,0 +1,5 @@
+<map id="engine.GameState" name="engine.GameState">
+<area shape="rect" id="Node000001" title="Implements an object that stores the state of the game between levels." alt="" coords="9,267,176,848"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_score_manager.html" title=" " alt="" coords="5,5,180,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,203,95,249,90,249,90,203"/>
+</map>

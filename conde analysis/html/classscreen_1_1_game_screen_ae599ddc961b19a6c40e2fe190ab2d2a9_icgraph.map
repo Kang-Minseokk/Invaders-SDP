@@ -1,0 +1,5 @@
+<map id="screen.GameScreen.handleObstacles" name="screen.GameScreen.handleObstacles">
+<area shape="rect" id="Node000001" title=" " alt="" coords="237,5,419,48"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+</map>

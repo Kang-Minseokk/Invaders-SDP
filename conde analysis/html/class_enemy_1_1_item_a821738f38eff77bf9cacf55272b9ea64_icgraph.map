@@ -1,0 +1,5 @@
+<map id="Enemy.Item.setSprite" name="Enemy.Item.setSprite">
+<area shape="rect" id="Node000001" title=" " alt="" coords="175,5,322,32"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_item.html#a1c24f30ce1ba4dae0016aa3498c5ecad" title=" " alt="" coords="5,5,127,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,21,127,21,127,16,159,16"/>
+</map>

@@ -1,0 +1,36 @@
+digraph "screen.HighScoreScreen.HighScoreScreen"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="screen.HighScoreScreen.High\lScoreScreen",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Constructor, establishes the properties of the screen."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="engine.Core.getFileManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8",tooltip="Controls access to the file manager."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="engine.FileManager.getInstance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0",tooltip="Returns shared instance of FileManager."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="engine.FileManager.FileManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a",tooltip="private constructor."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="engine.Core.getLogger",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2",tooltip="Controls access to the logger."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="engine.SoundManager.getInstance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea",tooltip=" "];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="engine.SoundManager.Sound\lManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9",tooltip="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..."];
+  Node7 -> Node5 [id="edge7_Node000007_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node7 -> Node8 [id="edge8_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="engine.SoundManager.preloadBGM",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb",tooltip=" "];
+  Node7 -> Node9 [id="edge9_Node000007_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="engine.SoundManager.preset\lEffectSound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f",tooltip=" "];
+  Node1 -> Node10 [id="edge10_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="engine.FileManager.loadHigh\lScores",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#adac4170cd0aad9ad621200c76684c0ae",tooltip="Loads high scores from file, and returns a sorted list of pairs score - value."];
+  Node10 -> Node11 [id="edge11_Node000010_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="engine.FileManager.loadDefault\lHighScores",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#a03d57bcd19887100a79ced041bd21a9c",tooltip="Returns the application default scores if there is no user high scores file."];
+  Node1 -> Node12 [id="edge12_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="engine.SoundManager.playBGM",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#ad2d4e5d9ec370d01a862b02dcfc11d53",tooltip=" "];
+  Node12 -> Node13 [id="edge13_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="engine.SoundManager.play\lPreloadedBGM",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#a135a306e4319833000eb0096fbe39715",tooltip=" "];
+  Node12 -> Node14 [id="edge14_Node000012_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="engine.SoundManager.stop\lAllBGM",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#a40790e756b1212611ea34236c06adceb",tooltip=" "];
+}

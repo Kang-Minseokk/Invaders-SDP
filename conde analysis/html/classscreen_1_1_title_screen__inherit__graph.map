@@ -1,0 +1,5 @@
+<map id="screen.TitleScreen" name="screen.TitleScreen">
+<area shape="rect" id="Node000001" title="Implements the title screen." alt="" coords="5,528,228,1045"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_screen.html" title="Implements a generic screen." alt="" coords="45,5,188,480"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,495,120,528,114,528,114,495"/>
+</map>
