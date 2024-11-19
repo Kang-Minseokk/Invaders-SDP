@@ -298,7 +298,7 @@ public class GameScreen extends Screen {
 		long currentTime = System.currentTimeMillis();
 
 		// P, Q 키 입력 처리
-		if ((inputManager.isKeyDown(KeyEvent.VK_P) || inputManager.isKeyDown(KeyEvent.VK_Q))
+		if ((inputManager.isKeyDown(Core.getKeyCode("PAUSE")) || inputManager.isKeyDown(KeyEvent.VK_Q))
 				&& currentTime - lastPauseToggleTime > PAUSE_TOGGLE_DELAY) {
 			this.isPaused = !this.isPaused;
 			lastPauseToggleTime = currentTime;
@@ -306,7 +306,8 @@ public class GameScreen extends Screen {
 
 			if (this.isPaused) {
 				Core.getLogger().info("Pausing the game.");
-				Core.getFrame().setScreen(new OptionScreen(this.width, this.height, this.fps));
+//				Core.pushScreen(new OptionScreen(this.width, this.height, this.fps, this));
+				Core.getFrame().setScreen(new OptionScreen(this.width, this.height, this.fps, this));
 				pauseStartTime = currentTime; // 일시 정지 시작 시간 기록
 				return;
 			} else {
@@ -395,8 +396,8 @@ public class GameScreen extends Screen {
 
 	private void handleShipMovement() {
 		if (!this.ship.isDestroyed()) {
-			boolean moveRight = inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D);
-			boolean moveLeft = inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A);
+			boolean moveRight = inputManager.isKeyDown(Core.getKeyCode("MOVE_RIGHT"));
+			boolean moveLeft = inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"));
 			boolean isRightBorder = this.ship.getPositionX() + this.ship.getWidth() + this.ship.getSpeed() > this.width - 1;
 			boolean isLeftBorder = this.ship.getPositionX() - this.ship.getSpeed() < 1;
 
@@ -408,7 +409,7 @@ public class GameScreen extends Screen {
 				this.ship.moveLeft();
 				this.backgroundMoveLeft = true;
 			}
-			if (inputManager.isKeyDown(KeyEvent.VK_ENTER)) {
+			if (inputManager.isKeyDown(Core.getKeyCode("SHOOT"))) {
 				if (this.ship.shoot(this.bullets)) {
 					this.bulletsShot++;
 					this.fire_id++;

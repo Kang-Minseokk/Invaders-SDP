@@ -81,4 +81,9 @@ public final class InputManager implements KeyListener {
 	public void keyTyped(final KeyEvent key) {
 
 	}
+
+	public void keyReleased(int vkEscape) {
+		if (vkEscape >= 0 && vkEscape < NUM_KEYS)
+			keys[vkEscape] = false;
+	}
 }
