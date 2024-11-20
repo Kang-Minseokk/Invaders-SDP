@@ -147,42 +147,42 @@ public class DrawManager {
 
 		try {
 			spriteMap = new LinkedHashMap<SpriteType, Color[][]>();
-			spriteMap.put(SpriteType.Obstacle, new Color[12][12]); // by Level Design Team
-			spriteMap.put(SpriteType.Ship, new Color[13][8]);
-			spriteMap.put(SpriteType.ShipDestroyed, new Color[13][8]);
-			spriteMap.put(SpriteType.Bullet, new Color[3][5]);
-			spriteMap.put(SpriteType.EnemyBullet, new Color[3][5]);
-			spriteMap.put(SpriteType.EnemyShipA1, new Color[12][8]);
-			spriteMap.put(SpriteType.EnemyShipA2, new Color[12][8]);
-			spriteMap.put(SpriteType.EnemyShipB1, new Color[12][8]);
-			spriteMap.put(SpriteType.EnemyShipB2, new Color[12][8]);
-			spriteMap.put(SpriteType.EnemyShipC1, new Color[12][8]);
-			spriteMap.put(SpriteType.EnemyShipC2, new Color[12][8]);
-			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[12][8]); // Edited by Enemy
-			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[12][8]); // Edited by Enemy
-			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[16][7]);
-			spriteMap.put(SpriteType.Explosion, new Color[13][7]);
-			spriteMap.put(SpriteType.Heart, new Color[13][8]);
-			spriteMap.put(SpriteType.Boss, new Color[24][16]); // by Enemy team
-			spriteMap.put(SpriteType.Coin, new Color[5][5]); // by Starter Team
-			spriteMap.put(SpriteType.AddSign, new Color[5][5]); // by Starter Team
+			spriteMap.put(SpriteType.Obstacle, new Color[24][24]); // by Level Design Team  //1
+			spriteMap.put(SpriteType.Ship, new Color[16][26]);//2
+			spriteMap.put(SpriteType.ShipDestroyed, new Color[16][26]);//3
+			spriteMap.put(SpriteType.Bullet, new Color[8][3]);//4
+			spriteMap.put(SpriteType.EnemyBullet, new Color[6][3]);//5
+			spriteMap.put(SpriteType.EnemyShipA1, new Color[12][8]);//6
+			spriteMap.put(SpriteType.EnemyShipA2, new Color[12][8]);//7
+			spriteMap.put(SpriteType.EnemyShipB1, new Color[12][8]);//8
+			spriteMap.put(SpriteType.EnemyShipB2, new Color[12][8]);//9
+			spriteMap.put(SpriteType.EnemyShipC1, new Color[12][8]);//10
+			spriteMap.put(SpriteType.EnemyShipC2, new Color[12][8]);//11
+			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[12][8]); // Edited by Enemy//12
+			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[12][8]); // Edited by Enemy//13
+			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[16][7]);//14
+			spriteMap.put(SpriteType.Explosion, new Color[13][7]);//15
+			spriteMap.put(SpriteType.Heart, new Color[13][8]);//16
+			spriteMap.put(SpriteType.Boss, new Color[24][16]); // by Enemy team//17
+			spriteMap.put(SpriteType.Coin, new Color[5][5]); // by Starter Team//18
+			spriteMap.put(SpriteType.AddSign, new Color[5][5]); // by Starter Team//19
 			spriteMap.put(SpriteType.Gem, new Color[7][6]); // CtrlS: res/graphics, line 20
 			// by Item team
-			spriteMap.put(SpriteType.ItemHeart, new Color[7][5]);
-			spriteMap.put(SpriteType.ItemBarrier, new Color[9][10]);
-			spriteMap.put(SpriteType.ItemBomb, new Color[7][9]);
-			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[13][8]);   // temporary
-			spriteMap.put(SpriteType.ItemCoin, new Color[7][7]);
-			spriteMap.put(SpriteType.ItemFeverTime, new Color[9][9]);
-			spriteMap.put(SpriteType.ItemPierce, new Color[7][7]);
-			spriteMap.put(SpriteType.ItemSpeedUp, new Color[9][9]);
-			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[9][9]);
+			spriteMap.put(SpriteType.ItemHeart, new Color[7][5]);//21
+			spriteMap.put(SpriteType.ItemBarrier, new Color[9][10]);//22
+			spriteMap.put(SpriteType.ItemBomb, new Color[7][9]);//23
+			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[13][8]);   // temporary//24
+			spriteMap.put(SpriteType.ItemCoin, new Color[7][7]);//25
+			spriteMap.put(SpriteType.ItemFeverTime, new Color[9][9]);//26
+			spriteMap.put(SpriteType.ItemPierce, new Color[7][7]);//27
+			spriteMap.put(SpriteType.ItemSpeedUp, new Color[9][9]);//28
+			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[9][9]);//29
 
-			spriteMap.put(SpriteType.Skin1, new Color[13][8]); //cat
-			spriteMap.put(SpriteType.Skin2, new Color[13][8]); //rabbit
-			spriteMap.put(SpriteType.Skin3, new Color[13][8]); //frog
-			spriteMap.put(SpriteType.Skin4, new Color[13][8]); //crab
-			spriteMap.put(SpriteType.Skin5, new Color[13][8]); //dirt
+			spriteMap.put(SpriteType.Skin1, new Color[13][8]); //30
+			spriteMap.put(SpriteType.Skin2, new Color[13][8]); //31
+			spriteMap.put(SpriteType.Skin3, new Color[13][8]); //32
+			spriteMap.put(SpriteType.Skin4, new Color[13][8]); //33
+			spriteMap.put(SpriteType.Skin5, new Color[13][8]); //34
 
 			fileManager.loadSprite(spriteMap);
 			logger.info("Finished loading the sprites.");
@@ -272,10 +272,10 @@ public class DrawManager {
 		Color[][] image = spriteMap.get(entity.getSpriteType());
 		for (int i = 0; i < image.length; i++){
 			for (int j = 0; j < image[i].length; j++){
-				if (image[i][j] != Color.BLACK){
+				if (image[i][j] != null){
 					backBufferGraphics.setColor(image[i][j]);
-					backBufferGraphics.drawRect(positionX + i * 2, positionY
-							+ j * 2, 1, 1);
+					backBufferGraphics.drawRect(positionX + j * 2, positionY
+							+ i * 2, 1, 1);
 				}
 			}
 		}
@@ -287,7 +287,7 @@ public class DrawManager {
 
 			for (int i = 0; i < image.length; i++) {
 				for (int j = 0; j < image[i].length; j++) {
-					if (image[i][j]!= Color.BLACK) {
+					if (image[i][j]!= null) {
 						g.fillRect(positionX + i * 7, positionY + j * 7, 7, 7);
 					}
 				}
@@ -503,11 +503,11 @@ public class DrawManager {
 			}
 			else if(option4 == 1){
 				selectedSpriteType = SpriteType.Ship;
-				String arrowDisplay = "<-        ->";
+				String arrowDisplay = "<-              ->";
 				drawCenteredRegularString(screen, arrowDisplay, yPosition);
 				// 스킨을 화살표 사이에 그리기
-				int positionX = screen.getWidth() / 2 - 15; // 중앙에 위치 조정
-				int positionY = yPosition - 10; // 약간 위쪽으로 위치 조정
+				int positionX = screen.getWidth() / 2 - 30; // 중앙에 위치 조정
+				int positionY = yPosition - 18; // 약간 위쪽으로 위치 조정
 				SkinEntity tempEntity = new SkinEntity(selectedSpriteType); // 임시 Entity 생성
 				drawEntity(tempEntity, positionX, positionY); }
 			else if (option4 >= 2 && option4 <= 6) {
@@ -533,7 +533,7 @@ public class DrawManager {
 				}
 				if (Skins.unlockedSkins.contains(selectedSpriteType)) {
 					// 중앙에 화살표를 표시
-					String arrowDisplay = "<-        ->";
+					String arrowDisplay = "<-              ->";
 					drawCenteredRegularString(screen, arrowDisplay, yPosition);
 
 					// 스킨을 화살표 사이에 그리기
