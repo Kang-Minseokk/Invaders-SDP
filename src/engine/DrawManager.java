@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 import java.util.logging.Logger;
+import java.awt.event.KeyEvent;
+
 
 import Currency.RoundState;
 import Currency.Gem;
@@ -1111,7 +1113,8 @@ public class DrawManager {
 
 		// 'PRESS P TO RESUME', 'PRESS Q TO TERMINATE' 안내문구 그리기
 		backBufferGraphics.setColor(Color.GRAY);
-		drawCenteredRegularString(screen, "PRESS P TO RESUME", screen.getHeight() / 5);
+			String resumeText = new String("PRESS "+KeyEvent.getKeyText(Core.getKeyCode("PAUSE"))+" TO RESUME");
+		drawCenteredRegularString(screen, resumeText, screen.getHeight() / 5);
 		drawCenteredRegularString(screen, "PRESS Q TO TERMINATE", screen.getHeight() / 4);// 화면 중간에 안내문구 표시
 	}
 

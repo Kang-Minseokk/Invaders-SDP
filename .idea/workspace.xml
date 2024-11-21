@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2d1df9e-7633-4932-824c-2c1f0ea58909" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Test/screen/KeyMappingOptionTesting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invaders-SDP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders-SDP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/DrawManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/InputManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/GameScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/OptionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/OptionScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -55,16 +54,30 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Core.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.KeyMappingOptionTest.executor": "Run",
+    "JUnit.KeyMappingOptionTest.testHandleVerticalMenuNavigation_MoveUp.executor": "Run",
+    "JUnit.KeyMappingOptionTest.testKeyMappingUpdate.executor": "Run",
+    "JUnit.KeyMappingOptionTest.testNextOptionCyclesToFirst.executor": "Run",
+    "JUnit.KeyMappingOptionTest.testNextOption_CyclesToFirst.executor": "Run",
+    "JUnit.KeyMappingOptionTesting$nextOption.executor": "Run",
+    "JUnit.KeyMappingOptionTesting$previousOption.executor": "Run",
+    "JUnit.KeyMappingOptionTesting.nextOption.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "KAN-73-add-key-mapping-option",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/limul/Desktop/College/2_grade/2_semester/소프트웨어 개발 실무/workspace2/Invaders-SDP/src/entity",
+    "last_opened_file_path": "C:/Users/limul/Desktop/College/2_grade/2_semester/소프트웨어 개발 실무/workspace/Invaders-SDP",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
+    "project.structure.last.edited": "라이브러리",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28390804",
     "vue.rearranger.settings.migration": "true",
@@ -83,6 +96,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="screen" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="entity" />
       <recent name="engine" />
@@ -90,10 +109,8 @@
       <recent name="clove" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="애플리케이션.Core">
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="22" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="engine.Core" />
       <module name="Invaders-SDP" />
       <extension name="coverage">
@@ -106,9 +123,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KeyMappingOptionTest.testNextOption_CyclesToFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen" />
+      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest" />
+      <option name="METHOD_NAME" value="testNextOption_CyclesToFirst" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyMappingOptionTesting$nextOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTesting" />
+      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTesting$nextOption" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyMappingOptionTesting$previousOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTesting" />
+      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTesting$previousOption" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyMappingOptionTesting.nextOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen" />
+      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTesting" />
+      <option name="METHOD_NAME" value="nextOption" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Core" />
+        <item itemvalue="JUnit.KeyMappingOptionTesting$previousOption" />
+        <item itemvalue="JUnit.KeyMappingOptionTesting$nextOption" />
+        <item itemvalue="JUnit.KeyMappingOptionTesting.nextOption" />
+        <item itemvalue="JUnit.KeyMappingOptionTest.testNextOption_CyclesToFirst" />
       </list>
     </recent_temporary>
   </component>
@@ -179,5 +262,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Invaders_SDP$Core.ic" NAME="Core 커버리지 결과" MODIFIED="1732155376167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>engine.*</FILTER>
+    </SUITE>
   </component>
 </project>

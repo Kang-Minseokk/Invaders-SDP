@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Map;
 
 public class KeyMappingOption extends Screen {
-    private List<String> actions; // 액션 목록
+    List<String> actions; // 액션 목록
     private Map<String, Integer> keyMappings; // 현재 키 매핑 정보
-    private int selectedIndex; // 선택된 액션의 인덱스
+    int selectedIndex; // 선택된 액션의 인덱스
     private boolean waitingForKeyInput; // 키 입력 대기 상태
     private Cooldown selectionCooldown; // 입력 쿨다운
     private static final int SELECTION_TIME = 120; // 쿨다운 시간(ms)
@@ -56,7 +56,7 @@ public class KeyMappingOption extends Screen {
         }
     }
 
-    private void handleVerticalMenuNavigation() {
+    void handleVerticalMenuNavigation() {
         if (inputManager.isKeyDown(Core.getKeyCode("MOVE_UP"))) {
             previousOption(); // 이전 항목으로 이동
         }
@@ -72,7 +72,7 @@ public class KeyMappingOption extends Screen {
         }
     }
 
-    private void handleKeyInput() {
+    void handleKeyInput() {
         for (int keyCode = 0; keyCode < 256; keyCode++) {
             if (inputManager.isKeyDown(keyCode) && this.selectionCooldown.checkFinished()) {
                 String selectedAction = actions.get(selectedIndex);
@@ -85,7 +85,7 @@ public class KeyMappingOption extends Screen {
         }
     }
 
-    private void nextOption() {
+    void nextOption() {
         if (selectedIndex >= actions.size() - 1) {
             selectedIndex = 0; // 마지막 항목에서 첫 번째로 순환
         } else {
@@ -93,7 +93,7 @@ public class KeyMappingOption extends Screen {
         }
     }
 
-    private void previousOption() {
+    void previousOption() {
         if (selectedIndex <= 0) {
             selectedIndex = actions.size() - 1; // 첫 번째 항목에서 마지막으로 순환
         } else {
