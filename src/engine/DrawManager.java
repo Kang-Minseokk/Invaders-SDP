@@ -151,17 +151,17 @@ public class DrawManager {
 			spriteMap.put(SpriteType.Ship, new Color[16][26]);//2
 			spriteMap.put(SpriteType.ShipDestroyed, new Color[16][26]);//3
 			spriteMap.put(SpriteType.Bullet, new Color[8][3]);//4
-			spriteMap.put(SpriteType.EnemyBullet, new Color[6][3]);//5
-			spriteMap.put(SpriteType.EnemyShipA1, new Color[12][8]);//6
-			spriteMap.put(SpriteType.EnemyShipA2, new Color[12][8]);//7
-			spriteMap.put(SpriteType.EnemyShipB1, new Color[12][8]);//8
-			spriteMap.put(SpriteType.EnemyShipB2, new Color[12][8]);//9
-			spriteMap.put(SpriteType.EnemyShipC1, new Color[12][8]);//10
-			spriteMap.put(SpriteType.EnemyShipC2, new Color[12][8]);//11
-			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[12][8]); // Edited by Enemy//12
-			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[12][8]); // Edited by Enemy//13
-			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[16][7]);//14
-			spriteMap.put(SpriteType.Explosion, new Color[13][7]);//15
+			spriteMap.put(SpriteType.EnemyBullet, new Color[8][5]);//5
+			spriteMap.put(SpriteType.EnemyShipA1, new Color[16][24]);//6
+			spriteMap.put(SpriteType.EnemyShipA2, new Color[16][24]);//7
+			spriteMap.put(SpriteType.EnemyShipB1, new Color[16][24]);//8
+			spriteMap.put(SpriteType.EnemyShipB2, new Color[16][24]);//9
+			spriteMap.put(SpriteType.EnemyShipC1, new Color[16][24]);//10
+			spriteMap.put(SpriteType.EnemyShipC2, new Color[16][24]);//11
+			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[16][24]); // Edited by Enemy//12
+			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[16][24]); // Edited by Enemy//13
+			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[14][32]);//14
+			spriteMap.put(SpriteType.Explosion, new Color[14][26]);//15
 			spriteMap.put(SpriteType.Heart, new Color[13][8]);//16
 			spriteMap.put(SpriteType.Boss, new Color[24][16]); // by Enemy team//17
 			spriteMap.put(SpriteType.Coin, new Color[5][5]); // by Starter Team//18
