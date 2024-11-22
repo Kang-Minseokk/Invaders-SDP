@@ -147,20 +147,20 @@ public class DrawManager {
 
 		try {
 			spriteMap = new LinkedHashMap<SpriteType, Color[][]>();
-			spriteMap.put(SpriteType.Obstacle, new Color[24][24]); // by Level Design Team  //1
-			spriteMap.put(SpriteType.Ship, new Color[16][26]);//2
-			spriteMap.put(SpriteType.ShipDestroyed, new Color[16][26]);//3
-			spriteMap.put(SpriteType.Bullet, new Color[8][3]);//4
-			spriteMap.put(SpriteType.EnemyBullet, new Color[8][5]);//5
-			spriteMap.put(SpriteType.EnemyShipA1, new Color[16][24]);//6
-			spriteMap.put(SpriteType.EnemyShipA2, new Color[16][24]);//7
-			spriteMap.put(SpriteType.EnemyShipB1, new Color[16][24]);//8
-			spriteMap.put(SpriteType.EnemyShipB2, new Color[16][24]);//9
-			spriteMap.put(SpriteType.EnemyShipC1, new Color[16][24]);//10
-			spriteMap.put(SpriteType.EnemyShipC2, new Color[16][24]);//11
-			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[16][24]); // Edited by Enemy//12
-			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[16][24]); // Edited by Enemy//13
-			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[14][32]);//14
+			spriteMap.put(SpriteType.Obstacle, new Color[24][24]); //1 - exam paper
+			spriteMap.put(SpriteType.Ship, new Color[16][26]);//2 - student
+			spriteMap.put(SpriteType.ShipDestroyed, new Color[16][26]);//3 - student buried in task
+			spriteMap.put(SpriteType.Bullet, new Color[8][3]);//4 - pencil
+			spriteMap.put(SpriteType.EnemyBullet, new Color[8][5]);//5 - F
+			spriteMap.put(SpriteType.EnemyShipA1, new Color[16][24]);//6 - cursor
+			spriteMap.put(SpriteType.EnemyShipA2, new Color[16][24]);//7 - cursor
+			spriteMap.put(SpriteType.EnemyShipB1, new Color[16][24]);//8 - offline
+			spriteMap.put(SpriteType.EnemyShipB2, new Color[16][24]);//9 - offline
+			spriteMap.put(SpriteType.EnemyShipC1, new Color[16][24]);//10 - bug
+			spriteMap.put(SpriteType.EnemyShipC2, new Color[16][24]);//11 - bug
+			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[16][24]); //12 - error
+			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[16][24]); //13 - error
+			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[14][32]);//14 - book
 			spriteMap.put(SpriteType.Explosion, new Color[14][26]);//15
 			spriteMap.put(SpriteType.Heart, new Color[13][8]);//16
 			spriteMap.put(SpriteType.Boss, new Color[24][16]); // by Enemy team//17
