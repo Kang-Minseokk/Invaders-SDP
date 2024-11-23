@@ -161,21 +161,21 @@ public class DrawManager {
 			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[16][24]); //12 - error
 			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[16][24]); //13 - error
 			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[14][32]);//14 - book
-			spriteMap.put(SpriteType.Explosion, new Color[14][26]);//15
-			spriteMap.put(SpriteType.Heart, new Color[13][8]);//16
-			spriteMap.put(SpriteType.Boss, new Color[24][16]); // by Enemy team//17
-			spriteMap.put(SpriteType.Coin, new Color[5][5]); // by Starter Team//18
-			spriteMap.put(SpriteType.AddSign, new Color[5][5]); // by Starter Team//19
-			spriteMap.put(SpriteType.Gem, new Color[7][6]); // CtrlS: res/graphics, line 20
+			spriteMap.put(SpriteType.Explosion, new Color[7][8]);//15 - 임시 잼
+			spriteMap.put(SpriteType.Heart, new Color[8][11]);//16 - heart
+			spriteMap.put(SpriteType.Boss, new Color[23][14]); // by Enemy team//17 - professor
+			spriteMap.put(SpriteType.Coin, new Color[7][8]); // by Starter Team//18 - coin
+			spriteMap.put(SpriteType.AddSign, new Color[5][5]); // by Starter Team//19 - plus
+			spriteMap.put(SpriteType.Gem, new Color[7][8]); // 20 - diamond
 			// by Item team
-			spriteMap.put(SpriteType.ItemHeart, new Color[7][5]);//21
-			spriteMap.put(SpriteType.ItemBarrier, new Color[9][10]);//22
-			spriteMap.put(SpriteType.ItemBomb, new Color[7][9]);//23
-			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[13][8]);   // temporary//24
-			spriteMap.put(SpriteType.ItemCoin, new Color[7][7]);//25
-			spriteMap.put(SpriteType.ItemFeverTime, new Color[9][9]);//26
+			spriteMap.put(SpriteType.ItemHeart, new Color[8][11]);//21 - heart
+			spriteMap.put(SpriteType.ItemBarrier, new Color[5][5]);//22 -임시 +
+			spriteMap.put(SpriteType.ItemBomb, new Color[23][23]);//23 - gpt logo
+			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[5][5]);   // temporary//24 - 임시 +
+			spriteMap.put(SpriteType.ItemCoin, new Color[7][8]);//25 - coin
+			spriteMap.put(SpriteType.ItemFeverTime, new Color[24][14]);//26 - starbucks coffee
 			spriteMap.put(SpriteType.ItemPierce, new Color[7][7]);//27
-			spriteMap.put(SpriteType.ItemSpeedUp, new Color[9][9]);//28
+			spriteMap.put(SpriteType.ItemSpeedUp, new Color[23][23]);//28
 			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[9][9]);//29
 
 			spriteMap.put(SpriteType.Skin1, new Color[13][8]); //30
