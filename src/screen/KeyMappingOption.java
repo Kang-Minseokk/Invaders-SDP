@@ -16,9 +16,13 @@ public class KeyMappingOption extends Screen {
     private boolean waitingForKeyInput; // 키 입력 대기 상태
     private Cooldown selectionCooldown; // 입력 쿨다운
     private static final int SELECTION_TIME = 120; // 쿨다운 시간(ms)
+    String osType;
 
     public KeyMappingOption(int width, int height, int fps) {
         super(width, height, fps);
+        osType = System.getProperty("os.name").toLowerCase();
+
+
 
         this.actions = new ArrayList<>(Core.getKeyMappings().keySet()); // Core에서 액션 목록 가져오기
         this.keyMappings = Core.getKeyMappings(); // Core에서 현재 키 매핑 정보 가져오기
@@ -66,9 +70,16 @@ public class KeyMappingOption extends Screen {
     }
 
     private void handleKeyMappingSelection() {
-        if (inputManager.isKeyDown(KeyEvent.VK_CAPS_LOCK) && this.selectionCooldown.checkFinished()) {
-            waitingForKeyInput = true; // 키 입력 대기 상태로 전환
-            this.selectionCooldown.reset();
+        if (osType.contains("mac")) {
+            if (inputManager.isKeyDown(KeyEvent.VK_META) && this.selectionCooldown.checkFinished()) {
+                waitingForKeyInput = true; // 키 입력 대기 상태로 전환
+                this.selectionCooldown.reset();
+            }
+        } else {
+            if (inputManager.isKeyDown(KeyEvent.VK_CAPS_LOCK) && this.selectionCooldown.checkFinished()) {
+                waitingForKeyInput = true; // 키 입력 대기 상태로 전환
+                this.selectionCooldown.reset();
+            }
         }
     }
 
@@ -109,7 +120,13 @@ public class KeyMappingOption extends Screen {
         drawManager.drawCenteredBigString(this, "KEY MAPPING", this.height / 8);
 
         drawManager.backBufferGraphics.setColor(Color.GRAY);
-        drawManager.drawCenteredRegularString(this, "Press CapsLock to Modify", this.height / 8*2 - drawManager.fontRegularMetrics.getHeight()*2);
+
+        if (osType.contains("mac")) {
+            drawManager.drawCenteredRegularString(this, "Press Command-key  to Modify", this.height / 8*2 - drawManager.fontRegularMetrics.getHeight()*2);
+        }else{
+            drawManager.drawCenteredRegularString(this, "Press CapsLock to Modify", this.height / 8*2 - drawManager.fontRegularMetrics.getHeight()*2);
+        }
+
 
         // 각 키 매핑 항목 표시
         for (int i = 0; i < actions.size(); i++) {

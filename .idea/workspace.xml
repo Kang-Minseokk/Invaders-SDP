@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2d1df9e-7633-4932-824c-2c1f0ea58909" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test/screen/KeyMappingOptionTesting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders-SDP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders-SDP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/DrawManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/GameScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/OptionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/OptionScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/TitleScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/TitleScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

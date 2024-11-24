@@ -298,7 +298,7 @@ public class GameScreen extends Screen {
 		long currentTime = System.currentTimeMillis();
 
 		// P, Q 키 입력 처리
-		if ((inputManager.isKeyDown(Core.getKeyCode("PAUSE")) || inputManager.isKeyDown(KeyEvent.VK_Q))
+		if ((inputManager.isKeyDown(Core.getKeyCode("PAUSE")) || inputManager.isKeyDown(KeyEvent.VK_Q)) || inputManager.isKeyDown(Core.getKeyCode("GO_BACK"))
 				&& currentTime - lastPauseToggleTime > PAUSE_TOGGLE_DELAY) {
 			this.isPaused = !this.isPaused;
 			lastPauseToggleTime = currentTime;

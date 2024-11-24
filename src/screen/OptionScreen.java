@@ -54,6 +54,9 @@ public class OptionScreen extends Screen {
 
         if ((inputManager.isKeyDown(Core.getKeyCode("GO_BACK")) || inputManager.isKeyDown(Core.getKeyCode("PAUSE")) || inputManager.isKeyDown(KeyEvent.VK_Q))
                 && this.inputDelay.checkFinished()) {
+//            if(inputManager.isKeyDown(Core.getKeyCode("GO_BACK")))
+//                inputManager.keyPressed(Core.getKeyCode("PAUSE"));
+
             Core.getLogger().info("Resuming GameScreen.");
 //            Core.popScreen();
             Core.setSavedVolumeSelectionCode(this.volumeSelectionCode); // GameScreen으로 돌아가기 위한 코드
