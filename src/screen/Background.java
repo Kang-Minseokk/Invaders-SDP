@@ -8,6 +8,7 @@ import java.util.List;
 
 public class Background {
     private static Background instance;
+    private static final String titleBackground = "/backgrounds/skyview.jpg";
 
     private int backgroundWidth;
     private int backgroundHeight;
@@ -28,6 +29,10 @@ public class Background {
             instance = new Background();
         }
         return instance;
+    }
+
+    public static InputStream getTitleBackgroundStream() {
+        return Background.class.getResourceAsStream(titleBackground);
     }
 
     public void initialize(Frame frame) {
