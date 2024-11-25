@@ -156,7 +156,6 @@ public class GameScreen extends Screen {
 	/** CtrlS: Count the number of coin collected in game */
 	private int coinItemsCollected;
 
-	private int customState;
 
 	/**
 	 * Constructor, establishes the properties of the screen.
@@ -298,7 +297,7 @@ public class GameScreen extends Screen {
 		long currentTime = System.currentTimeMillis();
 
 		// P, Q 키 입력 처리
-		if ((inputManager.isKeyDown(Core.getKeyCode("PAUSE")) || inputManager.isKeyDown(KeyEvent.VK_Q)) || inputManager.isKeyDown(Core.getKeyCode("GO_BACK"))
+		if ((inputManager.isKeyDown(Core.getKeyCode("PAUSE")) || inputManager.isKeyDown(KeyEvent.VK_Q) || inputManager.isKeyDown(Core.getKeyCode("GO_BACK")))
 				&& currentTime - lastPauseToggleTime > PAUSE_TOGGLE_DELAY) {
 			this.isPaused = !this.isPaused;
 			lastPauseToggleTime = currentTime;
@@ -871,7 +870,6 @@ public class GameScreen extends Screen {
 		}
 		return remainingEnemies;
 	} // by HUD team SeungYun
-
 
 	public SpeedItem getSpeedItem() {
 		return this.speedItem;

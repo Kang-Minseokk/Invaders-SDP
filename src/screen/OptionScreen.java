@@ -1,5 +1,6 @@
 package screen;
 
+
 import engine.Core;
 
 import java.awt.event.KeyEvent;
@@ -59,7 +60,7 @@ public class OptionScreen extends Screen {
 
             Core.getLogger().info("Resuming GameScreen.");
 //            Core.popScreen();
-            Core.setSavedVolumeSelectionCode(this.volumeSelectionCode); // GameScreen으로 돌아가기 위한 코드
+            Core.setSavedVolumeSelectionCode(this.volumeSelectionCode); // GameScreen으로 돌아가기 위한 코드\
             this.isRunning = false;
         }
 

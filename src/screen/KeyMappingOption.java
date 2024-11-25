@@ -11,11 +11,11 @@ import java.util.Map;
 
 public class KeyMappingOption extends Screen {
     List<String> actions; // 액션 목록
-    private Map<String, Integer> keyMappings; // 현재 키 매핑 정보
+    public Map<String, Integer> keyMappings; // 현재 키 매핑 정보
     int selectedIndex; // 선택된 액션의 인덱스
-    private boolean waitingForKeyInput; // 키 입력 대기 상태
-    private Cooldown selectionCooldown; // 입력 쿨다운
-    private static final int SELECTION_TIME = 120; // 쿨다운 시간(ms)
+    public boolean waitingForKeyInput; // 키 입력 대기 상태
+    public Cooldown selectionCooldown; // 입력 쿨다운
+    public static final int SELECTION_TIME = 120; // 쿨다운 시간(ms)
     String osType;
 
     public KeyMappingOption(int width, int height, int fps) {
@@ -63,13 +63,15 @@ public class KeyMappingOption extends Screen {
     void handleVerticalMenuNavigation() {
         if (inputManager.isKeyDown(Core.getKeyCode("MOVE_UP"))) {
             previousOption(); // 이전 항목으로 이동
+            inputManager.keyReset();
         }
         if (inputManager.isKeyDown(Core.getKeyCode("MOVE_DOWN"))) {
             nextOption(); // 다음 항목으로 이동
+            inputManager.keyReset();
         }
     }
 
-    private void handleKeyMappingSelection() {
+    public void handleKeyMappingSelection() {
         if (osType.contains("mac")) {
             if (inputManager.isKeyDown(KeyEvent.VK_META) && this.selectionCooldown.checkFinished()) {
                 waitingForKeyInput = true; // 키 입력 대기 상태로 전환
@@ -83,15 +85,34 @@ public class KeyMappingOption extends Screen {
         }
     }
 
-    void handleKeyInput() {
-        for (int keyCode = 0; keyCode < 256; keyCode++) {
-            if (inputManager.isKeyDown(keyCode) && this.selectionCooldown.checkFinished()) {
-                String selectedAction = actions.get(selectedIndex);
-                Core.updateKeyMapping(selectedAction, keyCode); // Core에 키 매핑 업데이트
-                this.keyMappings = Core.getKeyMappings(); // 업데이트된 매핑 정보 가져오기
-                waitingForKeyInput = false; // 입력 대기 상태 해제
-                this.selectionCooldown.reset();
-                break;
+    public void handleKeyInput() {
+        if(waitingForKeyInput){
+            for (int keyCode = 0; keyCode < 256; keyCode++) {
+                if (inputManager.isKeyDown(keyCode) && this.selectionCooldown.checkFinished()) {
+                    String selectedAction = actions.get(selectedIndex);
+                    boolean check = true;
+
+                    // 중복 키코드 검사
+                    for(Integer val : keyMappings.values()){
+                        if(keyCode == val)
+                            check = false;
+                    }
+                    if(keyCode == 20)
+                        check = false;
+
+                    if (check){
+                        Core.updateKeyMapping(selectedAction, keyCode); // Core에 키 매핑 업데이트
+                        this.keyMappings = Core.getKeyMappings(); // 업데이트된 매핑 정보 가져오기
+                        waitingForKeyInput = false; // 입력 대기 상태 해제
+                        this.selectionCooldown.reset();
+                        break;
+                    }else{
+                        waitingForKeyInput = false; // 입력 대기 상태 해제
+                        this.selectionCooldown.reset();
+                        break;
+                    }
+
+                }
             }
         }
     }
