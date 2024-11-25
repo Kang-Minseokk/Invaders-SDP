@@ -161,7 +161,7 @@ public class DrawManager {
 			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[16][24]); //12 - error
 			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[16][24]); //13 - error
 			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[14][32]);//14 - book
-			spriteMap.put(SpriteType.Explosion, new Color[7][8]);//15 - 적 맞췄을 때 표시, 임시잼은 그래픽 파일 제일 밑에 넣어둠
+			spriteMap.put(SpriteType.Explosion, new Color[14][26]);//15 - 적 맞췄을 때 표시, 임시잼은 그래픽 파일 제일 밑에 넣어둠
 			spriteMap.put(SpriteType.Heart, new Color[8][11]);//16 - heart
 			spriteMap.put(SpriteType.Boss, new Color[23][14]); // by Enemy team//17 - professor
 			spriteMap.put(SpriteType.Coin, new Color[7][8]); // by Starter Team//18 - coin
