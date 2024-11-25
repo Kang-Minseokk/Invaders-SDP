@@ -161,7 +161,7 @@ public class DrawManager {
 			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[16][24]); //12 - error
 			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[16][24]); //13 - error
 			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[14][32]);//14 - book
-			spriteMap.put(SpriteType.Explosion, new Color[14][26]);//15 - 적 맞췄을 때 표시, 임시잼은 그래픽 파일 제일 밑에 넣어둠
+			spriteMap.put(SpriteType.Explosion, new Color[14][26]);//15 - 적 맞췄을 때 표시
 			spriteMap.put(SpriteType.Heart, new Color[8][11]);//16 - heart
 			spriteMap.put(SpriteType.Boss, new Color[23][14]); // by Enemy team//17 - professor
 			spriteMap.put(SpriteType.Coin, new Color[7][8]); // by Starter Team//18 - coin
@@ -171,18 +171,18 @@ public class DrawManager {
 			spriteMap.put(SpriteType.ItemHeart, new Color[8][11]);//21 - heart
 			spriteMap.put(SpriteType.ItemBarrier, new Color[5][5]);//22 -임시 +
 			spriteMap.put(SpriteType.ItemBomb, new Color[23][23]);//23 - gpt logo
-			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[5][5]);   // temporary//24 - 임시 +
+			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[16][26]);   // temporary//24 - power student
 			spriteMap.put(SpriteType.ItemCoin, new Color[7][8]);//25 - coin
 			spriteMap.put(SpriteType.ItemFeverTime, new Color[24][14]);//26 - starbucks coffee
 			spriteMap.put(SpriteType.ItemPierce, new Color[7][7]);//27
 			spriteMap.put(SpriteType.ItemSpeedUp, new Color[23][23]);//28
 			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[9][9]);//29
 
-			spriteMap.put(SpriteType.Skin1, new Color[13][8]); //30
+			spriteMap.put(SpriteType.Skin1, new Color[10][23]); //30
 			spriteMap.put(SpriteType.Skin2, new Color[13][8]); //31
 			spriteMap.put(SpriteType.Skin3, new Color[13][8]); //32
 			spriteMap.put(SpriteType.Skin4, new Color[13][8]); //33
-			spriteMap.put(SpriteType.Skin5, new Color[13][8]); //34
+			spriteMap.put(SpriteType.Skin5, new Color[16][26]); //34
 
 			fileManager.loadSprite(spriteMap);
 			logger.info("Finished loading the sprites.");
