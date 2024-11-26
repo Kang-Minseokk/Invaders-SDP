@@ -1116,4 +1116,63 @@ public class DrawManager {
 		// Sound Operator
 		SoundManager.getInstance().playES("achievement");
 	}
+	public void drawOption(final Screen screen) {
+		// OPTION 제목 그리기
+		backBufferGraphics.setColor(Color.GREEN);
+		drawCenteredBigString(screen, "OPTION", screen.getHeight() / 8); // 화면 상단에 "OPTION" 표시
+
+		// 'PRESS P TO RESUME', 'PRESS Q TO TERMINATE' 안내문구 그리기
+		backBufferGraphics.setColor(Color.GRAY);
+		drawCenteredRegularString(screen, "PRESS P TO RESUME", screen.getHeight() / 5);
+		drawCenteredRegularString(screen, "PRESS Q TO TERMINATE", screen.getHeight() / 4);// 화면 중간에 안내문구 표시
+	}
+
+	public void drawSoundOption(final Screen screen, final int option, final int volumeIndex, final int BGMIndex, final List<String> bgmOptions) {
+		String bgmString = "Background Music";
+		String selectedBGM = bgmOptions.get(BGMIndex);
+
+		String[] volumes = {"VOLUME0", "VOLUME1", "VOLUME2", "VOLUME3", "VOLUME4", "VOLUME5"};
+		String volume = volumes[volumeIndex];
+
+		if (option == 1)
+			backBufferGraphics.setColor(Color.CYAN);
+		else
+			backBufferGraphics.setColor(Color.WHITE);
+
+		String bgmDisplay = "< " + selectedBGM + " >";
+		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 4 * 2);
+
+		backBufferGraphics.setColor(Color.PINK);
+		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 6);
+
+		if (option == 2) {
+			switch (volumeIndex) {
+				case 0:
+					backBufferGraphics.setColor(new Color(200, 200, 200));
+					break;
+				case 1:
+					backBufferGraphics.setColor(new Color(173, 216, 255));
+					break;
+				case 2:
+					backBufferGraphics.setColor(new Color(144, 238, 144));
+					break;
+				case 3:
+					backBufferGraphics.setColor(new Color(64, 224, 208));
+					break;
+				case 4:
+					backBufferGraphics.setColor(new Color(255, 255, 0));
+					break;
+				case 5:
+					backBufferGraphics.setColor(new Color(255, 0, 0));
+					break;
+				default:
+					backBufferGraphics.setColor(Color.WHITE);
+			}
+			volume = "<- " + volume + " ->";
+		} else {
+			backBufferGraphics.setColor(Color.WHITE); // 기본 색상
+		}
+		drawCenteredRegularString(screen, volume, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
+
+	}
 }
