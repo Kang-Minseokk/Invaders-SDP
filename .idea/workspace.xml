@@ -32,7 +32,7 @@
   <component name="TaskManager">
     <servers />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+  <component name="com.intellij.coverage.CoverageDataManagerImpl"></component>
     <SUITE FILE_PATH="coverage/Invaders_SDP$KeyMappingOptionTest_testHandleKeyInput_testBasic.ic" NAME="KeyMappingOptionTest$testHandleKeyInput.testBasic 커버리지 결과" MODIFIED="1732550772186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>screen.*</FILTER>
     </SUITE>
