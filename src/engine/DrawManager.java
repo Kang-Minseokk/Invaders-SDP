@@ -167,22 +167,20 @@ public class DrawManager {
 			spriteMap.put(SpriteType.Coin, new Color[7][8]); // by Starter Team//18 - coin
 			spriteMap.put(SpriteType.AddSign, new Color[5][5]); // by Starter Team//19 - plus
 			spriteMap.put(SpriteType.Gem, new Color[7][8]); // 20 - diamond
-			// by Item team
 			spriteMap.put(SpriteType.ItemHeart, new Color[8][11]);//21 - heart
-			spriteMap.put(SpriteType.ItemBarrier, new Color[5][5]);//22 -임시 +
+			spriteMap.put(SpriteType.ItemBarrier, new Color[6][9]);//22 - lunch
 			spriteMap.put(SpriteType.ItemBomb, new Color[23][23]);//23 - gpt logo
-			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[16][26]);   // temporary//24 - power student
+			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[16][26]); //24 - power student
 			spriteMap.put(SpriteType.ItemCoin, new Color[7][8]);//25 - coin
 			spriteMap.put(SpriteType.ItemFeverTime, new Color[24][14]);//26 - starbucks coffee
-			spriteMap.put(SpriteType.ItemPierce, new Color[7][7]);//27
-			spriteMap.put(SpriteType.ItemSpeedUp, new Color[23][23]);//28
-			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[9][9]);//29
-
-			spriteMap.put(SpriteType.Skin1, new Color[10][23]); //30
-			spriteMap.put(SpriteType.Skin2, new Color[13][8]); //31
-			spriteMap.put(SpriteType.Skin3, new Color[13][8]); //32
-			spriteMap.put(SpriteType.Skin4, new Color[13][8]); //33
-			spriteMap.put(SpriteType.Skin5, new Color[16][26]); //34
+			spriteMap.put(SpriteType.ItemPierce, new Color[5][5]);//27 - 임시 +
+			spriteMap.put(SpriteType.ItemSpeedUp, new Color[13][12]);//28 - phone
+			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[11][13]);//29 - bed
+			spriteMap.put(SpriteType.Skin1, new Color[10][23]); //30 - sleeping student
+			spriteMap.put(SpriteType.Skin2, new Color[5][5]); //31 - 임시 +
+			spriteMap.put(SpriteType.Skin3, new Color[16][26]); //32 - hanyang
+			spriteMap.put(SpriteType.Skin4, new Color[16][26]); //33 - santa
+			spriteMap.put(SpriteType.Skin5, new Color[16][26]); //34 - snowman
 
 			fileManager.loadSprite(spriteMap);
 			logger.info("Finished loading the sprites.");
