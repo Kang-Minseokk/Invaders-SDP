@@ -146,7 +146,7 @@ public class DrawManager {
 		logger.info("Started loading resources.");
 
 		try {
-			spriteMap = new LinkedHashMap<SpriteType, Color[][]>();
+			spriteMap = new LinkedHashMap<SpriteType, Color[][]>(); //[세로][가로]
 			spriteMap.put(SpriteType.Obstacle, new Color[24][24]); //1 - exam paper
 			spriteMap.put(SpriteType.Ship, new Color[16][26]);//2 - student
 			spriteMap.put(SpriteType.ShipDestroyed, new Color[16][26]);//3 - student buried in task
@@ -163,16 +163,16 @@ public class DrawManager {
 			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[14][32]);//14 - book
 			spriteMap.put(SpriteType.Explosion, new Color[14][26]);//15 - 적 맞췄을 때 표시
 			spriteMap.put(SpriteType.Heart, new Color[8][11]);//16 - heart
-			spriteMap.put(SpriteType.Boss, new Color[23][14]); // by Enemy team//17 - professor
-			spriteMap.put(SpriteType.Coin, new Color[7][8]); // by Starter Team//18 - coin
-			spriteMap.put(SpriteType.AddSign, new Color[5][5]); // by Starter Team//19 - plus
+			spriteMap.put(SpriteType.Boss, new Color[23][14]); //17 - professor
+			spriteMap.put(SpriteType.Coin, new Color[7][8]); //18 - coin
+			spriteMap.put(SpriteType.AddSign, new Color[5][5]); //19 - plus
 			spriteMap.put(SpriteType.Gem, new Color[7][8]); // 20 - diamond
 			spriteMap.put(SpriteType.ItemHeart, new Color[8][11]);//21 - heart
 			spriteMap.put(SpriteType.ItemBarrier, new Color[10][15]);//22 - lunch
-			spriteMap.put(SpriteType.ItemBomb, new Color[23][23]);//23 - gpt logo
+			spriteMap.put(SpriteType.ItemBomb, new Color[15][15]); //23 - battery
 			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[16][26]); //24 - power student
-			spriteMap.put(SpriteType.ItemCoin, new Color[7][8]);//25 - coin
-			spriteMap.put(SpriteType.ItemFeverTime, new Color[24][14]);//26 - starbucks coffee
+			spriteMap.put(SpriteType.ItemCoin, new Color[7][8]); //25 - coin
+			spriteMap.put(SpriteType.ItemFeverTime, new Color[15][15]);//26 - beer
 			spriteMap.put(SpriteType.ItemPierce, new Color[13][12]);//27 - phone
 			spriteMap.put(SpriteType.ItemSpeedUp, new Color[13][12]);//28 - phone - 거의 안나옴
 			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[11][13]);//29 - bed - 거의 안나옴
