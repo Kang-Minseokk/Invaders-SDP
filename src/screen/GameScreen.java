@@ -535,7 +535,7 @@ public class GameScreen extends Screen {
 		enemyShipFormation.draw();
 
 		DrawManagerImpl.drawSpeed(this, ship.getSpeed()); // Ko jesung / HUD team
-		DrawManagerImpl.drawSeparatorLine(this,  this.height-65); // Ko jesung / HUD team
+		DrawManagerImpl.drawSeparatorLine(this,  this.height-50); // Ko jesung / HUD team
 
 
 		for (PiercingBullet bullet : this.bullets)

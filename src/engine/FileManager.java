@@ -1,7 +1,6 @@
 package engine;
 
 import java.awt.*;
-import java.io.*;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -89,10 +88,10 @@ public final class FileManager {
 						for(int k = 0 ; k < 8 ; k++){
 							do
 								c = (char) inputStream.read();
-							while (!(c>=97 && c<=122) && !(c>=48 && c<=57) ); // 변경필요
+							while (!(c>=97 && c<=122) && !(c>=48 && c<=57)); // 변경필요
 							rgbHex += c;
 						}
-						if(rgbHex.equals("0x000000"))sprite.getValue()[i][j] = Color.BLACK;
+						if(rgbHex.equals("0x000000"))sprite.getValue()[i][j] = null;
 						else sprite.getValue()[i][j] = Color.decode(rgbHex);
 
 					}
