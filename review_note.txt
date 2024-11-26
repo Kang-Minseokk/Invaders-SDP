@@ -1,9 +1,10 @@
 1. drqwmanager에 나와있는 spritetype들을 전부 새로 디자인 했음.
 2. 가로 세로 크기도 바꿈.
 3. 이전에 90도 회전해서 나오는 현상을 고침.
+++ specialenemyship이 나타나지않는 오류를 해결함.
 
 문제 :
- - specialenemyship이 나타나지 않습니다.
+ - specialenemyship이 나타나지 않습니다. >> 해결
  - boss가 나타나지 않습니다.
  - enemyship 종류 3개가 다 나오지 않습니다.
 
