@@ -121,12 +121,12 @@ public class TitleScreen extends Screen {
 
 	private void handleCustomOption() {
 		if (returnCode == 6) {
-			if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
 				previousCustomState();
 				this.selectionCooldown.reset();
 				playMenuSelectSound();
 			}
-			if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_RIGHT"))) {
 				nextCustomState();
 				this.selectionCooldown.reset();
 				playMenuSelectSound();
@@ -135,12 +135,12 @@ public class TitleScreen extends Screen {
 	}
 
 	private void handleVerticalMenuNavigation() {
-		if (inputManager.isKeyDown(KeyEvent.VK_UP) || inputManager.isKeyDown(KeyEvent.VK_W)) {
+		if (inputManager.isKeyDown(Core.getKeyCode("MOVE_UP"))) {
 			previousMenuItem();
 			this.selectionCooldown.reset();
 			playMenuSelectSound();
 		}
-		if (inputManager.isKeyDown(KeyEvent.VK_DOWN) || inputManager.isKeyDown(KeyEvent.VK_S)) {
+		if (inputManager.isKeyDown(Core.getKeyCode("MOVE_DOWN"))) {
 			nextMenuItem();
 			this.selectionCooldown.reset();
 			playMenuSelectSound();
@@ -149,12 +149,12 @@ public class TitleScreen extends Screen {
 
 	private void handleHorizontalMenuNavigation() {
 		if (returnCode == 2) {
-			if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
 				moveMenuLeft();
 				this.selectionCooldown.reset();
 				playMenuSelectSound();
 			}
-			if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_RIGHT"))) {
 				moveMenuRight();
 				this.selectionCooldown.reset();
 				playMenuSelectSound();
@@ -164,12 +164,12 @@ public class TitleScreen extends Screen {
 
 	private void handleSpecialReturnCode() {
 		if (returnCode == 4) {
-			if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
 				nextMerchantState();
 				this.selectionCooldown.reset();
 				playMenuSelectSound();
 			}
-			if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_RIGHT"))) {
 				previousMerchantState();
 				this.selectionCooldown.reset();
 				playMenuSelectSound();
@@ -178,7 +178,7 @@ public class TitleScreen extends Screen {
 	}
 
 	private void handleSpaceKey() {
-		if (inputManager.isKeyDown(KeyEvent.VK_SPACE)) {
+		if (inputManager.isKeyDown(Core.getKeyCode("SHOOT"))) {
 			if (returnCode == 4) {
 				testStatUpgrade();
 				this.selectionCooldown.reset();
