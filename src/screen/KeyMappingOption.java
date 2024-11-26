@@ -94,10 +94,18 @@ public class KeyMappingOption extends Screen {
 
                     // 중복 키코드 검사
                     for(Integer val : keyMappings.values()){
-                        if(keyCode == val)
+                        if (keyCode == val) {
+                            String duplicateMessage = "Duplicate key is not allowed! Try again.";
+                            drawManager.drawCenteredRegularString(this, duplicateMessage, this.height / 8*2 - drawManager.fontRegularMetrics.getHeight()*2);
+                            draw();
                             check = false;
+                        }
+
+
                     }
-                    if(keyCode == 20)
+                    // 커맨드 키(윈도우 키)가 Go back으로 설정되는 경우, 다시 키 설정 못하게 되는 경우를 방지를 위해서 157 키코드를 추가했어요.
+                    // 강민석
+                    if(keyCode == 20 || keyCode == 157)
                         check = false;
 
                     if (check){
@@ -143,20 +151,29 @@ public class KeyMappingOption extends Screen {
         drawManager.backBufferGraphics.setColor(Color.GRAY);
 
         if (osType.contains("mac")) {
-            drawManager.drawCenteredRegularString(this, "Press Command-key  to Modify", this.height / 8*2 - drawManager.fontRegularMetrics.getHeight()*2);
+            drawManager.drawCenteredRegularString(this, "Press Command-key to Modify", this.height / 8*2 - drawManager.fontRegularMetrics.getHeight()*2);
         }else{
             drawManager.drawCenteredRegularString(this, "Press CapsLock to Modify", this.height / 8*2 - drawManager.fontRegularMetrics.getHeight()*2);
         }
+
+
 
 
         // 각 키 매핑 항목 표시
         for (int i = 0; i < actions.size(); i++) {
             String action = actions.get(i);
             String keyName = KeyEvent.getKeyText(keyMappings.get(action));
+            // Mac OS에서 스페이스와 esc키의 모양이 나오지 않아서 코드를 추가했습니다.
+            // 강민석
+            if ("␣".equalsIgnoreCase(keyName)) {
+                keyName = "space"; // 스페이스 키의 텍스트 변경
+            } else if ("⎋".equalsIgnoreCase(keyName)) {
+                keyName = "esc"; // ESC 키의 텍스트 변경
+            }
 
             // 선택된 항목 강조
             if (i == selectedIndex) {
-                drawManager.drawHighlightedString(this, action + ": " + keyName, this.width / 4, this.height / 4 + i * 40 + drawManager.fontRegularMetrics.getHeight());
+                drawManager.drawHighlightedString(this, action + " " + keyName, this.width / 4, this.height / 4 + i * 40 + drawManager.fontRegularMetrics.getHeight());
             } else {
                 drawManager.drawString(this, action + ": " + keyName, this.width / 4, this.height / 4 + i * 40 + drawManager.fontRegularMetrics.getHeight());
             }
@@ -170,4 +187,6 @@ public class KeyMappingOption extends Screen {
 
         drawManager.completeDrawing(this);
     }
+
+    
 }
