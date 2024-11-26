@@ -168,16 +168,16 @@ public class DrawManager {
 			spriteMap.put(SpriteType.AddSign, new Color[5][5]); // by Starter Team//19 - plus
 			spriteMap.put(SpriteType.Gem, new Color[7][8]); // 20 - diamond
 			spriteMap.put(SpriteType.ItemHeart, new Color[8][11]);//21 - heart
-			spriteMap.put(SpriteType.ItemBarrier, new Color[6][9]);//22 - lunch
+			spriteMap.put(SpriteType.ItemBarrier, new Color[10][15]);//22 - lunch
 			spriteMap.put(SpriteType.ItemBomb, new Color[23][23]);//23 - gpt logo
 			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[16][26]); //24 - power student
 			spriteMap.put(SpriteType.ItemCoin, new Color[7][8]);//25 - coin
 			spriteMap.put(SpriteType.ItemFeverTime, new Color[24][14]);//26 - starbucks coffee
-			spriteMap.put(SpriteType.ItemPierce, new Color[5][5]);//27 - 임시 +
-			spriteMap.put(SpriteType.ItemSpeedUp, new Color[13][12]);//28 - phone
-			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[11][13]);//29 - bed
-			spriteMap.put(SpriteType.Skin1, new Color[10][23]); //30 - sleeping student
-			spriteMap.put(SpriteType.Skin2, new Color[5][5]); //31 - 임시 +
+			spriteMap.put(SpriteType.ItemPierce, new Color[13][12]);//27 - phone
+			spriteMap.put(SpriteType.ItemSpeedUp, new Color[13][12]);//28 - phone - 거의 안나옴
+			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[11][13]);//29 - bed - 거의 안나옴
+			spriteMap.put(SpriteType.Skin1, new Color[10][23]); //30 - lying student
+			spriteMap.put(SpriteType.Skin2, new Color[16][26]); //31 - sleeping student
 			spriteMap.put(SpriteType.Skin3, new Color[16][26]); //32 - hanyang
 			spriteMap.put(SpriteType.Skin4, new Color[16][26]); //33 - santa
 			spriteMap.put(SpriteType.Skin5, new Color[16][26]); //34 - snowman
@@ -504,7 +504,7 @@ public class DrawManager {
 				String arrowDisplay = "<-              ->";
 				drawCenteredRegularString(screen, arrowDisplay, yPosition);
 				// 스킨을 화살표 사이에 그리기
-				int positionX = screen.getWidth() / 2 - 30; // 중앙에 위치 조정
+				int positionX = screen.getWidth() / 2 - 28; // 중앙에 위치 조정
 				int positionY = yPosition - 18; // 약간 위쪽으로 위치 조정
 				SkinEntity tempEntity = new SkinEntity(selectedSpriteType); // 임시 Entity 생성
 				drawEntity(tempEntity, positionX, positionY); }
@@ -535,8 +535,8 @@ public class DrawManager {
 					drawCenteredRegularString(screen, arrowDisplay, yPosition);
 
 					// 스킨을 화살표 사이에 그리기
-					int positionX = screen.getWidth() / 2 - 16; // 중앙에 위치 조정
-					int positionY = yPosition - 10; // 약간 위쪽으로 위치 조정
+					int positionX = screen.getWidth() / 2 - 28; // 중앙에 위치 조정
+					int positionY = yPosition - 18; // 약간 위쪽으로 위치 조정
 					SkinEntity tempEntity = new SkinEntity(selectedSpriteType); // 임시 Entity 생성
 					drawEntity(tempEntity, positionX, positionY); // drawEntity 메서드 호출
 				}
