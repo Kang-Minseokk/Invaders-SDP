@@ -2,6 +2,7 @@ package engine;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.Arrays;
 
 /**
  * Manages keyboard input for the provided screen.
@@ -80,5 +81,14 @@ public final class InputManager implements KeyListener {
 	@Override
 	public void keyTyped(final KeyEvent key) {
 
+	}
+
+	public void keyReleased(int vkEscape) {
+		if (vkEscape >= 0 && vkEscape < NUM_KEYS)
+			keys[vkEscape] = false;
+	}
+
+	public void keyReset(){
+		Arrays.fill(keys, false);
 	}
 }
