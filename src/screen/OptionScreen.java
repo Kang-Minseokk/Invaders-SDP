@@ -155,5 +155,5 @@ public class OptionScreen extends Screen {
         drawManager.drawSoundOption(this, this.returnCode,this.volumeSelectionCode, this.bgmState, this.bgmOptions);
         drawManager.completeDrawing(this);
     }
-    
+
 }
