@@ -1179,5 +1179,44 @@ public class DrawManager {
 		}
 		drawCenteredRegularString(screen, volume, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
 	}
+	/**
+	 * 일반 문자열을 화면에 그리는 메서드.
+	 *
+	 * @param screen 화면 객체.
+	 * @param text 표시할 텍스트.
+	 * @param x 텍스트의 X 좌표.
+	 * @param y 텍스트의 Y 좌표.
+	 */
+	public void drawString(final Screen screen, final String text, final int x, final int y) {
+		backBufferGraphics.setFont(fontRegular);
+		backBufferGraphics.setColor(Color.WHITE);
+		backBufferGraphics.drawString(text, x, y);
+	}
+
+	/**
+	 * 강조된 문자열을 화면에 그리는 메서드.
+	 *
+	 * @param screen 화면 객체.
+	 * @param text 강조 표시할 텍스트.
+	 * @param x 텍스트의 X 좌표.
+	 * @param y 텍스트의 Y 좌표.
+	 */
+	public void drawHighlightedString(Screen screen, String text, int x, int y) {
+		backBufferGraphics.setFont(fontBig); // 강조를 위해 큰 폰트 사용
+		backBufferGraphics.setColor(Color.YELLOW); // 강조 색상
+		int width = backBufferGraphics.getFontMetrics().stringWidth(text);
+		int height = backBufferGraphics.getFontMetrics().getHeight();
+
+		// 강조 배경 그리기
+		backBufferGraphics.fillRect(x - 5, y - height + 5, width + 10, height);
+
+		// 텍스트 그리기
+		backBufferGraphics.setColor(Color.BLACK);
+		backBufferGraphics.drawString(text, x, y);
+	}
+	public void drawKeyMapping(final Screen screen, final int option) {
+		backBufferGraphics.setColor(Color.WHITE);
+		drawCenteredRegularString(screen, "testing", screen.getHeight() / 8 * 5);
+	}
 
 }
