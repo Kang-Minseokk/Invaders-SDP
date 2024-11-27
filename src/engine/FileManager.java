@@ -1,8 +1,6 @@
 package engine;
 
-import java.io.*;
-import java.awt.Font;
-import java.awt.FontFormatException;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -17,6 +15,7 @@ import java.io.OutputStreamWriter;
 import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.util.*;
+import java.util.List;
 import java.util.logging.Logger;
 import Currency.EncryptionSupport;
 import engine.DrawManager.SpriteType;
@@ -71,7 +70,7 @@ public final class FileManager {
 	 * @throws IOException
 	 *             In case of loading problems.
 	 */
-	public void loadSprite(final Map<SpriteType, boolean[][]> spriteMap)
+	public void loadSprite(final Map<SpriteType, Color[][]> spriteMap)
 			throws IOException {
 		InputStream inputStream = null;
 
@@ -79,20 +78,22 @@ public final class FileManager {
 			inputStream = DrawManager.class.getClassLoader()
 					.getResourceAsStream("graphics");
 			char c;
-
+//         byte[] buffer = new byte[8];
 			// Sprite loading.
-			for (Map.Entry<SpriteType, boolean[][]> sprite : spriteMap
+			for (Map.Entry<SpriteType, Color[][]> sprite : spriteMap
 					.entrySet()) {
 				for (int i = 0; i < sprite.getValue().length; i++)
 					for (int j = 0; j < sprite.getValue()[i].length; j++) {
-						do
-							c = (char) inputStream.read();
-						while (c != '0' && c != '1');
+						String rgbHex = "";
+						for(int k = 0 ; k < 8 ; k++){
+							do
+								c = (char) inputStream.read();
+							while (!(c>=97 && c<=122) && !(c>=48 && c<=57)); // 변경필요
+							rgbHex += c;
+						}
+						if(rgbHex.equals("0x000000"))sprite.getValue()[i][j] = null;
+						else sprite.getValue()[i][j] = Color.decode(rgbHex);
 
-						if (c == '1')
-							sprite.getValue()[i][j] = true;
-						else
-							sprite.getValue()[i][j] = false;
 					}
 				logger.fine("Sprite " + sprite.getKey() + " loaded.");
 			}
@@ -103,6 +104,7 @@ public final class FileManager {
 				inputStream.close();
 		}
 	}
+
 
 	/**
 	 * Loads a font of a given size.

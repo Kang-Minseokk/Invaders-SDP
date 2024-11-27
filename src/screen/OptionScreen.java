@@ -1,8 +1,10 @@
 package screen;
 
+
 import engine.Core;
 
 import java.awt.event.KeyEvent;
+
 import engine.Cooldown;
 import engine.SoundManager;
 import engine.Frame;
@@ -20,15 +22,15 @@ public class OptionScreen extends Screen {
     private final int maxBGMState = 2;
     private int volumeSelectionCode;
     private Cooldown selectionCooldown;
-    private static final int SELECTION_TIME = 200;
+    private static final int SELECTION_TIME = 120;
     private static SoundManager sm;
+    private GameScreen gameScreen;
 
-    public OptionScreen(int width, int height, int fps) {
+    public OptionScreen(int width, int height, int fps, GameScreen gamesc) {
         super(width, height, fps);
         this.volumeSelectionCode = Core.getSavedVolumeSelectionCode();
         this.returnCode = 1; // Default return code for resuming the game
-        this.selectionCooldown = Core.getCooldown(SELECTION_TIME);
-        this.selectionCooldown.reset();
+        this.gameScreen = gamesc;
         sm = SoundManager.getInstance();
 
         bgmOptions = new ArrayList<>();
@@ -51,27 +53,34 @@ public class OptionScreen extends Screen {
         super.update();
         draw();
 
-        if ((inputManager.isKeyDown(KeyEvent.VK_P) || inputManager.isKeyDown(KeyEvent.VK_Q))
+        if ((inputManager.isKeyDown(Core.getKeyCode("GO_BACK")) || inputManager.isKeyDown(Core.getKeyCode("PAUSE")) || inputManager.isKeyDown(KeyEvent.VK_Q))
                 && this.inputDelay.checkFinished()) {
-            Core.setSavedVolumeSelectionCode(this.volumeSelectionCode); // GameScreen으로 돌아가기 위한 코드
-            this.isRunning = false; // Exit the pause screen and return to the game
+//            if(inputManager.isKeyDown(Core.getKeyCode("GO_BACK")))
+//                inputManager.keyPressed(Core.getKeyCode("PAUSE"));
+
+            Core.getLogger().info("Resuming GameScreen.");
+//            Core.popScreen();
+            Core.setSavedVolumeSelectionCode(this.volumeSelectionCode); // GameScreen으로 돌아가기 위한 코드\
+            this.isRunning = false;
         }
 
-        if(this.selectionCooldown.checkFinished() && this.inputDelay.checkFinished()){
+        if (this.selectionCooldown.checkFinished() && this.inputDelay.checkFinished()) {
             handleVerticalMenuNavigation();
-            handleVolumeCode();
             handleBGMCode();
+            handleVolumeCode();
+            openKeyMapping();
             this.selectionCooldown.reset();
         }
-
     }
 
     private void handleVerticalMenuNavigation() {
-        if (inputManager.isKeyDown(KeyEvent.VK_UP) || inputManager.isKeyDown(KeyEvent.VK_W)) {
+        if (inputManager.isKeyDown(Core.getKeyCode("MOVE_UP"))) {
+            Core.getLogger().info("Pressed uping to " + returnCode);
             previousOptionItem();
             this.selectionCooldown.reset();
         }
-        if (inputManager.isKeyDown(KeyEvent.VK_DOWN) || inputManager.isKeyDown(KeyEvent.VK_S)) {
+        if (inputManager.isKeyDown(Core.getKeyCode("MOVE_DOWN"))) {
+            Core.getLogger().info("Pressed Downing to " + returnCode);
             nextOptionItem();
             this.selectionCooldown.reset();
         }
@@ -79,12 +88,12 @@ public class OptionScreen extends Screen {
 
     private void handleBGMCode() {
         if (this.returnCode == 1) {
-            if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+            if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
                 previousBGMState();
                 this.selectionCooldown.reset();
                 playSelectedBGM();
             }
-            if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+            if (inputManager.isKeyDown(Core.getKeyCode("MOVE_RIGHT"))) {
                 nextBGMState();
                 this.selectionCooldown.reset();
                 playSelectedBGM();
@@ -114,8 +123,19 @@ public class OptionScreen extends Screen {
         }
     }
 
+
+    private void openKeyMapping() {
+        if (this.returnCode == 3) {
+            if (inputManager.isKeyDown(KeyEvent.VK_ENTER) || inputManager.isKeyDown(KeyEvent.VK_SPACE)) {
+                Core.getLogger().info("Open Key Mapping");
+                Core.pushScreen(new KeyMappingOption(this.width, this.height, this.fps));
+                Core.getLogger().info("Close Key Mapping");
+//                Core.getFrame().setScreen(new KeyMappingOption(this.width, this.height, this.fps));
+            }
+        }
+    }
     private void nextOptionItem() {
-        if (this.returnCode >= 2)
+        if (this.returnCode >= 3)
             this.returnCode = 1;
         else
             this.returnCode++;
@@ -123,7 +143,7 @@ public class OptionScreen extends Screen {
 
     private void previousOptionItem() {
         if (this.returnCode <= 1)
-            this.returnCode = 2;
+            this.returnCode = 3;
         else
             this.returnCode--;
     }
@@ -152,7 +172,8 @@ public class OptionScreen extends Screen {
     private void draw() {
         drawManager.initDrawing(this);
         drawManager.drawOption(this);
-        drawManager.drawSoundOption(this, this.returnCode,this.volumeSelectionCode, this.bgmState, this.bgmOptions);
+        drawManager.drawSoundOption(this, this.returnCode, this.volumeSelectionCode, this.bgmState, this.bgmOptions);
         drawManager.completeDrawing(this);
     }
+
 }
