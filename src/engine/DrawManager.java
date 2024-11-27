@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 import java.util.logging.Logger;
+import java.awt.event.KeyEvent;
+
 
 import Currency.RoundState;
 import Currency.Gem;
@@ -40,7 +42,7 @@ public class DrawManager {
 	/** Graphics context. */
 	private static Graphics graphics;
 	/** Buffer Graphics. */
-	public static Graphics backBufferGraphics;	// Modifying Access Restrictor to public - Lee Hyun Woo
+	public static Graphics backBufferGraphics;   // Modifying Access Restrictor to public - Lee Hyun Woo
 	/** Buffer image. */
 	private static BufferedImage backBuffer;
 	/** Normal sized font. */
@@ -57,7 +59,7 @@ public class DrawManager {
 	private BufferedImage backgroundImage;
 
 	/** Sprite types mapped to their images. */
-	private static Map<SpriteType, boolean[][]> spriteMap;
+	private static Map<SpriteType, Color[][]> spriteMap;
 	private int width;
 	private int height;
 	private int currentOption;
@@ -146,43 +148,41 @@ public class DrawManager {
 		logger.info("Started loading resources.");
 
 		try {
-			spriteMap = new LinkedHashMap<SpriteType, boolean[][]>();
-			spriteMap.put(SpriteType.Obstacle, new boolean[12][12]); // by Level Design Team
-			spriteMap.put(SpriteType.Ship, new boolean[13][8]);
-			spriteMap.put(SpriteType.ShipDestroyed, new boolean[13][8]);
-			spriteMap.put(SpriteType.Bullet, new boolean[3][5]);
-			spriteMap.put(SpriteType.EnemyBullet, new boolean[3][5]);
-			spriteMap.put(SpriteType.EnemyShipA1, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipA2, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipB1, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipB2, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipC1, new boolean[12][8]);
-			spriteMap.put(SpriteType.EnemyShipC2, new boolean[12][8]);
-			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new boolean[12][8]); // Edited by Enemy
-			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new boolean[12][8]); // Edited by Enemy
-			spriteMap.put(SpriteType.EnemyShipSpecial, new boolean[16][7]);
-			spriteMap.put(SpriteType.Explosion, new boolean[13][7]);
-			spriteMap.put(SpriteType.Heart, new boolean[13][8]);
-			spriteMap.put(SpriteType.Boss, new boolean[24][16]); // by Enemy team
-			spriteMap.put(SpriteType.Coin, new boolean[5][5]); // by Starter Team
-			spriteMap.put(SpriteType.AddSign, new boolean[5][5]); // by Starter Team
-			spriteMap.put(SpriteType.Gem, new boolean[7][6]); // CtrlS: res/graphics, line 20
-			// by Item team
-			spriteMap.put(SpriteType.ItemHeart, new boolean[7][5]);
-			spriteMap.put(SpriteType.ItemBarrier, new boolean[9][10]);
-			spriteMap.put(SpriteType.ItemBomb, new boolean[7][9]);
-			spriteMap.put(SpriteType.ShipBarrierStatus, new boolean[13][8]);	// temporary
-			spriteMap.put(SpriteType.ItemCoin, new boolean[7][7]);
-			spriteMap.put(SpriteType.ItemFeverTime, new boolean[9][9]);
-			spriteMap.put(SpriteType.ItemPierce, new boolean[7][7]);
-			spriteMap.put(SpriteType.ItemSpeedUp, new boolean[9][9]);
-			spriteMap.put(SpriteType.ItemSpeedSlow, new boolean[9][9]);
-
-			spriteMap.put(SpriteType.Skin1, new boolean[13][8]); //cat
-			spriteMap.put(SpriteType.Skin2, new boolean[13][8]); //rabbit
-			spriteMap.put(SpriteType.Skin3, new boolean[13][8]); //frog
-			spriteMap.put(SpriteType.Skin4, new boolean[13][8]); //crab
-			spriteMap.put(SpriteType.Skin5, new boolean[13][8]); //dirt
+			spriteMap = new LinkedHashMap<SpriteType, Color[][]>();
+			spriteMap.put(SpriteType.Obstacle, new Color[24][24]); //1 - exam paper
+			spriteMap.put(SpriteType.Ship, new Color[16][26]);//2 - student
+			spriteMap.put(SpriteType.ShipDestroyed, new Color[16][26]);//3 - student buried in task
+			spriteMap.put(SpriteType.Bullet, new Color[8][3]);//4 - pencil
+			spriteMap.put(SpriteType.EnemyBullet, new Color[8][5]);//5 - F
+			spriteMap.put(SpriteType.EnemyShipA1, new Color[16][24]);//6 - cursor
+			spriteMap.put(SpriteType.EnemyShipA2, new Color[16][24]);//7 - cursor
+			spriteMap.put(SpriteType.EnemyShipB1, new Color[16][24]);//8 - offline
+			spriteMap.put(SpriteType.EnemyShipB2, new Color[16][24]);//9 - offline
+			spriteMap.put(SpriteType.EnemyShipC1, new Color[16][24]);//10 - bug
+			spriteMap.put(SpriteType.EnemyShipC2, new Color[16][24]);//11 - bug
+			spriteMap.put(SpriteType.ExplosiveEnemyShip1, new Color[16][24]); //12 - error
+			spriteMap.put(SpriteType.ExplosiveEnemyShip2, new Color[16][24]); //13 - error
+			spriteMap.put(SpriteType.EnemyShipSpecial, new Color[14][32]);//14 - book
+			spriteMap.put(SpriteType.Explosion, new Color[14][26]);//15 - 적 맞췄을 때 표시
+			spriteMap.put(SpriteType.Heart, new Color[8][11]);//16 - heart
+			spriteMap.put(SpriteType.Boss, new Color[23][14]); // by Enemy team//17 - professor
+			spriteMap.put(SpriteType.Coin, new Color[7][8]); // by Starter Team//18 - coin
+			spriteMap.put(SpriteType.AddSign, new Color[5][5]); // by Starter Team//19 - plus
+			spriteMap.put(SpriteType.Gem, new Color[7][8]); // 20 - diamond
+			spriteMap.put(SpriteType.ItemHeart, new Color[8][11]);//21 - heart
+			spriteMap.put(SpriteType.ItemBarrier, new Color[10][15]);//22 - lunch
+			spriteMap.put(SpriteType.ItemBomb, new Color[23][23]);//23 - gpt logo
+			spriteMap.put(SpriteType.ShipBarrierStatus, new Color[16][26]); //24 - power student
+			spriteMap.put(SpriteType.ItemCoin, new Color[7][8]);//25 - coin
+			spriteMap.put(SpriteType.ItemFeverTime, new Color[24][14]);//26 - starbucks coffee
+			spriteMap.put(SpriteType.ItemPierce, new Color[13][12]);//27 - phone
+			spriteMap.put(SpriteType.ItemSpeedUp, new Color[13][12]);//28 - phone - 거의 안나옴
+			spriteMap.put(SpriteType.ItemSpeedSlow, new Color[11][13]);//29 - bed - 거의 안나옴
+			spriteMap.put(SpriteType.Skin1, new Color[10][23]); //30 - lying student
+			spriteMap.put(SpriteType.Skin2, new Color[16][26]); //31 - sleeping student
+			spriteMap.put(SpriteType.Skin3, new Color[16][26]); //32 - hanyang
+			spriteMap.put(SpriteType.Skin4, new Color[16][26]); //33 - santa
+			spriteMap.put(SpriteType.Skin5, new Color[16][26]); //34 - snowman
 
 			fileManager.loadSprite(spriteMap);
 			logger.info("Finished loading the sprites.");
@@ -267,34 +267,27 @@ public class DrawManager {
 	 * @param positionY
 	 *            Coordinates for the upper side of the image.
 	 */
-	public static void drawEntity(final Entity entity, final int positionX, final int positionY) {
-
-		try {
-			boolean[][] image = spriteMap.get(entity.getSpriteType());
-
-			backBufferGraphics.setColor(entity.getColor());
-			for (int i = 0; i < image.length; i++)
-				for (int j = 0; j < image[i].length; j++)
-					if (image[i][j])
-						backBufferGraphics.drawRect(positionX + i * 2, positionY
-								+ j * 2, 1, 1);
-
-		} catch(Exception e) {
-
-			System.out.println(e);
-			System.exit(1);
+	public static void drawEntity(final Entity entity, final int positionX,
+								  final int positionY) {
+		Color[][] image = spriteMap.get(entity.getSpriteType());
+		for (int i = 0; i < image.length; i++){
+			for (int j = 0; j < image[i].length; j++){
+				if (image[i][j] != null){
+					backBufferGraphics.setColor(image[i][j]);
+					backBufferGraphics.drawRect(positionX + j * 2, positionY
+							+ i * 2, 1, 1);
+				}
+			}
 		}
-
-
 	}
 	public static void drawEntityWithGraphics(final Graphics g, final Entity entity, final int positionX, final int positionY) {
 		try {
-			boolean[][] image = spriteMap.get(entity.getSpriteType());
+			Color[][] image = spriteMap.get(entity.getSpriteType());
 			g.setColor(entity.getColor());
 
 			for (int i = 0; i < image.length; i++) {
 				for (int j = 0; j < image[i].length; j++) {
-					if (image[i][j]) {
+					if (image[i][j]!= null) {
 						g.fillRect(positionX + i * 7, positionY + j * 7, 7, 7);
 					}
 				}
@@ -311,16 +304,16 @@ public class DrawManager {
 	 * @param screen
 	 *            Screen to draw in.
 	 */
-//	@SuppressWarnings("unused")
-//	private void drawBorders(final Screen screen) {
-//		backBufferGraphics.setColor(Color.GREEN);
-//		backBufferGraphics.drawLine(0, 0, screen.getWidth() - 1, 0);
-//		backBufferGraphics.drawLine(0, 0, 0, screen.getHeight() - 1);
-//		backBufferGraphics.drawLine(screen.getWidth() - 1, 0,
-//				screen.getWidth() - 1, screen.getHeight() - 1);
-//		backBufferGraphics.drawLine(0, screen.getHeight() - 1,
-//				screen.getWidth() - 1, screen.getHeight() - 1);
-//	}
+//   @SuppressWarnings("unused")
+//   private void drawBorders(final Screen screen) {
+//      backBufferGraphics.setColor(Color.GREEN);
+//      backBufferGraphics.drawLine(0, 0, screen.getWidth() - 1, 0);
+//      backBufferGraphics.drawLine(0, 0, 0, screen.getHeight() - 1);
+//      backBufferGraphics.drawLine(screen.getWidth() - 1, 0,
+//            screen.getWidth() - 1, screen.getHeight() - 1);
+//      backBufferGraphics.drawLine(0, screen.getHeight() - 1,
+//            screen.getWidth() - 1, screen.getHeight() - 1);
+//   }
 
 	/**
 	 * For debugging purpouses, draws a grid over the canvas.
@@ -328,14 +321,14 @@ public class DrawManager {
 	 * @param screen
 	 *            Screen to draw in.
 	 */
-//	@SuppressWarnings("unused")
-//	private void drawGrid(final Screen screen) {
-//		backBufferGraphics.setColor(Color.DARK_GRAY);
-//		for (int i = 0; i < screen.getHeight() - 1; i += 2)
-//			backBufferGraphics.drawLine(0, i, screen.getWidth() - 1, i);
-//		for (int j = 0; j < screen.getWidth() - 1; j += 2)
-//			backBufferGraphics.drawLine(j, 0, j, screen.getHeight() - 1);
-//	}
+//   @SuppressWarnings("unused")
+//   private void drawGrid(final Screen screen) {
+//      backBufferGraphics.setColor(Color.DARK_GRAY);
+//      for (int i = 0; i < screen.getHeight() - 1; i += 2)
+//         backBufferGraphics.drawLine(0, i, screen.getWidth() - 1, i);
+//      for (int j = 0; j < screen.getWidth() - 1; j += 2)
+//         backBufferGraphics.drawLine(j, 0, j, screen.getHeight() - 1);
+//   }
 
 	/**
 	 * Draws current score on screen.
@@ -345,12 +338,12 @@ public class DrawManager {
 	 * @param score
 	 *            Current score.
 	 */
-//	public void drawScore(final Screen screen, final int score) {
-//		backBufferGraphics.setFont(fontRegular);
-//		backBufferGraphics.setColor(Color.WHITE);
-//		String scoreString = String.format("%04d", score);
-//		backBufferGraphics.drawString(scoreString, screen.getWidth() - 60, 25);
-//	}
+//   public void drawScore(final Screen screen, final int score) {
+//      backBufferGraphics.setFont(fontRegular);
+//      backBufferGraphics.setColor(Color.WHITE);
+//      String scoreString = String.format("%04d", score);
+//      backBufferGraphics.drawString(scoreString, screen.getWidth() - 60, 25);
+//   }
 
 	/**
 	 * Draws number of remaining lives on screen.
@@ -363,7 +356,7 @@ public class DrawManager {
 	public void drawLives(final Screen screen, final int lives) {
 		backBufferGraphics.setFont(fontRegular);
 		backBufferGraphics.setColor(Color.WHITE);
-//		backBufferGraphics.drawString(Integer.toString(lives), 20, 25);
+//      backBufferGraphics.drawString(Integer.toString(lives), 20, 25);
 
 		Entity heart = new Entity(0, 0, 13 * 2, 8 * 2, Color.RED) {
 
@@ -414,7 +407,7 @@ public class DrawManager {
 	 * @param screen Screen to draw on.
 	 * @param option Option selected.
 	 */
-    static SpriteType selectedSpriteType = null;
+	static SpriteType selectedSpriteType = null;
 	public void drawMenu(final Screen screen, final int option, final int option2, final int option3, final int option4) {
 		String onePlayerModeString = "1 player mode";
 		String twoPlayerModeString = "2 player mode";
@@ -487,8 +480,8 @@ public class DrawManager {
 
 		drawCenteredRegularString(screen, merchantState, screen.getHeight()
 				/ 4 * 2 + fontRegularMetrics.getHeight() * 4);
-		/*drawEntity(addSign, screen.getWidth()/2 + 50, screen.getHeight()
-				/ 4 * 2 + fontRegularMetrics.getHeight() * 6 - 12);*/
+      /*drawEntity(addSign, screen.getWidth()/2 + 50, screen.getHeight()
+            / 4 * 2 + fontRegularMetrics.getHeight() * 6 - 12);*/
 
 		// Record scores (Team Clove)
 		if (option == 5)
@@ -510,11 +503,11 @@ public class DrawManager {
 			}
 			else if(option4 == 1){
 				selectedSpriteType = SpriteType.Ship;
-				String arrowDisplay = "<-        ->";
+				String arrowDisplay = "<-              ->";
 				drawCenteredRegularString(screen, arrowDisplay, yPosition);
 				// 스킨을 화살표 사이에 그리기
-				int positionX = screen.getWidth() / 2 - 15; // 중앙에 위치 조정
-				int positionY = yPosition - 10; // 약간 위쪽으로 위치 조정
+				int positionX = screen.getWidth() / 2 - 28; // 중앙에 위치 조정
+				int positionY = yPosition - 18; // 약간 위쪽으로 위치 조정
 				SkinEntity tempEntity = new SkinEntity(selectedSpriteType); // 임시 Entity 생성
 				drawEntity(tempEntity, positionX, positionY); }
 			else if (option4 >= 2 && option4 <= 6) {
@@ -537,15 +530,15 @@ public class DrawManager {
 					default:
 						selectedSpriteType = SpriteType.Ship;
 						break;
-					}
+				}
 				if (Skins.unlockedSkins.contains(selectedSpriteType)) {
 					// 중앙에 화살표를 표시
-					String arrowDisplay = "<-        ->";
+					String arrowDisplay = "<-              ->";
 					drawCenteredRegularString(screen, arrowDisplay, yPosition);
 
 					// 스킨을 화살표 사이에 그리기
-					int positionX = screen.getWidth() / 2 - 16; // 중앙에 위치 조정
-					int positionY = yPosition - 10; // 약간 위쪽으로 위치 조정
+					int positionX = screen.getWidth() / 2 - 28; // 중앙에 위치 조정
+					int positionY = yPosition - 18; // 약간 위쪽으로 위치 조정
 					SkinEntity tempEntity = new SkinEntity(selectedSpriteType); // 임시 Entity 생성
 					drawEntity(tempEntity, positionX, positionY); // drawEntity 메서드 호출
 				}
@@ -828,13 +821,13 @@ public class DrawManager {
 	 * Draws a righted string on regular font
 	 *
 	 * @param screen
-	 * 				Screen to draw on.
+	 *             Screen to draw on.
 	 * @param string
-	 * 				String to draw.
+	 *             String to draw.
 	 * @param height
-	 * 				Height of the drawing.
+	 *             Height of the drawing.
 	 *
-	 * 		//Clove
+	 *       //Clove
 	 */
 	public void drawRightedRegularString(final Screen screen,
 										 final String string, final int width, final int height) {
@@ -1084,7 +1077,7 @@ public class DrawManager {
 	 * Draw the item that player got
 	 *
 	 * @param screen
-	 *			  Screen to draw on.
+	 *           Screen to draw on.
 	 *
 	 * HUD Team - Jo Minseo
 	 */
@@ -1123,7 +1116,6 @@ public class DrawManager {
 		// Sound Operator
 		SoundManager.getInstance().playES("achievement");
 	}
-
 	public void drawOption(final Screen screen) {
 		// OPTION 제목 그리기
 		backBufferGraphics.setColor(Color.GREEN);
@@ -1131,7 +1123,8 @@ public class DrawManager {
 
 		// 'PRESS P TO RESUME', 'PRESS Q TO TERMINATE' 안내문구 그리기
 		backBufferGraphics.setColor(Color.GRAY);
-		drawCenteredRegularString(screen, "PRESS P TO RESUME", screen.getHeight() / 5);
+			String resumeText = new String("PRESS "+KeyEvent.getKeyText(Core.getKeyCode("PAUSE"))+" TO RESUME");
+		drawCenteredRegularString(screen, resumeText, screen.getHeight() / 5);
 		drawCenteredRegularString(screen, "PRESS Q TO TERMINATE", screen.getHeight() / 4);// 화면 중간에 안내문구 표시
 	}
 
@@ -1142,16 +1135,18 @@ public class DrawManager {
 		String[] volumes = {"VOLUME0", "VOLUME1", "VOLUME2", "VOLUME3", "VOLUME4", "VOLUME5"};
 		String volume = volumes[volumeIndex];
 
+		String keyMapping = "Modify KeyMapping ";
+
 		if (option == 1)
 			backBufferGraphics.setColor(Color.CYAN);
 		else
 			backBufferGraphics.setColor(Color.WHITE);
 
 		String bgmDisplay = "< " + selectedBGM + " >";
-		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 4 * 2);
+		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 8 * 3);
 
 		backBufferGraphics.setColor(Color.PINK);
-		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 6);
+		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 8 * 4 - fontRegularMetrics.getHeight() * 1);
 
 		if (option == 2) {
 			switch (volumeIndex) {
@@ -1180,7 +1175,55 @@ public class DrawManager {
 		} else {
 			backBufferGraphics.setColor(Color.WHITE); // 기본 색상
 		}
-		drawCenteredRegularString(screen, volume, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
+		drawCenteredRegularString(screen, volume, screen.getHeight() / 8 * 4 + fontRegularMetrics.getHeight() * 1);
 
+		if (option == 3)
+			backBufferGraphics.setColor(Color.CYAN);
+		else
+			backBufferGraphics.setColor(Color.WHITE);
+
+		drawCenteredRegularString(screen, keyMapping, screen.getHeight() / 8 * 5);
 	}
+
+	/**
+	 * 일반 문자열을 화면에 그리는 메서드.
+	 *
+	 * @param screen 화면 객체.
+	 * @param text 표시할 텍스트.
+	 * @param x 텍스트의 X 좌표.
+	 * @param y 텍스트의 Y 좌표.
+	 */
+	public void drawString(final Screen screen, final String text, final int x, final int y) {
+		backBufferGraphics.setFont(fontRegular);
+		backBufferGraphics.setColor(Color.WHITE);
+		backBufferGraphics.drawString(text, x, y);
+	}
+
+	/**
+	 * 강조된 문자열을 화면에 그리는 메서드.
+	 *
+	 * @param screen 화면 객체.
+	 * @param text 강조 표시할 텍스트.
+	 * @param x 텍스트의 X 좌표.
+	 * @param y 텍스트의 Y 좌표.
+	 */
+	public void drawHighlightedString(Screen screen, String text, int x, int y) {
+		backBufferGraphics.setFont(fontBig); // 강조를 위해 큰 폰트 사용
+		backBufferGraphics.setColor(Color.YELLOW); // 강조 색상
+		int width = backBufferGraphics.getFontMetrics().stringWidth(text);
+		int height = backBufferGraphics.getFontMetrics().getHeight();
+
+		// 강조 배경 그리기
+		backBufferGraphics.fillRect(x - 5, y - height + 5, width + 10, height);
+
+		// 텍스트 그리기
+		backBufferGraphics.setColor(Color.BLACK);
+		backBufferGraphics.drawString(text, x, y);
+	}
+	public void drawKeyMapping(final Screen screen, final int option) {
+		backBufferGraphics.setColor(Color.WHITE);
+		drawCenteredRegularString(screen, "testing", screen.getHeight() / 8 * 5);
+	}
+
+
 }
