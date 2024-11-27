@@ -1135,20 +1135,18 @@ public class DrawManager {
 		String[] volumes = {"VOLUME0", "VOLUME1", "VOLUME2", "VOLUME3", "VOLUME4", "VOLUME5"};
 		String volume = volumes[volumeIndex];
 
-
 		String keyMapping = "Modify KeyMapping ";
+
 		if (option == 1)
 			backBufferGraphics.setColor(Color.CYAN);
 		else
 			backBufferGraphics.setColor(Color.WHITE);
 
 		String bgmDisplay = "< " + selectedBGM + " >";
-
-		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 4 * 2);
+		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 8 * 3);
 
 		backBufferGraphics.setColor(Color.PINK);
-		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 6);
-
+		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 8 * 4 - fontRegularMetrics.getHeight() * 1);
 
 		if (option == 2) {
 			switch (volumeIndex) {
@@ -1177,7 +1175,14 @@ public class DrawManager {
 		} else {
 			backBufferGraphics.setColor(Color.WHITE); // 기본 색상
 		}
-		drawCenteredRegularString(screen, volume, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
+		drawCenteredRegularString(screen, volume, screen.getHeight() / 8 * 4 + fontRegularMetrics.getHeight() * 1);
+
+		if (option == 3)
+			backBufferGraphics.setColor(Color.CYAN);
+		else
+			backBufferGraphics.setColor(Color.WHITE);
+
+		drawCenteredRegularString(screen, keyMapping, screen.getHeight() / 8 * 5);
 	}
 	/**
 	 * 일반 문자열을 화면에 그리는 메서드.
