@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 import java.util.logging.Logger;
+import java.awt.event.KeyEvent;
+
 
 import Currency.RoundState;
 import Currency.Gem;
@@ -391,7 +393,7 @@ public class DrawManager {
 		String instructionsString =
 				"select with w+s / arrows, confirm with space";
 
-		backBufferGraphics.setColor(Color.GRAY);
+		backBufferGraphics.setColor(Color.YELLOW);
 		drawCenteredRegularString(screen, instructionsString,
 				screen.getHeight() * 3 / 10);
 
@@ -1024,6 +1026,26 @@ public class DrawManager {
 		backBufferGraphics.drawImage(backgroundImage, horizontalOffset, verticalOffset, null);
 	}
 
+	public void loadTitleBackground() {
+		background = Background.getInstance();
+
+		// 타이틀 화면 배경 이미지 스트림 가져오기
+		InputStream imageStream = Background.getTitleBackgroundStream();
+		try {
+			assert imageStream != null;
+			backgroundImage = ImageIO.read(imageStream);
+
+			// 타이틀 화면에서는 스크롤이 필요 없으므로 초기화 생략 가능
+		} catch (IOException e) {
+			throw new RuntimeException("Failed to load title background image", e);
+		}
+	}
+
+	public void drawTitleBackground() {
+		// 타이틀 화면은 고정된 배경이므로 (0, 0)에 고정 렌더링
+		backBufferGraphics.drawImage(backgroundImage, 0, 0, null);
+	}
+
 	/**
 	 * ### TEAM INTERNATIONAL ###
 	 *
@@ -1101,7 +1123,8 @@ public class DrawManager {
 
 		// 'PRESS P TO RESUME', 'PRESS Q TO TERMINATE' 안내문구 그리기
 		backBufferGraphics.setColor(Color.GRAY);
-		drawCenteredRegularString(screen, "PRESS P TO RESUME", screen.getHeight() / 5);
+		String resumeText = new String("PRESS "+KeyEvent.getKeyText(Core.getKeyCode("PAUSE"))+" TO RESUME");
+		drawCenteredRegularString(screen, resumeText, screen.getHeight() / 5);
 		drawCenteredRegularString(screen, "PRESS Q TO TERMINATE", screen.getHeight() / 4);// 화면 중간에 안내문구 표시
 	}
 
@@ -1112,16 +1135,20 @@ public class DrawManager {
 		String[] volumes = {"VOLUME0", "VOLUME1", "VOLUME2", "VOLUME3", "VOLUME4", "VOLUME5"};
 		String volume = volumes[volumeIndex];
 
+
+		String keyMapping = "Modify KeyMapping ";
 		if (option == 1)
 			backBufferGraphics.setColor(Color.CYAN);
 		else
 			backBufferGraphics.setColor(Color.WHITE);
 
 		String bgmDisplay = "< " + selectedBGM + " >";
+
 		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 4 * 2);
 
 		backBufferGraphics.setColor(Color.PINK);
 		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 6);
+
 
 		if (option == 2) {
 			switch (volumeIndex) {
@@ -1151,6 +1178,6 @@ public class DrawManager {
 			backBufferGraphics.setColor(Color.WHITE); // 기본 색상
 		}
 		drawCenteredRegularString(screen, volume, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
-
 	}
+
 }

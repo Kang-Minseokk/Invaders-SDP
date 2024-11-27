@@ -77,4 +77,7 @@ public class Frame extends JFrame {
 	public final int getHeight() {
 		return this.height;
 	}
+
+	public Screen getCurrentScreen() {return this.currentScreen;}
+
 }
