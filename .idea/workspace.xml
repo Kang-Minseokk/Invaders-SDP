@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c2d1df9e-7633-4932-824c-2c1f0ea58909" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invaders-SDP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders-SDP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,13 +94,13 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;KAN-73-add-key-mapping-option&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/limul/Desktop/College/2_grade/2_semester/Soft_Wared_Process/workspace/Invaders-SDP/lib&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/limul/Desktop/College/2_grade/2_semester/Software_Process/workspace/Invaders-SDP&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;라이브러리&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.17934166&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
@@ -133,7 +134,7 @@
       <recent name="clove" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Core">
+  <component name="RunManager" selected="JUnit.KeyMappingOptionTest">
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engine.Core" />
       <module name="Invaders-SDP" />
@@ -143,22 +144,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Invaders-SDP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="screen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTest" />
-      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest$testHandleKeyInput" />
-      <option name="METHOD_NAME" value="testBasicWithLoopIfNotCheckFinished" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,20 +195,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MockitoInstallationTest.testMockitoInstallation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MockitoInstallationTest" />
+      <option name="METHOD_NAME" value="testMockitoInstallation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Core" />
+      <item itemvalue="JUnit.MockitoInstallationTest.testMockitoInstallation" />
       <item itemvalue="JUnit.KeyMappingOptionTest" />
-      <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
+      <item itemvalue="애플리케이션.Core" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Core" />
         <item itemvalue="JUnit.KeyMappingOptionTest" />
         <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
+        <item itemvalue="애플리케이션.Core" />
+        <item itemvalue="JUnit.MockitoInstallationTest.testMockitoInstallation" />
         <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
-        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" />
       </list>
     </recent_temporary>
   </component>
