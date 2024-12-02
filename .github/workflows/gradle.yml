@@ -28,13 +28,13 @@ jobs:
           distribution: 'temurin'
           cache: gradle # Gradle 의존성 캐싱
 
-      # 3. Clean Gradle Caches
-      - name: Clean Gradle Cache
-        run: ./gradlew clean
-
-      # 4. Add Execution permission
+      # 3. Add Execution permission
       - name: Grant execute permission for Gradle Wrapper
         run: chmod +x ./gradlew
+
+      # 4. Clean Gradle Caches
+      - name: Clean Gradle Cache
+        run: ./gradlew clean
 
       # 5. Cache Gradle Wrapper and Dependencies
       - name: Cache Gradle
