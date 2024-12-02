@@ -18,6 +18,7 @@ local.properties
 .idea/misc.xml
 .idea/vcs.xml
 
+*.xml
 
 # External tool builders
 .externalToolBuilders/
