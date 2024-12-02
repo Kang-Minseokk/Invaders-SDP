@@ -54,3 +54,8 @@ tasks.test {
         html.required.set(true) // HTML 결과 저장
     }
 }
+
+tasks.jar {
+    archiveBaseName.set("Professor_Invaders")
+    archiveVersion.set(project.findProperty("version")?.toString() ?: "0.0.1")
+}

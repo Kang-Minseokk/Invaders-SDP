@@ -1,0 +1,57 @@
+name: CD for Java with Gradle
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  buildJar:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Repository Checkout
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # 2. Set up JDK
+      - name: Set up JDK 23
+        uses: actions/setup-java@v4
+        with:
+          java-version: '23'
+          distribution: 'temurin'
+          cache: gradle # Gradle 의존성 캐싱
+
+      # 3. Add Execution permission
+      - name: Grant execute permission for Gradle Wrapper
+        run: chmod +x ./gradlew
+
+      # 4. Extract Version Label
+      - name: Extract Version from Label
+        id: extract_version
+        run: |
+          VERSION_LABEL=$(echo "${{ github.event.pull_request.labels }}" | grep -oP 'release/v\d+\.\d+\.\d+')
+          if [ -z "$VERSION_LABEL" ]; then
+            echo "No version label found, defaulting to 'v0.0.1'"
+            echo "VERSION=v0.0.1" >> $GITHUB_ENV
+          else
+            echo "Found version label: $VERSION_LABEL"
+            echo "VERSION=${VERSION_LABEL#release/}" >> $GITHUB_ENV
+          fi
+
+      # 5. Build the Project with Version
+      - name: Build with Gradle
+        run: ./gradlew clean build -Pversion=$VERSION --no-daemon
+
+      # 6. Upload Versioned Build Artifact
+      - name: Upload Versioned Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Build Artifact
+          path: build/libs/your-artifact-name-$VERSION.jar
