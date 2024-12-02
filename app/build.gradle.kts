@@ -50,7 +50,7 @@ tasks.test {
         showStandardStreams = true // 표준 출력 및 표준 에러 출력
     }
     reports {
-        html.required.set(true)
-        html.outputLocation.set(file("$buildDir/reports/tests/test"))
+        junitXml.required.set(true) // XML 결과 저장
+        html.required.set(true) // HTML 결과 저장
     }
 }
