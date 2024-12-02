@@ -1,3 +1,4 @@
+import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 plugins {
     id("java")
     id("application")
@@ -40,7 +41,7 @@ sourceSets {
         }
     }
 }
-import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+
 tasks.test {
     useJUnitPlatform() // JUnit 5 플랫폼 사용
     testLogging {
