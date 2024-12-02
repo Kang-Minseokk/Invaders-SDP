@@ -429,6 +429,7 @@ public class GameScreen extends Screen {
 
 		if (this.enemyShipSpecial == null && this.enemyShipSpecialCooldown.checkFinished()) {
 			this.enemyShipSpecial = new EnemyShip();
+			this.enemyShipSpecial.setSpeedMultiplier(2.0);
 			this.enemyShipSpecialCooldown.reset();
 			sm = SoundManager.getInstance();
 			sm.playES("UFO_come_up");

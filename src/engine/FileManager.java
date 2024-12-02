@@ -52,7 +52,7 @@ public final class FileManager {
 
 	/**
 	 * Returns shared instance of FileManager.
-	 * 
+	 *
 	 * @return Shared instance of FileManager.
 	 */
 	protected static FileManager getInstance() {
@@ -63,45 +63,58 @@ public final class FileManager {
 
 	/**
 	 * Loads sprites from disk.
-	 * 
+	 *
 	 * @param spriteMap
 	 *            Mapping of sprite type and empty boolean matrix that will
 	 *            contain the image.
 	 * @throws IOException
 	 *             In case of loading problems.
 	 */
+
 	public void loadSprite(final Map<SpriteType, Color[][]> spriteMap)
 			throws IOException {
 		InputStream inputStream = null;
 
 		try {
-			inputStream = DrawManager.class.getClassLoader()
-					.getResourceAsStream("graphics");
+			inputStream = DrawManager.class.getClassLoader().getResourceAsStream("graphics");
+			if (inputStream == null) {
+				throw new FileNotFoundException("Graphics file not found.");
+			}
+
 			char c;
-//         byte[] buffer = new byte[8];
-			// Sprite loading.
-			for (Map.Entry<SpriteType, Color[][]> sprite : spriteMap
-					.entrySet()) {
-				for (int i = 0; i < sprite.getValue().length; i++)
+			// Sprite loading
+			for (Map.Entry<SpriteType, Color[][]> sprite : spriteMap.entrySet()) {
+				for (int i = 0; i < sprite.getValue().length; i++) {
 					for (int j = 0; j < sprite.getValue()[i].length; j++) {
 						String rgbHex = "";
-						for(int k = 0 ; k < 8 ; k++){
-							do
-								c = (char) inputStream.read();
-							while (!(c>=97 && c<=122) && !(c>=48 && c<=57)); // 변경필요
-							rgbHex += c;
+						for (int k = 0; k < 8; k++) {
+							c = (char) inputStream.read();
+							if (Character.isLetterOrDigit(c)) { // 유효한 16진수 문자 확인
+								rgbHex += c;
+							} else {
+								k--; // 잘못된 문자가 나오면 반복 횟수를 유지
+							}
 						}
-						if(rgbHex.equals("0x000000"))sprite.getValue()[i][j] = null;
-						else sprite.getValue()[i][j] = Color.decode(rgbHex);
 
+						try {
+							String colorHex = rgbHex.toString();
+							if (colorHex.equalsIgnoreCase("0x000000")) {
+								sprite.getValue()[i][j] = null;
+							} else {
+								sprite.getValue()[i][j] = Color.decode(rgbHex);
+							}
+						} catch (NumberFormatException e) {
+							logger.warning("Invalid color code: " + rgbHex);
+							sprite.getValue()[i][j] = null; // 잘못된 값을 null로 처리
+						}
 					}
+				}
 				logger.fine("Sprite " + sprite.getKey() + " loaded.");
 			}
-			if (inputStream != null)
-				inputStream.close();
 		} finally {
-			if (inputStream != null)
+			if (inputStream != null) {
 				inputStream.close();
+			}
 		}
 	}
 

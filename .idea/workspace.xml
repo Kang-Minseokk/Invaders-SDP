@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/StatusConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/res/StatusConfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/engine/FileManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/graphics" beforeDir="false" afterPath="$PROJECT_DIR$/res/graphics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/review_note.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/DrawManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/GameScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_7.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,20 +18,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="PropertiesComponent"></component>
-  <component name="TaskManager">
-    <servers />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl"></component>
-    <SUITE FILE_PATH="coverage/Invaders_SDP$KeyMappingOptionTest_testHandleKeyInput_testBasic.ic" NAME="KeyMappingOptionTest$testHandleKeyInput.testBasic 커버리지 결과" MODIFIED="1732550772186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>screen.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Invaders_SDP$Core.ic" NAME="Core 커버리지 결과" MODIFIED="1732155376167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>engine.*</FILTER>
-    </SUITE>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -74,7 +53,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"></component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "KAN-70-Changing-UI 병합 중",
+    "애플리케이션.Core.executor": "Run"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="clove" />
@@ -102,7 +86,7 @@
       <recent name="clove" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Core">
+  <component name="RunManager" selected="애플리케이션.Core">
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engine.Core" />
       <module name="Invaders-SDP" />
@@ -180,15 +164,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Core" />
       <item itemvalue="JUnit.KeyMappingOptionTest" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
+      <item itemvalue="애플리케이션.Core" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Core" />
+        <item itemvalue="애플리케이션.Core" />
         <item itemvalue="JUnit.KeyMappingOptionTest" />
         <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
         <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
@@ -266,7 +250,6 @@
         </entry>
       </map>
     </option>
->>>>>>> KAN-67-preprocessing
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
