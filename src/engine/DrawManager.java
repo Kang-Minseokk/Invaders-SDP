@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 import java.util.logging.Logger;
+import java.awt.event.KeyEvent;
+
 
 import Currency.RoundState;
 import Currency.Gem;
@@ -1123,7 +1125,8 @@ public class DrawManager {
 
 		// 'PRESS P TO RESUME', 'PRESS Q TO TERMINATE' 안내문구 그리기
 		backBufferGraphics.setColor(Color.GRAY);
-		drawCenteredRegularString(screen, "PRESS P TO RESUME", screen.getHeight() / 5);
+			String resumeText = new String("PRESS "+KeyEvent.getKeyText(Core.getKeyCode("PAUSE"))+" TO RESUME");
+		drawCenteredRegularString(screen, resumeText, screen.getHeight() / 5);
 		drawCenteredRegularString(screen, "PRESS Q TO TERMINATE", screen.getHeight() / 4);// 화면 중간에 안내문구 표시
 	}
 
@@ -1134,16 +1137,18 @@ public class DrawManager {
 		String[] volumes = {"VOLUME0", "VOLUME1", "VOLUME2", "VOLUME3", "VOLUME4", "VOLUME5"};
 		String volume = volumes[volumeIndex];
 
+		String keyMapping = "Modify KeyMapping ";
+
 		if (option == 1)
 			backBufferGraphics.setColor(Color.CYAN);
 		else
 			backBufferGraphics.setColor(Color.WHITE);
 
 		String bgmDisplay = "< " + selectedBGM + " >";
-		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 4 * 2);
+		drawCenteredRegularString(screen, bgmString + ": " + bgmDisplay, screen.getHeight() / 8 * 3);
 
 		backBufferGraphics.setColor(Color.PINK);
-		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 6);
+		drawCenteredRegularString(screen, "VOLUME", screen.getHeight() / 8 * 4 - fontRegularMetrics.getHeight() * 1);
 
 		if (option == 2) {
 			switch (volumeIndex) {
@@ -1172,7 +1177,55 @@ public class DrawManager {
 		} else {
 			backBufferGraphics.setColor(Color.WHITE); // 기본 색상
 		}
-		drawCenteredRegularString(screen, volume, screen.getHeight() / 4 * 2 + fontRegularMetrics.getHeight() * 8);
+		drawCenteredRegularString(screen, volume, screen.getHeight() / 8 * 4 + fontRegularMetrics.getHeight() * 1);
 
+		if (option == 3)
+			backBufferGraphics.setColor(Color.CYAN);
+		else
+			backBufferGraphics.setColor(Color.WHITE);
+
+		drawCenteredRegularString(screen, keyMapping, screen.getHeight() / 8 * 5);
 	}
+
+	/**
+	 * 일반 문자열을 화면에 그리는 메서드.
+	 *
+	 * @param screen 화면 객체.
+	 * @param text 표시할 텍스트.
+	 * @param x 텍스트의 X 좌표.
+	 * @param y 텍스트의 Y 좌표.
+	 */
+	public void drawString(final Screen screen, final String text, final int x, final int y) {
+		backBufferGraphics.setFont(fontRegular);
+		backBufferGraphics.setColor(Color.WHITE);
+		backBufferGraphics.drawString(text, x, y);
+	}
+
+	/**
+	 * 강조된 문자열을 화면에 그리는 메서드.
+	 *
+	 * @param screen 화면 객체.
+	 * @param text 강조 표시할 텍스트.
+	 * @param x 텍스트의 X 좌표.
+	 * @param y 텍스트의 Y 좌표.
+	 */
+	public void drawHighlightedString(Screen screen, String text, int x, int y) {
+		backBufferGraphics.setFont(fontBig); // 강조를 위해 큰 폰트 사용
+		backBufferGraphics.setColor(Color.YELLOW); // 강조 색상
+		int width = backBufferGraphics.getFontMetrics().stringWidth(text);
+		int height = backBufferGraphics.getFontMetrics().getHeight();
+
+		// 강조 배경 그리기
+		backBufferGraphics.fillRect(x - 5, y - height + 5, width + 10, height);
+
+		// 텍스트 그리기
+		backBufferGraphics.setColor(Color.BLACK);
+		backBufferGraphics.drawString(text, x, y);
+	}
+	public void drawKeyMapping(final Screen screen, final int option) {
+		backBufferGraphics.setColor(Color.WHITE);
+		drawCenteredRegularString(screen, "testing", screen.getHeight() / 8 * 5);
+	}
+
+
 }
