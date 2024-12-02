@@ -28,11 +28,15 @@ jobs:
           distribution: 'temurin'
           cache: gradle # Gradle 의존성 캐싱
 
-      # 3. Add Execution permission
+      # 3. Clean Gradle Caches
+      - name: Clean Gradle Cache
+        run: ./gradlew clean
+
+      # 4. Add Execution permission
       - name: Grant execute permission for Gradle Wrapper
         run: chmod +x ./gradlew
 
-      # 4. Cache Gradle Wrapper and Dependencies
+      # 5. Cache Gradle Wrapper and Dependencies
       - name: Cache Gradle
         uses: actions/cache@v3
         with:
@@ -43,18 +47,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      # 5. Build the Project
+      # 6. Build the Project
       - name: Build with Gradle
         run: ./gradlew build --no-daemon
 
-      # 6. Run Tests
+      # 7. Run Tests
       - name: Run Tests
         run: ./gradlew test --no-daemon
 
-
-      - name: Upload Test Report
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: Test Report
-          path: build/reports/tests/test/
+#      # 8. Upload Test report
+#      - name: Upload Test Report
+#        if: always()
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: Test Report
+#          path: build/reports/tests/test/
