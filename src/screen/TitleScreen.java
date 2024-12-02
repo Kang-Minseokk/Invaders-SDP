@@ -64,6 +64,9 @@ public class TitleScreen extends Screen {
 		this.selectionCooldown.reset();
 		this.customState = 0;
 
+		// 배경 이미지 로드
+		drawManager.loadTitleBackground();
+
 		//Skins.resetUnlockedSkins(); // 해금된 스킨 초기화
 
 		// CtrlS: Set user's coin, gem
@@ -81,7 +84,6 @@ public class TitleScreen extends Screen {
 		shipStatus = new ShipStatus();
 		shipStatus.loadPrice();
 		Skins.loadSkins();  // 기존 해금된 스킨 목록 로드
-
 	}
 
 	/**
@@ -466,6 +468,9 @@ public class TitleScreen extends Screen {
 	 */
 	private void draw() {
 		drawManager.initDrawing(this);
+
+		// 타이틀 배경 이미지 그리기
+		drawManager.drawTitleBackground();
 
 		drawManager.drawTitle(this);
 		drawManager.drawMenu(this, this.returnCode, this.pnumSelectionCode, this.merchantState, this.customState);

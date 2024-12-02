@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2d1df9e-7633-4932-824c-2c1f0ea58909" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Invaders-SDP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders-SDP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
-    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,65 +50,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Core.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path&quot;: &quot;C:\\Users\\limul\\Desktop\\College\\2_grade\\2_semester&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasic.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoop.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.testHandleKeyInputCallsCoreUpdateKeyMapping.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.testHandleKeyInputWithStaticMocking.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.testHandleKeyInput_IgnoreWhenCooldownNotFinished.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyInput.testStaticMethodCall.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyMappingSelection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyMappingSelection.testHandleKeyMappingSelection_MacOS.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleKeyMappingSelection.testNotMacInMac.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testDown.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveDown.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveRandom.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testUp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest.testHandleVerticalMenuNavigation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest.testHandleVerticalMenuNavigation_MoveUp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest.testKeyMappingUpdate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest.testNextOptionCyclesToFirst.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest.testNextOption_CyclesToFirst.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTest.testVerticalMenuNavigation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTesting$nextOption.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTesting$previousOption.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KeyMappingOptionTesting.nextOption.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MockitoInstallationTest.testMockitoInstallation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MockitoInstallationTest.testMockitoWithJDK23.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MockitoTest.testMock.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;KAN-73-add-key-mapping-option&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/limul/Desktop/College/2_grade/2_semester/Software_Process/workspace/Invaders-SDP&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;라이브러리&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.17934166&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;애플리케이션.Core.executor&quot;: &quot;Run&quot;
-  }
-}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="clove" />
@@ -119,6 +61,7 @@
       <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src\CtrlS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yeon0\Downloads\SDP\Invaders-SDP\res\backgrounds" />
       <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -214,11 +157,7 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.KeyMappingOptionTest" />
-        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
-        <item itemvalue="애플리케이션.Core" />
-        <item itemvalue="JUnit.MockitoInstallationTest.testMockitoInstallation" />
-        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
+        <item itemvalue="Application.Core" />
       </list>
     </recent_temporary>
   </component>
