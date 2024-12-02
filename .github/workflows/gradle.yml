@@ -57,7 +57,7 @@ jobs:
 
       # tmp. checking cwd
       - name: List generated files
-        run: ls -R build/reports
+        run: ls -R build/reports/tests/test/**
 
       # 8. Upload Test report
       - name: Upload Test Report
@@ -65,4 +65,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Test Report
-          path: build/reports
+          path: build/reports/tests/test/**
