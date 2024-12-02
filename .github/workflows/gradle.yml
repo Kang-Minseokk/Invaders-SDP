@@ -55,10 +55,10 @@ jobs:
       - name: Run Tests
         run: ./gradlew test --no-daemon
 
-#      # 8. Upload Test report
-#      - name: Upload Test Report
-#        if: always()
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: Test Report
-#          path: build/reports/tests/test/
+      # 8. Upload Test report
+      - name: Upload Test Report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: Test Report
+          path: build/reports/tests/test/
