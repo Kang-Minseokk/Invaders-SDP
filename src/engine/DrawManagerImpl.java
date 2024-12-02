@@ -9,13 +9,13 @@ public class DrawManagerImpl extends DrawManager {
 
     // Add method
     public static void drawLevel(final Screen screen, final int level){
-        String levelText = "Level: " + level;
+        String levelText = "CLASS " + level;
 
         backBufferGraphics.setFont(fontRegular);
-        backBufferGraphics.setColor(Color.WHITE);
+        backBufferGraphics.setColor(Color.YELLOW);
 
         int xPosition = screen.getWidth() / 2;
-        int yPosition = 25;
+        int yPosition = 27;
 
         backBufferGraphics.drawString(levelText, xPosition - fontRegularMetrics.stringWidth(levelText) / 2, yPosition); // edit by jesung ko - TeamHUD
     } // Lee Hyun Woo - level
@@ -24,21 +24,21 @@ public class DrawManagerImpl extends DrawManager {
         backBufferGraphics.setFont(fontRegular);
         backBufferGraphics.setColor(Color.WHITE);
         String bulletSpeedText = String.format("BS : %d px/f ", bulletSpeed);
-        backBufferGraphics.drawString(bulletSpeedText, 10, screen.getHeight() - 15);
+        backBufferGraphics.drawString(bulletSpeedText, 10, screen.getHeight() - 19);
     }
 
     public static void drawSpeed(final Screen screen, final double speed) {
         String speedString = "MS : " + speed;
         backBufferGraphics.setColor(Color.WHITE);
         backBufferGraphics.setFont(fontRegular);
-        backBufferGraphics.drawString(speedString, 10, screen.getHeight() - 35);
+        backBufferGraphics.drawString(speedString, 10, screen.getHeight() - 39);
     }
 
     public void drawLivesWithHeart(final Screen screen, final int lives) {
         backBufferGraphics.setFont(fontRegular);
         backBufferGraphics.setColor(Color.WHITE);
 
-        Entity heart = new Entity(0, 0, 13 * 2, 8 * 2, Color.RED) {
+        Entity heart = new Entity(0, 0, 13 * 2, 8 * 2, Color.CYAN) {
 
         };
         heart.setSpriteType(SpriteType.Heart);
@@ -65,7 +65,7 @@ public class DrawManagerImpl extends DrawManager {
         int playTimeSeconds = playTime % 60;
         String playTimeString = String.format("%d"+"m "+"%d"+"s", playTimeMinutes, playTimeSeconds);
         int xPosition = (screen.getWidth() * 4) / 6; // position 4/6
-        backBufferGraphics.drawString(playTimeString, xPosition - fontRegularMetrics.stringWidth(playTimeString) / 2, 25); // edit by jesung ko - TeamHUD
+        backBufferGraphics.drawString(playTimeString, xPosition - fontRegularMetrics.stringWidth(playTimeString) / 2, 27); // edit by jesung ko - TeamHUD
     }
 
     /**
@@ -82,8 +82,8 @@ public class DrawManagerImpl extends DrawManager {
         String scoreString = "Score: " + score;
         backBufferGraphics.setFont(fontRegular);
         backBufferGraphics.setColor(Color.WHITE);
-        int xPosition = (screen.getWidth() * 2) / 6; // 2/6 지점
-        backBufferGraphics.drawString(scoreString, xPosition - fontRegularMetrics.stringWidth(scoreString) / 2, 25);
+        int xPosition = screen.getWidth() - 425;
+        backBufferGraphics.drawString(scoreString, xPosition - fontRegularMetrics.stringWidth(scoreString) / 2, 27);
     }
     /**
      * Show accomplished achievement
@@ -138,12 +138,24 @@ public class DrawManagerImpl extends DrawManager {
         String remainingEnemiesString = "Enemies: " + remainingEnemies;
         int textWidth = fontRegularMetrics.stringWidth(remainingEnemiesString);
 
-        int x = (screen.getWidth() - textWidth) / 2;
-        int y = screen.getHeight() - 25;
+        int x = (screen.getWidth() - textWidth) / 2 ;
+        int y = screen.getHeight() - 30;
 
         backBufferGraphics.drawString(remainingEnemiesString, x, y);
     } // by SeungYun
 
+    public static void drawOptionHint(final Screen screen) {
+        backBufferGraphics.setFont(fontRegular);
+        backBufferGraphics.setColor(Color.WHITE);
+
+        String optionHintString = "OPTION: P";
+        int textWidth = fontRegularMetrics.stringWidth(optionHintString);
+
+        int x = screen.getWidth() - textWidth - 6; // 중앙에 배치 (x 좌표 계산)
+        int y = screen.getHeight() - 30; // 하단에서 30px 위 (y 좌표 계산)
+
+        backBufferGraphics.drawString(optionHintString, x, y);
+    }
 
 
     /**
@@ -157,7 +169,7 @@ public class DrawManagerImpl extends DrawManager {
      * by Ko jesung - TeamHUD
      */
     public static void drawSeparatorLine(final Screen screen, final int positionY) {
-        backBufferGraphics.setColor(Color.GREEN);
+        backBufferGraphics.setColor(Color.CYAN);
         backBufferGraphics.drawLine(0, positionY, screen.getWidth(), positionY);
         backBufferGraphics.drawLine(0, positionY + 1, screen.getWidth(),
                 positionY + 1);
@@ -178,7 +190,7 @@ public class DrawManagerImpl extends DrawManager {
      *            The color to fill the rectangle.
      */
     public static void drawRect(final int x, final int y, final int width, final int height, final Color color) {
-        backBufferGraphics.setColor(color);
+        backBufferGraphics.setColor(Color.BLACK);
         backBufferGraphics.fillRect(x, y, width, height);
     } // by Saeum Jung - TeamHUD
 
@@ -195,7 +207,7 @@ public class DrawManagerImpl extends DrawManager {
     public static void drawLives2P(final Screen screen, final int livestwo) {
         backBufferGraphics.setFont(fontRegular);
         backBufferGraphics.setColor(Color.WHITE);
-        Entity heart = new Entity(0, 0, 13 * 2, 8 * 2, Color.BLUE) {
+        Entity heart = new Entity(0, 0, 13 * 2, 8 * 2, Color.RED) {
 
         };
         heart.setSpriteType(SpriteType.Heart);
@@ -204,7 +216,7 @@ public class DrawManagerImpl extends DrawManager {
         int startingXPosition = screen.getWidth() - (heartWidth * livestwo) - 20;
 
         for (int i = 0; i < livestwo; i++)
-            drawEntity(heart, startingXPosition + 30 * i, 10);
+            drawEntity(heart, startingXPosition + 30 * i, 12);
     }
 
     /**
@@ -221,7 +233,7 @@ public class DrawManagerImpl extends DrawManager {
         backBufferGraphics.setFont(fontRegular);
         backBufferGraphics.setColor(Color.WHITE);
         String bulletSpeedText = String.format("BS : %d px/f ", bulletSpeed);
-        backBufferGraphics.drawString(bulletSpeedText, 500, screen.getHeight() - 15);
+        backBufferGraphics.drawString(bulletSpeedText, 500, screen.getHeight() - 19);
     }
 
     /**
@@ -238,6 +250,6 @@ public class DrawManagerImpl extends DrawManager {
         String speedString = "MS : " + speed;
         backBufferGraphics.setColor(Color.WHITE);
         backBufferGraphics.setFont(fontRegular);
-        backBufferGraphics.drawString(speedString, 500, screen.getHeight() - 35);
+        backBufferGraphics.drawString(speedString, 500, screen.getHeight() - 39);
     }
 }

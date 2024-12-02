@@ -520,7 +520,7 @@ public class GameScreen extends Screen {
 		this.backgroundMoveLeft = false;
 
 		DrawManagerImpl.drawRect(0, 0, this.width, SEPARATION_LINE_HEIGHT, Color.BLACK);
-		DrawManagerImpl.drawRect(0, this.height - 70, this.width, 70, Color.BLACK); // by Saeum Jung - TeamHUD
+		DrawManagerImpl.drawRect(0, this.height - 60, this.width, 70, Color.BLACK); // by Saeum Jung - TeamHUD
 
 		drawManager.drawEntity(this.ship, this.ship.getPositionX(),
 				this.ship.getPositionY());
@@ -535,7 +535,7 @@ public class GameScreen extends Screen {
 		enemyShipFormation.draw();
 
 		DrawManagerImpl.drawSpeed(this, ship.getSpeed()); // Ko jesung / HUD team
-		DrawManagerImpl.drawSeparatorLine(this,  this.height-50); // Ko jesung / HUD team
+		DrawManagerImpl.drawSeparatorLine(this,  this.height-60); // Ko jesung / HUD team
 
 
 		for (PiercingBullet bullet : this.bullets)
@@ -565,10 +565,12 @@ public class GameScreen extends Screen {
 		DrawManagerImpl.drawTime(this, this.playTime);
 		// Call the method in DrawManagerImpl - Soomin Lee / TeamHUD
 		drawManager.drawItem(this); // HUD team - Jo Minseo
+		DrawManagerImpl.drawOptionHint(this);
 
 		if(player2 != null){
-			DrawManagerImpl.drawBulletSpeed2P(this, player2.getBulletSpeed());
-			DrawManagerImpl.drawSpeed2P(this, player2.getSpeed());
+			//2P 속도 제거, 불필요함
+			//DrawManagerImpl.drawBulletSpeed2P(this, player2.getBulletSpeed());
+			//DrawManagerImpl.drawSpeed2P(this, player2.getSpeed());
 			DrawManagerImpl.drawLives2P(this, ((TwoPlayerMode) this).getLivestwo());
 			if (((TwoPlayerMode) this).getLivestwo() == 0) {
 				player2 = null;

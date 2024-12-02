@@ -24,7 +24,7 @@ import entity.Skins;
 public class TitleScreen extends Screen {
 
 	/** Milliseconds between changes in user selection. */
-	private static final int SELECTION_TIME = 200;
+	private static final int SELECTION_TIME = 190;
 
 	/** Time between changes in user selection. */
 	private Cooldown selectionCooldown;

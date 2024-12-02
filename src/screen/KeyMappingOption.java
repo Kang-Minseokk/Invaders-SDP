@@ -2,6 +2,7 @@ package screen;
 
 import engine.Cooldown;
 import engine.Core;
+import engine.SoundManager;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -15,7 +16,7 @@ public class KeyMappingOption extends Screen {
     int selectedIndex; // 선택된 액션의 인덱스
     public boolean waitingForKeyInput; // 키 입력 대기 상태
     public Cooldown selectionCooldown; // 입력 쿨다운
-    public static final int SELECTION_TIME = 120; // 쿨다운 시간(ms)
+    public static final int SELECTION_TIME = 190; // 쿨다운 시간(ms)
     String osType;
 
     public KeyMappingOption(int width, int height, int fps) {
@@ -131,6 +132,7 @@ public class KeyMappingOption extends Screen {
         } else {
             selectedIndex++;
         }
+        playMenuSelectSound();
     }
 
     void previousOption() {
@@ -139,13 +141,18 @@ public class KeyMappingOption extends Screen {
         } else {
             selectedIndex--;
         }
+        playMenuSelectSound();
+    }
+
+    private void playMenuSelectSound() {
+        SoundManager.getInstance().playES("menuSelect_es");
     }
 
     public void draw() {
         drawManager.initDrawing(this);
 
         // 제목
-        drawManager.backBufferGraphics.setColor(Color.GREEN);
+        drawManager.backBufferGraphics.setColor(Color.CYAN);
         drawManager.drawCenteredBigString(this, "KEY MAPPING", this.height / 8);
 
         drawManager.backBufferGraphics.setColor(Color.GRAY);

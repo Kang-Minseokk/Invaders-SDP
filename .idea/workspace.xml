@@ -6,39 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/StatusConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/res/StatusConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/graphics" beforeDir="false" afterPath="$PROJECT_DIR$/res/graphics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invaders-SDP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders-SDP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/DrawManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/DrawManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Ship.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/GameScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/backgrounds/background_level_7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/backgrounds/background_level_7.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/OptionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/OptionScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/TitleScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/TitleScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="PropertiesComponent"></component>
-  <component name="TaskManager">
-    <servers />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl"></component>
-    <SUITE FILE_PATH="coverage/Invaders_SDP$KeyMappingOptionTest_testHandleKeyInput_testBasic.ic" NAME="KeyMappingOptionTest$testHandleKeyInput.testBasic 커버리지 결과" MODIFIED="1732550772186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>screen.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Invaders_SDP$Core.ic" NAME="Core 커버리지 결과" MODIFIED="1732155376167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>engine.*</FILTER>
-    </SUITE>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -74,7 +55,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"></component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.KeyMappingOptionTest.executor": "Run",
+    "git-widget-placeholder": "KAN-71-Improve-HUD-Apply-sound",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/Desktop/HYeUniv_2-2/소프트웨어개발실무/Invaders-SDP/lib/byte-buddy-1.15.10.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.Core.executor": "Run"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="clove" />
@@ -102,7 +101,7 @@
       <recent name="clove" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Core">
+  <component name="RunManager" selected="애플리케이션.Core">
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engine.Core" />
       <module name="Invaders-SDP" />
@@ -180,15 +179,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Core" />
       <item itemvalue="JUnit.KeyMappingOptionTest" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
+      <item itemvalue="애플리케이션.Core" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Core" />
+        <item itemvalue="애플리케이션.Core" />
         <item itemvalue="JUnit.KeyMappingOptionTest" />
         <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
         <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
@@ -196,10 +195,17 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="c2d1df9e-7633-4932-824c-2c1f0ea58909" name="변경" comment="" />
       <created>1726056296422</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -227,6 +233,11 @@
       <workItem from="1732604013437" duration="1241000" />
       <workItem from="1732605259453" duration="1077000" />
       <workItem from="1732617584710" duration="2648000" />
+      <workItem from="1733043950360" duration="12064000" />
+      <workItem from="1733073156513" duration="28000" />
+      <workItem from="1733112154915" duration="115000" />
+      <workItem from="1733114290970" duration="70000" />
+      <workItem from="1733118792671" duration="9517000" />
     </task>
     <servers />
   </component>
@@ -266,7 +277,6 @@
         </entry>
       </map>
     </option>
->>>>>>> KAN-67-preprocessing
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

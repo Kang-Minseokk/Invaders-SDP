@@ -49,7 +49,7 @@ public class Ship extends Entity {
 	 */
 	//Edit by Enemy
 	public Ship(final int positionX, final int positionY, final Color color, SpriteType spriteType) {
-		super(positionX, positionY - 50, 13 * 2, 8 * 2, color);
+		super(positionX - 30, positionY - 60, 13 * 2, 8 * 2, color);
 		this.spriteType = spriteType;
 
 		// Create PlayerGrowth object and set initial stats
