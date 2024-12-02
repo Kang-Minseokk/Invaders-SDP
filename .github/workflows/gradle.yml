@@ -50,3 +50,11 @@ jobs:
       # 6. Run Tests
       - name: Run Tests
         run: ./gradlew test --no-daemon
+
+
+      - name: Upload Test Report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: Test Report
+          path: build/reports/tests/test/

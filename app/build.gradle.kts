@@ -43,4 +43,9 @@ sourceSets {
 
 tasks.test {
     useJUnitPlatform() // JUnit 5 플랫폼 사용
+    testLogging {
+        events("passed", "skipped", "failed") // 테스트 상태 출력
+        exceptionFormat = TestExceptionFormat.FULL // 예외의 전체 스택 트레이스 출력
+        showStandardStreams = true // 표준 출력 및 표준 에러 출력
+    }
 }
