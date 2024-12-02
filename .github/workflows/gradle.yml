@@ -55,6 +55,10 @@ jobs:
       - name: Run Tests
         run: ./gradlew test --no-daemon
 
+      # tmp. checking cwd
+      - name: List generated files
+        run: ls -R build/reports
+
       # 8. Upload Test report
       - name: Upload Test Report
         if: always()
