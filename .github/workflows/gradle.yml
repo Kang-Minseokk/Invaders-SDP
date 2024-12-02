@@ -57,7 +57,7 @@ jobs:
 
       # tmp. checking cwd
       - name: List generated files
-        run: ls -R build/reports/tests/test/**
+        run: ls -R
 
       # 8. Upload Test report
       - name: Upload Test Report
