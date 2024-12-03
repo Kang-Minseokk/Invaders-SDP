@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6270a70-827b-432f-a242-902be4ae5b4b" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/makeJarFile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/makeJarFile.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build&amp;CD.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build&amp;CD.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/runTestCode.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/runTestCode.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,19 +35,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.KeyMappingOptionTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "gradle__testing",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/limul/Desktop/ttmp/Invaders-SDP",
-    "project.structure.last.edited": "라이브러리",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "애플리케이션.Core.executor": "Debug"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.KeyMappingOptionTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;gradle__testing&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/limul/Desktop/ttmp/Invaders-SDP&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;라이브러리&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;애플리케이션.Core.executor&quot;: &quot;Debug&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\Software_Process\workspace\Invaders-SDP\lib" />
@@ -79,6 +82,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.KeyMappingOptionTest" />
+      <item itemvalue="애플리케이션.Core" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Core" />

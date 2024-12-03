@@ -1,23 +1,17 @@
-name: CI for Java with Gradle
+name: Build and Deploy for CD
 
 on:
   push:
-    branches:
-      - main
-      - develop
-  pull_request:
-    branches:
-      - main
-      - develop
+    tags:
+      - 'release/*'  # release/v1.2.3와 같은 태그에 대해서만 실행
 
 jobs:
-  CodeTest:
-
+  build:
     runs-on: ubuntu-latest
 
     steps:
       # 1. Repository Checkout
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       # 2. Set up JDK
@@ -26,13 +20,12 @@ jobs:
         with:
           java-version: '23'
           distribution: 'temurin'
-          cache: gradle # Gradle 의존성 캐싱
 
-      # 3. Add Execution permission
+      # 3. Grant execute permission for Gradle Wrapper
       - name: Grant execute permission for Gradle Wrapper
         run: chmod +x ./gradlew
 
-      # 4. Clean Gradle Caches
+      # 4. Clean Gradle Cache (Optional)
       - name: Clean Gradle Cache
         run: ./gradlew clean
 
@@ -55,14 +48,13 @@ jobs:
       - name: Run Tests
         run: ./gradlew test --no-daemon
 
-#      # tmp. checking cwd
-#      - name: List generated files
-#        run: ls -R app/
+      # 8. Build the JAR file
+      - name: Build with Gradle
+        run: ./gradlew makeJar --no-daemon
 
-      # 8. Upload Test report
-      - name: Upload Test Report
-        if: always()
+      # 9. Upload the JAR file as an artifact
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Test Report
-          path: app/build/reports/tests/test/**
+          name: build-artifact
+          path: build/libs/*.jar
