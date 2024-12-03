@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test/engine/FileManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/graphics" beforeDir="false" afterPath="$PROJECT_DIR$/res/graphics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review_note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/review_note.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/DrawManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/GameScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +49,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "KAN-70-Changing-UI 병합 중",
+    "git-widget-placeholder": "KAN-70-Changing-UI",
     "애플리케이션.Core.executor": "Run"
   }
 }]]></component>
