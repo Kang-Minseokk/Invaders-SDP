@@ -78,11 +78,17 @@ tasks.build {
 
 // Git 태그에서 버전 정보를 가져오는 함수
 fun getVersionFromGit(): String {
-    val gitTagCommand = "git describe --tags --abbrev=0"
-    val process = Runtime.getRuntime().exec(gitTagCommand)
-    val output = ByteArrayOutputStream()
-    process.inputStream.copyTo(output)
-    process.waitFor()
-    val version = output.toString().trim()
-    return version.ifEmpty { "0.0.1" }  // 만약 태그가 없다면 기본 버전 0.0.1 사용
+    try {
+        val gitTagCommand = "git describe --tags --abbrev=0"
+        val process = Runtime.getRuntime().exec(gitTagCommand)
+        val output = ByteArrayOutputStream()
+        process.inputStream.copyTo(output)
+        process.waitFor()
+        val version = output.toString().trim()
+        println("Git Tag Version: $version")  // 디버깅용 출력
+        return version.ifEmpty { "0.0.1" }  // 태그가 없다면 기본값 사용
+    } catch (e: Exception) {
+        println("Git describe failed: ${e.message}")
+        return "0.0.1"  // 기본값을 반환
+    }
 }
