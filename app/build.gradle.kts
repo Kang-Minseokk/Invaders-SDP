@@ -64,7 +64,7 @@ tasks.jar {
 }
 
 tasks.register<Jar>("makeJar") {
-    archiveBaseName.set("my-application")
+    archiveBaseName.set("Professor-Invador")
     archiveVersion.set(getVersionFromGit())  // git 태그에서 버전 가져오기
     from(sourceSets.main.get().output)
     manifest {
