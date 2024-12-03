@@ -1,9 +1,8 @@
 name: Build and Deploy for CD
 
 on:
-  push:
-    tags:
-      - 'release/*'  # release/v1.2.3와 같은 태그에 대해서만 실행
+  release:
+    types: [published]  # 'published' 타입은 Release가 생성되었을 때 트리거됩니다.
 
 jobs:
   build:
