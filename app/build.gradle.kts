@@ -1,4 +1,7 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+import org.gradle.api.tasks.bundling.Jar
+import java.io.ByteArrayOutputStream
+
 plugins {
     id("java")
     id("application")
@@ -57,5 +60,29 @@ tasks.test {
 
 tasks.jar {
     archiveBaseName.set("Professor_Invaders")
-    archiveVersion.set(project.findProperty("version")?.toString() ?: "0.0.1")
+    archiveVersion.set(getVersionFromGit())
+}
+
+tasks.register<Jar>("makeJar") {
+    archiveBaseName.set("my-application")
+    archiveVersion.set(getVersionFromGit())  // git 태그에서 버전 가져오기
+    from(sourceSets.main.get().output)
+    manifest {
+        attributes["Main-Class"] = "engine.Core"
+    }
+}
+
+tasks.build {
+    dependsOn("makeJar")
+}
+
+// Git 태그에서 버전 정보를 가져오는 함수
+fun getVersionFromGit(): String {
+    val gitTagCommand = "git describe --tags --abbrev=0"
+    val process = Runtime.getRuntime().exec(gitTagCommand)
+    val output = ByteArrayOutputStream()
+    process.inputStream.copyTo(output)
+    process.waitFor()
+    val version = output.toString().trim()
+    return version.ifEmpty { "1.0.0" }  // 만약 태그가 없다면 기본 버전 0.0.1 사용
 }
