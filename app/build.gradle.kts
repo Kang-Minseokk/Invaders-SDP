@@ -84,5 +84,5 @@ fun getVersionFromGit(): String {
     process.inputStream.copyTo(output)
     process.waitFor()
     val version = output.toString().trim()
-    return version.ifEmpty { "1.0.0" }  // 만약 태그가 없다면 기본 버전 0.0.1 사용
+    return version.ifEmpty { "0.0.1" }  // 만약 태그가 없다면 기본 버전 0.0.1 사용
 }

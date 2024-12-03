@@ -42,7 +42,7 @@ jobs:
 
       # 6. Build the Project
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon
+        run: ./gradlew build --no-daemon --no-configuration-cache
 
       # 7. Run Tests
       - name: Run Tests
