@@ -3,9 +3,9 @@ name: Build and Deploy for CD
 on:
   release:
     types: [published]  # 'published' 타입은 Release가 생성되었을 때 트리거됩니다.
-  branches:
-    - master
-    - develop  # develop 브랜치에서 릴리스가 트리거되도록 추가
+    branches:
+      - master
+      - develop  # develop 브랜치에서 릴리스가 트리거되도록 추가
 
 jobs:
   build:
