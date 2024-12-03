@@ -29,11 +29,30 @@ jobs:
       - name: Clean Gradle Cache
         run: ./gradlew clean
 
-      # 5. Build the JAR file
+      # 5. Cache Gradle Wrapper and Dependencies
+      - name: Cache Gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      # 6. Build the Project
+      - name: Build with Gradle
+        run: ./gradlew build --no-daemon
+
+      # 7. Run Tests
+      - name: Run Tests
+        run: ./gradlew test --no-daemon
+
+      # 8. Build the JAR file
       - name: Build with Gradle
         run: ./gradlew makeJar --no-daemon
 
-      # 6. Upload the JAR file as an artifact
+      # 9. Upload the JAR file as an artifact
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
