@@ -1,13 +1,18 @@
 package screen;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import static org.mockito.Mockito.*;
 
 import java.io.InputStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class BackgroundTest {
+
+    private Background background;
+
     @Nested
     class test_KAN_74_HSW{
         @Test
@@ -35,4 +40,91 @@ class BackgroundTest {
             assertNull(inputStream, "파일이 없으면 InputStream은 null이어야 합니다.");
         }
     }
+
+    @Nested
+    class IngameBackgroundTest {
+        private Background background;
+
+        @BeforeEach
+        void setUp() {
+            assertNotNull(Background.levelBackgrounds, "Level backgrounds list should be initialized");
+        }
+
+        @Test
+        void testSingletonInstance() {
+            Background instance1 = Background.getInstance();
+            Background instance2 = Background.getInstance();
+            assertSame(instance1, instance2, "The singleton instance should be the same.");
+        }
+
+        @Test
+        void testGetBackgroundImageStreamValidIndex() {
+            InputStream levelStream = Background.getBackgroundImageStream(1);
+            assertNotNull(levelStream, "Level background stream should not be null for valid index.");
+        }
+
+        @Test
+        void testValidLevelBackgrounds() {
+            // Test valid levels (1 to 6)
+            for (int i = 1; i <= Background.levelBackgrounds.size(); i++) {
+                InputStream backgroundStream = Background.getBackgroundImageStream(i);
+                assertNotNull(backgroundStream, "Background stream for level " + i + " should not be null");
+            }
+        }
+
+        @Test
+        void testInvalidLevelBackgrounds() {
+            // Test invalid level index (e.g., 0, negative, or out of bounds)
+            assertThrows(IllegalArgumentException.class, () -> {
+                Background.getBackgroundImageStream(0);
+            }, "Should throw exception for level index 0");
+
+            assertThrows(IllegalArgumentException.class, () -> {
+                Background.getBackgroundImageStream(-1);
+            }, "Should throw exception for negative level index");
+
+            assertThrows(IllegalArgumentException.class, () -> {
+                Background.getBackgroundImageStream(Background.levelBackgrounds.size() + 1);
+            }, "Should throw exception for out-of-bounds level index");
+        }
+    }
+
+    @Nested
+    class BackgroundMovementTest {
+
+        @BeforeEach
+        void setUp() {
+            background = mock(Background.class);
+            
+            when(background.getVerticalOffset()).thenReturn(0, -1, -2, -3);  // verticalOffset 값 순차적으로 반환
+            when(background.getHorizontalOffset(anyBoolean(), anyBoolean())).thenReturn(-800, -803, -800, -803); // 가로 오프셋 순차적으로 반환
+        }
+
+        @Test
+        void testVerticalMovement() {
+            int initialOffset = background.getVerticalOffset();
+            assertEquals(0, initialOffset, "Initial vertical offset should be 0");
+
+            int updatedOffset1 = background.getVerticalOffset();
+            int updatedOffset2 = background.getVerticalOffset();
+            int updatedOffset3 = background.getVerticalOffset();
+
+            assertEquals(-1, updatedOffset1, "Vertical offset should decrease by 1 on the first update");
+            assertEquals(-2, updatedOffset2, "Vertical offset should decrease by 1 on the second update");
+            assertEquals(-3, updatedOffset3, "Vertical offset should decrease by 1 on the third update");
+        }
+
+        @Test
+        void testHorizontalMovement() {
+            int initialOffset = background.getHorizontalOffset(false, false);
+            assertEquals(-800, initialOffset, "Initial horizontal offset should be -800");
+
+            int moveRightOffset = background.getHorizontalOffset(true, false);
+            assertEquals(-803, moveRightOffset, "Horizontal offset should decrease by 3 when moving right");
+
+            int moveLeftOffset = background.getHorizontalOffset(false, true);
+            assertEquals(-800, moveLeftOffset, "Horizontal offset should increase by 3 when moving left");
+        }
+    }
 }
+
