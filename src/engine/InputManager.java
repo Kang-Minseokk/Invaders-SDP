@@ -31,7 +31,7 @@ public final class InputManager implements KeyListener {
 	 * 
 	 * @return Shared instance of InputManager.
 	 */
-	protected static InputManager getInstance() {
+	public static InputManager getInstance() {
 		if (instance == null)
 			instance = new InputManager();
 		return instance;

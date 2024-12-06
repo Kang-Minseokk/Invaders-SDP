@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders-SDP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders-SDP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/DrawManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/DrawManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/GameScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/OptionScreenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/OptionScreenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/InputManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/OptionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/OptionScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/TitleScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/TitleScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +53,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.KeyMappingOptionTest.executor": "Run",
+    "JUnit.OptionScreenTest.executor": "Run",
+    "JUnit.OptionScreenTest.testHandleBGMCode_NextBGM.executor": "Debug",
+    "JUnit.OptionScreenTest.testHandleBGMCode_NextBGM_Debug.executor": "Run",
+    "JUnit.OptionScreenTest.testInitialState.executor": "Run",
+    "JUnit.OptionScreenTest.testMockConnection.executor": "Run",
     "git-widget-placeholder": "KAN-71-Improve-HUD-Apply-sound",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/user/Desktop/HYeUniv_2-2/소프트웨어개발실무/Invaders-SDP/lib/byte-buddy-1.15.10.jar",
@@ -66,7 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
+    "project.structure.last.edited": "프로젝트",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -101,7 +101,7 @@
       <recent name="clove" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.Core">
+  <component name="RunManager" selected="JUnit.OptionScreenTest">
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engine.Core" />
       <module name="Invaders-SDP" />
@@ -115,55 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Invaders-SDP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="screen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTest" />
-      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest$testHandleKeyInput" />
-      <option name="METHOD_NAME" value="testBasicWithLoopIfNotCheckFinished" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Invaders-SDP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="screen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTest" />
-      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest$testHandleKeyInput" />
-      <option name="METHOD_NAME" value="testDupblicateKeyInput" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Invaders-SDP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="screen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTest" />
-      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest$testHandleKeyInput" />
-      <option name="METHOD_NAME" value="testIfNotWaitingForKeyInput" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KeyMappingOptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OptionScreenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Invaders-SDP" />
       <extension name="coverage">
         <pattern>
@@ -172,26 +124,74 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="screen" />
-      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest" />
+      <option name="MAIN_CLASS_NAME" value="screen.OptionScreenTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OptionScreenTest.testHandleBGMCode_NextBGM_Debug" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen" />
+      <option name="MAIN_CLASS_NAME" value="screen.OptionScreenTest" />
+      <option name="METHOD_NAME" value="testHandleBGMCode_NextBGM_Debug" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OptionScreenTest.testInitialState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen" />
+      <option name="MAIN_CLASS_NAME" value="screen.OptionScreenTest" />
+      <option name="METHOD_NAME" value="testInitialState" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OptionScreenTest.testMockConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen" />
+      <option name="MAIN_CLASS_NAME" value="screen.OptionScreenTest" />
+      <option name="METHOD_NAME" value="testMockConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.KeyMappingOptionTest" />
-      <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" />
-      <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
-      <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
+      <item itemvalue="JUnit.OptionScreenTest.testHandleBGMCode_NextBGM_Debug" />
+      <item itemvalue="JUnit.OptionScreenTest.testMockConnection" />
+      <item itemvalue="JUnit.OptionScreenTest" />
+      <item itemvalue="JUnit.OptionScreenTest.testInitialState" />
       <item itemvalue="애플리케이션.Core" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OptionScreenTest" />
+        <item itemvalue="JUnit.OptionScreenTest.testHandleBGMCode_NextBGM_Debug" />
         <item itemvalue="애플리케이션.Core" />
-        <item itemvalue="JUnit.KeyMappingOptionTest" />
-        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
-        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
-        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" />
+        <item itemvalue="JUnit.OptionScreenTest.testMockConnection" />
+        <item itemvalue="JUnit.OptionScreenTest.testInitialState" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +237,11 @@
       <workItem from="1733073156513" duration="28000" />
       <workItem from="1733112154915" duration="115000" />
       <workItem from="1733114290970" duration="70000" />
-      <workItem from="1733118792671" duration="9517000" />
+      <workItem from="1733118792671" duration="10306000" />
+      <workItem from="1733231302661" duration="8998000" />
+      <workItem from="1733278455751" duration="68000" />
+      <workItem from="1733371216411" duration="8055000" />
+      <workItem from="1733479190676" duration="11079000" />
     </task>
     <servers />
   </component>
@@ -256,8 +260,18 @@
     </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="50570d2d-eb27-455a-a97a-4480372a0443" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="50570d2d-eb27-455a-a97a-4480372a0443">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -281,7 +295,7 @@
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="keys[83]" />
+        <watch expression="keys[83]" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -18,10 +18,10 @@ import java.util.List;
 public class OptionScreen extends Screen {
 
     private List<String> bgmOptions;
-    private int bgmState; // Tracks the current BGM option
+    protected int bgmState; // Tracks the current BGM option
     private final int maxBGMState = 2;
-    private int volumeSelectionCode;
-    private Cooldown selectionCooldown;
+    protected int volumeSelectionCode;
+    Cooldown selectionCooldown;
     private static final int SELECTION_TIME = 190;
     private static SoundManager sm;
     private GameScreen gameScreen;
@@ -73,7 +73,7 @@ public class OptionScreen extends Screen {
         }
     }
 
-    private void handleVerticalMenuNavigation() {
+    protected void handleVerticalMenuNavigation() {
         if (inputManager.isKeyDown(Core.getKeyCode("MOVE_UP"))) {
             Core.getLogger().info("Pressed uping to " + returnCode);
             previousOptionItem();
@@ -86,7 +86,7 @@ public class OptionScreen extends Screen {
         }
     }
 
-    private void handleBGMCode() {
+    protected void handleBGMCode() {
         if (this.returnCode == 1) {
             if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
                 previousBGMState();
@@ -103,7 +103,7 @@ public class OptionScreen extends Screen {
         }
     }
 
-    private void handleVolumeCode() {
+    protected void handleVolumeCode() {
         if (this.returnCode == 2) {
             if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
                 playMenuSelectSound();
@@ -158,14 +158,14 @@ public class OptionScreen extends Screen {
         SoundManager.getInstance().playES("menuSelect_es");
     }
 
-    private void nextBGMState() {
+    void nextBGMState() {
         if (this.bgmState == maxBGMState)
             this.bgmState = 0; // Wrap around to the first BGM option
         else
             this.bgmState++; // Move to the next BGM option
     }
 
-    private void previousBGMState() {
+    void previousBGMState() {
         if (this.bgmState == 0)
             this.bgmState = maxBGMState; // Wrap around to the last BGM option
         else
