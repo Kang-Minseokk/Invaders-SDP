@@ -64,12 +64,12 @@ public class Background {
     }
     // Static method to get background image stream
     public static InputStream getBackgroundImageStream(int levelIndex) {
-        if (levelBackgrounds != null && levelIndex >= 0 && levelIndex <= levelBackgrounds.size()) {
-            return Background.class.getResourceAsStream(levelBackgrounds.get(levelIndex-1));
-        } else {
-            throw new IllegalArgumentException("Invalid index or levelBackgrounds not initialized");
+        if (levelBackgrounds == null || levelIndex < 1 || levelIndex > levelBackgrounds.size()) {
+            throw new IllegalArgumentException("Invalid level index: " + levelIndex);
         }
+        return Background.class.getResourceAsStream(levelBackgrounds.get(levelIndex - 1));
     }
+
 
     // Dynamic method to update background image vertical offset
     public int getVerticalOffset() {
