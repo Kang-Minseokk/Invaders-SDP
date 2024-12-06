@@ -4,24 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="gradle_testing" />
+        <entry key="$PROJECT_DIR$" value="feature/background" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+    &quot;isMigrated&quot;: true
+    }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2pf71nTqB0s2H5BMxSvFXZFRnk1" />
+    &quot;customColor&quot;: &quot;&quot;,
+    &quot;associatedIndex&quot;: 6
+    }</component>
+  <component name="ProjectId" id="2lvMrDXDXT0D24Hdc7PGKjkYe4i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -31,6 +49,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "git-widget-placeholder": "KAN-70-Changing-UI",
+    "애플리케이션.Core.executor": "Run"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="clove" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\Soft_Wared_Process\workspace\Invaders-SDP\lib" />
+      <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src\entity" />
+      <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src" />
+      <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src\CtrlS" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yeon0\Downloads\SDP\Invaders-SDP\res\backgrounds" />
+      <recent name="C:\Users\limul\Desktop\College\2_grade\2_semester\소프트웨어 개발 실무\workspace2\Invaders-SDP\src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="screen" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="entity" />
+      <recent name="engine" />
+      <recent name="screen" />
+      <recent name="clove" />
     </key>
   </component>
   <component name="RunManager" selected="애플리케이션.Core">
@@ -43,6 +90,54 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTest" />
+      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest$testHandleKeyInput" />
+      <option name="METHOD_NAME" value="testBasicWithLoopIfNotCheckFinished" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTest" />
+      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest$testHandleKeyInput" />
+      <option name="METHOD_NAME" value="testDupblicateKeyInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTest" />
+      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest$testHandleKeyInput" />
+      <option name="METHOD_NAME" value="testIfNotWaitingForKeyInput" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -64,19 +159,105 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.KeyMappingOptionTest" />
+      <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" />
+      <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
+      <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
       <item itemvalue="애플리케이션.Core" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Core" />
+        <item itemvalue="JUnit.KeyMappingOptionTest" />
+        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testDupblicateKeyInput" />
+        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testIfNotWaitingForKeyInput" />
+        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleKeyInput.testBasicWithLoopIfNotCheckFinished" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="a6270a70-827b-432f-a242-902be4ae5b4b" name="변경" comment="" />
-      <created>1733145065716</created>
+      <changelist id="c2d1df9e-7633-4932-824c-2c1f0ea58909" name="변경" comment="" />
+      <created>1726056296422</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+      <updated>1726056296422</updated>
+      <workItem from="1726056299029" duration="19000" />
+      <workItem from="1726057063667" duration="254000" />
+      <workItem from="1727073179477" duration="2621000" />
+      <workItem from="1727337713579" duration="4315000" />
+      <workItem from="1727673594528" duration="3581000" />
+      <workItem from="1727853780298" duration="1888000" />
+      <workItem from="1728206919186" duration="934000" />
+      <workItem from="1728265576204" duration="8338000" />
+      <workItem from="1728368219728" duration="3365000" />
+      <workItem from="1728543473893" duration="35000" />
+      <workItem from="1728543519314" duration="31000" />
+      <workItem from="1728543602718" duration="1250000" />
+      <workItem from="1728629758931" duration="5233000" />
+      <workItem from="1728807807324" duration="43000" />
+      <workItem from="1728884400421" duration="1555000" />
+      <workItem from="1728890242900" duration="37000" />
+      <workItem from="1728890316138" duration="346000" />
+      <workItem from="1730784203333" duration="5260000" />
+      <workItem from="1731079002390" duration="632000" />
+      <workItem from="1731778564358" duration="21588000" />
+      <workItem from="1732604013437" duration="1241000" />
+      <workItem from="1732605259453" duration="1077000" />
+      <workItem from="1732617584710" duration="2648000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="GitHub.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/KAN-67-preprocessing" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="keys[83]" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Invaders_SDP$KeyMappingOptionTest_testHandleKeyInput_testBasic.ic" NAME="KeyMappingOptionTest$testHandleKeyInput.testBasic 커버리지 결과" MODIFIED="1732550772186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>screen.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Invaders_SDP$Core.ic" NAME="Core 커버리지 결과" MODIFIED="1732155376167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>engine.*</FILTER>
+    </SUITE>
+  </component>
 </project>
