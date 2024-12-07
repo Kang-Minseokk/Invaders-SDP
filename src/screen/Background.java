@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Background {
     private static Background instance;
-    private static final String titleBackground = "/backgrounds/night.jpg";
+    private static final String titleBackground = "/backgrounds/night2.jpg";
 
     private int backgroundWidth;
     private int backgroundHeight;

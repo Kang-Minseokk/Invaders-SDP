@@ -85,18 +85,19 @@ public class OptionScreen extends Screen {
             this.selectionCooldown.reset();
         }
     }
-
     public void handleBGMCode() {
         if (this.returnCode == 1) {
             if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
                 previousBGMState();
                 this.selectionCooldown.reset();
                 playSelectedBGM();
+                playMenuSelectSound();
             }
             if (inputManager.isKeyDown(Core.getKeyCode("MOVE_RIGHT"))) {
                 nextBGMState();
                 this.selectionCooldown.reset();
                 playSelectedBGM();
+                playMenuSelectSound();
             }
         }
     }
@@ -104,6 +105,7 @@ public class OptionScreen extends Screen {
     public void handleVolumeCode() {
         if (this.returnCode == 2) {
             if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
+                playMenuSelectSound();
                 if (this.volumeSelectionCode == 0)
                     this.volumeSelectionCode = 5;
 
@@ -113,6 +115,7 @@ public class OptionScreen extends Screen {
                 sm.modifyAllESVolume(this.volumeSelectionCode);
             }
             if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
+                playMenuSelectSound();
                 if (this.volumeSelectionCode == 5)
                     this.volumeSelectionCode = 0;
                 else
@@ -139,6 +142,7 @@ public class OptionScreen extends Screen {
             this.returnCode = 1;
         else
             this.returnCode++;
+        playMenuSelectSound();
     }
 
     public void previousOptionItem() {
@@ -146,6 +150,11 @@ public class OptionScreen extends Screen {
             this.returnCode = 3;
         else
             this.returnCode--;
+        playMenuSelectSound();
+    }
+
+    private void playMenuSelectSound() {
+        SoundManager.getInstance().playES("menuSelect_es");
     }
 
     public void nextBGMState() {
