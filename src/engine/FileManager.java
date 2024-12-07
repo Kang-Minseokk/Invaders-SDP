@@ -77,6 +77,7 @@ public final class FileManager {
 
 		try {
 			inputStream = DrawManager.class.getClassLoader().getResourceAsStream("graphics");
+			System.out.println("testing"+inputStream);
 			if (inputStream == null) {
 				throw new FileNotFoundException("Graphics file not found.");
 			}
