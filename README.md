@@ -29,7 +29,11 @@
 
   |                         Title Screen                         |                         Game Screen                          | Score Screen                                                 |
   | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------- |
-  | ![image](https://user-images.githubusercontent.com/69495129/136980139-7ad6adab-3f11-4711-b0a6-341080aa3361.png) | ![image](https://user-images.githubusercontent.com/69495129/136980236-c5d9ef85-f09a-47a7-b9d9-948f7b624002.png) | ![image](https://user-images.githubusercontent.com/69495129/136980681-93dcadaf-08cb-48d8-90c9-68c651a115c9.png) |
+  | ![image](https://github.com/user-attachments/assets/682d8752-a5ae-40d2-90ef-fe3e30679171)| ![image](https://github.com/user-attachments/assets/3b9cb34f-7c54-454b-862b-4838dae2e170) | ![image](https://github.com/user-attachments/assets/64b63133-4834-4998-8216-19c2f60d4efb)|
+|                         Option Screen                         |                         KeyMapping Screen                          | Skin Draw                                                 |
+  | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------- |
+  | ![image](https://github.com/user-attachments/assets/0f10f2a9-67d7-43c0-bddf-c76f2b705489)| ![image](https://github.com/user-attachments/assets/5369e596-9f67-4de7-8de2-04783760224d) | ![image](https://github.com/user-attachments/assets/eba60080-d78b-414b-ab34-aabae00fcfe2)|
+
 
 
   ## Development
