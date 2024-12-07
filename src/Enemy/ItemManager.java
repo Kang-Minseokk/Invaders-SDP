@@ -3,26 +3,23 @@ package Enemy;
 import engine.Core;
 import entity.EnemyShip;
 import entity.Ship;
-import inventory_develop.Bomb;
-import inventory_develop.FeverTimeItem;
 import screen.GameScreen;
 import engine.DrawManager;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.logging.Logger;
 
-//import inventory_develop.Bomb;
-import inventory_develop.ItemBarrierAndHeart;
-import inventory_develop.NumberOfBullet;
-import inventory_develop.SpeedItem;
+import entity.Bomb;
+import entity.FeverTimeItem;
+import entity.ItemBarrierAndHeart;
+import entity.NumberOfBullet;
+import entity.SpeedItem;
 
-import CtrlS.CurrencyManager;
+import Currency.CurrencyManager;
 
 // Sound Operator
-import Sound_Operator.SoundManager;
+import engine.SoundManager;
 
 
 public class ItemManager {

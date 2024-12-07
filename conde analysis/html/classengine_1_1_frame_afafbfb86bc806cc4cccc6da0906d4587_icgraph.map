@@ -1,0 +1,10 @@
+<map id="engine.Frame.getHeight" name="engine.Frame.getHeight">
+<area shape="rect" id="Node000001" title="Getter for frame height." alt="" coords="660,31,821,57"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_background.html#a46b6744103a1380f77313b244d0158aa" title=" " alt="" coords="428,5,612,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="645,36,613,32,613,27,645,30"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="5,31,129,57"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="645,47,129,47,129,41,645,41"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#a0b4602f6ec25da0455285693cbf2d9a0" title="Sets the frame to draw the image on." alt="" coords="177,5,380,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,21,381,21,381,16,412,16"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="161,35,129,39,128,34,161,30"/>
+</map>

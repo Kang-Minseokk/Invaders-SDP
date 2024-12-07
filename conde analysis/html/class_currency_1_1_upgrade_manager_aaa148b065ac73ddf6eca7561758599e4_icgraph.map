@@ -1,0 +1,16 @@
+<map id="Currency.UpgradeManager.Price" name="Currency.UpgradeManager.Price">
+<area shape="rect" id="Node000001" title=" " alt="" coords="973,27,1153,69"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#aa78bf3e4414404d78091953b914cc4d5" title=" " alt="" coords="703,5,925,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="957,38,925,34,926,29,957,33"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_title_screen.html#a64bde84610fa44a3ef12fcf017ef3217" title="runs when player do buying things when store system is ready – unwrap annotated code and rename this ..." alt="" coords="724,56,904,99"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="957,63,905,69,904,64,957,58"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#aa8899ff89b1b8cb4a30c6248ab3386f4" title=" " alt="" coords="447,5,655,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="688,21,656,21,656,16,688,16"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_title_screen.html#a6194c8e8f96a4ba27c9433bfe2a47b59" title="Draws the elements associated with the screen." alt="" coords="232,5,394,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="431,21,394,21,394,16,431,16"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="5,35,179,61"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="217,34,180,39,179,34,216,29"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_title_screen.html#aecedcd5e961b0da973cf9ef5c37ece6c" title=" " alt="" coords="227,56,399,99"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="709,80,400,80,400,75,709,75"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="211,67,179,62,180,57,212,61"/>
+</map>

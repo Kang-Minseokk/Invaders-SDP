@@ -1,0 +1,23 @@
+<map id="Enemy.Item.Item" name="Enemy.Item.Item">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,280,127,307"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_item.html#a821738f38eff77bf9cacf55272b9ea64" title=" " alt="" coords="175,280,322,307"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,291,159,291,159,296,127,296"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_ship_status.html#a235eedd72df9efd5d2db38cc3b9cb1bc" title=" " alt="" coords="386,5,563,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,279,263,236,285,177,320,113,342,84,368,58,373,54,376,59,372,62,346,87,325,116,290,179,268,238,255,280"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_ship_status.html#afd9aea7244bcf246ea79efc3337bd3f0" title=" " alt="" coords="387,72,562,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="254,278,270,247,295,205,328,162,368,125,375,120,378,125,372,129,332,166,299,208,274,249,258,281"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_ship_status.html#aed783e2fe4b6c24f3de704843224dd7b" title=" " alt="" coords="384,139,565,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="261,277,306,235,336,212,369,191,380,185,382,190,371,196,339,216,310,239,265,281"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_ship_status.html#abc231238d03b8d931966f92e4f964fc5" title=" " alt="" coords="385,205,564,248"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="296,277,384,250,386,256,297,282"/>
+<area shape="rect" id="Node000007" href="$classentity_1_1_ship_status.html#afc1a231311c3498f276efdeca6946686" title=" " alt="" coords="386,272,564,315"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="322,291,370,291,370,296,322,296"/>
+<area shape="rect" id="Node000008" href="$classentity_1_1_ship_status.html#a32b5b42e4e98a4cd363acca90e8c46ef" title=" " alt="" coords="385,339,564,381"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="297,305,386,331,384,336,296,310"/>
+<area shape="rect" id="Node000009" href="$classentity_1_1_ship_status.html#a523702689927a41a44c66230ef2b1250" title=" " alt="" coords="385,405,564,448"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="265,305,310,347,339,371,371,391,382,396,380,401,369,396,336,375,306,351,261,309"/>
+<area shape="rect" id="Node000010" href="$classentity_1_1_ship_status.html#aa5edbc61902360a968e31cb06df3ad6c" title=" " alt="" coords="370,472,579,499"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="258,306,273,338,298,379,331,422,372,458,380,463,377,468,368,462,327,425,294,382,269,340,253,308"/>
+<area shape="rect" id="Node000011" href="$classentity_1_1_entity.html#ad3c95a68bcededd6325adee1274560eb" title="Setter for the X axis position of the entity." alt="" coords="404,523,546,549"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="256,306,268,347,291,402,325,460,347,486,372,509,390,519,388,524,368,513,343,490,321,463,286,404,263,348,251,308"/>
+</map>

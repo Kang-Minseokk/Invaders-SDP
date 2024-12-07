@@ -1,0 +1,7 @@
+<map id="Achievement.Achievement.getRequiredKills" name="Achievement.Achievement.getRequiredKills">
+<area shape="rect" id="Node000001" title=" " alt="" coords="270,39,469,81"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_achievement.html#ae8959da9c049ae6c2dab6f0fb61d7898" title=" " alt="" coords="5,5,222,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,48,222,43,222,38,254,42"/>
+<area shape="rect" id="Node000003" href="$class_achievement_1_1_achievement.html#a6a1933fa040cc9be60b3c88e66a16bb0" title=" " alt="" coords="5,72,222,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,78,222,82,222,77,254,72"/>
+</map>

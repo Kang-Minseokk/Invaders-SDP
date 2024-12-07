@@ -1,0 +1,9 @@
+<map id="entity.ItemBarrierAndHeart.isbarrierActive" name="entity.ItemBarrierAndHeart.isbarrierActive">
+<area shape="rect" id="Node000001" title=" " alt="" coords="705,5,931,48"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#a86aba24ff3eb7aaadec5c84dcebd3d68" title=" " alt="" coords="475,5,657,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="690,29,658,29,658,24,690,24"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a20e6975baf2786217ea22eabdcc4f3ce" title="Manages collisions between bullets and ships." alt="" coords="237,5,427,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,29,427,29,427,24,460,24"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+</map>

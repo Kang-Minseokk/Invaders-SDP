@@ -1,0 +1,5 @@
+<map id="entity.Ship.getBulletSpeed" name="entity.Ship.getBulletSpeed">
+<area shape="rect" id="Node000001" title="Calculates and returns the bullet speed in Pixels per frame." alt="" coords="5,13,180,40"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_player_growth.html#acdf3474eea58fcc63344d3bf646542a4" title=" " alt="" coords="228,5,427,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,24,212,24,212,29,180,29"/>
+</map>

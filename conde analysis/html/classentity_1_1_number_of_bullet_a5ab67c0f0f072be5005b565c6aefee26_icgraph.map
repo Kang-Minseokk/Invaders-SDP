@@ -1,0 +1,11 @@
+<map id="entity.NumberOfBullet.pierceup" name="entity.NumberOfBullet.pierceup">
+<area shape="rect" id="Node000001" title=" " alt="" coords="971,13,1173,40"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_item_manager.html#a485cd51965cc7532571b592bf4bb1891" title=" " alt="" coords="705,13,923,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="955,29,923,29,923,24,955,24"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#aaa246e4bb4604682b7380845beab0e9f" title=" " alt="" coords="475,5,657,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="690,29,658,29,658,24,690,24"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#a20e6975baf2786217ea22eabdcc4f3ce" title="Manages collisions between bullets and ships." alt="" coords="237,5,427,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="460,29,427,29,427,24,460,24"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+</map>

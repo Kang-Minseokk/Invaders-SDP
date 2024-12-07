@@ -1,0 +1,22 @@
+<map id="entity.Ship.destroy" name="entity.Ship.destroy">
+<area shape="rect" id="Node000001" title="Switches the ship to its destroyed state." alt="" coords="960,109,1089,136"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_two_player_mode.html#a285af0cfa1987ad696978b30b33157b9" title=" " alt="" coords="713,5,912,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="987,103,911,62,882,51,884,46,913,58,989,98"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_game_screen.html#a86aba24ff3eb7aaadec5c84dcebd3d68" title=" " alt="" coords="479,128,661,171"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="944,130,662,147,662,141,944,125"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_two_player_mode.html#a7de003667ea149049a184c496a16af0c" title=" " alt="" coords="713,72,912,115"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="944,114,912,110,912,104,944,109"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_game_screen.html#a3d24b8d63b4a79a97952e11d5e9db8d7" title=" " alt="" coords="721,193,904,236"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="978,145,865,195,863,190,976,140"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a76eb9b586bb07db6674cd2e311f05331" title=" " alt="" coords="475,61,665,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="703,55,666,63,665,58,702,50"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,107,189,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="460,94,189,115,189,110,460,89"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_game_screen.html#a20e6975baf2786217ea22eabdcc4f3ce" title="Manages collisions between bullets and ships." alt="" coords="237,128,427,171"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="463,152,428,152,428,147,463,147"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="221,138,189,134,190,129,221,133"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="698,91,666,90,666,84,698,86"/>
+<area shape="rect" id="Node000009" href="$classscreen_1_1_game_screen.html#af6ce22d045fc5614a16a76ce73331295" title=" " alt="" coords="479,195,661,237"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="706,218,662,218,662,213,706,213"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="477,193,410,174,412,169,478,188"/>
+</map>

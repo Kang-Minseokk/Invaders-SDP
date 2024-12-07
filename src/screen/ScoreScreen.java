@@ -5,15 +5,13 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
-import clove.Statistics; //Team Clove
-import HUDTeam.DrawAchievementHud;
-import HUDTeam.DrawManagerImpl;
+import Achievement.Statistics; //Team Clove
 import engine.Cooldown;
 import engine.Core;
 import engine.GameState;
 import engine.Score;
 import Enemy.PlayerGrowth;
-import inventory_develop.NumberOfBullet;
+import entity.NumberOfBullet;
 
 /**
  * Implements the score screen.
@@ -138,72 +136,89 @@ public class ScoreScreen extends Screen {
 	 */
 	protected final void update() {
 		super.update();
-
 		draw();
-		if (this.inputDelay.checkFinished()) {
-			if (inputManager.isKeyDown(KeyEvent.VK_ESCAPE)) {
-				// Return to main menu.
-				this.returnCode = 1;
-				this.isRunning = false;
-				if (this.isNewRecord) {
-					saveScore();
-				}
-				if (this.isGameClear) {
-					saveGem();
-				} // CtrlS
-				saveCoin(); // Team-Ctrl-S(Currency)
-				saveStatistics(); //Team Clove
-				saveRecentScore(); // Team Clove
-			} else if (inputManager.isKeyDown(KeyEvent.VK_SPACE)) {
-				// Play again.
-				System.out.println(this.isTwoPlayerMode());
-				if (this.isTwoPlayerMode()){
-					this.returnCode = 4;
-				} else {
-					this.returnCode = 2;
-				}
-				this.isRunning = false;
-				if (this.isNewRecord) {
-					saveScore();
-				}
-				if (this.isGameClear) {
-					saveGem();
-				} // CtrlS
-				saveCoin(); // Team-Ctrl-S(Currency)
-				saveStatistics(); //Team Clove
-				saveRecentScore(); // Team Clove
-			}
 
-			if (this.isNewRecord && this.selectionCooldown.checkFinished()) {
-				if (inputManager.isKeyDown(KeyEvent.VK_RIGHT)) {
-					this.nameCharSelected = this.nameCharSelected == 2 ? 0
-							: this.nameCharSelected + 1;
-					this.selectionCooldown.reset();
-				}
-				if (inputManager.isKeyDown(KeyEvent.VK_LEFT)) {
-					this.nameCharSelected = this.nameCharSelected == 0 ? 2
-							: this.nameCharSelected - 1;
-					this.selectionCooldown.reset();
-				}
-				if (inputManager.isKeyDown(KeyEvent.VK_UP)) {
-					this.name[this.nameCharSelected] =
-							(char) (this.name[this.nameCharSelected]
-									== LAST_CHAR ? FIRST_CHAR
-							: this.name[this.nameCharSelected] + 1);
-					this.selectionCooldown.reset();
-				}
-				if (inputManager.isKeyDown(KeyEvent.VK_DOWN)) {
-					this.name[this.nameCharSelected] =
-							(char) (this.name[this.nameCharSelected]
-									== FIRST_CHAR ? LAST_CHAR
-							: this.name[this.nameCharSelected] - 1);
-					this.selectionCooldown.reset();
-				}
-			}
-			numberOfBullet.ResetPierceLevel();
-			growth.ResetBulletSpeed();
+		if (this.inputDelay.checkFinished()) {
+			handleEscapeKey();
+			handleSpaceKey();
+			handleNewRecordInput();
+			resetGameSettings();
 		}
 	}
+
+	private void handleEscapeKey() {
+		if (inputManager.isKeyDown(KeyEvent.VK_ESCAPE)) {
+			// Return to main menu.
+			this.returnCode = 1;
+			this.isRunning = false;
+			saveGameProgress();
+		}
+	}
+
+	private void handleSpaceKey() {
+		if (inputManager.isKeyDown(KeyEvent.VK_SPACE)) {
+			// Play again.
+			System.out.println(this.isTwoPlayerMode());
+			this.returnCode = this.isTwoPlayerMode() ? 4 : 2;
+			this.isRunning = false;
+			saveGameProgress();
+		}
+	}
+
+	private void saveGameProgress() {
+		if (this.isNewRecord) {
+			saveScore();
+		}
+		if (this.isGameClear) {
+			saveGem();
+		} // CtrlS
+		saveCoin(); // Team-Ctrl-S(Currency)
+		saveStatistics(); // Team Clove
+		saveRecentScore(); // Team Clove
+	}
+
+	private void handleNewRecordInput() {
+		if (this.isNewRecord && this.selectionCooldown.checkFinished()) {
+			if (inputManager.isKeyDown(KeyEvent.VK_RIGHT)) {
+				moveNameCharSelectionRight();
+			}
+			if (inputManager.isKeyDown(KeyEvent.VK_LEFT)) {
+				moveNameCharSelectionLeft();
+			}
+			if (inputManager.isKeyDown(KeyEvent.VK_UP)) {
+				incrementNameChar();
+			}
+			if (inputManager.isKeyDown(KeyEvent.VK_DOWN)) {
+				decrementNameChar();
+			}
+		}
+	}
+
+	private void moveNameCharSelectionRight() {
+		this.nameCharSelected = this.nameCharSelected == 2 ? 0 : this.nameCharSelected + 1;
+		this.selectionCooldown.reset();
+	}
+
+	private void moveNameCharSelectionLeft() {
+		this.nameCharSelected = this.nameCharSelected == 0 ? 2 : this.nameCharSelected - 1;
+		this.selectionCooldown.reset();
+	}
+
+	private void incrementNameChar() {
+		this.name[this.nameCharSelected] = (char) (this.name[this.nameCharSelected] == LAST_CHAR ? FIRST_CHAR : this.name[this.nameCharSelected] + 1);
+		this.selectionCooldown.reset();
+	}
+
+	private void decrementNameChar() {
+		this.name[this.nameCharSelected] = (char) (this.name[this.nameCharSelected] == FIRST_CHAR ? LAST_CHAR : this.name[this.nameCharSelected] - 1);
+		this.selectionCooldown.reset();
+	}
+
+	private void resetGameSettings() {
+		numberOfBullet.ResetPierceLevel();
+		growth.ResetBulletSpeed();
+	}
+
 
 	/**
 	 * Saves the score as a high score.

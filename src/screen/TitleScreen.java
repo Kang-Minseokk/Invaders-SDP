@@ -2,14 +2,18 @@ package screen;
 
 import java.awt.event.KeyEvent;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Random;
 
 import engine.Cooldown;
 import engine.Core;
 // Sound Operator
-import Sound_Operator.SoundManager;
-import engine.Score;
-import inventory_develop.ShipStatus;
+import engine.SoundManager;
+import entity.ShipStatus;
+
+import engine.DrawManager.SpriteType;
+import java.util.Properties;
+
+import entity.Skins;
 
 /**
  * Implements the title screen.
@@ -20,7 +24,7 @@ import inventory_develop.ShipStatus;
 public class TitleScreen extends Screen {
 
 	/** Milliseconds between changes in user selection. */
-	private static final int SELECTION_TIME = 200;
+	private static final int SELECTION_TIME = 190;
 
 	/** Time between changes in user selection. */
 	private Cooldown selectionCooldown;
@@ -34,6 +38,9 @@ public class TitleScreen extends Screen {
 	private int merchantState;
 	//inventory
 	private ShipStatus shipStatus;
+
+	private int customState;
+	private Properties unlockedSkins;
 
 
 	/**
@@ -55,22 +62,28 @@ public class TitleScreen extends Screen {
 		this.returnCode = 2;
 		this.selectionCooldown = Core.getCooldown(SELECTION_TIME);
 		this.selectionCooldown.reset();
+		this.customState = 0;
 
+		// 배경 이미지 로드
+		drawManager.loadTitleBackground();
+
+		//Skins.resetUnlockedSkins(); // 해금된 스킨 초기화
 
 		// CtrlS: Set user's coin, gem
-        try {
-            this.coin = Core.getCurrencyManager().getCoin();
+		try {
+			this.coin = Core.getCurrencyManager().getCoin();
 			this.gem = Core.getCurrencyManager().getGem();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 
-        // Sound Operator
+		// Sound Operator
 		SoundManager.getInstance().playBGM("mainMenu_bgm");
 
 		// inventory load upgrade price
 		shipStatus = new ShipStatus();
 		shipStatus.loadPrice();
+		Skins.loadSkins();  // 기존 해금된 스킨 목록 로드
 	}
 
 	/**
@@ -94,69 +107,96 @@ public class TitleScreen extends Screen {
 	 */
 	protected final void update() {
 		super.update();
-
 		draw();
-		if (this.selectionCooldown.checkFinished()
-				&& this.inputDelay.checkFinished()) {
-			if (inputManager.isKeyDown(KeyEvent.VK_UP)
-					|| inputManager.isKeyDown(KeyEvent.VK_W)) {
-				previousMenuItem();
+
+		if (this.selectionCooldown.checkFinished() && this.inputDelay.checkFinished()) {
+			handleVerticalMenuNavigation();
+			handleHorizontalMenuNavigation();
+			handleSpecialReturnCode();
+			handleSpaceKey();
+			handleCustomOption();
+		}
+
+	}
+
+	private void handleCustomOption() {
+		if (returnCode == 6) {
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
+				previousCustomState();
 				this.selectionCooldown.reset();
-				// Sound Operator
-				SoundManager.getInstance().playES("menuSelect_es");
+				playMenuSelectSound();
 			}
-			if (inputManager.isKeyDown(KeyEvent.VK_DOWN)
-					|| inputManager.isKeyDown(KeyEvent.VK_S)) {
-				nextMenuItem();
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_RIGHT"))) {
+				nextCustomState();
 				this.selectionCooldown.reset();
-				// Sound Operator
-				SoundManager.getInstance().playES("menuSelect_es");
+				playMenuSelectSound();
 			}
-
-			// produced by Starter
-			if (returnCode == 2) {
-				if (inputManager.isKeyDown(KeyEvent.VK_LEFT)
-						|| inputManager.isKeyDown(KeyEvent.VK_A)) {
-					moveMenuLeft();
-					this.selectionCooldown.reset();
-					// Sound Operator
-					SoundManager.getInstance().playES("menuSelect_es");
-				}
-				if (inputManager.isKeyDown(KeyEvent.VK_RIGHT)
-						|| inputManager.isKeyDown(KeyEvent.VK_D)) {
-					moveMenuRight();
-					this.selectionCooldown.reset();
-					// Sound Operator
-					SoundManager.getInstance().playES("menuSelect_es");
-				}
-			}
-
-			if(returnCode == 4) {
-				if (inputManager.isKeyDown(KeyEvent.VK_LEFT)
-						|| inputManager.isKeyDown(KeyEvent.VK_A)) {
-					nextMerchantState();
-					this.selectionCooldown.reset();
-					// Sound Operator
-					SoundManager.getInstance().playES("menuSelect_es");
-				}
-				if (inputManager.isKeyDown(KeyEvent.VK_RIGHT)
-						|| inputManager.isKeyDown(KeyEvent.VK_D)) {
-					previousMerchantState();
-					this.selectionCooldown.reset();
-					// Sound Operator
-					SoundManager.getInstance().playES("menuSelect_es");
-				}
-
-			}
-
-			if (inputManager.isKeyDown(KeyEvent.VK_SPACE))
-				if(returnCode == 4) {
-					testStatUpgrade();
-                    this.selectionCooldown.reset();
-				}
-				else this.isRunning = false;
 		}
 	}
+
+	private void handleVerticalMenuNavigation() {
+		if (inputManager.isKeyDown(Core.getKeyCode("MOVE_UP"))) {
+			previousMenuItem();
+			this.selectionCooldown.reset();
+			playMenuSelectSound();
+		}
+		if (inputManager.isKeyDown(Core.getKeyCode("MOVE_DOWN"))) {
+			nextMenuItem();
+			this.selectionCooldown.reset();
+			playMenuSelectSound();
+		}
+	}
+
+	private void handleHorizontalMenuNavigation() {
+		if (returnCode == 2) {
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
+				moveMenuLeft();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_RIGHT"))) {
+				moveMenuRight();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+		}
+	}
+
+	private void handleSpecialReturnCode() {
+		if (returnCode == 4) {
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
+				nextMerchantState();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+			if (inputManager.isKeyDown(Core.getKeyCode("MOVE_RIGHT"))) {
+				previousMerchantState();
+				this.selectionCooldown.reset();
+				playMenuSelectSound();
+			}
+		}
+	}
+
+	private void handleSpaceKey() {
+		if (inputManager.isKeyDown(Core.getKeyCode("SHOOT"))) {
+			if (returnCode == 4) {
+				testStatUpgrade();
+				this.selectionCooldown.reset();
+			}
+			else if(returnCode == 6){
+				drawRandomSkin();
+				this.selectionCooldown.reset();
+			}
+			else {
+				this.isRunning = false;
+			}
+		}
+	}
+
+	private void playMenuSelectSound() {
+		SoundManager.getInstance().playES("menuSelect_es");
+	}
+
 	// Use later if needed. -Starter
 	// public int getPnumSelectionCode() {return this.pnumSelectionCode;}
 
@@ -179,7 +219,7 @@ public class TitleScreen extends Screen {
 	/**
 	 * Shifts the focus to the next menu item.
 	 */
-	
+
 	private void testStatUpgrade() {
 		// CtrlS: testStatUpgrade should only be called after coins are spent
 		if (this.merchantState == 1) { // bulletCount
@@ -299,8 +339,53 @@ public class TitleScreen extends Screen {
 			throw new RuntimeException(e);
 		}
 	}
+	//custom
+	private void drawRandomSkin() {
+		if (customState == 7 ) {
+			if (Skins.lockedSkins.isEmpty() || Skins.unlockedSkins.size() == 5) {
+				Core.getLogger().info("All skins are already unlocked.");
+				return;
+			}
+
+			try {
+				int DrawPrice = 50 * (1 + Skins.unlockedSkins.size());
+				if (Core.getCurrencyManager().spendCoin(DrawPrice)) {
+					Random random = new Random();
+					int randomIndex = random.nextInt(Skins.lockedSkins.size());
+					SpriteType selectedSkin = Skins.lockedSkins.get(randomIndex);
+					Core.getLogger().info("randomIndex: " + randomIndex);
+					int option4num = Skins.AllSkins.indexOf(selectedSkin) + 2;
+					Core.getLogger().info("option4num: " + option4num);
+					if (!Skins.isSkinUnlocked(selectedSkin)) {
+						Skins.unlockSkin(selectedSkin);
+						Core.getLogger().info("Unlocked Skin: " + selectedSkin);
+						this.customState = option4num; //해당스킨으로 이동
+						Core.getLogger().info("Customstate: " + customState);
+						SoundManager.getInstance().playES("draw_success");
+					}
+					else {
+							Core.getLogger().info("Skin already unlocked: " + selectedSkin);
+					}
+				}
+			}
+			catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+			try {
+				this.coin = Core.getCurrencyManager().getCoin();
+				this.gem = Core.getCurrencyManager().getGem();
+			}
+			catch (IOException e) {
+					throw new RuntimeException(e);
+			}
+
+		}
+
+	}
+
+
 	private void nextMenuItem() {
-		if (this.returnCode == 5) // Team Clover changed values because recordMenu added
+		if (this.returnCode == 6) // Team Clover changed values because recordMenu added
 			this.returnCode = 0; // from '2 player mode' to 'Exit' (Starter)
 		else if (this.returnCode == 0)
 			this.returnCode = 2; // from 'Exit' to 'Play' (Starter)
@@ -314,7 +399,7 @@ public class TitleScreen extends Screen {
 	private void previousMenuItem() {
 		this.merchantState =0;
 		if (this.returnCode == 0)
-			this.returnCode = 5; // from 'Exit' to '2 player mode' (Starter) // Team Clover changed values because recordMenu added
+			this.returnCode = 6; // from 'Exit' to '2 player mode' (Starter) // Team Clover changed values because recordMenu added
 		else if (this.returnCode == 2)
 			this.returnCode = 0; // from 'Play' to 'Exit' (Starter)
 		else
@@ -359,14 +444,36 @@ public class TitleScreen extends Screen {
 		}
 	}
 
+	//custom
+	private void nextCustomState() {
+		if (this.returnCode == 6) {
+			if (this.customState == 7)
+				this.customState = 0;
+			else
+				this.customState++;
+		}
+	}
+
+	private void previousCustomState() {
+		if (this.returnCode == 6) {
+			if (this.customState == 0)
+				this.customState = 7;
+			else
+				this.customState--;
+		}
+	}
+
 	/**
 	 * Draws the elements associated with the screen.
 	 */
 	private void draw() {
 		drawManager.initDrawing(this);
 
+		// 타이틀 배경 이미지 그리기
+		drawManager.drawTitleBackground();
+
 		drawManager.drawTitle(this);
-		drawManager.drawMenu(this, this.returnCode, this.pnumSelectionCode, this.merchantState);
+		drawManager.drawMenu(this, this.returnCode, this.pnumSelectionCode, this.merchantState, this.customState);
 		// CtrlS
 		drawManager.drawCurrentCoin(this, coin);
 		drawManager.drawCurrentGem(this, gem);

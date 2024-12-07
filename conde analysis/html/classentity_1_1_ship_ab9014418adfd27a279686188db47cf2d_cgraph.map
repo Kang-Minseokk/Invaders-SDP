@@ -1,0 +1,5 @@
+<map id="entity.Ship.increaseHealth" name="entity.Ship.increaseHealth">
+<area shape="rect" id="Node000001" title="스탯을 증가시키는 메서드들 (PlayerGrowth 클래스 사용) Methods to increase stats (using PlayerGrowth)" alt="" coords="5,13,179,40"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_player_growth.html#a9fb7040a89f06398d27b664fd1819dc7" title=" " alt="" coords="227,5,424,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,24,211,24,211,29,179,29"/>
+</map>

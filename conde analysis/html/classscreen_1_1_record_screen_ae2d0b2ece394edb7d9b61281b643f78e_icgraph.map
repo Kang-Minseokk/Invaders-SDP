@@ -1,0 +1,5 @@
+<map id="screen.RecordScreen.draw" name="screen.RecordScreen.draw">
+<area shape="rect" id="Node000001" title="Draws the elements associated with the screen." alt="" coords="244,5,423,32"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_record_screen.html#a8fcd1a5dbd99e5dc2b991997d682c418" title="Updates the elements on screen and checks for events." alt="" coords="5,5,196,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,21,196,21,196,16,228,16"/>
+</map>

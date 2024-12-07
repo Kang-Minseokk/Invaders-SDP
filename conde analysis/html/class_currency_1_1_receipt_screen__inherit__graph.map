@@ -1,0 +1,5 @@
+<map id="Currency.ReceiptScreen" name="Currency.ReceiptScreen">
+<area shape="rect" id="Node000001" title="Implements the high scores screen, it shows player records." alt="" coords="5,528,158,683"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_screen.html" title="Implements a generic screen." alt="" coords="10,5,153,480"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,495,84,528,79,528,79,495"/>
+</map>

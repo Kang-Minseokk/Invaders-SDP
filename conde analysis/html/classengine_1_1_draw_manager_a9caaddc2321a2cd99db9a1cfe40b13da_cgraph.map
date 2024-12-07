@@ -1,0 +1,11 @@
+<map id="engine.DrawManager.loadBackground" name="engine.DrawManager.loadBackground">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,247,107"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_background.html#a96eb921b9b6104f1e940b9954c61edf2" title=" " alt="" coords="305,5,509,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,77,299,50,300,55,186,82"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_background.html#a56098d0da3860282885e3a05acb9de21" title=" " alt="" coords="295,72,519,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,91,279,91,279,96,247,96"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_background.html#a2c76faa8fa5e6bf6318dcdac9a1912cc" title=" " alt="" coords="304,139,510,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,105,325,132,324,137,193,110"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_background.html#a500cc4fb2f76cc20a16a284215975448" title=" " alt="" coords="567,139,773,165"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="510,149,552,149,552,155,510,155"/>
+</map>

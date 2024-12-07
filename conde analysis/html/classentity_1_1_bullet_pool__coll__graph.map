@@ -1,0 +1,5 @@
+<map id="entity.BulletPool" name="entity.BulletPool">
+<area shape="rect" id="Node000001" title="Implements a pool of recyclable bullets." alt="" coords="14,139,119,251"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,128,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,74,69,122,64,122,64,74"/>
+</map>

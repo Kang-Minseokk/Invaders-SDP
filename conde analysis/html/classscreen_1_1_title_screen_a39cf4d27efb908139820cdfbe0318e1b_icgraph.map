@@ -1,0 +1,16 @@
+<map id="screen.TitleScreen.playMenuSelectSound" name="screen.TitleScreen.playMenuSelectSound">
+<area shape="rect" id="Node000001" title=" " alt="" coords="449,105,639,148"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_title_screen.html#aa096a9853f7b30afa52f751bccf0698d" title=" " alt="" coords="228,5,400,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,101,400,62,372,51,374,46,402,58,486,96"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_title_screen.html#a4cea29053a302903adb24c481f73ef32" title=" " alt="" coords="227,72,401,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="433,113,401,109,402,103,434,108"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_title_screen.html#a13e1bc224668add219c9a8544a8d8f34" title=" " alt="" coords="228,139,400,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="434,145,401,150,400,145,433,140"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_title_screen.html#a26c6225edd92e784057fc7bc2df4b88c" title=" " alt="" coords="228,205,400,248"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="486,157,402,196,374,207,372,202,400,191,484,153"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="5,113,179,140"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="241,57,228,62,120,115,118,111,226,58,239,52"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="212,111,179,116,179,111,211,106"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="212,147,179,142,180,137,213,142"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="239,202,226,196,118,143,120,138,228,191,241,197"/>
+</map>

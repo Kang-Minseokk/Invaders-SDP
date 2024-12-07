@@ -8,17 +8,15 @@ import Enemy.PiercingBullet;
 import engine.Cooldown;
 import engine.Core;
 import engine.DrawManager.SpriteType;
-import inventory_develop.Bomb;
+import engine.DrawManager;
 import Enemy.PiercingBulletPool;
 // Sound Operator
-import Sound_Operator.SoundManager;
+import engine.SoundManager;
 // Import PlayerGrowth class
 import Enemy.PlayerGrowth;
 // Import NumberOfBullet class
-import inventory_develop.NumberOfBullet;
-// Import ShipStatus class
-import inventory_develop.ItemBarrierAndHeart;
-import inventory_develop.ShipStatus;
+
+
 /**
  * Implements a ship, to be controlled by the player.
  *
@@ -50,10 +48,9 @@ public class Ship extends Entity {
 	 *            Initial position of the ship in the Y axis.
 	 */
 	//Edit by Enemy
-	public Ship(final int positionX, final int positionY, final Color color) {
-		super(positionX, positionY - 50, 13 * 2, 8 * 2, color); // add by team HUD
-
-		this.spriteType = SpriteType.Ship;
+	public Ship(final int positionX, final int positionY, final Color color, SpriteType spriteType) {
+		super(positionX - 30, positionY - 60, 13 * 2, 8 * 2, color);
+		this.spriteType = spriteType;
 
 		// Create PlayerGrowth object and set initial stats
 		this.growth = new PlayerGrowth();  // PlayerGrowth 객체를 먼저 초기화
@@ -68,6 +65,11 @@ public class Ship extends Entity {
 
 		this.numberOfBullet = new NumberOfBullet();
 	}
+
+	public void setSpriteType(SpriteType spriteType) {
+		this.spriteType = spriteType;
+	}
+
 
 	/**
 	 * Moves the ship speed uni ts right, or until the right screen border is
@@ -125,19 +127,18 @@ public class Ship extends Entity {
 		return false;
 	}
 
-
-
-
-
 	/**
 	 * Updates status of the ship.
 	 */
 	public final void update() {
-		if (!this.destructionCooldown.checkFinished())
+		if (!this.destructionCooldown.checkFinished()) {
 			this.spriteType = SpriteType.ShipDestroyed;
-		else
-			this.spriteType = SpriteType.Ship;
+		} else {
+			SpriteType selectedSpriteType = DrawManager.getselectedSpriteType();
+			this.spriteType = selectedSpriteType;
+		}
 	}
+
 
 	/**
 	 * Switches the ship to its destroyed state.

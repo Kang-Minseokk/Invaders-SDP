@@ -1,0 +1,9 @@
+<map id="entity.BulletPool.recycle" name="entity.BulletPool.recycle">
+<area shape="rect" id="Node000001" title="Adds one or more bullets to the list of available ones." alt="" coords="721,13,883,40"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_two_player_mode.html#a285af0cfa1987ad696978b30b33157b9" title=" " alt="" coords="475,5,673,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="706,29,674,29,674,24,706,24"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a76eb9b586bb07db6674cd2e311f05331" title=" " alt="" coords="237,5,427,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,29,427,29,427,24,460,24"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,13,189,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="Enemy.Item" name="Enemy.Item">
+<area shape="rect" id="Node000001" title=" " alt="" coords="240,976,327,1131"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_entity.html" title="Implements a generic game entity." alt="" coords="116,480,228,848"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,862,264,976,259,977,226,863"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,144,47,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="34,213,45,277,62,351,112,505,107,506,57,353,40,278,28,214"/>
+<area shape="rect" id="Node000004" href="$enumengine_1_1_draw_manager_1_1_sprite_type.html" title="Sprite types." alt="" coords="72,37,271,320"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="174,320,174,463,169,463,169,320"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_ship_status.html" title=" " alt="" coords="391,416,613,912"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="394,863,337,962,333,960,389,860"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_number_of_bullet.html" title="TwoBulletPool extends BulletPool to manage firing two bullets at once." alt="" coords="295,69,499,288"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="423,287,447,399,442,400,418,288"/>
+<area shape="rect" id="Node000007" href="$class_enemy_1_1_player_growth.html" title=" " alt="" coords="522,5,692,352"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="573,352,562,400,557,399,567,351"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="717,144,786,213"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="748,213,733,279,707,353,669,429,625,501,620,498,664,426,702,351,728,278,743,212"/>
+</map>

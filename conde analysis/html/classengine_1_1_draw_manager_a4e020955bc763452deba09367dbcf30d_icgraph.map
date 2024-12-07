@@ -1,0 +1,27 @@
+<map id="engine.DrawManager.initDrawing" name="engine.DrawManager.initDrawing">
+<area shape="rect" id="Node000001" title="First part of the drawing process." alt="" coords="509,132,722,159"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_receipt_screen.html#a6c8320866245be6a855d7253627548ad" title="Draws the elements associated with the screen." alt="" coords="264,5,460,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="584,124,528,85,460,46,429,35,430,30,462,42,531,80,587,120"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#a41ddf8251a118219238774fd8483e92a" title="Draws the elements associated with the screen." alt="" coords="276,56,448,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="560,129,460,97,419,86,420,81,462,92,562,124"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_high_score_screen.html#ac1bf2de37016bbe023dd444517e4c4de" title="Draws the elements associated with the screen." alt="" coords="263,107,461,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="493,136,461,133,462,127,494,130"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_record_screen.html#ae2d0b2ece394edb7d9b61281b643f78e" title="Draws the elements associated with the screen." alt="" coords="272,157,452,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="494,160,452,164,452,159,493,155"/>
+<area shape="rect" id="Node000010" href="$classscreen_1_1_score_screen.html#a6dcccac9ed794d82c023319c75cdbf22" title="Draws the elements associated with the screen." alt="" coords="276,208,448,235"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="562,167,462,199,420,210,419,205,460,193,560,161"/>
+<area shape="rect" id="Node000012" href="$classscreen_1_1_title_screen.html#a6194c8e8f96a4ba27c9433bfe2a47b59" title="Draws the elements associated with the screen." alt="" coords="281,259,443,285"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="587,171,531,211,462,249,430,261,429,256,460,244,528,206,584,166"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_receipt_screen.html#ad1a8f6ed95eff0f0542c0ae9c6eda729" title="Updates the elements on screen and checks for events." alt="" coords="7,5,213,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,21,214,21,214,16,249,16"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="18,56,202,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="260,72,202,72,202,67,260,67"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_high_score_screen.html#adec70baa7a1861f519c3a23490cc081e" title="Updates the elements on screen and checks for events." alt="" coords="5,107,215,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="247,123,215,123,215,117,247,117"/>
+<area shape="rect" id="Node000009" href="$classscreen_1_1_record_screen.html#a8fcd1a5dbd99e5dc2b991997d682c418" title="Updates the elements on screen and checks for events." alt="" coords="15,157,205,184"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="256,173,206,173,206,168,256,168"/>
+<area shape="rect" id="Node000011" href="$classscreen_1_1_score_screen.html#a38e621d92395da75408301bb9873dbdf" title="Updates the elements on screen and checks for events." alt="" coords="19,208,201,235"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="260,224,202,224,202,219,260,219"/>
+<area shape="rect" id="Node000013" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="23,259,197,285"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="265,275,197,275,197,269,265,269"/>
+</map>

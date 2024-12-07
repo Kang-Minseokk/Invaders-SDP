@@ -1,0 +1,13 @@
+<map id="Achievement.AchievementConditions.resetKillCountIfNeeded" name="Achievement.AchievementConditions.resetKillCountIfNeeded">
+<area shape="rect" id="Node000001" title=" " alt="" coords="945,39,1218,81"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_achievement_conditions.html#a97e05c2e6b58217292dc1c60f7c6542c" title=" " alt="" coords="614,47,897,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="930,63,898,63,898,57,930,57"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a41e19e7b8b70f17d04c7787b81d5116c" title=" " alt="" coords="340,5,522,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="604,47,523,39,523,33,605,42"/>
+<area shape="rect" id="Node000005" href="$class_achievement_1_1_achievement_conditions.html#aab304539b282cda2ac1eabc1994ccfe2" title=" " alt="" coords="297,72,566,115"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="605,78,567,82,566,77,604,73"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="35,13,219,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="325,29,219,29,219,24,325,24"/>
+<area shape="rect" id="Node000006" href="$class_achievement_1_1_achievement_conditions.html#a4b274e04be1f1bc7c0ef6010e68d0583" title=" " alt="" coords="5,72,249,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="281,96,249,96,249,91,281,91"/>
+</map>

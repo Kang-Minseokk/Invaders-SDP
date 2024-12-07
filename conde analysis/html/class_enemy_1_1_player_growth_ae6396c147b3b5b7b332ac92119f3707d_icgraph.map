@@ -1,0 +1,22 @@
+<map id="Enemy.PlayerGrowth.getMoveSpeed" name="Enemy.PlayerGrowth.getMoveSpeed">
+<area shape="rect" id="Node000001" title=" " alt="" coords="672,64,871,107"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_ship.html#afd86f13a6b7af8196f97df35189200f3" title="Getter for the ship&#39;s speed." alt="" coords="479,21,620,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="660,63,611,51,612,46,661,57"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_ship.html#ad7a346c7f50d3d1b96489d550607afbc" title="Moves the ship speed units left, or until the left screen border is reached." alt="" coords="480,123,620,149"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="661,113,612,125,611,119,660,108"/>
+<area shape="rect" id="Node000008" href="$classentity_1_1_ship.html#a7daed8f541a11b22bc3d4f83f2252e97" title="Moves the ship speed uni ts right, or until the right screen border is reached." alt="" coords="475,72,624,99"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="657,88,625,88,625,83,657,83"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#a41ddf8251a118219238774fd8483e92a" title="Draws the elements associated with the screen." alt="" coords="246,5,418,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="463,31,418,28,419,22,464,26"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_game_screen.html#afe65922c8de47fc748e1555c84a991c2" title=" " alt="" coords="241,56,423,99"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="464,54,424,62,423,57,463,49"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,64,189,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="261,39,154,66,153,61,260,34"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="225,80,189,80,189,75,225,75"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="482,121,413,102,414,97,483,116"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_game_screen.html#a76eb9b586bb07db6674cd2e311f05331" title=" " alt="" coords="237,123,427,165"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="464,142,427,143,427,138,464,136"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="239,121,146,94,148,89,241,115"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="460,85,423,83,424,78,460,79"/>
+<area shape="poly" id="edge12_Node000008_Node000007" title=" " alt="" coords="483,106,414,125,413,119,482,101"/>
+</map>

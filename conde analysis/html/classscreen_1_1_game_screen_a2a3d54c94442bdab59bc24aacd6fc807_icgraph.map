@@ -1,0 +1,5 @@
+<map id="screen.GameScreen.getFeverTimeItem" name="screen.GameScreen.getFeverTimeItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="275,5,470,48"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_item_manager.html#a92fc23273e2c3d32be0290c4490f1d77" title=" " alt="" coords="5,13,227,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,29,227,29,227,24,259,24"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="entity.ItemBarrierAndHeart.activeheart" name="entity.ItemBarrierAndHeart.activeheart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,249,57"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#a25a9ad38e06c9a8b48e128dcb64c9522" title=" " alt="" coords="297,5,490,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,30,281,27,282,32,249,35"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#abdae767a05e67828e00183cf5b5bdcdd" title=" " alt="" coords="297,56,490,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,53,282,56,281,61,249,58"/>
+</map>

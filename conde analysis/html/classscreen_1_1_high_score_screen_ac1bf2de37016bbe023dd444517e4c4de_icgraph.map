@@ -1,0 +1,5 @@
+<map id="screen.HighScoreScreen.draw" name="screen.HighScoreScreen.draw">
+<area shape="rect" id="Node000001" title="Draws the elements associated with the screen." alt="" coords="263,5,461,32"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_high_score_screen.html#adec70baa7a1861f519c3a23490cc081e" title="Updates the elements on screen and checks for events." alt="" coords="5,5,215,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,21,215,21,215,16,247,16"/>
+</map>

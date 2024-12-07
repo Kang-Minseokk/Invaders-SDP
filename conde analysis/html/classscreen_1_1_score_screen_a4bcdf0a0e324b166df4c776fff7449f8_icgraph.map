@@ -1,0 +1,7 @@
+<map id="screen.ScoreScreen.moveNameCharSelectionRight" name="screen.ScoreScreen.moveNameCharSelectionRight">
+<area shape="rect" id="Node000001" title=" " alt="" coords="465,5,675,48"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_score_screen.html#a8cbc7f2d7ffbddaf31889e91ed409a70" title=" " alt="" coords="236,5,417,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="449,29,417,29,417,24,449,24"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_score_screen.html#a38e621d92395da75408301bb9873dbdf" title="Updates the elements on screen and checks for events." alt="" coords="5,13,188,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="220,29,188,29,188,24,220,24"/>
+</map>

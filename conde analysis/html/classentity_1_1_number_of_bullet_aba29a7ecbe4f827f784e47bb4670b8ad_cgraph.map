@@ -1,0 +1,21 @@
+<map id="entity.NumberOfBullet.addBullet" name="entity.NumberOfBullet.addBullet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,140,180,183"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_piercing_bullet_pool.html#a4a52999ff5a663a5f5ff989fee638d18" title="Retrieves a piercing bullet from the pool if one is available, or creates a new one if the pool is em..." alt="" coords="228,140,421,183"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,159,212,159,212,164,180,164"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="480,5,625,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,138,398,90,432,64,468,42,480,36,483,40,470,46,435,68,401,94,348,142"/>
+<area shape="rect" id="Node000004" href="$class_enemy_1_1_piercing_bullet.html#aaf715b32aa00f90727b81075c048ec83" title="Setter for the piercing count." alt="" coords="469,56,636,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="383,137,478,102,479,107,385,142"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_entity.html#a34b1106b5fc108c72ce6083d913e42ed" title="Setter for the X axis position of the entity." alt="" coords="469,123,636,149"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="421,148,453,144,454,150,422,153"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_entity.html#ac88ed00a2aee4a591913edb6e596b114" title="Setter for the Y axis position of the entity." alt="" coords="469,173,636,200"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="422,169,454,173,453,178,421,175"/>
+<area shape="rect" id="Node000007" href="$classentity_1_1_bullet.html#a59bdfb1e41a99260374b3f7b2ea50007" title="Setter of the speed of the bullet." alt="" coords="478,224,627,251"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="387,181,470,209,492,217,490,222,468,215,385,186"/>
+<area shape="rect" id="Node000008" href="$classentity_1_1_bullet.html#a2aec4db9c13df6487b5221d3cf5fbc7d" title="Sets correct sprite for the bullet, based on speed." alt="" coords="480,275,625,301"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="353,181,405,221,470,260,484,266,482,271,468,265,402,225,349,185"/>
+<area shape="rect" id="Node000009" href="$classentity_1_1_bomb.html#a8f61c1500609ebfc7a285461ed9e1028" title=" " alt="" coords="684,249,855,276"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="626,277,669,272,669,277,626,282"/>
+<area shape="rect" id="Node000010" href="$classentity_1_1_bomb.html#acc740247abbfc0e65202ebbdd984d736" title=" " alt="" coords="691,300,848,327"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="626,294,676,300,675,305,626,299"/>
+</map>

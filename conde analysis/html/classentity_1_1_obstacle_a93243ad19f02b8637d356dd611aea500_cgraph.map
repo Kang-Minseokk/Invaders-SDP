@@ -1,0 +1,5 @@
+<map id="entity.Obstacle.update" name="entity.Obstacle.update">
+<area shape="rect" id="Node000001" title="Updates the obstacle&#39;s movement or other attributes." alt="" coords="5,5,157,32"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793" title="Checks if the cooldown is finished." alt="" coords="205,5,414,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,16,189,16,189,21,157,21"/>
+</map>

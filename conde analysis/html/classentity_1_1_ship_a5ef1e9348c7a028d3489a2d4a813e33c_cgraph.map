@@ -1,0 +1,7 @@
+<map id="entity.Ship.increaseMoveSpeed" name="entity.Ship.increaseMoveSpeed">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,173,69"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_ship_status.html#a858ebc58e7d5613878dbf1b7d2e4594f" title=" " alt="" coords="224,5,414,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,35,208,30,209,35,174,40"/>
+<area shape="rect" id="Node000003" href="$class_enemy_1_1_player_growth.html#a0b0dd43ffd65a8b2b4fe02374735ebde" title=" " alt="" coords="221,56,418,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,56,205,60,205,65,173,61"/>
+</map>

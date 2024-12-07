@@ -1,0 +1,7 @@
+<map id="engine.DrawManager.drawReceipt" name="engine.DrawManager.drawReceipt">
+<area shape="rect" id="Node000001" title="Show ReceiptScreen." alt="" coords="503,5,724,32"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_receipt_screen.html#a6c8320866245be6a855d7253627548ad" title="Draws the elements associated with the screen." alt="" coords="260,5,455,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,21,455,21,455,16,487,16"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_receipt_screen.html#ad1a8f6ed95eff0f0542c0ae9c6eda729" title="Updates the elements on screen and checks for events." alt="" coords="5,5,212,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,21,212,21,212,16,244,16"/>
+</map>

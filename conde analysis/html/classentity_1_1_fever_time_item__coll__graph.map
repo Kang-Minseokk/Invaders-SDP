@@ -1,0 +1,13 @@
+<map id="entity.FeverTimeItem" name="entity.FeverTimeItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,528,151,725"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="44,5,94,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,74,71,139,69,301,71,464,73,511,68,511,66,464,64,301,66,139,66,74"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_sound_manager.html" title=" " alt="" coords="127,139,273,464"/>
+<area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="88,73,121,139,116,141,83,76"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,464,123,513,118,511,137,463"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="274,264,292,276,297,288,299,301,297,317,290,329,285,326,292,315,294,301,292,289,288,280,271,269"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="123,5,263,75"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="197,75,198,121,192,122,191,75"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="287,5,411,75"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="332,76,284,160,279,157,327,73"/>
+</map>

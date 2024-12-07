@@ -1,0 +1,56 @@
+<map id="Currency.CurrencyManager.addGem" name="Currency.CurrencyManager.addGem">
+<area shape="rect" id="Node000001" title="Add an amount of gem to the current gem." alt="" coords="1530,441,1763,468"/>
+<area shape="rect" id="Node000002" href="$class_achievement_1_1_achievement_conditions.html#a370857deb5c4dc35e2bd3191fb6834c1" title=" " alt="" coords="1186,291,1482,333"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1600,437,1382,336,1384,331,1602,432"/>
+<area shape="rect" id="Node000019" href="$classscreen_1_1_score_screen.html#a7eb9637ed29cd1d517d7c64c6317bbc4" title="Saves the gem into currency file." alt="" coords="1234,471,1434,497"/>
+<area shape="poly" id="edge26_Node000001_Node000019" title=" " alt="" coords="1514,470,1434,477,1433,472,1514,464"/>
+<area shape="rect" id="Node000003" href="$class_achievement_1_1_achievement_conditions.html#a99d262bc05fed539b97aa1107fcfba48" title=" " alt="" coords="857,23,1135,65"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1308,280,1278,238,1238,189,1190,140,1136,97,1108,81,1078,68,1080,63,1111,76,1139,92,1193,136,1242,186,1282,235,1312,276"/>
+<area shape="rect" id="Node000006" href="$class_achievement_1_1_achievement_conditions.html#ab3b45005bc2580da03cf08b1f13c44cb" title=" " alt="" coords="528,341,806,384"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1171,337,1138,340,966,353,807,361,807,355,965,347,1137,335,1170,331"/>
+<area shape="rect" id="Node000009" href="$class_achievement_1_1_achievement_conditions.html#a97e05c2e6b58217292dc1c60f7c6542c" title=" " alt="" coords="854,467,1138,493"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1301,346,1230,404,1186,433,1139,457,1105,469,1103,464,1137,452,1183,428,1227,399,1297,342"/>
+<area shape="rect" id="Node000012" href="$class_achievement_1_1_achievement_conditions.html#ad3dd6057a9bfa438d4750cfa2c643e57" title=" " alt="" coords="866,400,1126,443"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="1261,342,1138,384,1079,402,1077,397,1137,379,1259,337"/>
+<area shape="rect" id="Node000013" href="$class_achievement_1_1_achievement_conditions.html#a5c82f71185fe8a0b03cea729d6a4d4fe" title=" " alt="" coords="858,107,1134,133"/>
+<area shape="poly" id="edge14_Node000002_Node000013" title=" " alt="" coords="1301,281,1230,216,1185,183,1137,154,1086,136,1088,131,1139,150,1188,178,1233,212,1304,278"/>
+<area shape="rect" id="Node000016" href="$class_achievement_1_1_achievement_conditions.html#a58e9009c80c1208580a23f8646ef423a" title=" " alt="" coords="867,208,1125,251"/>
+<area shape="poly" id="edge19_Node000002_Node000016" title=" " alt="" coords="1232,289,1137,265,1090,254,1091,249,1138,260,1233,284"/>
+<area shape="rect" id="Node000017" href="$class_achievement_1_1_achievement_conditions.html#a2abd1058b6a5125525283f05ebc90f30" title=" " alt="" coords="858,299,1134,325"/>
+<area shape="poly" id="edge21_Node000002_Node000017" title=" " alt="" coords="1170,315,1134,315,1134,309,1170,309"/>
+<area shape="rect" id="Node000018" href="$class_achievement_1_1_achievement_conditions.html#a13bba364bdccb0c5f713dd9c006e508d" title=" " alt="" coords="532,189,803,216"/>
+<area shape="poly" id="edge24_Node000002_Node000018" title=" " alt="" coords="1294,284,1224,236,1181,215,1137,199,1086,187,1033,180,926,176,827,181,745,191,745,186,827,176,926,170,1033,175,1087,182,1138,193,1183,210,1226,232,1297,279"/>
+<area shape="rect" id="Node000004" href="$class_achievement_1_1_achievement_manager.html#af08cdf01288424b5d580ff7c820561ec" title=" " alt="" coords="532,5,802,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="841,39,803,36,803,31,841,33"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="297,13,420,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="517,29,421,29,421,24,517,24"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_game_screen.html#a41e19e7b8b70f17d04c7787b81d5116c" title=" " alt="" coords="267,257,450,300"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="571,339,439,303,440,298,572,334"/>
+<area shape="rect" id="Node000008" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,265,189,292"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="252,281,189,281,189,276,252,276"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="839,495,764,493,684,486,604,469,527,442,477,412,433,374,398,335,372,302,376,298,402,331,437,370,480,408,529,438,605,464,685,480,765,488,839,489"/>
+<area shape="rect" id="Node000010" href="$class_achievement_1_1_achievement_conditions.html#aab304539b282cda2ac1eabc1994ccfe2" title=" " alt="" coords="532,509,802,552"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="890,499,803,513,802,507,889,494"/>
+<area shape="rect" id="Node000011" href="$class_achievement_1_1_achievement_conditions.html#a4b274e04be1f1bc7c0ef6010e68d0583" title=" " alt="" coords="237,509,480,552"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="517,533,480,533,480,528,517,528"/>
+<area shape="poly" id="edge13_Node000012_Node000007" title=" " alt="" coords="851,436,775,437,693,432,609,420,527,399,483,379,443,353,380,302,384,298,446,349,486,374,529,393,610,415,693,427,775,431,851,431"/>
+<area shape="poly" id="edge18_Node000013_Node000007" title=" " alt="" coords="843,134,665,154,586,166,529,180,489,197,451,217,389,259,386,255,448,213,487,192,527,175,585,161,664,148,843,129"/>
+<area shape="rect" id="Node000014" href="$class_achievement_1_1_statistics.html#a59564a449d79bf40b07d6bca1feab4f9" title="Add the number of ships destroyed so far to the previous record." alt="" coords="576,72,758,115"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="842,110,758,103,758,98,843,105"/>
+<area shape="poly" id="edge16_Node000014_Node000007" title=" " alt="" coords="563,121,529,136,484,164,443,198,381,259,377,255,439,194,481,160,527,131,561,116"/>
+<area shape="rect" id="Node000015" href="$class_achievement_1_1_statistics.html#abf85693bc6a7f785a02fad922acc9bcc" title=" " alt="" coords="265,72,452,115"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="561,96,452,96,452,91,561,91"/>
+<area shape="poly" id="edge20_Node000016_Node000007" title=" " alt="" coords="852,243,450,274,450,269,852,238"/>
+<area shape="poly" id="edge22_Node000017_Node000007" title=" " alt="" coords="843,307,450,286,450,281,843,301"/>
+<area shape="poly" id="edge23_Node000017_Node000017" title=" " alt="" coords="1054,287,1035,280,996,277,961,279,942,284,937,289,945,296,942,300,932,290,939,280,960,274,996,272,1036,275,1056,282"/>
+<area shape="poly" id="edge25_Node000018_Node000007" title=" " alt="" coords="590,223,529,237,442,259,441,254,527,232,588,217"/>
+<area shape="rect" id="Node000020" href="$classscreen_1_1_score_screen.html#a41ff54b61e6d1d32adc72c07e2c3b3b6" title=" " alt="" coords="893,576,1099,619"/>
+<area shape="poly" id="edge27_Node000019_Node000020" title=" " alt="" coords="1278,505,1063,578,1062,573,1276,500"/>
+<area shape="rect" id="Node000021" href="$classscreen_1_1_score_screen.html#a057479f036d6fbc727ae22c60f924d09" title=" " alt="" coords="576,576,758,619"/>
+<area shape="poly" id="edge28_Node000020_Node000021" title=" " alt="" coords="878,600,758,600,758,595,878,595"/>
+<area shape="rect" id="Node000023" href="$classscreen_1_1_score_screen.html#acbdd3f9cc0796d86422536b798d5c953" title=" " alt="" coords="576,643,758,685"/>
+<area shape="poly" id="edge30_Node000020_Node000023" title=" " alt="" coords="878,624,759,648,758,643,877,619"/>
+<area shape="rect" id="Node000022" href="$classscreen_1_1_score_screen.html#a38e621d92395da75408301bb9873dbdf" title="Updates the elements on screen and checks for events." alt="" coords="267,617,450,644"/>
+<area shape="poly" id="edge29_Node000021_Node000022" title=" " alt="" coords="561,611,450,623,450,618,561,606"/>
+<area shape="poly" id="edge31_Node000023_Node000022" title=" " alt="" coords="561,655,450,643,450,638,561,650"/>
+</map>

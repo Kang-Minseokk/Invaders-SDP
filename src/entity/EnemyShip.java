@@ -7,7 +7,7 @@ import engine.Cooldown;
 import engine.Core;
 import engine.DrawManager.SpriteType;
 // Sound Operator
-import Sound_Operator.SoundManager;
+import engine.SoundManager;
 
 /**
  * Implements a enemy ship, to be destroyed by the player.

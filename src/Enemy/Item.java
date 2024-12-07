@@ -4,7 +4,7 @@ import java.awt.Color;
 
 import engine.DrawManager.SpriteType;
 import entity.Entity;
-import inventory_develop.ShipStatus;
+import entity.ShipStatus;
 
 public class Item extends Entity {
     private final ShipStatus shipStatus = new ShipStatus();

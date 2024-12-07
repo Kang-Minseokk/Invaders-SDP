@@ -1,0 +1,9 @@
+<map id="engine.InputManager" name="engine.InputManager">
+<area shape="rect" id="Node000001" title="Manages keyboard input for the provided screen." alt="" coords="5,385,137,583"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="26,5,106,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,89,73,386,67,386,64,89"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_input_manager.html" title="Manages keyboard input for the provided screen." alt="" coords="87,124,218,321"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="91,87,108,123,103,125,86,89"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,322,109,370,104,368,119,320"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="219,198,237,206,245,222,243,233,236,240,232,237,238,231,240,223,234,209,217,203"/>
+</map>

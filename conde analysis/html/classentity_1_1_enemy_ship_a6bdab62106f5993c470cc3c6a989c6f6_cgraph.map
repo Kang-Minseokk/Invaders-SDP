@@ -1,0 +1,5 @@
+<map id="entity.EnemyShip.move" name="entity.EnemyShip.move">
+<area shape="rect" id="Node000001" title="Moves the ship the specified distance." alt="" coords="5,13,165,40"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_enemy_ship.html#a96f875a55434c8bf74f7821ab1d0794d" title=" " alt="" coords="213,5,395,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,24,197,24,197,29,165,29"/>
+</map>

@@ -4,7 +4,7 @@ import java.awt.Color;
 
 import engine.DrawManager;
 import engine.DrawManager.SpriteType;
-import inventory_develop.Bomb;
+import entity.Bomb;
 
 /**
  * Implements a bullet that moves vertically up or down.

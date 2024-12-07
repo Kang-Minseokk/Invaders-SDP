@@ -1,0 +1,5 @@
+<map id="engine.Score" name="engine.Score">
+<area shape="rect" id="Node000001" title="Implements a high score record." alt="" coords="5,123,208,640"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="38,5,176,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,90,110,123,104,123,104,90"/>
+</map>

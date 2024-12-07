@@ -1,0 +1,13 @@
+<map id="entity.ShipStatus.getSuootingInIn" name="entity.ShipStatus.getSuootingInIn">
+<area shape="rect" id="Node000001" title=" " alt="" coords="925,47,1140,73"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_upgrade_manager.html#aefbfd2de7aec68c5ed0c30396815711d" title="Add to the current attack speed." alt="" coords="675,5,877,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="909,47,877,42,877,37,910,41"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_ship.html#a597d32babc2534b0062e2c64861916b7" title=" " alt="" coords="681,72,871,115"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="910,79,872,84,871,78,909,73"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_title_screen.html#a64bde84610fa44a3ef12fcf017ef3217" title="runs when player do buying things when store system is ready – unwrap annotated code and rename this ..." alt="" coords="447,5,627,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="660,29,628,29,628,24,660,24"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_title_screen.html#aecedcd5e961b0da973cf9ef5c37ece6c" title=" " alt="" coords="227,5,399,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="432,29,399,29,399,24,432,24"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="5,13,179,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="211,29,179,29,179,24,211,24"/>
+</map>

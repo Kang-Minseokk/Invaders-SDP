@@ -1,0 +1,116 @@
+<map id="engine.SoundManager.presetEffectSound" name="engine.SoundManager.presetEffectSound">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1687,927,1878,969"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9" title="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..." alt="" coords="1448,927,1639,969"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1671,951,1640,951,1640,945,1671,945"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea" title=" " alt="" coords="1178,935,1400,961"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1432,951,1400,951,1400,945,1432,945"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_draw_manager.html#a4a0a0ce908ee42bdc7b312ee3dae8dec" title=" " alt="" coords="924,347,1118,389"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1278,920,1258,846,1226,741,1182,623,1127,507,1084,442,1041,391,1045,388,1088,439,1132,504,1187,621,1231,740,1264,844,1283,919"/>
+<area shape="rect" id="Node000022" href="$classentity_1_1_fever_time_item.html#a798fa032307cc7414a82e55946d4a97f" title=" " alt="" coords="924,628,1118,655"/>
+<area shape="poly" id="edge14_Node000003_Node000022" title=" " alt="" coords="1277,921,1258,868,1227,802,1184,734,1158,703,1128,676,1095,658,1098,653,1131,671,1161,699,1188,730,1232,799,1263,866,1282,919"/>
+<area shape="rect" id="Node000023" href="$class_enemy_1_1_item_manager.html#a485cd51965cc7532571b592bf4bb1891" title=" " alt="" coords="608,511,825,537"/>
+<area shape="poly" id="edge49_Node000003_Node000023" title=" " alt="" coords="1283,919,1274,843,1264,793,1250,741,1230,687,1204,636,1170,590,1128,551,1086,527,1041,511,993,501,944,497,851,501,774,513,773,507,850,495,944,492,993,496,1042,506,1089,522,1131,547,1174,586,1208,633,1235,685,1255,739,1269,792,1279,842,1289,919"/>
+<area shape="rect" id="Node000026" href="$class_enemy_1_1_item_manager.html#a3a3dd08c8c89f9bf925efaa8d390f584" title=" " alt="" coords="925,561,1117,604"/>
+<area shape="poly" id="edge17_Node000003_Node000026" title=" " alt="" coords="1279,920,1263,858,1234,776,1214,733,1190,691,1161,652,1128,618,1112,607,1115,602,1131,614,1165,649,1194,688,1219,731,1239,774,1269,856,1285,919"/>
+<area shape="rect" id="Node000027" href="$classentity_1_1_enemy_ship.html#a64297ffda858a49a7f3cb2ddde1c36b6" title="Destroys the ship, causing an explosion." alt="" coords="936,729,1106,756"/>
+<area shape="poly" id="edge19_Node000003_Node000027" title=" " alt="" coords="1266,925,1208,860,1169,824,1128,792,1096,773,1063,759,1065,754,1098,768,1131,787,1173,820,1211,856,1270,921"/>
+<area shape="rect" id="Node000038" href="$classentity_1_1_bomb.html#af1efba260e80c0e811e99f3326b3ca3e" title=" " alt="" coords="622,561,810,588"/>
+<area shape="poly" id="edge41_Node000003_Node000038" title=" " alt="" coords="1274,922,1253,877,1222,822,1180,766,1155,741,1128,720,1099,704,1072,696,1021,694,969,693,941,685,911,669,894,652,886,634,878,617,863,602,837,590,810,582,811,577,839,585,866,598,883,614,891,632,899,649,914,665,943,680,970,687,1021,689,1073,691,1101,699,1131,715,1159,737,1184,762,1226,819,1258,874,1279,919"/>
+<area shape="rect" id="Node000044" href="$classentity_1_1_ship.html#aa687b4ba56e05226f2fa22fa55eb49e1" title="Switches the ship to its destroyed state." alt="" coords="956,1153,1086,1180"/>
+<area shape="poly" id="edge32_Node000003_Node000044" title=" " alt="" coords="1275,976,1252,1014,1220,1060,1179,1105,1131,1144,1109,1154,1087,1161,1085,1156,1107,1149,1128,1139,1175,1102,1216,1057,1248,1011,1271,974"/>
+<area shape="rect" id="Node000049" href="$classscreen_1_1_game_screen.html#a3d24b8d63b4a79a97952e11d5e9db8d7" title=" " alt="" coords="625,999,807,1041"/>
+<area shape="poly" id="edge44_Node000003_Node000049" title=" " alt="" coords="1191,967,1130,976,808,1014,807,1008,1129,971,1190,962"/>
+<area shape="rect" id="Node000050" href="$classscreen_1_1_game_screen.html#ade3bfa4a898833ad3e648da6f2664f8c" title=" " alt="" coords="930,868,1112,911"/>
+<area shape="poly" id="edge42_Node000003_Node000050" title=" " alt="" coords="1209,933,1112,912,1113,907,1210,928"/>
+<area shape="rect" id="Node000051" href="$classscreen_1_1_game_screen.html#a753aeed9a3b2d6409487544622e35e53" title=" " alt="" coords="930,1416,1112,1459"/>
+<area shape="poly" id="edge45_Node000003_Node000051" title=" " alt="" coords="1289,977,1280,1061,1270,1116,1255,1176,1235,1238,1209,1299,1174,1356,1131,1406,1114,1419,1111,1414,1128,1402,1170,1353,1204,1296,1230,1236,1250,1174,1265,1115,1274,1060,1284,977"/>
+<area shape="rect" id="Node000052" href="$classscreen_1_1_high_score_screen.html#a64a97eae14496b17608a6d39d38dc54f" title="Constructor, establishes the properties of the screen." alt="" coords="922,1036,1120,1079"/>
+<area shape="poly" id="edge47_Node000003_Node000052" title=" " alt="" coords="1245,970,1131,1020,1084,1038,1082,1033,1129,1015,1243,966"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="959,1103,1083,1129"/>
+<area shape="poly" id="edge48_Node000003_Node000008" title=" " alt="" coords="1269,975,1211,1035,1173,1066,1131,1093,1084,1110,1082,1105,1128,1088,1170,1062,1207,1031,1265,972"/>
+<area shape="rect" id="Node000053" href="$classentity_1_1_enemy_ship_formation.html#a1fdfe251c7b640055b3769dad2c9ad4f" title=" " alt="" coords="916,801,1126,844"/>
+<area shape="poly" id="edge50_Node000003_Node000053" title=" " alt="" coords="1253,928,1196,893,1129,858,1100,847,1101,842,1131,854,1199,889,1256,924"/>
+<area shape="rect" id="Node000054" href="$classscreen_1_1_title_screen.html#a39cf4d27efb908139820cdfbe0318e1b" title=" " alt="" coords="926,1349,1116,1392"/>
+<area shape="poly" id="edge52_Node000003_Node000054" title=" " alt="" coords="1281,977,1259,1034,1226,1110,1184,1195,1132,1275,1093,1317,1054,1351,1050,1347,1089,1313,1128,1272,1179,1192,1222,1108,1254,1032,1276,975"/>
+<area shape="rect" id="Node000060" href="$classentity_1_1_enemy_ship_formation.html#ab14e0e86abd1a4cb54b03c24ded35547" title="Shoots a bullet downwards." alt="" coords="912,935,1130,961"/>
+<area shape="poly" id="edge57_Node000003_Node000060" title=" " alt="" coords="1162,951,1130,951,1130,945,1162,945"/>
+<area shape="rect" id="Node000062" href="$classentity_1_1_ship.html#a9f468e29f8e09081fcb45234b5d97f5a" title="Shoots a bullet upwards." alt="" coords="657,1265,775,1292"/>
+<area shape="poly" id="edge60_Node000003_Node000062" title=" " alt="" coords="1280,977,1260,1025,1228,1084,1185,1144,1160,1171,1131,1194,1088,1220,1042,1240,993,1256,945,1267,852,1280,776,1283,776,1278,852,1274,944,1262,992,1251,1040,1235,1086,1215,1128,1190,1156,1167,1181,1140,1224,1081,1255,1022,1275,975"/>
+<area shape="rect" id="Node000064" href="$classscreen_1_1_title_screen.html#a6d58b0bb3a8064f2e9a0b165762421f5" title="Constructor, establishes the properties of the screen." alt="" coords="941,1483,1101,1525"/>
+<area shape="poly" id="edge64_Node000003_Node000064" title=" " alt="" coords="1290,977,1285,1071,1277,1134,1264,1203,1244,1275,1216,1347,1179,1414,1131,1473,1103,1492,1100,1487,1128,1469,1175,1411,1211,1344,1239,1274,1259,1202,1272,1133,1280,1070,1285,976"/>
+<area shape="rect" id="Node000005" href="$class_achievement_1_1_achievement_conditions.html#a370857deb5c4dc35e2bd3191fb6834c1" title=" " alt="" coords="568,248,864,291"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="937,344,784,294,785,289,939,339"/>
+<area shape="rect" id="Node000006" href="$class_achievement_1_1_achievement_conditions.html#a99d262bc05fed539b97aa1107fcfba48" title=" " alt="" coords="239,248,518,291"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="552,272,518,272,518,267,552,267"/>
+<area shape="rect" id="Node000009" href="$class_achievement_1_1_achievement_conditions.html#ab3b45005bc2580da03cf08b1f13c44cb" title=" " alt="" coords="239,315,518,357"/>
+<area shape="poly" id="edge6_Node000005_Node000009" title=" " alt="" coords="590,297,490,317,489,311,589,292"/>
+<area shape="rect" id="Node000012" href="$class_achievement_1_1_achievement_conditions.html#a97e05c2e6b58217292dc1c60f7c6542c" title=" " alt="" coords="237,381,520,408"/>
+<area shape="poly" id="edge7_Node000005_Node000012" title=" " alt="" coords="668,301,600,338,521,372,479,383,477,378,519,367,598,333,666,297"/>
+<area shape="rect" id="Node000015" href="$class_achievement_1_1_achievement_conditions.html#ad3dd6057a9bfa438d4750cfa2c643e57" title=" " alt="" coords="249,432,508,475"/>
+<area shape="poly" id="edge8_Node000005_Node000015" title=" " alt="" coords="684,303,613,364,569,396,521,422,492,434,490,429,519,418,566,391,610,360,681,299"/>
+<area shape="rect" id="Node000016" href="$class_achievement_1_1_achievement_conditions.html#a5c82f71185fe8a0b03cea729d6a4d4fe" title=" " alt="" coords="241,5,516,32"/>
+<area shape="poly" id="edge9_Node000005_Node000016" title=" " alt="" coords="693,236,664,191,625,139,575,88,548,66,519,46,493,35,496,30,521,42,551,61,579,84,629,136,669,188,697,233"/>
+<area shape="rect" id="Node000019" href="$class_achievement_1_1_achievement_conditions.html#a58e9009c80c1208580a23f8646ef423a" title=" " alt="" coords="250,56,507,99"/>
+<area shape="poly" id="edge10_Node000005_Node000019" title=" " alt="" coords="682,239,611,174,567,141,519,113,491,102,493,97,521,108,570,137,615,170,686,235"/>
+<area shape="rect" id="Node000020" href="$class_achievement_1_1_achievement_conditions.html#a2abd1058b6a5125525283f05ebc90f30" title=" " alt="" coords="241,147,516,173"/>
+<area shape="poly" id="edge11_Node000005_Node000020" title=" " alt="" coords="657,243,592,214,519,188,473,177,475,171,521,183,594,209,659,238"/>
+<area shape="rect" id="Node000021" href="$class_achievement_1_1_achievement_conditions.html#a13bba364bdccb0c5f713dd9c006e508d" title=" " alt="" coords="243,197,514,224"/>
+<area shape="poly" id="edge13_Node000005_Node000021" title=" " alt="" coords="574,247,459,227,460,222,575,242"/>
+<area shape="poly" id="edge12_Node000020_Node000020" title=" " alt="" coords="428,135,412,128,378,125,349,127,332,132,328,137,336,144,332,148,323,138,329,128,348,122,378,120,413,123,430,130"/>
+<area shape="poly" id="edge15_Node000022_Node000023" title=" " alt="" coords="920,623,911,618,894,601,886,583,878,567,863,552,824,535,826,530,866,547,883,564,891,581,899,598,914,614,922,619"/>
+<area shape="rect" id="Node000024" href="$classscreen_1_1_game_screen.html#aaa246e4bb4604682b7380845beab0e9f" title=" " alt="" coords="287,499,470,541"/>
+<area shape="poly" id="edge16_Node000023_Node000024" title=" " alt="" coords="592,525,470,524,470,518,592,520"/>
+<area shape="poly" id="edge18_Node000026_Node000023" title=" " alt="" coords="909,561,864,552,801,541,802,535,865,547,910,556"/>
+<area shape="rect" id="Node000028" href="$classentity_1_1_enemy_ship.html#ae47b2ffda8233c5d5a0f0ba9de608264" title="Destroys ship, causing a chain explode." alt="" coords="614,679,819,705"/>
+<area shape="poly" id="edge20_Node000027_Node000028" title=" " alt="" coords="921,729,800,709,801,703,922,724"/>
+<area shape="poly" id="edge22_Node000027_Node000038" title=" " alt="" coords="927,724,911,713,898,699,891,684,886,655,881,627,875,614,863,602,838,588,809,579,811,574,840,583,866,598,879,611,886,625,892,654,896,682,903,696,914,709,931,720"/>
+<area shape="rect" id="Node000040" href="$classentity_1_1_bomb.html#a145812b545b1662e338831889f667d22" title=" " alt="" coords="622,612,810,655"/>
+<area shape="poly" id="edge25_Node000027_Node000040" title=" " alt="" coords="940,726,911,713,896,702,886,690,877,679,863,669,809,649,811,644,866,664,881,675,891,687,900,698,914,708,943,722"/>
+<area shape="rect" id="Node000041" href="$classscreen_1_1_game_screen.html#a86f8c8c2cd6408de33420665e3dedb85" title=" " alt="" coords="625,780,807,823"/>
+<area shape="poly" id="edge27_Node000027_Node000041" title=" " alt="" coords="934,762,808,786,807,781,933,757"/>
+<area shape="rect" id="Node000042" href="$class_enemy_1_1_hp_enemy_ship.html#a07c30d46d1490fddfbc87aabdf15a835" title="When the EnemyShip is hit and its hp reaches 0, destroy the ship." alt="" coords="632,729,800,756"/>
+<area shape="poly" id="edge29_Node000027_Node000042" title=" " alt="" coords="920,745,800,745,800,740,920,740"/>
+<area shape="rect" id="Node000029" href="$classentity_1_1_enemy_ship_formation.html#aaf51727a5bd3b68f8fb8523d4b7bf3ea" title="When EnemyShip is hit, its HP decrease by 1, and if the HP reaches 0, the ship is destroyed." alt="" coords="286,616,471,659"/>
+<area shape="poly" id="edge21_Node000028_Node000029" title=" " alt="" coords="614,678,471,655,472,650,615,673"/>
+<area shape="poly" id="edge23_Node000038_Node000029" title=" " alt="" coords="617,594,568,603,472,621,471,616,568,597,616,589"/>
+<area shape="rect" id="Node000039" href="$classentity_1_1_enemy_ship_formation.html#a6c7e9726d2340a498c24f35490e41df8" title="Destroys a ship." alt="" coords="264,565,492,592"/>
+<area shape="poly" id="edge24_Node000038_Node000039" title=" " alt="" coords="607,579,493,580,493,575,607,573"/>
+<area shape="poly" id="edge26_Node000040_Node000029" title=" " alt="" coords="607,637,472,639,472,634,607,632"/>
+<area shape="rect" id="Node000037" href="$classscreen_1_1_game_screen.html#af6ce22d045fc5614a16a76ce73331295" title=" " alt="" coords="287,889,470,932"/>
+<area shape="poly" id="edge28_Node000041_Node000037" title=" " alt="" coords="634,831,448,891,446,886,632,826"/>
+<area shape="rect" id="Node000032" href="$classentity_1_1_enemy_ship_formation.html#a695de08faa9695c26d2f8f2d1d491560" title=" " alt="" coords="267,805,490,848"/>
+<area shape="poly" id="edge30_Node000042_Node000032" title=" " alt="" coords="618,760,569,771,443,807,442,802,567,765,617,755"/>
+<area shape="rect" id="Node000043" href="$classentity_1_1_enemy_ship_formation.html#aae55bec682ecd1692c011a6a4cc23212" title=" " alt="" coords="267,721,490,764"/>
+<area shape="poly" id="edge31_Node000042_Node000043" title=" " alt="" coords="617,745,491,745,491,740,617,740"/>
+<area shape="rect" id="Node000045" href="$classengine_1_1_two_player_mode.html#a285af0cfa1987ad696978b30b33157b9" title=" " alt="" coords="617,1065,815,1108"/>
+<area shape="poly" id="edge33_Node000044_Node000045" title=" " alt="" coords="941,1153,911,1144,863,1123,815,1109,817,1104,865,1117,913,1139,942,1147"/>
+<area shape="rect" id="Node000047" href="$classscreen_1_1_game_screen.html#a86aba24ff3eb7aaadec5c84dcebd3d68" title=" " alt="" coords="625,1199,807,1241"/>
+<area shape="poly" id="edge36_Node000044_Node000047" title=" " alt="" coords="942,1183,808,1207,807,1201,941,1178"/>
+<area shape="rect" id="Node000048" href="$classengine_1_1_two_player_mode.html#a7de003667ea149049a184c496a16af0c" title=" " alt="" coords="617,1132,815,1175"/>
+<area shape="poly" id="edge37_Node000044_Node000048" title=" " alt="" coords="941,1166,816,1160,816,1155,941,1161"/>
+<area shape="poly" id="edge39_Node000044_Node000049" title=" " alt="" coords="940,1159,911,1143,893,1121,886,1098,879,1076,863,1055,836,1040,807,1031,809,1025,839,1035,866,1051,884,1073,891,1097,897,1119,914,1139,943,1154"/>
+<area shape="rect" id="Node000046" href="$classscreen_1_1_game_screen.html#a76eb9b586bb07db6674cd2e311f05331" title=" " alt="" coords="283,1147,474,1189"/>
+<area shape="poly" id="edge34_Node000045_Node000046" title=" " alt="" coords="602,1115,569,1123,465,1149,463,1143,567,1117,601,1109"/>
+<area shape="rect" id="Node000011" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,1173,189,1200"/>
+<area shape="poly" id="edge35_Node000046_Node000011" title=" " alt="" coords="268,1178,189,1183,189,1178,267,1173"/>
+<area shape="poly" id="edge38_Node000048_Node000046" title=" " alt="" coords="602,1161,474,1167,474,1161,601,1156"/>
+<area shape="poly" id="edge40_Node000049_Node000037" title=" " alt="" coords="632,996,446,935,448,930,634,991"/>
+<area shape="poly" id="edge43_Node000050_Node000037" title=" " alt="" coords="914,896,470,910,470,905,914,890"/>
+<area shape="poly" id="edge46_Node000051_Node000011" title=" " alt="" coords="919,1469,914,1473,903,1485,897,1497,893,1523,887,1550,879,1562,866,1573,826,1595,789,1609,755,1616,721,1616,686,1611,650,1602,567,1573,486,1537,408,1490,336,1437,271,1380,215,1325,167,1274,107,1202,111,1199,171,1271,218,1321,275,1376,340,1433,411,1486,488,1532,569,1568,652,1597,687,1606,721,1611,754,1611,788,1604,824,1590,863,1568,875,1558,882,1547,887,1522,892,1495,899,1482,910,1469,915,1465"/>
+<area shape="poly" id="edge51_Node000053_Node000032" title=" " alt="" coords="901,835,864,837,716,840,568,837,490,835,490,829,568,832,716,835,864,832,901,830"/>
+<area shape="rect" id="Node000055" href="$classscreen_1_1_title_screen.html#aa096a9853f7b30afa52f751bccf0698d" title=" " alt="" coords="630,1316,802,1359"/>
+<area shape="poly" id="edge53_Node000054_Node000055" title=" " alt="" coords="910,1361,803,1349,803,1344,911,1356"/>
+<area shape="rect" id="Node000057" href="$classscreen_1_1_title_screen.html#a4cea29053a302903adb24c481f73ef32" title=" " alt="" coords="629,1383,803,1425"/>
+<area shape="poly" id="edge54_Node000054_Node000057" title=" " alt="" coords="911,1385,804,1397,804,1392,910,1380"/>
+<area shape="rect" id="Node000058" href="$classscreen_1_1_title_screen.html#a13e1bc224668add219c9a8544a8d8f34" title=" " alt="" coords="630,1449,802,1492"/>
+<area shape="poly" id="edge55_Node000054_Node000058" title=" " alt="" coords="926,1401,914,1406,890,1423,865,1440,804,1460,802,1455,863,1435,887,1419,911,1402,924,1396"/>
+<area shape="rect" id="Node000059" href="$classscreen_1_1_title_screen.html#a26c6225edd92e784057fc7bc2df4b88c" title=" " alt="" coords="630,1516,802,1559"/>
+<area shape="poly" id="edge56_Node000054_Node000059" title=" " alt="" coords="918,1403,914,1406,903,1418,897,1430,891,1455,885,1481,878,1494,866,1506,836,1523,804,1534,802,1529,834,1519,863,1502,874,1491,880,1479,886,1454,892,1428,899,1415,911,1402,915,1399"/>
+<area shape="rect" id="Node000061" href="$classscreen_1_1_game_screen.html#a170f7dceead615d1b65eadbd70693ea2" title=" " alt="" coords="287,1011,470,1053"/>
+<area shape="poly" id="edge58_Node000060_Node000061" title=" " alt="" coords="897,956,740,968,568,989,460,1013,459,1007,568,984,739,963,897,951"/>
+<area shape="poly" id="edge59_Node000061_Node000011" title=" " alt="" coords="326,1064,125,1175,122,1170,323,1059"/>
+<area shape="poly" id="edge63_Node000062_Node000046" title=" " alt="" coords="641,1276,604,1268,567,1256,552,1247,542,1237,519,1218,458,1192,460,1188,521,1214,545,1233,555,1243,569,1251,605,1263,642,1271"/>
+<area shape="rect" id="Node000063" href="$classscreen_1_1_game_screen.html#afe65922c8de47fc748e1555c84a991c2" title=" " alt="" coords="287,1228,470,1271"/>
+<area shape="poly" id="edge61_Node000062_Node000063" title=" " alt="" coords="641,1275,469,1260,470,1255,642,1270"/>
+<area shape="poly" id="edge62_Node000063_Node000011" title=" " alt="" coords="271,1228,160,1203,161,1198,272,1223"/>
+</map>

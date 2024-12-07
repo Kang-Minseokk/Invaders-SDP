@@ -1,0 +1,9 @@
+<map id="engine.Frame.Frame" name="engine.Frame.Frame">
+<area shape="rect" id="Node000001" title="Initializes the new frame." alt="" coords="5,13,147,40"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#a2b8d5ab296c2a48e7150a78dc19c2b09" title="Controls access to the input manager." alt="" coords="195,13,387,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,24,179,24,179,29,147,29"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_input_manager.html#a55cc5fad5e42059643d58c5c0f550b82" title="Returns shared instance of InputManager." alt="" coords="435,13,649,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="388,24,419,24,419,29,388,29"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_input_manager.html#a1ab5f8bce66f516527390223c6dc18db" title="Private constructor." alt="" coords="697,5,873,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="650,24,682,24,682,29,650,29"/>
+</map>

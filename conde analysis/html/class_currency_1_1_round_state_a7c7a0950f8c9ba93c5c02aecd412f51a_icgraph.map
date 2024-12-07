@@ -1,0 +1,9 @@
+<map id="Currency.RoundState.getLevelBonus_amount" name="Currency.RoundState.getLevelBonus_amount">
+<area shape="rect" id="Node000001" title=" " alt="" coords="772,5,972,48"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a3a4c805d68a2cb1265ef7c3cd8f3ff42" title="Show ReceiptScreen." alt="" coords="503,13,724,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="757,29,725,29,725,24,757,24"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_receipt_screen.html#a6c8320866245be6a855d7253627548ad" title="Draws the elements associated with the screen." alt="" coords="260,13,455,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,29,455,29,455,24,487,24"/>
+<area shape="rect" id="Node000004" href="$class_currency_1_1_receipt_screen.html#ad1a8f6ed95eff0f0542c0ae9c6eda729" title="Updates the elements on screen and checks for events." alt="" coords="5,13,212,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="244,29,212,29,212,24,244,24"/>
+</map>

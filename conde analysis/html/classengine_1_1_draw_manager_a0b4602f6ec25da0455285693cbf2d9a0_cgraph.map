@@ -1,0 +1,13 @@
+<map id="engine.DrawManager.setFrame" name="engine.DrawManager.setFrame">
+<area shape="rect" id="Node000001" title="Sets the frame to draw the image on." alt="" coords="5,31,209,57"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_background.html#a2c76faa8fa5e6bf6318dcdac9a1912cc" title=" " alt="" coords="257,5,462,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,31,241,28,242,33,209,36"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_background.html#a46b6744103a1380f77313b244d0158aa" title=" " alt="" coords="267,56,452,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="209,52,252,56,251,61,209,57"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_background.html#a500cc4fb2f76cc20a16a284215975448" title=" " alt="" coords="510,5,716,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,16,494,16,494,21,462,21"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_frame.html#afafbfb86bc806cc4cccc6da0906d4587" title="Getter for frame height." alt="" coords="533,56,693,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="452,67,517,67,517,72,452,72"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_frame.html#ad76885b5f6387926e7d8bc631d4b4052" title="Getter for frame width." alt="" coords="535,107,691,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="430,81,529,100,527,106,429,86"/>
+</map>

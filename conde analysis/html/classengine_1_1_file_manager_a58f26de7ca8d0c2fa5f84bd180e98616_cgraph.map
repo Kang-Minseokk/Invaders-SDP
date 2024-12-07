@@ -1,0 +1,5 @@
+<map id="engine.FileManager.loadUserData" name="engine.FileManager.loadUserData">
+<area shape="rect" id="Node000001" title="load userData(Statistics) from file, and return userData(Statistics)" alt="" coords="5,13,224,40"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html#a659bc395de42280133d732e581ffb91d" title="Returns the application default userData(Statistics) if there is no Statistic.properties file." alt="" coords="272,5,476,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,24,256,24,256,29,224,29"/>
+</map>

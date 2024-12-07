@@ -1,0 +1,7 @@
+<map id="engine.DrawManager.drawBackground" name="engine.DrawManager.drawBackground">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,251,73"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_background.html#a918f6f3f1b91f3d38edfc90604c5235f" title=" " alt="" coords="299,5,513,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,43,283,39,284,44,245,49"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_background.html#aa24d734763866bee6c605656eca3632b" title=" " alt="" coords="307,72,505,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,71,291,77,291,82,245,77"/>
+</map>

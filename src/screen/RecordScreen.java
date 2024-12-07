@@ -42,6 +42,7 @@ public class RecordScreen extends Screen {
      *
      * @return Next screen code.
      */
+    @Override
     public final int run() {
         super.run();
 
@@ -51,6 +52,7 @@ public class RecordScreen extends Screen {
     /**
      * Updates the elements on screen and checks for events.
      */
+    @Override
     protected final void update() {
         super.update();
 

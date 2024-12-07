@@ -1,7 +1,6 @@
 package engine;
 
-import java.awt.Font;
-import java.awt.FontFormatException;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -16,11 +15,12 @@ import java.io.OutputStreamWriter;
 import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.util.*;
+import java.util.List;
 import java.util.logging.Logger;
-import CtrlS.EncryptionSupport;
+import Currency.EncryptionSupport;
 import engine.DrawManager.SpriteType;
 
-import clove.Statistics; //Team Clove
+import Achievement.Statistics; //Team Clove
 
 /**
  * Manages files used in the application.
@@ -38,17 +38,21 @@ public final class FileManager {
 	private static final int MAX_SCORES = 7;
 	/** Max number of recent recorded scores / Team Clove */
 	private static final int MAX_RECORD = 10;
+	private static final String SKIN_PROPERTIES_FILE = "unlocked_skins.properties";
+
+
+
 
 	/**
 	 * private constructor.
 	 */
-	private FileManager() {
+    public FileManager() {
 		logger = Core.getLogger();
 	}
 
 	/**
 	 * Returns shared instance of FileManager.
-	 * 
+	 *
 	 * @return Shared instance of FileManager.
 	 */
 	protected static FileManager getInstance() {
@@ -59,45 +63,61 @@ public final class FileManager {
 
 	/**
 	 * Loads sprites from disk.
-	 * 
+	 *
 	 * @param spriteMap
 	 *            Mapping of sprite type and empty boolean matrix that will
 	 *            contain the image.
 	 * @throws IOException
 	 *             In case of loading problems.
 	 */
-	public void loadSprite(final Map<SpriteType, boolean[][]> spriteMap)
+
+	public void loadSprite(final Map<SpriteType, Color[][]> spriteMap)
 			throws IOException {
 		InputStream inputStream = null;
 
 		try {
-			inputStream = DrawManager.class.getClassLoader()
-					.getResourceAsStream("graphics");
+			inputStream = DrawManager.class.getClassLoader().getResourceAsStream("graphics");
+			if (inputStream == null) {
+				throw new FileNotFoundException("Graphics file not found.");
+			}
+
 			char c;
-
-			// Sprite loading.
-			for (Map.Entry<SpriteType, boolean[][]> sprite : spriteMap
-					.entrySet()) {
-				for (int i = 0; i < sprite.getValue().length; i++)
+			// Sprite loading
+			for (Map.Entry<SpriteType, Color[][]> sprite : spriteMap.entrySet()) {
+				for (int i = 0; i < sprite.getValue().length; i++) {
 					for (int j = 0; j < sprite.getValue()[i].length; j++) {
-						do
+						String rgbHex = "";
+						for (int k = 0; k < 8; k++) {
 							c = (char) inputStream.read();
-						while (c != '0' && c != '1');
+							if (Character.isLetterOrDigit(c)) { // 유효한 16진수 문자 확인
+								rgbHex += c;
+							} else {
+								k--; // 잘못된 문자가 나오면 반복 횟수를 유지
+							}
+						}
 
-						if (c == '1')
-							sprite.getValue()[i][j] = true;
-						else
-							sprite.getValue()[i][j] = false;
+						try {
+							String colorHex = rgbHex.toString();
+							if (colorHex.equalsIgnoreCase("0x000000")) {
+								sprite.getValue()[i][j] = null;
+							} else {
+								sprite.getValue()[i][j] = Color.decode(rgbHex);
+							}
+						} catch (NumberFormatException e) {
+							logger.warning("Invalid color code: " + rgbHex);
+							sprite.getValue()[i][j] = null; // 잘못된 값을 null로 처리
+						}
 					}
+				}
 				logger.fine("Sprite " + sprite.getKey() + " loaded.");
 			}
-			if (inputStream != null)
-				inputStream.close();
 		} finally {
-			if (inputStream != null)
+			if (inputStream != null) {
 				inputStream.close();
+			}
 		}
 	}
+
 
 	/**
 	 * Loads a font of a given size.
@@ -456,6 +476,35 @@ public final class FileManager {
 			if (bufferedWriter != null)
 				bufferedWriter.close();
 		}
+	}
+
+
+	//custom
+	// FileManager에 추가
+	public static void saveUnlockedSkins(Properties unlockedSkins) throws IOException {
+		String jarPath = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+		jarPath = URLDecoder.decode(jarPath, "UTF-8");
+
+		String propertiesPath = new File(jarPath).getParent() + File.separator + SKIN_PROPERTIES_FILE;
+		try (OutputStream outputStream = new FileOutputStream(propertiesPath)) {
+			unlockedSkins.store(new OutputStreamWriter(outputStream, Charset.forName("UTF-8")), "Unlocked Skins");
+		}
+	}
+
+	public static Properties loadUnlockedSkins() throws IOException {
+		Properties unlockedSkins = new Properties();
+		String jarPath = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+		jarPath = URLDecoder.decode(jarPath, "UTF-8");
+
+		String propertiesPath = new File(jarPath).getParent() + File.separator + SKIN_PROPERTIES_FILE;
+		File file = new File(propertiesPath);
+
+		if (file.exists()) {
+			try (InputStream inputStream = new FileInputStream(file)) {
+				unlockedSkins.load(new InputStreamReader(inputStream, Charset.forName("UTF-8")));
+			}
+		}
+		return unlockedSkins;
 	}
 
 	/**

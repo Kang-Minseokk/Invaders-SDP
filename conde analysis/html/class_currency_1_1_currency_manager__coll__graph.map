@@ -1,0 +1,14 @@
+<map id="Currency.CurrencyManager" name="Currency.CurrencyManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="51,939,221,1157"/>
+<area shape="rect" id="Node000002" href="$class_currency_1_1_currency_manager.html" title=" " alt="" coords="51,656,221,875"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,875,139,922,133,922,133,875"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="222,738,240,747,247,765,245,777,238,785,234,781,240,774,242,766,236,751,219,743"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="59,5,109,75"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="78,75,48,206,32,299,19,404,10,519,9,638,19,758,41,874,59,922,54,924,36,875,14,759,4,638,5,519,13,404,27,298,43,205,72,74"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="85,74,81,292,85,441,98,592,106,639,101,640,93,592,80,441,76,292,80,74"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_file_manager.html" title="Manages files used in the application." alt="" coords="151,139,335,592"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="103,73,134,137,146,161,141,163,130,140,98,76"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="327,591,339,661,343,734,336,806,328,842,316,876,300,905,281,932,236,980,232,976,277,929,296,902,311,874,323,840,331,805,338,734,333,662,321,592"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="185,592,172,640,167,639,180,591"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="336,319,354,336,361,365,358,386,350,401,346,398,353,384,356,365,350,338,333,323"/>
+</map>

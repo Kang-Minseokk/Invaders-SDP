@@ -1,0 +1,11 @@
+<map id="entity.Skins.saveSkins" name="entity.Skins.saveSkins">
+<area shape="rect" id="Node000001" title=" " alt="" coords="938,13,1092,40"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_skins.html#a4e0ef4d22d9493b0f374a0148787a1dd" title=" " alt="" coords="732,13,890,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="922,29,890,29,890,24,922,24"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_title_screen.html#a7fd5b09abe3bec0ab469b9cf6c8153b9" title=" " alt="" coords="447,13,684,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="717,29,685,29,685,24,717,24"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_title_screen.html#aecedcd5e961b0da973cf9ef5c37ece6c" title=" " alt="" coords="227,5,399,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="431,29,400,29,400,24,431,24"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d" title="Updates the elements on screen and checks for events." alt="" coords="5,13,179,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="211,29,179,29,179,24,211,24"/>
+</map>

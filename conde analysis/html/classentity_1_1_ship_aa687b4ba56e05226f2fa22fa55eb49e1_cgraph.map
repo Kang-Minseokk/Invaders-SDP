@@ -1,0 +1,19 @@
+<map id="entity.Ship.destroy" name="entity.Ship.destroy">
+<area shape="rect" id="Node000001" title="Switches the ship to its destroyed state." alt="" coords="5,119,135,145"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea" title=" " alt="" coords="183,64,405,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,115,221,92,222,97,128,121"/>
+<area shape="rect" id="Node000007" href="$classengine_1_1_sound_manager.html#af326739e7c567da7bedf9a07eff7e232" title=" " alt="" coords="196,119,392,145"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="135,129,180,129,180,135,135,135"/>
+<area shape="rect" id="Node000009" href="$classengine_1_1_cooldown.html#abcb3cea769834552c6a81075f5d17dc7" title="Restarts the cooldown." alt="" coords="217,169,371,196"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="133,143,217,163,216,168,132,149"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9" title="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..." alt="" coords="453,48,644,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,71,438,70,438,75,405,77"/>
+<area shape="rect" id="Node000004" href="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2" title="Controls access to the logger." alt="" coords="729,5,882,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="644,48,719,33,720,38,645,53"/>
+<area shape="rect" id="Node000005" href="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb" title=" " alt="" coords="692,56,919,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="645,67,677,67,677,72,645,72"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f" title=" " alt="" coords="710,107,901,149"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="645,89,696,100,695,105,644,94"/>
+<area shape="rect" id="Node000008" href="$classengine_1_1_sound_manager.html#aff8a50dd8c931099450db7066e6a360e" title=" " alt="" coords="460,115,638,157"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="393,131,444,132,444,137,393,136"/>
+</map>

@@ -1,0 +1,22 @@
+digraph "engine.DrawManager.DrawManager"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="engine.DrawManager.DrawManager",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Private constructor."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="engine.Core.getFileManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8",tooltip="Controls access to the file manager."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="engine.FileManager.getInstance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0",tooltip="Returns shared instance of FileManager."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="engine.FileManager.FileManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a",tooltip="private constructor."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="engine.Core.getLogger",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2",tooltip="Controls access to the logger."];
+  Node1 -> Node5 [id="edge5_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge6_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="engine.FileManager.loadFont",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#a557804f2c71a599400dd60c4b24f9a1d",tooltip="Loads a font of a given size."];
+  Node1 -> Node7 [id="edge7_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="engine.FileManager.loadSprite",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#a77c85c9ebc8af1cf9f2e272505c7fa38",tooltip="Loads sprites from disk."];
+}

@@ -3,25 +3,28 @@ package engine;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
+import java.util.Map;
+import java.util.HashMap;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import CtrlS.CurrencyManager;
-import CtrlS.RoundState;
-import CtrlS.ReceiptScreen;
-import CtrlS.UpgradeManager;
-import Sound_Operator.SoundManager;
-import clove.Statistics;
-import level_design.Background;
-import CtrlS.RoundState;
-import CtrlS.ReceiptScreen;
-import Sound_Operator.SoundManager;
-import clove.AchievementManager;
+import java.awt.event.KeyEvent;
+
+import Currency.CurrencyManager;
+import Currency.RoundState;
+import Currency.ReceiptScreen;
+import Currency.UpgradeManager;
+
+import Achievement.Statistics;
+import Achievement.AchievementManager;
+
+import entity.Skins;
 import screen.*;
-import twoplayermode.TwoPlayerMode;
+import engine.TwoPlayerMode;
 
 
 /**
@@ -85,9 +88,33 @@ public final class Core {
 	private static SoundManager sm;
     private static AchievementManager achievementManager; // Team CLOVER
 
+	private static int savedVolumeSelectionCode = 3; // 기본값
+
+	public static int getSavedVolumeSelectionCode() {
+		return savedVolumeSelectionCode;
+	}
+
+	public static void setSavedVolumeSelectionCode(int newCode) {
+		savedVolumeSelectionCode = newCode;
+	}
+
+	private static Stack<Screen> screenStack = new Stack<>();
+
+	private static Map<String, Integer> keyMappings = new HashMap<>();
+
+	static {
+		// 기본 키 매핑 설정
+		keyMappings.put("MOVE_UP", KeyEvent.VK_W);
+		keyMappings.put("MOVE_DOWN", KeyEvent.VK_S);
+		keyMappings.put("MOVE_LEFT", KeyEvent.VK_A);
+		keyMappings.put("MOVE_RIGHT", KeyEvent.VK_D);
+		keyMappings.put("SHOOT", KeyEvent.VK_SPACE);
+		keyMappings.put("PAUSE", KeyEvent.VK_P);
+		keyMappings.put("GO_BACK", KeyEvent.VK_ESCAPE);
+	}
 	/**
 	 * Test implementation.
-	 * 
+	 *
 	 * @param args
 	 *            Program args, ignored.
 	 */
@@ -119,6 +146,8 @@ public final class Core {
 			Statistics statistics = new Statistics();
 			statistics.resetStatistics();
 			LOGGER.info("Reset Player Statistics");
+		/*	Skins.loadSkins();*/
+
 
 		} catch (Exception e) {
 			// TODO handle exception
@@ -129,10 +158,6 @@ public final class Core {
 		DrawManager.getInstance().setFrame(frame);
 		int width = frame.getWidth();
 		int height = frame.getHeight();
-
-		/** ### TEAM INTERNATIONAL ###*/
-		/** Initialize singleton instance of a background*/
-		Background.getInstance().initialize(frame);
 
 		gameSettings = new ArrayList<GameSettings>();
 		gameSettings.add(SETTINGS_LEVEL_1);
@@ -176,9 +201,16 @@ public final class Core {
 							&& gameState.getLivesRemaining() < MAX_LIVES;
 
 					GameState prevState = gameState;
+
+//					pushScreen(new GameScreen(gameState,
+//							gameSettings.get(gameState.getLevel() - 1),
+//							bonusLife, width, height, FPS));
+//					currentScreen = peekScreen();
+
 					currentScreen = new GameScreen(gameState,
 							gameSettings.get(gameState.getLevel() - 1),
 							bonusLife, width, height, FPS);
+
 					LOGGER.info("Starting " + WIDTH + "x" + HEIGHT
 							+ " game screen at " + FPS + " fps.");
 					frame.setScreen(currentScreen);
@@ -377,12 +409,6 @@ public final class Core {
 		System.exit(0);
 	}
 
-	/**
-	 * Constructor, not called.
-	 */
-	private Core() {
-
-	}
 
 	/**
 	 * Controls access to the logger.
@@ -463,5 +489,40 @@ public final class Core {
 	// Team-Ctrl-S(Currency)
 	public static UpgradeManager getUpgradeManager() {
 		return UpgradeManager.getInstance();
+	}
+
+	public static Frame getFrame() {
+		return frame;
+	}
+
+	public static void pushScreen(Screen screen) {
+		if (getFrame().getCurrentScreen() != null) {
+			// 현재 화면을 스택에 저장
+			screenStack.push(getFrame().getCurrentScreen());
+		}
+		// 새 화면 설정
+		getFrame().setScreen(screen);
+	}
+
+	public static void popScreen(){
+		if (getFrame().getCurrentScreen() != null) {
+			// 현재 화면을 스택에 저장
+			screenStack.pop();
+		}
+	}
+
+	// 키 매핑 정보 가져오기
+	public static int getKeyCode(String action) {
+		return keyMappings.getOrDefault(action, -1); // -1: 매핑되지 않은 키
+	}
+
+	// 키 매핑 업데이트
+	public static void updateKeyMapping(String action, int keyCode) {
+		keyMappings.put(action, keyCode);
+	}
+
+	// 모든 키 매핑 정보 가져오기
+	public static Map<String, Integer> getKeyMappings() {
+		return new HashMap<>(keyMappings);
 	}
 }

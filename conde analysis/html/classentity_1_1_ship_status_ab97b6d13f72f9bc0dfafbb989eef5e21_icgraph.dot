@@ -1,0 +1,24 @@
+digraph "entity.ShipStatus.getSpeed_price"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="entity.ShipStatus.getSpeed\l_price",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Currency.UpgradeManager.\lPrice",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_currency_1_1_upgrade_manager.html#aaa148b065ac73ddf6eca7561758599e4",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="engine.DrawManager.MerchantTxt",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_draw_manager.html#aa78bf3e4414404d78091953b914cc4d5",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="engine.DrawManager.drawMenu",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_draw_manager.html#aa8899ff89b1b8cb4a30c6248ab3386f4",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="screen.TitleScreen.draw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_title_screen.html#a6194c8e8f96a4ba27c9433bfe2a47b59",tooltip="Draws the elements associated with the screen."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="screen.TitleScreen.update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_title_screen.html#a3d9cb268fcea0fb80c636094b7da3a3d",tooltip="Updates the elements on screen and checks for events."];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="screen.TitleScreen.testStat\lUpgrade",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_title_screen.html#a64bde84610fa44a3ef12fcf017ef3217",tooltip="runs when player do buying things when store system is ready – unwrap annotated code and rename this ..."];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="screen.TitleScreen.handle\lSpaceKey",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_title_screen.html#aecedcd5e961b0da973cf9ef5c37ece6c",tooltip=" "];
+  Node8 -> Node6 [id="edge8_Node000008_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

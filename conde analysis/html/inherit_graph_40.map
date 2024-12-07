@@ -1,0 +1,17 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classscreen_1_1_screen.html" title="Implements a generic screen." alt="" coords="5,132,111,159"/>
+<area shape="rect" id="Node000001" href="$class_currency_1_1_receipt_screen.html" title="Implements the high scores screen, it shows player records." alt="" coords="160,5,324,32"/>
+<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="76,118,111,79,157,42,181,30,184,35,160,46,115,83,80,122"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html" title="Implements the game screen, where the action happens." alt="" coords="172,56,312,83"/>
+<area shape="poly" id="edge18_Node000000_Node000002" title=" " alt="" coords="96,122,158,92,190,81,192,86,160,97,98,127"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_high_score_screen.html" title="Implements the high scores screen, it shows player records." alt="" coords="159,107,325,133"/>
+<area shape="poly" id="edge20_Node000000_Node000004" title=" " alt="" coords="126,133,158,129,159,134,126,139"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_record_screen.html" title="Implements past user recorded score." alt="" coords="168,157,316,184"/>
+<area shape="poly" id="edge21_Node000000_Node000005" title=" " alt="" coords="126,152,168,158,167,163,126,157"/>
+<area shape="rect" id="Node000006" href="$classscreen_1_1_score_screen.html" title="Implements the score screen." alt="" coords="172,208,312,235"/>
+<area shape="poly" id="edge22_Node000000_Node000006" title=" " alt="" coords="98,164,160,194,192,205,190,210,158,198,96,169"/>
+<area shape="rect" id="Node000007" href="$classscreen_1_1_title_screen.html" title="Implements the title screen." alt="" coords="177,259,307,285"/>
+<area shape="poly" id="edge23_Node000000_Node000007" title=" " alt="" coords="80,169,115,208,160,244,184,256,181,260,157,249,111,212,76,173"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_two_player_mode.html" title=" " alt="" coords="373,56,529,83"/>
+<area shape="poly" id="edge19_Node000002_Node000003" title=" " alt="" coords="328,67,372,67,372,72,328,72"/>
+</map>

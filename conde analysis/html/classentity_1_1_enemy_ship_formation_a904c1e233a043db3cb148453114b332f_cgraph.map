@@ -1,0 +1,11 @@
+<map id="entity.EnemyShipFormation.findTargetsInRange" name="entity.EnemyShipFormation.findTargetsInRange">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,212,91"/>
+<area shape="rect" id="Node000002" href="$classentity_1_1_enemy_ship_formation.html#aef8ac8fa91fd51417fdd9462b64049f5" title=" " alt="" coords="260,48,480,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,67,244,67,244,72,212,72"/>
+<area shape="rect" id="Node000003" href="$classentity_1_1_enemy_ship.html#a370800097669d1fea7604d09a19058ad" title="Getter for the Initial x&#45;coordinate of this EnemyShip." alt="" coords="548,5,703,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="480,45,539,33,540,38,481,50"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_enemy_ship.html#a28edf6400f1cc93cde71d035fc8467bc" title="Getter for the Initial y&#45;coordinate of this EnemyShip." alt="" coords="548,56,703,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="480,67,533,67,533,72,480,72"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_enemy_ship_formation.html#a706d12b166bf8a052b019719d59f5d5c" title=" " alt="" coords="528,107,723,149"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="466,89,515,100,514,105,465,94"/>
+</map>

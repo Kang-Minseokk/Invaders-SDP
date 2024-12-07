@@ -1,0 +1,7 @@
+<map id="engine.DrawManager.drawGameEnd" name="engine.DrawManager.drawGameEnd">
+<area shape="rect" id="Node000001" title="Draws basic content of game end screen." alt="" coords="5,47,240,73"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a01d2cd207f7553b79e0f73972acd514c" title="Draws a centered string on big font." alt="" coords="288,5,517,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,43,272,40,272,45,240,49"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#a4016c7be1acc513467bcc183b5e515d0" title="Draws a centered string on regular font." alt="" coords="288,72,517,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,71,272,75,272,80,240,77"/>
+</map>

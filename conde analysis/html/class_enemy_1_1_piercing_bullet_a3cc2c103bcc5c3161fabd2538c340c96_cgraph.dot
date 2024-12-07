@@ -1,0 +1,15 @@
+digraph "Enemy.PiercingBullet.PiercingBullet"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Enemy.PiercingBullet.Piercing\lBullet",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Constructor for PiercingBullet."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="entity.Bullet.setSprite",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_bullet.html#a2aec4db9c13df6487b5221d3cf5fbc7d",tooltip="Sets correct sprite for the bullet, based on speed."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="entity.Bomb.getCanShoot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_bomb.html#a8f61c1500609ebfc7a285461ed9e1028",tooltip=" "];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="entity.Bomb.getIsBomb",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_bomb.html#acc740247abbfc0e65202ebbdd984d736",tooltip=" "];
+}

@@ -1,0 +1,9 @@
+<map id="Currency.CurrencyManager.getCoin" name="Currency.CurrencyManager.getCoin">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,235,57"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_file_manager.html#a389ab7fb9ebb7b483d0992a3e845b652" title="Loads user coin from file, and returns current coin." alt="" coords="283,31,472,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,41,267,41,267,47,235,47"/>
+<area shape="rect" id="Node000003" href="$class_currency_1_1_encryption_support.html#aace733246300350ac93d39bf3d251434" title="Performs decryption for a given input." alt="" coords="520,5,751,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="472,32,504,29,505,34,473,37"/>
+<area shape="rect" id="Node000004" href="$class_currency_1_1_encryption_support.html#ac6690d521e47eaa9de388d6359655779" title="Performs encryption for a given input." alt="" coords="520,56,751,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="473,51,505,54,504,59,472,56"/>
+</map>

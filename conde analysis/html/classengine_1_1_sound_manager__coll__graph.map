@@ -1,0 +1,15 @@
+<map id="engine.SoundManager" name="engine.SoundManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="172,528,318,853"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_sound_manager.html" title=" " alt="" coords="270,139,416,464"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,465,292,512,287,511,299,463"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="417,264,435,276,441,288,443,301,440,317,433,329,429,326,435,315,438,301,436,289,431,280,414,269"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,145,75"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="74,74,69,146,68,244,77,354,87,410,101,463,128,526,164,585,160,588,124,529,96,465,81,411,71,355,63,244,64,146,69,74"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="116,72,145,93,177,112,198,119,215,122,233,125,253,136,260,143,256,147,250,141,231,130,215,127,196,125,175,117,142,98,113,77"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="186,5,311,75"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="234,76,221,106,211,139,199,234,197,330,203,424,213,511,207,511,197,425,192,330,194,233,206,138,216,104,229,74"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="263,74,281,122,276,124,258,76"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="342,5,392,75"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="393,47,422,60,456,79,488,105,512,137,534,183,549,224,558,263,561,300,557,338,547,377,512,465,478,521,433,570,383,612,334,645,331,640,379,607,429,566,473,518,507,463,542,375,552,337,555,300,553,264,544,226,529,185,508,140,484,109,453,84,420,65,391,52"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="367,75,362,122,357,121,361,74"/>
+</map>

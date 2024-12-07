@@ -1,0 +1,21 @@
+<map id="screen.GameScreen.handleChainExplosion" name="screen.GameScreen.handleChainExplosion">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,153,188,196"/>
+<area shape="rect" id="Node000002" href="$class_enemy_1_1_item_manager.html#aab357bd87102d8477d909ad527f3563a" title=" " alt="" coords="236,81,432,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,150,235,117,259,110,260,115,237,123,149,155"/>
+<area shape="rect" id="Node000008" href="$classentity_1_1_entity.html#a3016a1d6a74d9a823feaf4cb0b537ef5" title="Getter for the color of the entity." alt="" coords="263,132,405,159"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="188,161,247,153,247,159,189,166"/>
+<area shape="rect" id="Node000009" href="$classentity_1_1_enemy_ship.html#ada16aeee2f6d94e63efb5f33e78ba9b6" title="Getter for the score bonus if this ship is destroyed." alt="" coords="246,183,422,225"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="189,183,231,189,230,194,188,189"/>
+<area shape="rect" id="Node000010" href="$classentity_1_1_enemy_ship.html#a794bd95c39984a70314dbe0adeb33706" title="Setter for enemy ship&#39;s isChainExploded to false." alt="" coords="244,249,424,292"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="144,194,237,235,253,241,251,246,235,240,142,199"/>
+<area shape="rect" id="Node000003" href="$class_enemy_1_1_item_pool.html#a137f799e5f461caed45ef95615d32258" title=" " alt="" coords="481,31,646,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,78,484,59,486,64,398,83"/>
+<area shape="rect" id="Node000006" href="$classentity_1_1_entity.html#aade70f342a09b3c37b7f40d17db45983" title="Getter for the X axis position of the entity." alt="" coords="480,81,647,108"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="432,92,465,92,465,97,432,97"/>
+<area shape="rect" id="Node000007" href="$classentity_1_1_entity.html#afdcbb4ca073d5a81b37ed096ac85f5ef" title="Getter for the Y axis position of the entity." alt="" coords="480,132,647,159"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="398,106,486,125,484,131,397,111"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_entity.html#a9eed63b7e9308461e1af62cabcbe0219" title="Getter for the width of the image associated to the entity." alt="" coords="706,5,852,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="646,32,691,26,691,32,647,37"/>
+<area shape="rect" id="Node000005" href="$classentity_1_1_entity.html#a34b1106b5fc108c72ce6083d913e42ed" title="Setter for the X axis position of the entity." alt="" coords="695,56,863,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="647,51,680,55,680,60,646,56"/>
+</map>

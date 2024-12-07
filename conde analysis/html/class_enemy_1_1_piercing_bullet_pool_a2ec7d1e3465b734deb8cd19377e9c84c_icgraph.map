@@ -1,0 +1,10 @@
+<map id="Enemy.PiercingBulletPool.recycle" name="Enemy.PiercingBulletPool.recycle">
+<area shape="rect" id="Node000001" title="Adds one or more bullets to the list of available ones." alt="" coords="500,35,717,61"/>
+<area shape="rect" id="Node000002" href="$classscreen_1_1_game_screen.html#a52a1f7f3c2ca7352fbeaf89ba5846977" title="Cleans bullets that go off screen." alt="" coords="237,5,452,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,37,452,33,453,28,485,32"/>
+<area shape="rect" id="Node000004" href="$classscreen_1_1_game_screen.html#a20e6975baf2786217ea22eabdcc4f3ce" title="Manages collisions between bullets and ships." alt="" coords="249,56,440,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="485,64,440,69,440,64,484,59"/>
+<area shape="rect" id="Node000003" href="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0" title="Updates the elements on screen and checks for events." alt="" coords="5,35,189,61"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,36,189,40,189,34,221,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="234,67,189,62,190,56,234,62"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="engine.Frame" name="engine.Frame">
+<area shape="rect" id="Node000001" title="Implements a frame to show screens on." alt="" coords="5,123,110,299"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="30,5,85,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,90,60,123,55,123,55,90"/>
+</map>

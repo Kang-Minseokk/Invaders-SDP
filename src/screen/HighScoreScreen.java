@@ -4,12 +4,10 @@ import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.List;
 
-import HUDTeam.DrawAchievementHud;
-import HUDTeam.DrawManagerImpl;
 import engine.Core;
 import engine.Score;
 // Sound Operator
-import Sound_Operator.SoundManager;
+import engine.SoundManager;
 
 /**
  * Implements the high scores screen, it shows player records.
@@ -52,6 +50,7 @@ public class HighScoreScreen extends Screen {
 	 * 
 	 * @return Next screen code.
 	 */
+	@Override
 	public final int run() {
 		super.run();
 
@@ -61,6 +60,8 @@ public class HighScoreScreen extends Screen {
 	/**
 	 * Updates the elements on screen and checks for events.
 	 */
+
+	@Override
 	protected final void update() {
 		super.update();
 

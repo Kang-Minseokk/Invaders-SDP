@@ -1,0 +1,5 @@
+<map id="Achievement.Statistics.addTotalPlayTime" name="Achievement.Statistics.addTotalPlayTime">
+<area shape="rect" id="Node000001" title="Add the current game&#39;s playtime to the previous total playtime." alt="" coords="177,5,358,48"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="5,13,129,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,29,129,29,129,24,161,24"/>
+</map>

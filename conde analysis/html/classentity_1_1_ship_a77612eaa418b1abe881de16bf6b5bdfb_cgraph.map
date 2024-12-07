@@ -1,0 +1,7 @@
+<map id="entity.Ship.update" name="entity.Ship.update">
+<area shape="rect" id="Node000001" title="Updates status of the ship." alt="" coords="5,35,131,61"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_cooldown.html#a941db70eb870be549e8a2b1a1fdb6793" title="Checks if the cooldown is finished." alt="" coords="182,5,391,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,37,167,32,168,37,131,42"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_draw_manager.html#a16019fb34636287f1d5b5e84e900c9c0" title=" " alt="" coords="179,56,394,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,54,164,58,163,63,131,59"/>
+</map>

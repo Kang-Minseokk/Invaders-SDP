@@ -1,0 +1,51 @@
+digraph "entity.EnemyShip.destroy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="entity.EnemyShip.destroy",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Destroys the ship, causing an explosion."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="entity.EnemyShip.chainExplode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_enemy_ship.html#ae47b2ffda8233c5d5a0f0ba9de608264",tooltip="Destroys ship, causing a chain explode."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="entity.EnemyShipFormation.\l_destroy",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_enemy_ship_formation.html#aaf51727a5bd3b68f8fb8523d4b7bf3ea",tooltip="When EnemyShip is hit, its HP decrease by 1, and if the HP reaches 0, the ship is destroyed."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="entity.EnemyShipFormation.create\lExplosionListener",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_enemy_ship_formation.html#a3c917e5861e940e183419ec3356fa2d3",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="entity.EnemyShipFormation.explosive",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_enemy_ship_formation.html#ad8676ce8b832d61f3b7d9c0989cb1e97",tooltip="A function that explosive up, down, left, and right when an explosive EnemyShip dies."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="entity.EnemyShipFormation.handle\lExplosiveShipDestruction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_enemy_ship_formation.html#a695de08faa9695c26d2f8f2d1d491560",tooltip=" "];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="entity.EnemyShipFormation.process\lShipDestruction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_enemy_ship_formation.html#af852f8b09aeb0532701aad312a341f10",tooltip=" "];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="entity.EnemyShipFormation.handle\lStandardDestruction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_enemy_ship_formation.html#ace75d4809eb81b70b9b4d076937867e5",tooltip=" "];
+  Node8 -> Node3 [id="edge8_Node000008_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node9 [id="edge9_Node000003_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="screen.GameScreen.process\lEnemyCollision",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_game_screen.html#a22cbc570dfbcfcb8b266be01b13164ee",tooltip=" "];
+  Node9 -> Node10 [id="edge10_Node000009_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="screen.GameScreen.handle\lEnemyCollisions",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_game_screen.html#af124aabf618c13024b2b60137927c2fb",tooltip=" "];
+  Node10 -> Node11 [id="edge11_Node000010_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="screen.GameScreen.handle\lBulletCollisions",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_game_screen.html#af6ce22d045fc5614a16a76ce73331295",tooltip=" "];
+  Node11 -> Node12 [id="edge12_Node000011_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="screen.GameScreen.manage\lCollisions_add_item",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_game_screen.html#a20e6975baf2786217ea22eabdcc4f3ce",tooltip="Manages collisions between bullets and ships."];
+  Node12 -> Node13 [id="edge13_Node000012_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="screen.GameScreen.update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_game_screen.html#aea54bbc0cb5c6990c159be77532b94e0",tooltip="Updates the elements on screen and checks for events."];
+  Node1 -> Node14 [id="edge14_Node000001_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="entity.Bomb.destroyByBomb",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_bomb.html#af1efba260e80c0e811e99f3326b3ca3e",tooltip=" "];
+  Node14 -> Node3 [id="edge15_Node000014_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 -> Node15 [id="edge16_Node000014_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="entity.EnemyShipFormation.destroy",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_enemy_ship_formation.html#a6c7e9726d2340a498c24f35490e41df8",tooltip="Destroys a ship."];
+  Node1 -> Node16 [id="edge17_Node000001_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="entity.Bomb.destroyByBomb\l_isCircle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_bomb.html#a145812b545b1662e338831889f667d22",tooltip=" "];
+  Node16 -> Node3 [id="edge18_Node000016_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node17 [id="edge19_Node000001_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="screen.GameScreen.handle\lSpecialEnemyCollisions",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classscreen_1_1_game_screen.html#a86f8c8c2cd6408de33420665e3dedb85",tooltip=" "];
+  Node17 -> Node11 [id="edge20_Node000017_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node18 [id="edge21_Node000001_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="Enemy.HpEnemyShip.hit",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_enemy_1_1_hp_enemy_ship.html#a07c30d46d1490fddfbc87aabdf15a835",tooltip="When the EnemyShip is hit and its hp reaches 0, destroy the ship."];
+  Node18 -> Node6 [id="edge22_Node000018_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 -> Node19 [id="edge23_Node000018_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="entity.EnemyShipFormation.handle\lNormalShipDestruction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classentity_1_1_enemy_ship_formation.html#aae55bec682ecd1692c011a6a4cc23212",tooltip=" "];
+  Node19 -> Node7 [id="edge24_Node000019_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

@@ -1,0 +1,54 @@
+digraph "Achievement.AchievementConditions.checkAllAchievements"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="Achievement.AchievementConditions.check\lAllAchievements",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Achievement.AchievementConditions.complete\lAchievement",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_achievement_1_1_achievement_conditions.html#a370857deb5c4dc35e2bd3191fb6834c1",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="engine.DrawManager.achieve\lAchievement",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_draw_manager.html#a4a0a0ce908ee42bdc7b312ee3dae8dec",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="engine.SoundManager.getInstance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#a4e6f0b41bd8568517ad66a9407a77fea",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="engine.SoundManager.Sound\lManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#a18b0e843467737587e1ce3f2d844f4f9",tooltip="Code Description Base: BGM files are stored in res/sound/BGM ES files are stored in res/sound/ES,..."];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="engine.Core.getLogger",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_core.html#a89349dea52049be064320358db9412a2",tooltip="Controls access to the logger."];
+  Node5 -> Node7 [id="edge6_Node000005_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="engine.SoundManager.preloadBGM",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#a6bcd9eaf792c1b87b19a6f6f37f9c4cb",tooltip=" "];
+  Node5 -> Node8 [id="edge7_Node000005_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="engine.SoundManager.preset\lEffectSound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#af26c2bfcdc62884f2f9bc521b437905f",tooltip=" "];
+  Node3 -> Node9 [id="edge8_Node000003_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="engine.SoundManager.playES",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#af326739e7c567da7bedf9a07eff7e232",tooltip=" "];
+  Node9 -> Node10 [id="edge9_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="engine.SoundManager.play\lEffectSound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_sound_manager.html#aff8a50dd8c931099450db7066e6a360e",tooltip=" "];
+  Node2 -> Node11 [id="edge10_Node000002_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="Currency.CurrencyManager.addGem",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_currency_1_1_currency_manager.html#ad60b174c664ad0c85f62bd498fc3c1b0",tooltip="Add an amount of gem to the current gem."];
+  Node11 -> Node12 [id="edge11_Node000011_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="engine.FileManager.loadGem",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#aa1a63106adf5599efd6409ac09ede0f7",tooltip="Loads user gem from file, and returns current gem."];
+  Node12 -> Node13 [id="edge12_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="Currency.EncryptionSupport.decrypt",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_currency_1_1_encryption_support.html#aace733246300350ac93d39bf3d251434",tooltip="Performs decryption for a given input."];
+  Node12 -> Node14 [id="edge13_Node000012_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="Currency.EncryptionSupport.encrypt",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_currency_1_1_encryption_support.html#ac6690d521e47eaa9de388d6359655779",tooltip="Performs encryption for a given input."];
+  Node11 -> Node15 [id="edge14_Node000011_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="engine.FileManager.saveGem",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#ad7ef07a23c6ff9c29a6d86622c49661e",tooltip="Saves user gem to disk."];
+  Node15 -> Node14 [id="edge15_Node000015_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node16 [id="edge16_Node000002_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="engine.Core.getCurrencyManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_core.html#af6af7caff5e9b89c8bf5d801095f726d",tooltip="Controls access to the currency manager."];
+  Node16 -> Node17 [id="edge17_Node000016_Node000017",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="Currency.CurrencyManager.get\lInstance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_currency_1_1_currency_manager.html#a31c832489fc9cffeeb9a753e3abe3154",tooltip="Returns shared instance of FileManager."];
+  Node17 -> Node18 [id="edge18_Node000017_Node000018",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="Currency.CurrencyManager.\lCurrencyManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_currency_1_1_currency_manager.html#a717e788aeda8a1ffde764f7e187b9146",tooltip="private constructor."];
+  Node18 -> Node19 [id="edge19_Node000018_Node000019",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="engine.Core.getFileManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_core.html#adb491d93cae178d9f5b8e7d05e2ad8e8",tooltip="Controls access to the file manager."];
+  Node19 -> Node20 [id="edge20_Node000019_Node000020",color="steelblue1",style="solid",tooltip=" "];
+  Node20 [id="Node000020",label="engine.FileManager.getInstance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#a7698513523dc07d8c3a5e8f196b77ab0",tooltip="Returns shared instance of FileManager."];
+  Node20 -> Node21 [id="edge21_Node000020_Node000021",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="engine.FileManager.FileManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classengine_1_1_file_manager.html#afdca4bda43ab44bb37d0f6665f71378a",tooltip="private constructor."];
+  Node21 -> Node6 [id="edge22_Node000021_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node18 -> Node6 [id="edge23_Node000018_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node22 [id="edge24_Node000002_Node000022",color="steelblue1",style="solid",tooltip=" "];
+  Node22 [id="Node000022",label="Achievement.AchievementConditions.get\lUnlockedAchievements",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_achievement_1_1_achievement_conditions.html#a84364f3c41539a286a35c633c6a314e2",tooltip=" "];
+}

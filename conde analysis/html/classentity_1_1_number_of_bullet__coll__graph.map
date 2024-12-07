@@ -1,0 +1,3 @@
+<map id="entity.NumberOfBullet" name="entity.NumberOfBullet">
+<area shape="rect" id="Node000001" title="TwoBulletPool extends BulletPool to manage firing two bullets at once." alt="" coords="5,5,209,224"/>
+</map>

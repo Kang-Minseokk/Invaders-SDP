@@ -1,0 +1,13 @@
+<map id="engine.DrawManager.DrawManager" name="engine.DrawManager.DrawManager">
+<area shape="rect" id="Node000001" title="Private constructor." alt="" coords="745,68,975,95"/>
+<area shape="rect" id="Node000002" href="$classengine_1_1_draw_manager.html#a65d3bcf5882046f637638cfcc3d7d84f" title="Returns shared instance of DrawManager." alt="" coords="481,68,697,95"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="730,84,698,84,698,79,730,79"/>
+<area shape="rect" id="Node000003" href="$classengine_1_1_core.html#ab8d6946e1c3ea2981bc009665d6155b5" title="Controls access to the drawing manager." alt="" coords="239,43,433,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,72,433,68,434,63,466,66"/>
+<area shape="rect" id="Node000006" href="$classengine_1_1_core.html#a57772a5de30ed8af04183baad8f1281e" title="Test implementation." alt="" coords="274,93,398,120"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="465,96,398,103,398,98,465,91"/>
+<area shape="rect" id="Node000004" href="$classentity_1_1_enemy_ship_formation.html#a376224dc2ff5bd7fbd919e4d6b225cdc" title="Constructor, sets the initial conditions." alt="" coords="5,5,191,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,45,191,41,191,35,223,39"/>
+<area shape="rect" id="Node000005" href="$classscreen_1_1_screen.html#a1ebb8482ec863c6ad05618ad5d11518e" title="Constructor, establishes the properties of the screen." alt="" coords="23,72,173,99"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="224,73,174,79,173,73,223,67"/>
+</map>
