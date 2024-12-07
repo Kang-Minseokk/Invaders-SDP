@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test/OptionScreenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/OptionScreenTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test/screen/KeyMappingOptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/screen/KeyMappingOptionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/OptionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/OptionScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.Invaders-SDP의 전부.executor": "Run",
+    "JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp.executor": "Run",
     "JUnit.KeyMappingOptionTest.executor": "Run",
     "JUnit.OptionScreenTest.executor": "Run",
     "JUnit.OptionScreenTest.testHandleBGMCode_NextBGM.executor": "Debug",
@@ -102,7 +104,7 @@
       <recent name="clove" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KeyMappingOptionTest">
+  <component name="RunManager" selected="JUnit.OptionScreenTest">
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engine.Core" />
       <module name="Invaders-SDP" />
@@ -112,6 +114,30 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Invaders-SDP의 전부" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Invaders-SDP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="screen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="screen.KeyMappingOptionTest" />
+      <option name="MAIN_CLASS_NAME" value="screen.KeyMappingOptionTest$testHandleVerticalMenuNavigation" />
+      <option name="METHOD_NAME" value="testMoveUp" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,52 +172,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OptionScreenTest.testHandleBGMCode_NextBGM_Debug" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Invaders-SDP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="screen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="screen" />
-      <option name="MAIN_CLASS_NAME" value="screen.OptionScreenTest" />
-      <option name="METHOD_NAME" value="testHandleBGMCode_NextBGM_Debug" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OptionScreenTest.testMockConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Invaders-SDP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="screen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="screen" />
-      <option name="MAIN_CLASS_NAME" value="screen.OptionScreenTest" />
-      <option name="METHOD_NAME" value="testMockConnection" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="JUnit.Invaders-SDP의 전부" />
       <item itemvalue="JUnit.KeyMappingOptionTest" />
-      <item itemvalue="JUnit.OptionScreenTest.testHandleBGMCode_NextBGM_Debug" />
-      <item itemvalue="JUnit.OptionScreenTest.testMockConnection" />
+      <item itemvalue="JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp" />
       <item itemvalue="JUnit.OptionScreenTest" />
       <item itemvalue="애플리케이션.Core" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.KeyMappingOptionTest" />
-        <item itemvalue="애플리케이션.Core" />
         <item itemvalue="JUnit.OptionScreenTest" />
-        <item itemvalue="JUnit.OptionScreenTest.testHandleBGMCode_NextBGM_Debug" />
-        <item itemvalue="JUnit.OptionScreenTest.testMockConnection" />
+        <item itemvalue="JUnit.KeyMappingOptionTest" />
+        <item itemvalue="JUnit.Invaders-SDP의 전부" />
+        <item itemvalue="JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp" />
+        <item itemvalue="애플리케이션.Core" />
       </list>
     </recent_temporary>
   </component>

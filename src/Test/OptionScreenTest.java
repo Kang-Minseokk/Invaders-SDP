@@ -56,6 +56,7 @@ class OptionScreenTest {
 
             // OptionScreen 생성
             optionScreen = new OptionScreen(800, 600, 60, null);
+            optionScreen.setTestEnv();
         }
 
         optionScreen.inputManager = mockInputManager;

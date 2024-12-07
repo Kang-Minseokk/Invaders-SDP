@@ -47,6 +47,7 @@ public class KeyMappingOptionTest {
         keyMappingOption.selectionCooldown = mockSelectionCooldown;
         keyMappingOption.actions = new ArrayList<>(mockKeyMappings.keySet());
 
+        keyMappingOption.setTestEnv();
         Core.setTestEnv();
     }
 
