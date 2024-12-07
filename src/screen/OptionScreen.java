@@ -26,12 +26,20 @@ public class OptionScreen extends Screen {
     public static SoundManager sm;
     public GameScreen gameScreen;
 
+    public static boolean isTestEnv = false;
+
+
+    public static void setTestEnv(){
+        isTestEnv = true;
+    }
+
     public OptionScreen(int width, int height, int fps, GameScreen gamesc) {
         super(width, height, fps);
         this.volumeSelectionCode = Core.getSavedVolumeSelectionCode();
         this.returnCode = 1; // Default return code for resuming the game
         this.gameScreen = gamesc;
-        sm = SoundManager.getInstance();
+        if(!isTestEnv)
+            sm = SoundManager.getInstance();
 
         bgmOptions = new ArrayList<>();
         bgmOptions.add("inGame_bgm");
@@ -111,8 +119,10 @@ public class OptionScreen extends Screen {
 
                 else
                     this.volumeSelectionCode--;
-                sm.modifyAllBGMVolume(this.volumeSelectionCode);
-                sm.modifyAllESVolume(this.volumeSelectionCode);
+                if(!isTestEnv){
+                    sm.modifyAllBGMVolume(this.volumeSelectionCode);
+                    sm.modifyAllESVolume(this.volumeSelectionCode);
+                }
             }
             if (inputManager.isKeyDown(KeyEvent.VK_RIGHT) || inputManager.isKeyDown(KeyEvent.VK_D)) {
                 playMenuSelectSound();
@@ -120,8 +130,10 @@ public class OptionScreen extends Screen {
                     this.volumeSelectionCode = 0;
                 else
                     this.volumeSelectionCode++;
-                sm.modifyAllBGMVolume(this.volumeSelectionCode);
-                sm.modifyAllESVolume(this.volumeSelectionCode);
+                if(!isTestEnv){
+                    sm.modifyAllBGMVolume(this.volumeSelectionCode);
+                    sm.modifyAllESVolume(this.volumeSelectionCode);
+                }
             }
         }
     }
@@ -154,7 +166,8 @@ public class OptionScreen extends Screen {
     }
 
     private void playMenuSelectSound() {
-        SoundManager.getInstance().playES("menuSelect_es");
+        if(!isTestEnv)
+            SoundManager.getInstance().playES("menuSelect_es");
     }
 
     public void nextBGMState() {
@@ -173,8 +186,10 @@ public class OptionScreen extends Screen {
 
     public void playSelectedBGM() {
         String selectedBGM = bgmOptions.get(bgmState);
-        sm.stopAllBGM();
-        sm.playBGM(selectedBGM);
+        if(!isTestEnv){
+            sm.stopAllBGM();
+            sm.playBGM(selectedBGM);
+        }
         Core.getLogger().info("Playing selected BGM: " + selectedBGM);
     }
 

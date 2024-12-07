@@ -20,6 +20,13 @@ public class KeyMappingOption extends Screen {
     String osType;
     public boolean flagDuplicated;
 
+    public static boolean isTestEnv = false;
+
+
+    public static void setTestEnv(){
+        isTestEnv = true;
+    }
+
     public KeyMappingOption(int width, int height, int fps) {
         super(width, height, fps);
         osType = System.getProperty("os.name").toLowerCase();
@@ -133,7 +140,8 @@ public class KeyMappingOption extends Screen {
         } else {
             selectedIndex++;
         }
-        playMenuSelectSound();
+        if(!isTestEnv)
+            playMenuSelectSound();
     }
 
     void previousOption() {
@@ -142,7 +150,8 @@ public class KeyMappingOption extends Screen {
         } else {
             selectedIndex--;
         }
-        playMenuSelectSound();
+        if(!isTestEnv)
+            playMenuSelectSound();
     }
 
     private void playMenuSelectSound() {

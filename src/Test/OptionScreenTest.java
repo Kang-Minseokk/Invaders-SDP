@@ -29,6 +29,7 @@ class OptionScreenTest {
         Logger mockLogger = mock(Logger.class);
         mockedCore.when(Core::getLogger).thenReturn(mockLogger);
         doNothing().when(mockLogger).info(anyString());
+        Core.setTestEnv();
     }
 
     @AfterAll
@@ -55,6 +56,7 @@ class OptionScreenTest {
 
             // OptionScreen 생성
             optionScreen = new OptionScreen(800, 600, 60, null);
+            optionScreen.setTestEnv();
         }
 
         optionScreen.inputManager = mockInputManager;
