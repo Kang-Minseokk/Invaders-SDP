@@ -57,10 +57,16 @@ tasks.test {
         html.required.set(true) // HTML 결과 저장
     }
 }
-
 tasks.jar {
+    from(sourceSets.main.get().output)
+    from("res") // 리소스 파일 추가
+    include("**/*.mp3", "**/*.wav") // 필요한 파일 형식만 포함
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE // 중복 파일을 무시
     archiveBaseName.set("Professor_Invaders")
     archiveVersion.set(getVersionFromGit())
+    manifest {
+        attributes["Main-Class"] = "engine.Core"
+    }
 }
 
 tasks.register<Jar>("makeJar") {
