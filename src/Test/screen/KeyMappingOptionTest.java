@@ -46,6 +46,8 @@ public class KeyMappingOptionTest {
         keyMappingOption.inputManager = mockInputManager; // InputManager Mock 설정
         keyMappingOption.selectionCooldown = mockSelectionCooldown;
         keyMappingOption.actions = new ArrayList<>(mockKeyMappings.keySet());
+
+        Core.setTestEnv();
     }
 
     @AfterAll
