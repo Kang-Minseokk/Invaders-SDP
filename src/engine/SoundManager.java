@@ -103,7 +103,7 @@ public class SoundManager {
     public void preloadBGM(String name, String filePath, float volume) {
         try {
             if (!BGMs.containsKey(name)) {
-                URL resourceURL = SoundManager.class.getClassLoader().getResource("Sound.assets/BGM/background.wav");
+                URL resourceURL = SoundManager.class.getClassLoader().getResource("Sound.assets/BGM/pixelated-drive-228439.wav");
                 if (resourceURL == null) {
                     logger.warning("Resource not found: Sound.assets/BGM/background.wav");
                 } else {
