@@ -17,14 +17,14 @@ import java.util.List;
  */
 public class OptionScreen extends Screen {
 
-    private List<String> bgmOptions;
-    private int bgmState; // Tracks the current BGM option
-    private final int maxBGMState = 2;
-    private int volumeSelectionCode;
-    private Cooldown selectionCooldown;
-    private static final int SELECTION_TIME = 120;
-    private static SoundManager sm;
-    private GameScreen gameScreen;
+    public List<String> bgmOptions;
+    protected int bgmState; // Tracks the current BGM option
+    public final int maxBGMState = 2;
+    protected int volumeSelectionCode;
+    public Cooldown selectionCooldown;
+    public static final int SELECTION_TIME = 120;
+    public static SoundManager sm;
+    public GameScreen gameScreen;
 
     public OptionScreen(int width, int height, int fps, GameScreen gamesc) {
         super(width, height, fps);
@@ -73,7 +73,7 @@ public class OptionScreen extends Screen {
         }
     }
 
-    private void handleVerticalMenuNavigation() {
+    public void handleVerticalMenuNavigation() {
         if (inputManager.isKeyDown(Core.getKeyCode("MOVE_UP"))) {
             Core.getLogger().info("Pressed uping to " + returnCode);
             previousOptionItem();
@@ -86,7 +86,7 @@ public class OptionScreen extends Screen {
         }
     }
 
-    private void handleBGMCode() {
+    public void handleBGMCode() {
         if (this.returnCode == 1) {
             if (inputManager.isKeyDown(Core.getKeyCode("MOVE_LEFT"))) {
                 previousBGMState();
@@ -101,7 +101,7 @@ public class OptionScreen extends Screen {
         }
     }
 
-    private void handleVolumeCode() {
+    public void handleVolumeCode() {
         if (this.returnCode == 2) {
             if (inputManager.isKeyDown(KeyEvent.VK_LEFT) || inputManager.isKeyDown(KeyEvent.VK_A)) {
                 if (this.volumeSelectionCode == 0)
@@ -124,7 +124,7 @@ public class OptionScreen extends Screen {
     }
 
 
-    private void openKeyMapping() {
+    public void openKeyMapping() {
         if (this.returnCode == 3) {
             if (inputManager.isKeyDown(KeyEvent.VK_ENTER) || inputManager.isKeyDown(KeyEvent.VK_SPACE)) {
                 Core.getLogger().info("Open Key Mapping");
@@ -134,42 +134,42 @@ public class OptionScreen extends Screen {
             }
         }
     }
-    private void nextOptionItem() {
+    public void nextOptionItem() {
         if (this.returnCode >= 3)
             this.returnCode = 1;
         else
             this.returnCode++;
     }
 
-    private void previousOptionItem() {
+    public void previousOptionItem() {
         if (this.returnCode <= 1)
             this.returnCode = 3;
         else
             this.returnCode--;
     }
 
-    private void nextBGMState() {
+    public void nextBGMState() {
         if (this.bgmState == maxBGMState)
             this.bgmState = 0; // Wrap around to the first BGM option
         else
             this.bgmState++; // Move to the next BGM option
     }
 
-    private void previousBGMState() {
+    public void previousBGMState() {
         if (this.bgmState == 0)
             this.bgmState = maxBGMState; // Wrap around to the last BGM option
         else
             this.bgmState--; // Move to the previous BGM option
     }
 
-    private void playSelectedBGM() {
+    public void playSelectedBGM() {
         String selectedBGM = bgmOptions.get(bgmState);
         sm.stopAllBGM();
         sm.playBGM(selectedBGM);
         Core.getLogger().info("Playing selected BGM: " + selectedBGM);
     }
 
-    private void draw() {
+    public void draw() {
         drawManager.initDrawing(this);
         drawManager.drawOption(this);
         drawManager.drawSoundOption(this, this.returnCode, this.volumeSelectionCode, this.bgmState, this.bgmOptions);
