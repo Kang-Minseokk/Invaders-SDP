@@ -18,6 +18,7 @@ local.properties
 .idea/misc.xml
 .idea/vcs.xml
 
+*.xml
 
 # External tool builders
 .externalToolBuilders/
@@ -178,3 +179,6 @@ Invader_Space_HUD.iml
 # running files
 out/
 .idea/
+
+# Ignore Gradle project-specific cache directory
+#.gradle

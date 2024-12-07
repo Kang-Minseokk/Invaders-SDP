@@ -18,6 +18,7 @@ public class KeyMappingOption extends Screen {
     public Cooldown selectionCooldown; // 입력 쿨다운
     public static final int SELECTION_TIME = 190; // 쿨다운 시간(ms)
     String osType;
+    public boolean flagDuplicated;
 
     public KeyMappingOption(int width, int height, int fps) {
         super(width, height, fps);
@@ -31,6 +32,7 @@ public class KeyMappingOption extends Screen {
         this.waitingForKeyInput = false;
         this.selectionCooldown = Core.getCooldown(SELECTION_TIME);
         this.selectionCooldown.reset();
+        this. flagDuplicated = false;
     }
 
     @Override
@@ -96,13 +98,12 @@ public class KeyMappingOption extends Screen {
                     // 중복 키코드 검사
                     for(Integer val : keyMappings.values()){
                         if (keyCode == val) {
-                            String duplicateMessage = "Duplicate key is not allowed! Try again.";
-                            drawManager.drawCenteredRegularString(this, duplicateMessage, this.height / 8*2 - drawManager.fontRegularMetrics.getHeight()*2);
-                            draw();
+                            flagDuplicated = true;
+//                            String duplicateMessage = ;
+//                            drawManager.drawCenteredRegularString(this, "Duplicate key is not allowed! Try again.", this.height / 8*2 - drawManager.fontRegularMetrics.getHeight()*2);
+//                            draw();
                             check = false;
                         }
-
-
                     }
                     // 커맨드 키(윈도우 키)가 Go back으로 설정되는 경우, 다시 키 설정 못하게 되는 경우를 방지를 위해서 157 키코드를 추가했어요.
                     // 강민석
@@ -190,6 +191,22 @@ public class KeyMappingOption extends Screen {
         if (waitingForKeyInput) {
             drawManager.backBufferGraphics.setColor(Color.white);
             drawManager.drawCenteredRegularString(this, "Press a key to map", this.height / 4 + actions.size()*40 + drawManager.fontRegularMetrics.getHeight()*2);
+        }
+
+        // flagDuplicated가 true일 경우 메시지 표시
+        if (flagDuplicated) {
+            drawManager.backBufferGraphics.setColor(Color.RED);
+            drawManager.drawCenteredRegularString(this, "Key mapping is duplicated!", this.height / 4 + actions.size()*40 + drawManager.fontRegularMetrics.getHeight()*2);
+            drawManager.completeDrawing(this);
+
+            // 1초 대기 후 플래그를 리셋
+            try {
+                Thread.sleep(1000); // 1초 대기
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            flagDuplicated = false; // 플래그 리셋
+            return; // 메시지를 표시한 후 즉시 draw()를 종료
         }
 
         drawManager.completeDrawing(this);
