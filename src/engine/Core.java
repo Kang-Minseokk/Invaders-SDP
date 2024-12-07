@@ -35,6 +35,8 @@ import engine.TwoPlayerMode;
  */
 public final class Core {
 
+	private static boolean isTestEnv = false;
+
 	/** Width of current screen. */
 	private static final int WIDTH = 630;
 	/** Height of current screen. */
@@ -128,7 +130,9 @@ public final class Core {
 			consoleHandler = new ConsoleHandler();
 			consoleHandler.setFormatter(new MinimalFormatter());
 			// Sound Operator
-			sm = SoundManager.getInstance();
+			if(!isTestEnv){
+				sm = SoundManager.getInstance();
+			}
 
 			LOGGER.addHandler(fileHandler);
 			LOGGER.addHandler(consoleHandler);
@@ -525,4 +529,6 @@ public final class Core {
 	public static Map<String, Integer> getKeyMappings() {
 		return new HashMap<>(keyMappings);
 	}
+
+	public static void setTestEnv(){ isTestEnv = true;}
 }
