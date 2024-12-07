@@ -38,6 +38,8 @@
 
   ## System Requirements
   Requires Java 7 or better.
+  +) Newly requires Junit5 & mockito & Gradle
+  +) JDK 23
 
   ### Resources
 

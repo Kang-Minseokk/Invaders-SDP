@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/OptionScreenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/OptionScreenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/screen/KeyMappingOptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/screen/KeyMappingOptionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/KeyMappingOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/OptionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/OptionScreen.java" afterDir="false" />
-    </list>
+    <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +55,8 @@
     "JUnit.OptionScreenTest.testHandleBGMCode_NextBGM_Debug.executor": "Run",
     "JUnit.OptionScreenTest.testInitialState.executor": "Run",
     "JUnit.OptionScreenTest.testMockConnection.executor": "Run",
-    "git-widget-placeholder": "hotFix",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/user/Desktop/HYeUniv_2-2/소프트웨어개발실무/Invaders-SDP/lib/byte-buddy-1.15.10.jar",
     "node.js.detected.package.eslint": "true",
@@ -104,7 +99,7 @@
       <recent name="clove" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OptionScreenTest">
+  <component name="RunManager" selected="Application.Core">
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engine.Core" />
       <module name="Invaders-SDP" />
@@ -173,11 +168,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Core" />
       <item itemvalue="JUnit.Invaders-SDP의 전부" />
       <item itemvalue="JUnit.KeyMappingOptionTest" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp" />
       <item itemvalue="JUnit.OptionScreenTest" />
-      <item itemvalue="애플리케이션.Core" />
     </list>
     <recent_temporary>
       <list>
@@ -185,7 +180,6 @@
         <item itemvalue="JUnit.KeyMappingOptionTest" />
         <item itemvalue="JUnit.Invaders-SDP의 전부" />
         <item itemvalue="JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp" />
-        <item itemvalue="애플리케이션.Core" />
       </list>
     </recent_temporary>
   </component>
