@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="" />
+    <list default="true" id="cd836850-31f4-448c-ba08-b49bcecca064" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/DrawManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/DrawManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Skins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Skins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/TitleScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/TitleScreen.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,11 +26,48 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/background" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "YenaCho"
+  }
+}]]></component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="hotFix" />
+                    <option name="lastUsedInstant" value="1733669388" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1733669379" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Kang-Minseokk/Invaders-SDP.git",
+    "accountId": "73cdfe11-f096-49e8-89c1-418e89fb898e"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
     &quot;isMigrated&quot;: true
@@ -45,33 +87,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.Invaders-SDP의 전부.executor": "Run",
-    "JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp.executor": "Run",
-    "JUnit.KeyMappingOptionTest.executor": "Run",
-    "JUnit.OptionScreenTest.executor": "Run",
-    "JUnit.OptionScreenTest.testHandleBGMCode_NextBGM.executor": "Debug",
-    "JUnit.OptionScreenTest.testHandleBGMCode_NextBGM_Debug.executor": "Run",
-    "JUnit.OptionScreenTest.testInitialState.executor": "Run",
-    "JUnit.OptionScreenTest.testMockConnection.executor": "Run",
-    "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/HYeUniv_2-2/소프트웨어개발실무/Invaders-SDP/lib/byte-buddy-1.15.10.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "프로젝트",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true",
-    "애플리케이션.Core.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.Invaders-SDP의 전부.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.KeyMappingOptionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OptionScreenTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OptionScreenTest.testHandleBGMCode_NextBGM.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.OptionScreenTest.testHandleBGMCode_NextBGM_Debug.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OptionScreenTest.testInitialState.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OptionScreenTest.testMockConnection.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hotFix&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/HYeUniv_2-2/소프트웨어개발실무/Invaders-SDP/lib/byte-buddy-1.15.10.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.Core.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="clove" />
@@ -176,20 +217,13 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Core" />
         <item itemvalue="JUnit.OptionScreenTest" />
         <item itemvalue="JUnit.KeyMappingOptionTest" />
         <item itemvalue="JUnit.Invaders-SDP의 전부" />
         <item itemvalue="JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
