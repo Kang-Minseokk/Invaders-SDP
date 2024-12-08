@@ -140,7 +140,7 @@
       <recent name="clove" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.Core">
+  <component name="RunManager" selected="Application.Core">
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="engine.Core" />
       <module name="Invaders-SDP" />
@@ -209,11 +209,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Core" />
       <item itemvalue="JUnit.Invaders-SDP의 전부" />
       <item itemvalue="JUnit.KeyMappingOptionTest" />
       <item itemvalue="JUnit.KeyMappingOptionTest$testHandleVerticalMenuNavigation.testMoveUp" />
       <item itemvalue="JUnit.OptionScreenTest" />
-      <item itemvalue="애플리케이션.Core" />
     </list>
     <recent_temporary>
       <list>
