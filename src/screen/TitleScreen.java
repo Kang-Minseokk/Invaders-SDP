@@ -67,7 +67,7 @@ public class TitleScreen extends Screen {
 		// 배경 이미지 로드
 		drawManager.loadTitleBackground();
 
-		Skins.resetUnlockedSkins(); // 해금된 스킨 초기화
+//		Skins.resetUnlockedSkins(); // 해금된 스킨 초기화
 
 		// CtrlS: Set user's coin, gem
 		try {
