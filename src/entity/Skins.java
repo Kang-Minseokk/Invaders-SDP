@@ -86,8 +86,8 @@ public class Skins {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
 
-                int centerX = getWidth() / 2 - (unlockedSkinEntity.getWidth() / 2) - 43;
-                int centerY = getHeight() / 2 - (unlockedSkinEntity.getHeight() / 2) - 25;
+                int centerX = getWidth() / 2 - (unlockedSkinEntity.getWidth() / 2) - 61;
+                int centerY = getHeight() / 2 - (unlockedSkinEntity.getHeight() / 2) - 10;
                 g.setColor(Color.GREEN);
 
                 // 새로운 drawEntityWithGraphics 메서드를 호출하여 JPanel에 그리기
@@ -119,8 +119,8 @@ public class Skins {
         dialog.setVisible(true); // 창 표시
     }
 
-/*
-  public static void resetUnlockedSkins() {
+
+ /* public static void resetUnlockedSkins() {
         unlockedSkins.clear(); // 해금된 스킨 초기화
         saveSkins(); // 저장된 파일도 초기화
         Core.getLogger().info("Unlocked skins have been reset.");
