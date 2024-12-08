@@ -283,12 +283,11 @@ public class DrawManager {
 	public static void drawEntityWithGraphics(final Graphics g, final Entity entity, final int positionX, final int positionY) {
 		try {
 			Color[][] image = spriteMap.get(entity.getSpriteType());
-			g.setColor(entity.getColor());
-
 			for (int i = 0; i < image.length; i++) {
 				for (int j = 0; j < image[i].length; j++) {
 					if (image[i][j]!= null) {
-						g.fillRect(positionX + i * 7, positionY + j * 7, 7, 7);
+						g.setColor(image[i][j]);
+						g.fillRect(positionX + j * 5, positionY + i * 5, 5, 5);
 					}
 				}
 			}
