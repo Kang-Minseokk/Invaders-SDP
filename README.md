@@ -32,7 +32,7 @@
   | ![image](https://github.com/user-attachments/assets/682d8752-a5ae-40d2-90ef-fe3e30679171)| ![image](https://github.com/user-attachments/assets/3b9cb34f-7c54-454b-862b-4838dae2e170) | ![image](https://github.com/user-attachments/assets/64b63133-4834-4998-8216-19c2f60d4efb)|
 |                         Option Screen                         |                         KeyMapping Screen                          | Skin Draw                                                 |
   | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------- |
-  | ![image](https://github.com/user-attachments/assets/0f10f2a9-67d7-43c0-bddf-c76f2b705489)| ![image](https://github.com/user-attachments/assets/5369e596-9f67-4de7-8de2-04783760224d) | ![image](https://github.com/user-attachments/assets/95466292-499c-4b1f-912b-8d67dbf717ee)|
+  | ![image](https://github.com/user-attachments/assets/0f10f2a9-67d7-43c0-bddf-c76f2b705489)| ![image](https://github.com/user-attachments/assets/5369e596-9f67-4de7-8de2-04783760224d) | ![image](https://github.com/user-attachments/assets/0e0dc250-7951-4bdb-ad9a-179ef488343f)|
 
 
 
